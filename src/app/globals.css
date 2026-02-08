@@ -1,0 +1,442 @@
+@import "tailwindcss";
+
+:root {
+  --red: #bc002d;
+  --black: #000;
+  --white: #fff;
+  --g1: #111;
+  --g2: #222;
+  --g3: #444;
+  --g4: #888;
+}
+
+/* ── Presentation base ── */
+::selection {
+  background: var(--red);
+  color: var(--white);
+}
+
+/* ── Slides ── */
+.slide {
+  min-height: 100vh;
+  min-height: 100dvh;
+  scroll-snap-align: start;
+  position: relative;
+  display: flex;
+  align-items: center;
+  padding: 80px clamp(32px, 10vw, 140px);
+  overflow: hidden;
+}
+
+/* ── Hero ── */
+.hero {
+  justify-content: center;
+  text-align: center;
+  flex-direction: column;
+}
+.hero-content {
+  position: relative;
+  z-index: 2;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.hero-pre {
+  font-size: 0.7rem;
+  letter-spacing: 0.35em;
+  text-transform: uppercase;
+  color: var(--g3);
+}
+.hero-title {
+  font-size: clamp(5rem, 18vw, 14rem);
+  font-weight: 900;
+  letter-spacing: -0.04em;
+  line-height: 0.85;
+  margin: 16px 0 0;
+}
+.hero-jp {
+  font-size: clamp(1.2rem, 3.5vw, 2.4rem);
+  font-weight: 200;
+  letter-spacing: 0.4em;
+  color: var(--red);
+  margin-top: 8px;
+}
+.hero-line {
+  width: 60px;
+  height: 2px;
+  background: var(--red);
+  margin: 32px auto;
+}
+.hero-meta {
+  font-size: clamp(0.8rem, 1.3vw, 1rem);
+  color: var(--g4);
+  letter-spacing: 0.12em;
+  line-height: 1.8;
+}
+.hero-route {
+  font-size: 0.7rem;
+  color: var(--g3);
+  letter-spacing: 0.08em;
+  margin-top: 24px;
+  max-width: 500px;
+  line-height: 1.6;
+}
+.scroll-cue {
+  position: absolute;
+  bottom: 32px;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 6px;
+  animation: cue 2.5s infinite;
+  z-index: 2;
+}
+.scroll-cue span {
+  font-size: 0.6rem;
+  letter-spacing: 0.25em;
+  text-transform: uppercase;
+  color: var(--g3);
+}
+.scroll-cue svg {
+  width: 16px;
+  height: 16px;
+  stroke: var(--g3);
+  fill: none;
+  stroke-width: 2;
+}
+@keyframes cue {
+  0%,
+  100% {
+    opacity: 0.3;
+    transform: translateX(-50%) translateY(0);
+  }
+  50% {
+    opacity: 1;
+    transform: translateX(-50%) translateY(6px);
+  }
+}
+
+/* ── Day Slides ── */
+.day-bg-num {
+  position: absolute;
+  right: -3vw;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: clamp(10rem, 28vw, 24rem);
+  font-weight: 900;
+  -webkit-text-stroke: 1.5px rgba(255, 255, 255, 0.04);
+  color: transparent;
+  line-height: 1;
+  z-index: 0;
+  pointer-events: none;
+  user-select: none;
+}
+.day-content {
+  position: relative;
+  z-index: 2;
+  max-width: 580px;
+  width: 100%;
+}
+.day-label {
+  font-size: 0.7rem;
+  font-weight: 600;
+  letter-spacing: 0.22em;
+  text-transform: uppercase;
+  color: var(--red);
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.day-label .day-icon {
+  width: 32px;
+  height: 32px;
+  object-fit: contain;
+  filter: drop-shadow(0 0 8px rgba(188, 0, 45, 0.3));
+  flex-shrink: 0;
+}
+.red-line {
+  width: 40px;
+  height: 2px;
+  background: var(--red);
+  margin: 14px 0;
+  transform-origin: left;
+}
+.day-title {
+  font-size: clamp(2rem, 4.5vw, 3.6rem);
+  font-weight: 800;
+  letter-spacing: -0.03em;
+  line-height: 1.05;
+  margin-bottom: 6px;
+}
+.day-tagline {
+  font-size: clamp(0.9rem, 1.6vw, 1.15rem);
+  color: var(--g4);
+  font-weight: 300;
+  margin-bottom: 28px;
+  line-height: 1.5;
+}
+.highlights {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.hl {
+  display: flex;
+  align-items: flex-start;
+  gap: 12px;
+  font-size: 0.88rem;
+  line-height: 1.55;
+  color: rgba(255, 255, 255, 0.8);
+}
+.hl-dot {
+  width: 5px;
+  height: 5px;
+  border-radius: 50%;
+  background: var(--red);
+  margin-top: 9px;
+  flex-shrink: 0;
+}
+.day-footer {
+  display: flex;
+  gap: 28px;
+  margin-top: 36px;
+  flex-wrap: wrap;
+}
+.df-item {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+.df-label {
+  font-size: 0.55rem;
+  text-transform: uppercase;
+  letter-spacing: 0.18em;
+  color: var(--g3);
+}
+.df-val {
+  font-size: 0.8rem;
+  color: var(--g4);
+}
+.day-tip {
+  margin-top: 20px;
+  font-size: 0.78rem;
+  color: var(--g3);
+  font-style: italic;
+  padding-left: 14px;
+  border-left: 2px solid var(--red);
+}
+
+/* ── Sticker decorations ── */
+.sticker {
+  position: absolute;
+  pointer-events: none;
+  z-index: 1;
+  opacity: 0;
+  transform: scale(0.6) rotate(var(--rot, 0deg));
+  transition: opacity 1.2s cubic-bezier(0.16, 1, 0.3, 1),
+    transform 1.2s cubic-bezier(0.16, 1, 0.3, 1);
+}
+.sticker img,
+.sticker-float img,
+.sticker-spin img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  filter: drop-shadow(0 2px 8px rgba(0, 0, 0, 0.6)) brightness(0.35)
+    saturate(1.8);
+}
+.sticker.vis {
+  opacity: var(--op, 0.12);
+  transform: scale(1) rotate(var(--rot, 0deg));
+}
+
+/* Floating stickers — hero & closing */
+.sticker-float {
+  position: absolute;
+  pointer-events: none;
+  z-index: 1;
+  opacity: 0;
+  animation: stickerFloat var(--dur, 6s) ease-in-out infinite alternate;
+}
+@keyframes stickerFloat {
+  0% {
+    transform: translateY(0) rotate(var(--rot, 0deg)) scale(1);
+  }
+  100% {
+    transform: translateY(var(--drift, -15px))
+      rotate(calc(var(--rot, 0deg) + var(--swing, 4deg))) scale(1.03);
+  }
+}
+.sticker-float.vis {
+  opacity: var(--op, 0.12);
+  transform: none;
+}
+
+/* Spin entrance for certain stickers */
+.sticker-spin {
+  position: absolute;
+  pointer-events: none;
+  z-index: 1;
+  opacity: 0;
+  transition: opacity 1.4s cubic-bezier(0.16, 1, 0.3, 1),
+    transform 1.4s cubic-bezier(0.16, 1, 0.3, 1);
+}
+.sticker-spin.vis {
+  opacity: var(--op, 0.12);
+  transform: scale(1) rotate(calc(var(--rot, 0deg) + 360deg));
+}
+
+/* ── Closing ── */
+.closing {
+  justify-content: center;
+  text-align: center;
+  flex-direction: column;
+}
+.closing > *:not(.sticker):not(.sticker-float):not(.sticker-spin) {
+  position: relative;
+  z-index: 2;
+}
+.stats {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+  gap: 32px;
+  margin-top: 48px;
+  max-width: 600px;
+  width: 100%;
+}
+.stat-num {
+  font-size: clamp(2.5rem, 5vw, 3.5rem);
+  font-weight: 900;
+  color: var(--red);
+}
+.stat-num .suffix {
+  font-size: 0.5em;
+  font-weight: 300;
+}
+.stat-label {
+  font-size: 0.65rem;
+  color: var(--g3);
+  text-transform: uppercase;
+  letter-spacing: 0.15em;
+  margin-top: 4px;
+}
+.closing-jp {
+  font-size: clamp(1.5rem, 3vw, 2.5rem);
+  font-weight: 200;
+  color: var(--white);
+  margin-top: 56px;
+  letter-spacing: 0.15em;
+}
+.closing-sub {
+  font-size: 0.8rem;
+  color: var(--g3);
+  margin-top: 8px;
+}
+
+/* ── Progress + Nav ── */
+#progress {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 2px;
+  background: var(--red);
+  z-index: 200;
+  width: 0;
+  transition: width 0.15s;
+}
+#nav {
+  position: fixed;
+  right: 20px;
+  top: 50%;
+  transform: translateY(-50%);
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  z-index: 200;
+}
+.dot {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.12);
+  cursor: pointer;
+  transition: all 0.3s;
+  border: none;
+  padding: 0;
+}
+.dot:hover {
+  background: rgba(255, 255, 255, 0.3);
+}
+.dot.active {
+  background: var(--red);
+  transform: scale(1.5);
+}
+
+/* ── Reveals ── */
+.rv {
+  opacity: 0;
+  transform: translateY(35px);
+  transition: opacity 0.9s cubic-bezier(0.16, 1, 0.3, 1),
+    transform 0.9s cubic-bezier(0.16, 1, 0.3, 1);
+}
+.rv.v {
+  opacity: 1;
+  transform: translateY(0);
+}
+.rv-s {
+  opacity: 0;
+  transform: scale(0.85);
+  transition: opacity 1s cubic-bezier(0.16, 1, 0.3, 1),
+    transform 1s cubic-bezier(0.16, 1, 0.3, 1);
+}
+.rv-s.v {
+  opacity: 1;
+  transform: scale(1);
+}
+.rv-l {
+  transform: scaleX(0);
+  transform-origin: left;
+  transition: transform 0.7s cubic-bezier(0.16, 1, 0.3, 1);
+}
+.rv-l.v {
+  transform: scaleX(1);
+}
+.d1 { transition-delay: 0.1s; }
+.d2 { transition-delay: 0.15s; }
+.d3 { transition-delay: 0.25s; }
+.d4 { transition-delay: 0.35s; }
+.d5 { transition-delay: 0.45s; }
+.d6 { transition-delay: 0.55s; }
+.d7 { transition-delay: 0.65s; }
+.d8 { transition-delay: 0.75s; }
+.d9 { transition-delay: 0.85s; }
+
+/* ── Responsive ── */
+@media (max-width: 768px) {
+  .slide {
+    padding: 60px 24px;
+  }
+  .day-bg-num {
+    display: none;
+  }
+  .day-footer {
+    flex-direction: column;
+    gap: 10px;
+  }
+  #nav {
+    right: 10px;
+    gap: 4px;
+  }
+  .dot {
+    width: 6px;
+    height: 6px;
+  }
+  .sticker {
+    display: none;
+  }
+  .sticker.mobile-keep {
+    display: block;
+  }
+}
