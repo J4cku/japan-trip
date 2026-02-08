@@ -6,7 +6,6 @@ import { ClosingSlide } from "@/components/presentation/ClosingSlide";
 import { NavDots } from "@/components/presentation/NavDots";
 import { ProgressBar } from "@/components/presentation/ProgressBar";
 import { ScrollObserver } from "@/components/presentation/ScrollObserver";
-import { SnapActivator } from "@/components/presentation/SnapActivator";
 import Link from "next/link";
 
 const data = tripData as unknown as TripData;
@@ -16,6 +15,8 @@ export default function PresentationPage() {
 
   return (
     <div
+      id="snap-root"
+      className="snap-container"
       style={{
         background: "var(--black)",
         color: "var(--white)",
@@ -23,18 +24,15 @@ export default function PresentationPage() {
         WebkitFontSmoothing: "antialiased",
       }}
     >
-      <SnapActivator />
       <ProgressBar />
       <NavDots totalSlides={totalSlides} />
       <ScrollObserver />
 
-      <main>
-        <HeroSlide trip={data.trip} />
-        {data.days.map((day, i) => (
-          <DaySlide key={day.day} day={day} index={i} />
-        ))}
-        <ClosingSlide stats={data.stats} totalDays={data.days.length} />
-      </main>
+      <HeroSlide trip={data.trip} />
+      {data.days.map((day, i) => (
+        <DaySlide key={day.day} day={day} index={i} />
+      ))}
+      <ClosingSlide stats={data.stats} totalDays={data.days.length} />
 
       <Link
         href="/itinerary"

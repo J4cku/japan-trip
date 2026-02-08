@@ -4,6 +4,9 @@ import { useEffect } from "react";
 
 export function ScrollObserver() {
   useEffect(() => {
+    const container = document.getElementById("snap-root");
+    if (!container) return;
+
     // Reveal animations
     const obs = new IntersectionObserver(
       (entries) => {
@@ -16,13 +19,13 @@ export function ScrollObserver() {
           }
         });
       },
-      { threshold: 0.3 }
+      { root: container, threshold: 0.3 }
     );
-    document.querySelectorAll(".slide").forEach((s) => obs.observe(s));
+    container.querySelectorAll(".slide").forEach((s) => obs.observe(s));
 
     // Keyboard navigation
     let current = 0;
-    const total = document.querySelectorAll(".slide").length;
+    const total = container.querySelectorAll(".slide").length;
 
     const keyObs = new IntersectionObserver(
       (entries) => {
@@ -32,9 +35,9 @@ export function ScrollObserver() {
           }
         });
       },
-      { threshold: 0.5 }
+      { root: container, threshold: 0.5 }
     );
-    document.querySelectorAll(".slide").forEach((s) => keyObs.observe(s));
+    container.querySelectorAll(".slide").forEach((s) => keyObs.observe(s));
 
     const onKey = (e: KeyboardEvent) => {
       if (e.key === "ArrowDown" || e.key === "PageDown") {

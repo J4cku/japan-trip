@@ -6,14 +6,15 @@ export function ProgressBar() {
   const ref = useRef<HTMLDivElement>(null);
 
   useEffect(() => {
+    const container = document.getElementById("snap-root");
+    if (!container) return;
     const handler = () => {
       if (!ref.current) return;
-      const pct =
-        window.scrollY / (document.body.scrollHeight - window.innerHeight);
+      const pct = container.scrollTop / (container.scrollHeight - container.clientHeight);
       ref.current.style.width = `${pct * 100}%`;
     };
-    window.addEventListener("scroll", handler, { passive: true });
-    return () => window.removeEventListener("scroll", handler);
+    container.addEventListener("scroll", handler, { passive: true });
+    return () => container.removeEventListener("scroll", handler);
   }, []);
 
   return <div id="progress" ref={ref} />;

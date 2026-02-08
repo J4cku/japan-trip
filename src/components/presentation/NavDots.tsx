@@ -6,7 +6,10 @@ export function NavDots({ totalSlides }: { totalSlides: number }) {
   const [active, setActive] = useState(0);
 
   useEffect(() => {
-    const slides = document.querySelectorAll(".slide");
+    const container = document.getElementById("snap-root");
+    if (!container) return;
+
+    const slides = container.querySelectorAll(".slide");
     const obs = new IntersectionObserver(
       (entries) => {
         entries.forEach((e) => {
@@ -16,7 +19,7 @@ export function NavDots({ totalSlides }: { totalSlides: number }) {
           }
         });
       },
-      { threshold: 0.3 }
+      { root: container, threshold: 0.3 }
     );
     slides.forEach((s) => obs.observe(s));
     return () => obs.disconnect();
