@@ -16,7 +16,7 @@ export function Sticker({ s, cls = "sticker" }: { s: StickerPlacement; cls?: str
   if (s.dur) style["--dur"] = s.dur;
   if (s.drift) style["--drift"] = s.drift;
   if (s.swing) style["--swing"] = s.swing;
-  if (s.delay) style.transitionDelay = s.delay;
+  if (s.delay) style["--pop-delay"] = s.delay;
 
   return (
     <div className={animCls} style={style}>

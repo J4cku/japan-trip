@@ -6,12 +6,13 @@ import { ClosingSlide } from "@/components/presentation/ClosingSlide";
 import { NavDots } from "@/components/presentation/NavDots";
 import { ProgressBar } from "@/components/presentation/ProgressBar";
 import { ScrollObserver } from "@/components/presentation/ScrollObserver";
+import { SnapActivator } from "@/components/presentation/SnapActivator";
 import Link from "next/link";
 
 const data = tripData as unknown as TripData;
 
 export default function PresentationPage() {
-  const totalSlides = data.days.length + 2; // hero + days + closing
+  const totalSlides = data.days.length + 2;
 
   return (
     <div
@@ -22,7 +23,7 @@ export default function PresentationPage() {
         WebkitFontSmoothing: "antialiased",
       }}
     >
-      <style>{`html{scroll-snap-type:y mandatory;scroll-behavior:smooth;-webkit-overflow-scrolling:touch}`}</style>
+      <SnapActivator />
       <ProgressBar />
       <NavDots totalSlides={totalSlides} />
       <ScrollObserver />

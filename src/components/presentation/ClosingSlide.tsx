@@ -1,5 +1,7 @@
 import { CLOSING_STICKERS } from "@/data/stickers";
+import { CLOSING_TAGS } from "@/data/luggage-tags";
 import { Sticker } from "./Sticker";
+import { LuggageTag } from "./LuggageTag";
 import type { Stat } from "@/types/trip";
 
 export function ClosingSlide({ stats, totalDays }: { stats: Stat[]; totalDays: number }) {
@@ -7,6 +9,22 @@ export function ClosingSlide({ stats, totalDays }: { stats: Stat[]; totalDays: n
     <section className="slide closing" id={`slide-${totalDays + 1}`}>
       {CLOSING_STICKERS.map((s, i) => (
         <Sticker key={i} s={s} />
+      ))}
+      {CLOSING_TAGS.map((t, i) => (
+        <LuggageTag
+          key={i}
+          city={t.city}
+          code={t.code}
+          date={t.date}
+          style={{
+            ...(t.top ? { top: t.top } : {}),
+            ...(t.bottom ? { bottom: t.bottom } : {}),
+            ...(t.left ? { left: t.left } : {}),
+            ...(t.right ? { right: t.right } : {}),
+            "--tag-rot": t.rot || "0deg",
+            "--tag-delay": t.delay || "0.2s",
+          } as React.CSSProperties}
+        />
       ))}
       <p className="hero-pre rv">The journey</p>
       <div className="stats">

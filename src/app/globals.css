@@ -10,6 +10,13 @@
   --g4: #888;
 }
 
+/* ── Scroll snap on presentation page ── */
+html.snap {
+  scroll-snap-type: y mandatory;
+  scroll-behavior: smooth;
+  -webkit-overflow-scrolling: touch;
+}
+
 /* ── Presentation base ── */
 ::selection {
   background: var(--red);
@@ -228,15 +235,13 @@
   border-left: 2px solid var(--red);
 }
 
-/* ── Sticker decorations ── */
+/* ── Sticker decorations — POP entrance ── */
 .sticker {
   position: absolute;
   pointer-events: none;
   z-index: 1;
   opacity: 0;
-  transform: scale(0.6) rotate(var(--rot, 0deg));
-  transition: opacity 1.2s cubic-bezier(0.16, 1, 0.3, 1),
-    transform 1.2s cubic-bezier(0.16, 1, 0.3, 1);
+  transform: scale(0) rotate(var(--rot, 0deg));
 }
 .sticker img,
 .sticker-float img,
@@ -249,16 +254,40 @@
 }
 .sticker.vis {
   opacity: var(--op, 0.12);
-  transform: scale(1) rotate(var(--rot, 0deg));
+  animation: stickerPop 0.5s cubic-bezier(0.34, 1.56, 0.64, 1) forwards;
+  animation-delay: var(--pop-delay, 0s);
+}
+@keyframes stickerPop {
+  0% {
+    transform: scale(0) rotate(var(--rot, 0deg));
+    opacity: 0;
+  }
+  60% {
+    transform: scale(1.15) rotate(var(--rot, 0deg));
+    opacity: var(--op, 0.12);
+  }
+  80% {
+    transform: scale(0.95) rotate(var(--rot, 0deg));
+  }
+  100% {
+    transform: scale(1) rotate(var(--rot, 0deg));
+    opacity: var(--op, 0.12);
+  }
 }
 
-/* Floating stickers — hero & closing */
+/* Floating stickers — hero & closing: pop in then float */
 .sticker-float {
   position: absolute;
   pointer-events: none;
   z-index: 1;
   opacity: 0;
-  animation: stickerFloat var(--dur, 6s) ease-in-out infinite alternate;
+  transform: scale(0) rotate(var(--rot, 0deg));
+}
+.sticker-float.vis {
+  opacity: var(--op, 0.12);
+  animation:
+    stickerPop 0.5s cubic-bezier(0.34, 1.56, 0.64, 1) forwards,
+    stickerFloat var(--dur, 6s) ease-in-out 0.5s infinite alternate;
 }
 @keyframes stickerFloat {
   0% {
@@ -269,23 +298,109 @@
       rotate(calc(var(--rot, 0deg) + var(--swing, 4deg))) scale(1.03);
   }
 }
-.sticker-float.vis {
-  opacity: var(--op, 0.12);
-  transform: none;
-}
 
-/* Spin entrance for certain stickers */
+/* Spin entrance — pop with spin */
 .sticker-spin {
   position: absolute;
   pointer-events: none;
   z-index: 1;
   opacity: 0;
-  transition: opacity 1.4s cubic-bezier(0.16, 1, 0.3, 1),
-    transform 1.4s cubic-bezier(0.16, 1, 0.3, 1);
+  transform: scale(0) rotate(var(--rot, 0deg));
 }
 .sticker-spin.vis {
-  opacity: var(--op, 0.12);
-  transform: scale(1) rotate(calc(var(--rot, 0deg) + 360deg));
+  animation: stickerPopSpin 0.6s cubic-bezier(0.34, 1.56, 0.64, 1) forwards;
+}
+@keyframes stickerPopSpin {
+  0% {
+    transform: scale(0) rotate(var(--rot, 0deg));
+    opacity: 0;
+  }
+  60% {
+    transform: scale(1.15) rotate(calc(var(--rot, 0deg) + 300deg));
+    opacity: var(--op, 0.12);
+  }
+  100% {
+    transform: scale(1) rotate(calc(var(--rot, 0deg) + 360deg));
+    opacity: var(--op, 0.12);
+  }
+}
+
+/* ── Luggage tags ── */
+.luggage-tag {
+  position: absolute;
+  z-index: 1;
+  pointer-events: none;
+  opacity: 0;
+  transform: scale(0) rotate(var(--tag-rot, -6deg));
+}
+.luggage-tag.vis {
+  animation: tagPop 0.4s cubic-bezier(0.34, 1.56, 0.64, 1) forwards;
+  animation-delay: var(--tag-delay, 0.2s);
+}
+@keyframes tagPop {
+  0% {
+    transform: scale(0) rotate(var(--tag-rot, -6deg));
+    opacity: 0;
+  }
+  70% {
+    transform: scale(1.1) rotate(var(--tag-rot, -6deg));
+    opacity: 1;
+  }
+  100% {
+    transform: scale(1) rotate(var(--tag-rot, -6deg));
+    opacity: 1;
+  }
+}
+.luggage-tag-inner {
+  background: var(--g1);
+  border: 1px solid var(--g2);
+  border-radius: 4px;
+  padding: 6px 12px 6px 16px;
+  position: relative;
+  min-width: 80px;
+}
+.luggage-tag-inner::before {
+  content: "";
+  position: absolute;
+  left: 6px;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  border: 1.5px solid var(--g3);
+}
+.luggage-tag-inner::after {
+  content: "";
+  position: absolute;
+  left: -8px;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 12px;
+  height: 1px;
+  background: var(--g3);
+}
+.luggage-tag-city {
+  font-size: 0.6rem;
+  font-weight: 800;
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+  color: var(--white);
+  opacity: 0.5;
+  line-height: 1;
+}
+.luggage-tag-code {
+  font-size: 0.9rem;
+  font-weight: 900;
+  letter-spacing: 0.08em;
+  color: var(--red);
+  line-height: 1.2;
+}
+.luggage-tag-date {
+  font-size: 0.5rem;
+  color: var(--g3);
+  letter-spacing: 0.1em;
+  margin-top: 1px;
 }
 
 /* ── Closing ── */

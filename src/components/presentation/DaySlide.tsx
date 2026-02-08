@@ -1,5 +1,7 @@
 import { DAY_STICKERS, DAY_LABEL_ICON, STICKERS } from "@/data/stickers";
+import { DAY_TAGS } from "@/data/luggage-tags";
 import { Sticker } from "./Sticker";
+import { LuggageTag } from "./LuggageTag";
 import type { Day } from "@/types/trip";
 
 export function DaySlide({ day, index }: { day: Day; index: number }) {
@@ -7,6 +9,7 @@ export function DaySlide({ day, index }: { day: Day; index: number }) {
   const dayStickers = DAY_STICKERS[num] || [];
   const iconKey = DAY_LABEL_ICON[num];
   const iconSrc = iconKey ? STICKERS[iconKey] : null;
+  const tag = DAY_TAGS[num];
 
   return (
     <section className="slide" id={`slide-${index + 1}`}>
@@ -14,6 +17,21 @@ export function DaySlide({ day, index }: { day: Day; index: number }) {
       {dayStickers.map((s, j) => (
         <Sticker key={j} s={{ ...s, delay: `${0.3 + j * 0.2}s` }} />
       ))}
+      {tag && (
+        <LuggageTag
+          city={tag.city}
+          code={tag.code}
+          date={tag.date}
+          style={{
+            ...(tag.top ? { top: tag.top } : {}),
+            ...(tag.bottom ? { bottom: tag.bottom } : {}),
+            ...(tag.left ? { left: tag.left } : {}),
+            ...(tag.right ? { right: tag.right } : {}),
+            "--tag-rot": tag.rot || "0deg",
+            "--tag-delay": tag.delay || "0.2s",
+          } as React.CSSProperties}
+        />
+      )}
       <div className="day-content">
         <p className="day-label rv">
           {iconSrc && (
