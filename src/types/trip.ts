@@ -80,6 +80,42 @@ export interface Restaurant {
   type: string;
 }
 
+export interface RestaurantSpot {
+  name: string;
+  nameJp: string;
+  cuisine: string;
+  neighborhood: string;
+  price: "¥" | "¥¥" | "¥¥¥";
+  gf: boolean;
+  vegan: boolean;
+  vegetarian: boolean;
+  mustTry: string;
+  note: string;
+  url: string;
+}
+
+export interface RestaurantLocation {
+  label: string;
+  forDays: number[];
+  spots: RestaurantSpot[];
+  survivalTips?: string;
+  cyclingFuelGuide?: {
+    whatToPack: string[];
+    konbiniStops: string;
+    tip: string;
+  };
+}
+
+export interface Restaurants {
+  note: string;
+  allergyCardJp: string;
+  allergyCardEn: string;
+  safeFoods: string[];
+  dangerFoods: string[];
+  apps: string[];
+  byLocation: Record<string, RestaurantLocation>;
+}
+
 export interface DietaryGuide {
   restrictions: string[];
   japanesePhrases: DietaryPhrase[];
@@ -138,6 +174,100 @@ export interface Stat {
   suffix?: string;
 }
 
+export interface RyokanDetails {
+  onsen?: boolean;
+  onsenType?: string;
+  privateBath?: boolean;
+  privateBathInRoom?: boolean;
+  rotenburo?: boolean;
+  communalBath?: boolean;
+  meals?: string;
+  drinks?: string;
+  bikeRental?: string;
+  tatami?: boolean;
+  futon?: boolean;
+  yukata?: boolean;
+}
+
+export interface HotelOption {
+  name: string;
+  nameJp: string;
+  type?: "hotel" | "ryokan";
+  priceEUR: string;
+  priceJPY: string;
+  style: string;
+  location: string;
+  neighborhood: string;
+  highlights: string[];
+  url?: string;
+  travellerPick: boolean;
+  pickReason?: string;
+  bookingUrl?: string;
+  officialUrl?: string;
+  totalPerRoom?: string;
+  ryokanDetails?: RyokanDetails;
+  dietaryNote?: string;
+  shimanamiReady?: boolean;
+  naritaAccess?: string;
+}
+
+export interface HotelCity {
+  stayId: string;
+  location: string;
+  nights: number;
+  dates: string;
+  purpose: string;
+  options: HotelOption[];
+  checkIn?: string;
+  checkOut?: string;
+  searchParams?: { adults: number; rooms: number; nights: number };
+  pricingNote?: string;
+}
+
+export interface Hotels {
+  budget: string;
+  note: string;
+  userPreferences: {
+    lovedHotel: string;
+    style: string;
+    interestedIn: string;
+  };
+  shibuya: HotelCity;
+  kumamoto: HotelCity;
+  onomichi: HotelCity;
+  osaka: HotelCity;
+  tokyoFinal: HotelCity;
+  [key: string]: HotelCity | string | { lovedHotel: string; style: string; interestedIn: string };
+}
+
+export interface TravelPoint {
+  name: string;
+  area?: string;
+  country?: string;
+  code?: string;
+}
+
+export interface Travel {
+  id: string;
+  day: number;
+  from: TravelPoint;
+  to: TravelPoint;
+  mode: "plane" | "train" | "shinkansen" | "bus" | "bike";
+  icon: string;
+  carrier?: string;
+  line?: string;
+  route?: string;
+  duration: string;
+  distance: string;
+  cost: number | null;
+  costNote?: string;
+  roundTrip?: boolean;
+  via?: string[];
+  islands?: string[];
+  details: string;
+  animation: string;
+}
+
 export interface TripData {
   trip: Trip;
   stays: Stay[];
@@ -148,4 +278,7 @@ export interface TripData {
   budget: Budget;
   packing: string[];
   stats: Stat[];
+  hotels: Hotels;
+  travels: Travel[];
+  restaurants: Restaurants;
 }

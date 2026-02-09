@@ -8,21 +8,78 @@
     "durationNights": 13,
     "origin": "Warsaw",
     "flights": {
-      "outbound": { "from": "WAW", "to": "NRT", "date": "2026-05-08", "arrives": "2026-05-09T18:30", "note": "Landing Narita Terminal 1" },
-      "return": { "from": "NRT", "to": "WAW", "date": "2026-05-22", "departs": "2026-05-22T22:50" }
+      "outbound": {
+        "from": "WAW",
+        "to": "NRT",
+        "date": "2026-05-08",
+        "arrives": "2026-05-09T18:30",
+        "note": "Landing Narita Terminal 1"
+      },
+      "return": {
+        "from": "NRT",
+        "to": "WAW",
+        "date": "2026-05-22",
+        "departs": "2026-05-22T22:50"
+      }
     },
-    "dietary": ["vegetarian", "vegan", "gluten-free"],
-    "route": ["Warsaw", "Tokyo", "Kamakura", "Mt Fuji", "Kumamoto", "Mt Aso", "Onomichi", "Shimanami Kaido", "Osaka", "Kyoto", "Nara", "Tokyo", "Warsaw"]
+    "dietary": [
+      "vegetarian",
+      "vegan",
+      "gluten-free"
+    ],
+    "route": [
+      "Warsaw",
+      "Tokyo",
+      "Kamakura",
+      "Mt Fuji",
+      "Kumamoto",
+      "Mt Aso",
+      "Onomichi",
+      "Shimanami Kaido",
+      "Osaka",
+      "Kyoto",
+      "Nara",
+      "Tokyo",
+      "Warsaw"
+    ]
   },
-
   "stays": [
-    { "location": "Shibuya, Tokyo", "nights": 4, "dates": "May 9–12", "area": "Near Shibuya Station", "budget": "¥15,000–20,000/room/night" },
-    { "location": "Kumamoto", "nights": 2, "dates": "May 13–14", "area": "Near Kumamoto Castle", "budget": "¥12,000–16,000/room/night" },
-    { "location": "Onomichi", "nights": 1, "dates": "May 15", "area": "Near Onomichi Station", "budget": "¥10,000–15,000/room/night" },
-    { "location": "Namba, Osaka", "nights": 5, "dates": "May 16–20", "area": "Dōtonbori / Namba", "budget": "¥15,000–20,000/room/night" },
-    { "location": "Tokyo", "nights": 1, "dates": "May 21", "area": "Near Tokyo Station", "budget": "¥15,000–18,000/room/night" }
+    {
+      "location": "Shibuya, Tokyo",
+      "nights": 4,
+      "dates": "May 9–12",
+      "area": "Near Shibuya Station",
+      "budget": "¥15,000–20,000/room/night"
+    },
+    {
+      "location": "Kumamoto",
+      "nights": 3,
+      "dates": "May 13–15",
+      "area": "Near Kumamoto Castle",
+      "budget": "¥12,000–16,000/room/night"
+    },
+    {
+      "location": "Onomichi",
+      "nights": 1,
+      "dates": "May 16",
+      "area": "Near Onomichi Station",
+      "budget": "¥10,000–15,000/room/night"
+    },
+    {
+      "location": "Namba, Osaka",
+      "nights": 4,
+      "dates": "May 17–20",
+      "area": "Dōtonbori / Namba",
+      "budget": "¥15,000–20,000/room/night"
+    },
+    {
+      "location": "Tokyo",
+      "nights": 1,
+      "dates": "May 21",
+      "area": "Near Tokyo Station",
+      "budget": "¥15,000–18,000/room/night"
+    }
   ],
-
   "days": [
     {
       "day": 1,
@@ -39,12 +96,37 @@
         "Check into hotel. Light konbini dinner — onigiri is your new best friend"
       ],
       "activities": [
-        { "time": "18:30", "name": "Arrive Narita Airport", "type": "transport" },
-        { "time": "19:00", "name": "Narita Express to Shibuya", "duration": "75 min", "cost": 3250, "type": "transport" },
-        { "time": "20:30", "name": "Check into Shibuya hotel", "type": "accommodation" },
-        { "time": "21:00", "name": "Konbini dinner", "type": "food" }
+        {
+          "time": "18:30",
+          "name": "Arrive Narita Airport",
+          "type": "transport"
+        },
+        {
+          "time": "19:00",
+          "name": "Narita Express to Shibuya",
+          "duration": "75 min",
+          "cost": 3250,
+          "type": "transport"
+        },
+        {
+          "time": "20:30",
+          "name": "Check into Shibuya hotel",
+          "type": "accommodation"
+        },
+        {
+          "time": "21:00",
+          "name": "Konbini dinner",
+          "type": "food"
+        }
       ],
-      "transport": { "mode": "Narita Express", "from": "Narita Airport", "to": "Shibuya", "duration": "75 min", "cost": 3250, "jrPass": false },
+      "transport": {
+        "mode": "Narita Express",
+        "from": "Narita Airport",
+        "to": "Shibuya",
+        "duration": "75 min",
+        "cost": 3250,
+        "jrPass": false
+      },
       "food": "Konbini onigiri — umeboshi, kombu fillings are naturally GF + vegan. Available 24/7.",
       "tip": "Withdraw yen at 7-Eleven ATMs — best rates, English menus. Japan runs on cash.",
       "keyCost": 3250
@@ -64,15 +146,50 @@
         "Shibuya Crossing at dusk — you live here. Golden Gai after dark."
       ],
       "activities": [
-        { "time": "09:00", "name": "TeamLab Borderless", "location": "Azabudai Hills", "duration": "2–3 hrs", "cost": 3800, "bookAhead": true, "type": "attraction" },
-        { "time": "12:30", "name": "Lunch in Roppongi area", "type": "food" },
-        { "time": "14:00", "name": "Meiji Shrine", "type": "attraction" },
-        { "time": "15:00", "name": "Harajuku & Takeshita Street", "type": "explore" },
-        { "time": "16:30", "name": "Omotesandō", "type": "explore" },
-        { "time": "18:00", "name": "Shibuya Crossing / Shibuya Sky (¥2,000)", "type": "attraction" },
-        { "time": "19:30", "name": "Dinner — Ain Soph Journey (vegan, GF options)", "type": "food" }
+        {
+          "time": "09:00",
+          "name": "TeamLab Borderless",
+          "location": "Azabudai Hills",
+          "duration": "2–3 hrs",
+          "cost": 3800,
+          "bookAhead": true,
+          "type": "attraction"
+        },
+        {
+          "time": "12:30",
+          "name": "Lunch in Roppongi area",
+          "type": "food"
+        },
+        {
+          "time": "14:00",
+          "name": "Meiji Shrine",
+          "type": "attraction"
+        },
+        {
+          "time": "15:00",
+          "name": "Harajuku & Takeshita Street",
+          "type": "explore"
+        },
+        {
+          "time": "16:30",
+          "name": "Omotesandō",
+          "type": "explore"
+        },
+        {
+          "time": "18:00",
+          "name": "Shibuya Crossing / Shibuya Sky (¥2,000)",
+          "type": "attraction"
+        },
+        {
+          "time": "19:30",
+          "name": "Dinner — Ain Soph Journey (vegan, GF options)",
+          "type": "food"
+        }
       ],
-      "transport": { "mode": "Metro", "note": "All within central Tokyo, use Suica" },
+      "transport": {
+        "mode": "Metro",
+        "note": "All within central Tokyo, use Suica"
+      },
       "food": "Ain Soph Journey (Shinjuku) — fully vegan, GF options. Afuri ramen in Harajuku — ask for tamari.",
       "tip": "Wear dark clothing at TeamLab — projections look best on black. Book tickets the moment they open (2 months ahead).",
       "keyCost": 3800
@@ -93,15 +210,53 @@
         "Enoden train to Enoshima Island — caves, shrine, panoramic views"
       ],
       "activities": [
-        { "time": "08:00", "name": "JR to Kamakura", "duration": "60 min", "cost": 940, "type": "transport" },
-        { "time": "09:15", "name": "Tsurugaoka Hachimangū", "type": "attraction" },
-        { "time": "10:00", "name": "Komachi-dōri shopping street", "type": "explore" },
-        { "time": "11:30", "name": "Kōtoku-in — Great Buddha", "type": "attraction" },
-        { "time": "13:30", "name": "Hase-dera Temple", "type": "attraction" },
-        { "time": "15:00", "name": "Enoden to Enoshima Island", "type": "explore" },
-        { "time": "17:30", "name": "Return to Tokyo", "type": "transport" }
+        {
+          "time": "08:00",
+          "name": "JR to Kamakura",
+          "duration": "60 min",
+          "cost": 940,
+          "type": "transport"
+        },
+        {
+          "time": "09:15",
+          "name": "Tsurugaoka Hachimangū",
+          "type": "attraction"
+        },
+        {
+          "time": "10:00",
+          "name": "Komachi-dōri shopping street",
+          "type": "explore"
+        },
+        {
+          "time": "11:30",
+          "name": "Kōtoku-in — Great Buddha",
+          "type": "attraction"
+        },
+        {
+          "time": "13:30",
+          "name": "Hase-dera Temple",
+          "type": "attraction"
+        },
+        {
+          "time": "15:00",
+          "name": "Enoden to Enoshima Island",
+          "type": "explore"
+        },
+        {
+          "time": "17:30",
+          "name": "Return to Tokyo",
+          "type": "transport"
+        }
       ],
-      "transport": { "mode": "JR Yokosuka Line", "from": "Shibuya", "to": "Kamakura", "duration": "60 min", "cost": 940, "jrPass": true, "roundTrip": true },
+      "transport": {
+        "mode": "JR Yokosuka Line",
+        "from": "Shibuya",
+        "to": "Kamakura",
+        "duration": "60 min",
+        "cost": 940,
+        "jrPass": true,
+        "roundTrip": true
+      },
       "food": "Bowls Kamakura (plant-based café near Hase). Look for vegetable tempura sets (note: batter has gluten).",
       "tip": "Time your visit to catch golden hour at Enoshima observation tower.",
       "keyCost": 940
@@ -121,13 +276,45 @@
         "Walk the north shore of Lake Kawaguchi — Fuji reflected in water"
       ],
       "activities": [
-        { "time": "06:30", "name": "Highway bus to Kawaguchiko", "duration": "2 hrs", "cost": 2200, "type": "transport" },
-        { "time": "09:00", "name": "Chureito Pagoda (398 steps)", "type": "attraction" },
-        { "time": "12:00", "name": "Kawaguchiko Ropeway", "cost": 1000, "type": "attraction" },
-        { "time": "14:00", "name": "Lake Kawaguchi north shore walk", "type": "explore" },
-        { "time": "17:00", "name": "Return bus to Shibuya", "cost": 2200, "type": "transport" }
+        {
+          "time": "06:30",
+          "name": "Highway bus to Kawaguchiko",
+          "duration": "2 hrs",
+          "cost": 2200,
+          "type": "transport"
+        },
+        {
+          "time": "09:00",
+          "name": "Chureito Pagoda (398 steps)",
+          "type": "attraction"
+        },
+        {
+          "time": "12:00",
+          "name": "Kawaguchiko Ropeway",
+          "cost": 1000,
+          "type": "attraction"
+        },
+        {
+          "time": "14:00",
+          "name": "Lake Kawaguchi north shore walk",
+          "type": "explore"
+        },
+        {
+          "time": "17:00",
+          "name": "Return bus to Shibuya",
+          "cost": 2200,
+          "type": "transport"
+        }
       ],
-      "transport": { "mode": "Highway bus", "from": "Shibuya", "to": "Kawaguchiko", "duration": "2 hrs", "cost": 2200, "jrPass": false, "roundTrip": true },
+      "transport": {
+        "mode": "Highway bus",
+        "from": "Shibuya",
+        "to": "Kawaguchiko",
+        "duration": "2 hrs",
+        "cost": 2200,
+        "jrPass": false,
+        "roundTrip": true
+      },
       "food": "Limited veg/GF options around Kawaguchiko. Bring snacks from Tokyo. Rice dishes at lakeside restaurants.",
       "tip": "Clouds roll in by midday almost daily. The early bus is non-negotiable.",
       "keyCost": 2200
@@ -138,26 +325,80 @@
       "dateLabel": "Tue, May 13",
       "title": "Tokyo → Kumamoto",
       "region": "kyushu",
-      "tagline": "Six hours south by bullet train. Welcome to Kyushu.",
+      "tagline": "A quick flight south. By lunch, you're in Kyushu.",
       "stay": "Kumamoto hotel",
       "highlights": [
-        "Shinkansen: Tokyo → Shin-Osaka (Hikari, 2h45) → Kumamoto (Sakura, 3h10)",
-        "Ekiben bento from Tokyo Station — an essential ritual",
+        "Flight: Haneda → Kumamoto — 1h50, arrive by lunch",
+        "Limousine bus from Shibuya to Haneda (30 min, ¥1,300)",
         "Kumamoto Castle — rebuilt after 2016 earthquake, stunning stone walls",
-        "Shimotori covered arcade — Kumamoto's beating heart"
+        "Shimotori covered arcade — Kumamoto's beating heart",
+        "Whole afternoon free to explore — way more time than the 6hr shinkansen"
       ],
       "activities": [
-        { "time": "08:00", "name": "Check out Shibuya hotel", "type": "logistics" },
-        { "time": "08:30", "name": "Shinkansen Tokyo → Shin-Osaka", "duration": "2h45", "type": "transport" },
-        { "time": "11:20", "name": "Shinkansen Shin-Osaka → Kumamoto", "duration": "3h10", "type": "transport" },
-        { "time": "14:30", "name": "Arrive Kumamoto", "type": "transport" },
-        { "time": "15:30", "name": "Kumamoto Castle", "type": "attraction" },
-        { "time": "18:00", "name": "Shimotori arcade", "type": "explore" }
+        {
+          "time": "07:00",
+          "name": "Check out Shibuya hotel",
+          "type": "logistics"
+        },
+        {
+          "time": "07:30",
+          "name": "Limousine bus Shibuya → Haneda",
+          "duration": "30 min",
+          "cost": 1300,
+          "type": "transport"
+        },
+        {
+          "time": "09:30",
+          "name": "Flight HND → KMJ",
+          "duration": "1h50",
+          "cost": 15000,
+          "type": "transport"
+        },
+        {
+          "time": "11:20",
+          "name": "Arrive Kumamoto Airport",
+          "type": "transport"
+        },
+        {
+          "time": "12:00",
+          "name": "Airport bus to city center",
+          "duration": "50 min",
+          "cost": 900,
+          "type": "transport"
+        },
+        {
+          "time": "13:00",
+          "name": "Check into hotel, lunch",
+          "type": "food"
+        },
+        {
+          "time": "15:00",
+          "name": "Kumamoto Castle",
+          "type": "attraction"
+        },
+        {
+          "time": "17:00",
+          "name": "Shimotori arcade",
+          "type": "explore"
+        },
+        {
+          "time": "19:00",
+          "name": "Dinner in Shimotori",
+          "type": "food"
+        }
       ],
-      "transport": { "mode": "Shinkansen", "from": "Tokyo", "to": "Kumamoto", "via": "Shin-Osaka", "duration": "~6 hrs", "cost": 22000, "jrPass": true },
-      "food": "Ekiben bento from Tokyo Station — incredible selection. Ask for 'yasai no obentō' (vegetable bento).",
-      "tip": "Window seat on the right side heading south for occasional Fuji glimpses early on.",
-      "keyCost": 22000
+      "transport": {
+        "mode": "Flight",
+        "from": "Tokyo (HND)",
+        "to": "Kumamoto (KMJ)",
+        "carrier": "ANA / JAL / Solaseed",
+        "duration": "1h50",
+        "cost": 15000,
+        "jrPass": false
+      },
+      "food": "Kumamoto is famous for horse meat (basashi) — not for you, but the veggie izakayas near Shimotori are excellent. Try tofu steak sets.",
+      "tip": "Book HND→KMJ flight early — ANA Super Value or JAL Special Saver can drop to ¥8,000–12,000 if booked 75+ days ahead.",
+      "keyCost": 15000
     },
     {
       "day": 6,
@@ -175,13 +416,44 @@
         "Kusasenri — vast green meadows inside the caldera"
       ],
       "activities": [
-        { "time": "07:30", "name": "JR Hōhi Line to Aso", "duration": "75 min", "type": "transport" },
-        { "time": "09:30", "name": "Bokuya Rides e-bike tour", "duration": "3–4 hrs", "cost": 8000, "bookAhead": true, "type": "cycling" },
-        { "time": "14:00", "name": "Nakadake Crater visit (if accessible)", "type": "attraction" },
-        { "time": "15:30", "name": "Kusasenri grasslands", "type": "explore" },
-        { "time": "17:00", "name": "JR back to Kumamoto", "type": "transport" }
+        {
+          "time": "07:30",
+          "name": "JR Hōhi Line to Aso",
+          "duration": "75 min",
+          "type": "transport"
+        },
+        {
+          "time": "09:30",
+          "name": "Bokuya Rides e-bike tour",
+          "duration": "3–4 hrs",
+          "cost": 8000,
+          "bookAhead": true,
+          "type": "cycling"
+        },
+        {
+          "time": "14:00",
+          "name": "Nakadake Crater visit (if accessible)",
+          "type": "attraction"
+        },
+        {
+          "time": "15:30",
+          "name": "Kusasenri grasslands",
+          "type": "explore"
+        },
+        {
+          "time": "17:00",
+          "name": "JR back to Kumamoto",
+          "type": "transport"
+        }
       ],
-      "transport": { "mode": "JR Hōhi Line", "from": "Kumamoto", "to": "Aso", "duration": "75 min", "jrPass": true, "roundTrip": true },
+      "transport": {
+        "mode": "JR Hōhi Line",
+        "from": "Kumamoto",
+        "to": "Aso",
+        "duration": "75 min",
+        "jrPass": true,
+        "roundTrip": true
+      },
       "food": "Limited veggie options in Aso area. Bring snacks from Kumamoto konbini. Rice-bowl restaurants for GF.",
       "tip": "Book Bokuya Rides at asocalderatourism.com. Start with the ride while legs are fresh. Helmets provided.",
       "keyCost": 8000,
@@ -191,6 +463,81 @@
       "day": 7,
       "date": "2026-05-15",
       "dateLabel": "Thu, May 15",
+      "title": "Kurokawa Onsen",
+      "region": "kyushu",
+      "tagline": "Mountain onsen village. Soak in open-air baths hidden among cedar forests.",
+      "stay": "Kumamoto hotel",
+      "highlights": [
+        "Bus from Kumamoto Sakuramachi → Kurokawa Onsen — 2.5 hrs through mountains",
+        "Rotenburo meguri — wooden pass (¥1,500) for 3 outdoor baths of your choice",
+        "Wander the village: cedar-lined paths, stone bridges, steam rising everywhere",
+        "Each ryokan has a unique bath — forest views, river-side, cave, rock formations",
+        "Evening return to Kumamoto — or linger for golden hour at the village"
+      ],
+      "activities": [
+        {
+          "time": "08:00",
+          "name": "Bus to Kurokawa Onsen",
+          "duration": "2.5 hrs",
+          "cost": 2500,
+          "type": "transport"
+        },
+        {
+          "time": "10:30",
+          "name": "Arrive Kurokawa, buy Nyuto Tegata pass",
+          "cost": 1500,
+          "type": "attraction"
+        },
+        {
+          "time": "11:00",
+          "name": "First onsen — Yamamizuki (riverside rotenburo)",
+          "type": "attraction"
+        },
+        {
+          "time": "12:30",
+          "name": "Lunch in village",
+          "type": "food"
+        },
+        {
+          "time": "14:00",
+          "name": "Second onsen — Kurokawa-so (cave bath)",
+          "type": "attraction"
+        },
+        {
+          "time": "15:30",
+          "name": "Village walk — bridges, steam, cedar paths",
+          "type": "explore"
+        },
+        {
+          "time": "16:30",
+          "name": "Third onsen — Yamabiko Ryokan (forest bath)",
+          "type": "attraction"
+        },
+        {
+          "time": "18:00",
+          "name": "Bus back to Kumamoto",
+          "duration": "2.5 hrs",
+          "cost": 2500,
+          "type": "transport"
+        }
+      ],
+      "transport": {
+        "mode": "Bus",
+        "from": "Kumamoto Sakuramachi",
+        "to": "Kurokawa Onsen",
+        "duration": "2.5 hrs",
+        "cost": 2500,
+        "jrPass": false,
+        "roundTrip": true
+      },
+      "food": "Limited options in Kurokawa. Tofu Kissho for handmade tofu dishes (vegan-friendly, soy sauce contains wheat — bring tamari). Pack snacks from Kumamoto konbini.",
+      "tip": "Rotenburo meguri pass works at 28 participating ryokan baths. Bring a small towel (or buy one). Onsen etiquette: wash before entering, no swimwear, tattoos usually OK in Kurokawa.",
+      "keyCost": 6500
+    },
+    {
+      "day": 8,
+      "date": "2026-05-16",
+      "dateLabel": "Fri, May 16",
       "title": "Kumamoto → Onomichi",
       "region": "seto",
       "tagline": "Shinkansen north. A hillside port town of cats, temples, and sea views.",
@@ -203,24 +550,67 @@
         "Reserve bikes at Onomichi terminal for tomorrow's Shimanami Kaido"
       ],
       "activities": [
-        { "time": "08:00", "name": "Shinkansen Kumamoto → Hakata", "duration": "40 min", "type": "transport" },
-        { "time": "09:00", "name": "Shinkansen Hakata → Fukuyama", "duration": "1h30", "type": "transport" },
-        { "time": "10:45", "name": "Local train Fukuyama → Onomichi", "duration": "20 min", "type": "transport" },
-        { "time": "11:30", "name": "Temple Trail walk", "type": "explore" },
-        { "time": "12:30", "name": "Senkoji Ropeway", "cost": 500, "type": "attraction" },
-        { "time": "14:30", "name": "Cat Alley", "type": "explore" },
-        { "time": "17:00", "name": "Reserve bikes for tomorrow", "type": "logistics" }
+        {
+          "time": "08:00",
+          "name": "Shinkansen Kumamoto → Hakata",
+          "duration": "40 min",
+          "type": "transport"
+        },
+        {
+          "time": "09:00",
+          "name": "Shinkansen Hakata → Fukuyama",
+          "duration": "1h30",
+          "type": "transport"
+        },
+        {
+          "time": "10:45",
+          "name": "Local train Fukuyama → Onomichi",
+          "duration": "20 min",
+          "type": "transport"
+        },
+        {
+          "time": "11:30",
+          "name": "Temple Trail walk",
+          "type": "explore"
+        },
+        {
+          "time": "12:30",
+          "name": "Senkoji Ropeway",
+          "cost": 500,
+          "type": "attraction"
+        },
+        {
+          "time": "14:30",
+          "name": "Cat Alley",
+          "type": "explore"
+        },
+        {
+          "time": "17:00",
+          "name": "Reserve bikes for tomorrow",
+          "type": "logistics"
+        }
       ],
-      "transport": { "mode": "Shinkansen + local", "from": "Kumamoto", "to": "Onomichi", "via": "Hakata, Fukuyama", "duration": "~3.5 hrs", "cost": 13000, "jrPass": true },
+      "transport": {
+        "mode": "Shinkansen + local",
+        "from": "Kumamoto",
+        "to": "Onomichi",
+        "via": "Hakata, Fukuyama",
+        "duration": "~3.5 hrs",
+        "cost": 13000,
+        "jrPass": true
+      },
       "food": "Onomichi ramen is the local specialty (not veggie-friendly). Try Komichi Café near Cat Alley for lighter fare.",
       "tip": "If you can spare 2 hrs, detour to Hiroshima Peace Memorial Park en route. It's one of the most powerful experiences in Japan.",
       "keyCost": 13000,
-      "optional": { "name": "Hiroshima detour", "addedTime": "2 hrs" }
+      "optional": {
+        "name": "Hiroshima detour",
+        "addedTime": "2 hrs"
+      }
     },
     {
-      "day": 8,
-      "date": "2026-05-16",
-      "dateLabel": "Fri, May 16",
+      "day": 9,
+      "date": "2026-05-17",
+      "dateLabel": "Sat, May 17",
       "title": "Shimanami Kaido → Osaka",
       "region": "seto",
       "tagline": "70 km across 6 islands. Then straight to Japan's kitchen.",
@@ -234,15 +624,53 @@
         "Imabari → Okayama → Shin-Osaka — train ~3.5 hrs. Arrive ~19:00."
       ],
       "activities": [
-        { "time": "06:30", "name": "Send bags via takkyubin", "cost": 2500, "note": "per bag, arrives next day at Osaka hotel", "type": "logistics" },
-        { "time": "07:00", "name": "Pick up e-bikes at Onomichi terminal", "cost": 4000, "type": "cycling" },
-        { "time": "07:30", "name": "Ferry to Mukaishima", "cost": 110, "type": "transport" },
-        { "time": "08:00", "name": "Shimanami Kaido ride begins", "type": "cycling" },
-        { "time": "15:00", "name": "Arrive Imabari, drop bikes", "type": "cycling" },
-        { "time": "15:30", "name": "Train Imabari → Okayama → Shin-Osaka", "duration": "3.5 hrs", "cost": 11000, "type": "transport" },
-        { "time": "19:00", "name": "Arrive Osaka, check into Namba hotel", "type": "accommodation" }
+        {
+          "time": "06:30",
+          "name": "Send bags via takkyubin",
+          "cost": 2500,
+          "note": "per bag, arrives next day at Osaka hotel",
+          "type": "logistics"
+        },
+        {
+          "time": "07:00",
+          "name": "Pick up e-bikes at Onomichi terminal",
+          "cost": 4000,
+          "type": "cycling"
+        },
+        {
+          "time": "07:30",
+          "name": "Ferry to Mukaishima",
+          "cost": 110,
+          "type": "transport"
+        },
+        {
+          "time": "08:00",
+          "name": "Shimanami Kaido ride begins",
+          "type": "cycling"
+        },
+        {
+          "time": "15:00",
+          "name": "Arrive Imabari, drop bikes",
+          "type": "cycling"
+        },
+        {
+          "time": "15:30",
+          "name": "Train Imabari → Okayama → Shin-Osaka",
+          "duration": "3.5 hrs",
+          "cost": 11000,
+          "type": "transport"
+        },
+        {
+          "time": "19:00",
+          "name": "Arrive Osaka, check into Namba hotel",
+          "type": "accommodation"
+        }
       ],
-      "transport": { "mode": "E-bike + JR", "note": "Ride Onomichi → Imabari (70km), then train to Osaka", "cost": 15000 },
+      "transport": {
+        "mode": "E-bike + JR",
+        "note": "Ride Onomichi → Imabari (70km), then train to Osaka",
+        "cost": 15000
+      },
       "food": "Pack snacks before starting. Setoda has Dolce gelato shop. Omishima has mikan everything. Konbini stops on islands.",
       "tip": "Takkyubin: drop bags at any konbini or Yamato office by morning. Follow the blue line on the road. E-bikes worth every yen.",
       "keyCost": 15000,
@@ -250,14 +678,26 @@
       "shimanamiKaido": {
         "distance": "60–70 km",
         "duration": "6–8 hrs",
-        "islands": ["Mukaishima", "Innoshima", "Ikuchijima", "Omishima", "Hakatajima", "Oshima"],
-        "bikeRental": { "type": "e-bike (public system)", "cost": 4000, "oneWayDropoff": true, "reserveAhead": true }
+        "islands": [
+          "Mukaishima",
+          "Innoshima",
+          "Ikuchijima",
+          "Omishima",
+          "Hakatajima",
+          "Oshima"
+        ],
+        "bikeRental": {
+          "type": "e-bike (public system)",
+          "cost": 4000,
+          "oneWayDropoff": true,
+          "reserveAhead": true
+        }
       }
     },
     {
-      "day": 9,
-      "date": "2026-05-17",
-      "dateLabel": "Sat, May 17",
+      "day": 10,
+      "date": "2026-05-18",
+      "dateLabel": "Sun, May 18",
       "title": "Osaka — Dōtonbori & Shinsekai",
       "region": "kansai",
       "tagline": "Neon canals, retro towers, and the art of eating till you drop.",
@@ -270,21 +710,48 @@
         "Hozenji Yokocho at dusk — stone-paved alley, tiny restaurants"
       ],
       "activities": [
-        { "time": "10:00", "name": "Late start — rest day for legs", "type": "rest" },
-        { "time": "11:00", "name": "Dōtonbori canal walk", "type": "explore" },
-        { "time": "13:00", "name": "Lunch in Dōtonbori", "type": "food" },
-        { "time": "15:00", "name": "Shinsekai & Tsutenkaku Tower", "type": "explore" },
-        { "time": "17:00", "name": "Street food crawl", "type": "food" },
-        { "time": "19:00", "name": "Hozenji Yokocho", "type": "explore" }
+        {
+          "time": "10:00",
+          "name": "Late start — rest day for legs",
+          "type": "rest"
+        },
+        {
+          "time": "11:00",
+          "name": "Dōtonbori canal walk",
+          "type": "explore"
+        },
+        {
+          "time": "13:00",
+          "name": "Lunch in Dōtonbori",
+          "type": "food"
+        },
+        {
+          "time": "15:00",
+          "name": "Shinsekai & Tsutenkaku Tower",
+          "type": "explore"
+        },
+        {
+          "time": "17:00",
+          "name": "Street food crawl",
+          "type": "food"
+        },
+        {
+          "time": "19:00",
+          "name": "Hozenji Yokocho",
+          "type": "explore"
+        }
       ],
-      "transport": { "mode": "Osaka Metro + walking", "note": "All within central Osaka" },
+      "transport": {
+        "mode": "Osaka Metro + walking",
+        "note": "All within central Osaka"
+      },
       "food": "Paprika Shokudo Vegan (Namba). Green Earth (Shinsaibashi). For GF okonomiyaki, ask 'kome-ko de dekimasu ka?' (rice flour?).",
       "tip": "Osaka's motto is kuidaore — eat till you drop. Dōtonbori at night is pure electricity."
     },
     {
-      "day": 10,
-      "date": "2026-05-18",
-      "dateLabel": "Sun, May 18",
+      "day": 11,
+      "date": "2026-05-19",
+      "dateLabel": "Mon, May 19",
       "title": "Osaka — Castle & Markets",
       "region": "kansai",
       "tagline": "Castle parks, market stalls, and the city that never stops eating.",
@@ -296,21 +763,45 @@
         "Shinsaibashi arcade — covered shopping stretching for blocks"
       ],
       "activities": [
-        { "time": "09:00", "name": "Osaka Castle", "cost": 600, "type": "attraction" },
-        { "time": "10:30", "name": "Castle Park walk", "type": "explore" },
-        { "time": "12:00", "name": "Kuromon Market", "type": "food" },
-        { "time": "14:00", "name": "Shinsaibashi arcade", "type": "explore" },
-        { "time": "16:00", "name": "Den Den Town (optional, Osaka's Akihabara)", "type": "explore" }
+        {
+          "time": "09:00",
+          "name": "Osaka Castle",
+          "cost": 600,
+          "type": "attraction"
+        },
+        {
+          "time": "10:30",
+          "name": "Castle Park walk",
+          "type": "explore"
+        },
+        {
+          "time": "12:00",
+          "name": "Kuromon Market",
+          "type": "food"
+        },
+        {
+          "time": "14:00",
+          "name": "Shinsaibashi arcade",
+          "type": "explore"
+        },
+        {
+          "time": "16:00",
+          "name": "Den Den Town (optional, Osaka's Akihabara)",
+          "type": "explore"
+        }
       ],
-      "transport": { "mode": "Osaka Metro", "note": "Morinomiya or Tanimachi-yonchōme for Castle" },
+      "transport": {
+        "mode": "Osaka Metro",
+        "note": "Morinomiya or Tanimachi-yonchōme for Castle"
+      },
       "food": "Kuromon Market — look for fresh fruit, pickles, rice dishes. Mochi (glutinous rice ≠ gluten!) is naturally GF.",
       "tip": "Kuromon Market before 2pm — stalls close early. Supermarket bento after 7pm is 30-50% off.",
       "keyCost": 600
     },
     {
-      "day": 11,
-      "date": "2026-05-19",
-      "dateLabel": "Mon, May 19",
+      "day": 12,
+      "date": "2026-05-20",
+      "dateLabel": "Tue, May 20",
       "title": "Kyoto",
       "region": "kansai",
       "tagline": "Thousands of torii gates. Gold temples. Bamboo forests. Geisha at dusk.",
@@ -323,48 +814,64 @@
         "Gion at dusk — traditional machiya, geiko quarter"
       ],
       "activities": [
-        { "time": "07:30", "name": "JR to Kyoto", "duration": "30 min", "cost": 580, "type": "transport" },
-        { "time": "08:15", "name": "Fushimi Inari Shrine", "note": "Go early to avoid crowds", "type": "attraction" },
-        { "time": "11:00", "name": "Kinkaku-ji (Golden Pavilion)", "cost": 500, "type": "attraction" },
-        { "time": "13:00", "name": "Arashiyama Bamboo Grove", "type": "attraction" },
-        { "time": "14:30", "name": "Tenryū-ji Temple garden", "cost": 500, "type": "attraction" },
-        { "time": "15:30", "name": "Togetsukyo Bridge", "type": "explore" },
-        { "time": "17:00", "name": "Gion district evening stroll", "type": "explore" },
-        { "time": "20:00", "name": "Return to Osaka", "type": "transport" }
+        {
+          "time": "07:30",
+          "name": "JR to Kyoto",
+          "duration": "30 min",
+          "cost": 580,
+          "type": "transport"
+        },
+        {
+          "time": "08:15",
+          "name": "Fushimi Inari Shrine",
+          "note": "Go early to avoid crowds",
+          "type": "attraction"
+        },
+        {
+          "time": "11:00",
+          "name": "Kinkaku-ji (Golden Pavilion)",
+          "cost": 500,
+          "type": "attraction"
+        },
+        {
+          "time": "13:00",
+          "name": "Arashiyama Bamboo Grove",
+          "type": "attraction"
+        },
+        {
+          "time": "14:30",
+          "name": "Tenryū-ji Temple garden",
+          "cost": 500,
+          "type": "attraction"
+        },
+        {
+          "time": "15:30",
+          "name": "Togetsukyo Bridge",
+          "type": "explore"
+        },
+        {
+          "time": "17:00",
+          "name": "Gion district evening stroll",
+          "type": "explore"
+        },
+        {
+          "time": "20:00",
+          "name": "Return to Osaka",
+          "type": "transport"
+        }
       ],
-      "transport": { "mode": "JR Special Rapid", "from": "Osaka", "to": "Kyoto", "duration": "30 min", "cost": 580, "jrPass": true, "roundTrip": true },
+      "transport": {
+        "mode": "JR Special Rapid",
+        "from": "Osaka",
+        "to": "Kyoto",
+        "duration": "30 min",
+        "cost": 580,
+        "jrPass": true,
+        "roundTrip": true
+      },
       "food": "Kyoto has the best vegan scene in Japan. Shigetsu at Tenryū-ji (shōjin ryōri, ¥3,300–5,500). Mumokuteki Café. Falafel Garden (Gion).",
       "tip": "Fushimi Inari at dawn is life-changing. The first tunnel of gates, almost empty, almost holy.",
       "keyCost": 580
-    },
-    {
-      "day": 12,
-      "date": "2026-05-20",
-      "dateLabel": "Tue, May 20",
-      "title": "Nara Day Trip",
-      "region": "kansai",
-      "tagline": "Sacred deer, the world's largest wooden building, and deep calm.",
-      "stay": "Namba hotel",
-      "highlights": [
-        "JR or Kintetsu to Nara — 45 min from Osaka, ~¥800",
-        "Nara Park — 1,200 free-roaming sacred deer",
-        "Tōdai-ji — the Great Buddha Hall, world's largest wooden structure",
-        "Kasuga Taisha — shrine with 3,000 stone and bronze lanterns",
-        "Naramachi — traditional merchant quarter, craft shops, cafés"
-      ],
-      "activities": [
-        { "time": "09:00", "name": "Train to Nara", "duration": "45 min", "cost": 800, "type": "transport" },
-        { "time": "10:00", "name": "Nara Park — sacred deer", "type": "explore" },
-        { "time": "11:00", "name": "Tōdai-ji — Great Buddha Hall", "type": "attraction" },
-        { "time": "13:00", "name": "Lunch in Naramachi", "type": "food" },
-        { "time": "14:30", "name": "Kasuga Taisha shrine", "type": "attraction" },
-        { "time": "16:00", "name": "Naramachi walk", "type": "explore" },
-        { "time": "17:30", "name": "Return to Osaka", "type": "transport" }
-      ],
-      "transport": { "mode": "JR or Kintetsu", "from": "Osaka", "to": "Nara", "duration": "45 min", "cost": 800, "roundTrip": true },
-      "food": "Naramachi has quiet cafés with set meals. Look for tofu-based dishes. Kakinoha-zushi (persimmon leaf sushi) — veggie versions exist.",
-      "tip": "The deer bow for shika senbei crackers — bow back! Watch your maps and tickets though, they'll eat paper.",
-      "keyCost": 800
     },
     {
       "day": 13,
@@ -382,13 +889,42 @@
         "Farewell dinner — Golden Gai or Michelin-star shōjin ryōri"
       ],
       "activities": [
-        { "time": "09:00", "name": "Last Osaka morning", "type": "explore" },
-        { "time": "11:00", "name": "Shinkansen to Tokyo", "duration": "2h45", "cost": 13870, "type": "transport" },
-        { "time": "14:00", "name": "Check into Tokyo hotel", "type": "accommodation" },
-        { "time": "15:00", "name": "Asakusa / Akihabara / free choice", "type": "explore" },
-        { "time": "19:00", "name": "Farewell dinner", "type": "food" }
+        {
+          "time": "09:00",
+          "name": "Last Osaka morning",
+          "type": "explore"
+        },
+        {
+          "time": "11:00",
+          "name": "Shinkansen to Tokyo",
+          "duration": "2h45",
+          "cost": 13870,
+          "type": "transport"
+        },
+        {
+          "time": "14:00",
+          "name": "Check into Tokyo hotel",
+          "type": "accommodation"
+        },
+        {
+          "time": "15:00",
+          "name": "Asakusa / Akihabara / free choice",
+          "type": "explore"
+        },
+        {
+          "time": "19:00",
+          "name": "Farewell dinner",
+          "type": "food"
+        }
       ],
-      "transport": { "mode": "Shinkansen", "from": "Shin-Osaka", "to": "Tokyo", "duration": "2h45", "cost": 13870, "jrPass": true },
+      "transport": {
+        "mode": "Shinkansen",
+        "from": "Shin-Osaka",
+        "to": "Tokyo",
+        "duration": "2h45",
+        "cost": 13870,
+        "jrPass": true
+      },
       "food": "Daigo near Shiba Park — 2-Michelin-star Buddhist vegan. Book ahead. Or casual Golden Gai.",
       "tip": "For a special last meal: Daigo is extraordinary. Otherwise, kaiten-zushi (conveyor belt sushi) — kappa, avocado, inari are veggie.",
       "keyCost": 13870
@@ -409,29 +945,82 @@
         "22:50 — ✈️ Fly home to Warsaw. Sayonara, Japan."
       ],
       "activities": [
-        { "time": "08:00", "name": "Tsukiji Outer Market breakfast", "type": "food" },
-        { "time": "10:00", "name": "Last shopping", "type": "explore" },
-        { "time": "15:00", "name": "Tokyo Station omiyage shopping", "type": "explore" },
-        { "time": "17:00", "name": "Pack and prepare", "type": "logistics" },
-        { "time": "19:00", "name": "Narita Express to airport", "duration": "60 min", "cost": 3250, "type": "transport" },
-        { "time": "22:50", "name": "Flight to Warsaw", "type": "transport" }
+        {
+          "time": "08:00",
+          "name": "Tsukiji Outer Market breakfast",
+          "type": "food"
+        },
+        {
+          "time": "10:00",
+          "name": "Last shopping",
+          "type": "explore"
+        },
+        {
+          "time": "15:00",
+          "name": "Tokyo Station omiyage shopping",
+          "type": "explore"
+        },
+        {
+          "time": "17:00",
+          "name": "Pack and prepare",
+          "type": "logistics"
+        },
+        {
+          "time": "19:00",
+          "name": "Narita Express to airport",
+          "duration": "60 min",
+          "cost": 3250,
+          "type": "transport"
+        },
+        {
+          "time": "22:50",
+          "name": "Flight to Warsaw",
+          "type": "transport"
+        }
       ],
-      "transport": { "mode": "Narita Express", "from": "Tokyo", "to": "Narita Airport", "duration": "60 min", "cost": 3250 },
+      "transport": {
+        "mode": "Narita Express",
+        "from": "Tokyo",
+        "to": "Narita Airport",
+        "duration": "60 min",
+        "cost": 3250
+      },
       "food": "Stock up on snacks at Narita — excellent selection. Senbei (rice crackers, GF!), mochi, regional KitKats.",
       "tip": "Tax-free shopping: ¥5,000+ at participating stores = ~10% savings. Don't open sealed items before leaving Japan.",
       "keyCost": 3250
     }
   ],
-
   "dietary": {
-    "restrictions": ["vegetarian", "vegan", "gluten-free"],
+    "restrictions": [
+      "vegetarian",
+      "vegan",
+      "gluten-free"
+    ],
     "japanesePhrases": [
-      { "japanese": "Watashi wa bejitarian desu", "meaning": "I am vegetarian" },
-      { "japanese": "Niku to sakana wa taberaremasen", "meaning": "I can't eat meat or fish" },
-      { "japanese": "Guruten furī wa arimasu ka?", "meaning": "Do you have gluten-free options?" },
-      { "japanese": "Komugi arerugī desu", "meaning": "I have a wheat allergy" },
-      { "japanese": "Tamari shōyu wa arimasu ka?", "meaning": "Do you have tamari soy sauce?" },
-      { "japanese": "Dashi wa katsuobushi nashi de onegai shimasu", "meaning": "Please make dashi without bonito flakes" }
+      {
+        "japanese": "Watashi wa bejitarian desu",
+        "meaning": "I am vegetarian"
+      },
+      {
+        "japanese": "Niku to sakana wa taberaremasen",
+        "meaning": "I can't eat meat or fish"
+      },
+      {
+        "japanese": "Guruten furī wa arimasu ka?",
+        "meaning": "Do you have gluten-free options?"
+      },
+      {
+        "japanese": "Komugi arerugī desu",
+        "meaning": "I have a wheat allergy"
+      },
+      {
+        "japanese": "Tamari shōyu wa arimasu ka?",
+        "meaning": "Do you have tamari soy sauce?"
+      },
+      {
+        "japanese": "Dashi wa katsuobushi nashi de onegai shimasu",
+        "meaning": "Please make dashi without bonito flakes"
+      }
     ],
     "safeFoods": [
       "Onigiri (rice balls) — umeboshi, kombu, nattō fillings",
@@ -451,26 +1040,61 @@
       "Miso soup often has bonito dashi",
       "Many 'vegetable' dishes use fish-based seasonings"
     ],
-    "apps": ["HappyCow", "Google Translate (camera mode)", "Vegewel.com"],
+    "apps": [
+      "HappyCow",
+      "Google Translate (camera mode)",
+      "Vegewel.com"
+    ],
     "recommendedRestaurants": [
-      { "name": "Ain Soph Journey", "city": "Tokyo (Shinjuku)", "type": "Fully vegan, GF options" },
-      { "name": "T's TanTan", "city": "Tokyo Station", "type": "Vegan ramen" },
-      { "name": "Paprika Shokudo Vegan", "city": "Osaka (Namba)", "type": "Fully vegan" },
-      { "name": "Green Earth", "city": "Osaka (Shinsaibashi)", "type": "Organic vegan" },
-      { "name": "Shigetsu", "city": "Kyoto (Tenryū-ji)", "type": "Shōjin ryōri, ¥3,300–5,500" },
-      { "name": "Mumokuteki Café", "city": "Kyoto", "type": "Vegan, some GF" },
-      { "name": "Falafel Garden", "city": "Kyoto (Gion)", "type": "Naturally GF" },
-      { "name": "Daigo", "city": "Tokyo (Shiba Park)", "type": "2-Michelin-star shōjin ryōri" }
+      {
+        "name": "Ain Soph Journey",
+        "city": "Tokyo (Shinjuku)",
+        "type": "Fully vegan, GF options"
+      },
+      {
+        "name": "T's TanTan",
+        "city": "Tokyo Station",
+        "type": "Vegan ramen"
+      },
+      {
+        "name": "Paprika Shokudo Vegan",
+        "city": "Osaka (Namba)",
+        "type": "Fully vegan"
+      },
+      {
+        "name": "Green Earth",
+        "city": "Osaka (Shinsaibashi)",
+        "type": "Organic vegan"
+      },
+      {
+        "name": "Shigetsu",
+        "city": "Kyoto (Tenryū-ji)",
+        "type": "Shōjin ryōri, ¥3,300–5,500"
+      },
+      {
+        "name": "Mumokuteki Café",
+        "city": "Kyoto",
+        "type": "Vegan, some GF"
+      },
+      {
+        "name": "Falafel Garden",
+        "city": "Kyoto (Gion)",
+        "type": "Naturally GF"
+      },
+      {
+        "name": "Daigo",
+        "city": "Tokyo (Shiba Park)",
+        "type": "2-Michelin-star shōjin ryōri"
+      }
     ]
   },
-
   "transport": {
     "jrPassAnalysis": {
       "sevenDay": 50000,
       "fourteenDay": 80000,
-      "estimatedIndividualTotal": "¥65,000–70,000",
-      "recommendation": "Buy individual tickets. After the 2025 price increase, the 14-day pass (¥80,000) costs more than individual tickets (~¥65,000–70,000). You also get to ride the faster Nozomi Shinkansen, saving ~30 min per leg.",
-      "note": "If you value convenience over savings, a 7-day pass activated Day 5 roughly breaks even."
+      "estimatedIndividualTotal": "¥35,000–45,000",
+      "recommendation": "Definitely buy individual tickets. With Tokyo→Kumamoto now a flight, your shinkansen legs are only Kumamoto→Onomichi (¥13,000) and Osaka→Tokyo (¥13,870) plus local trains. The 7-day pass (¥50,000) costs more than your actual train spend. Individual tickets + Nozomi access is the clear winner.",
+      "note": "No JR Pass needed. Individual shinkansen tickets can be booked at JR ticket counters (midori no madoguchi) or via SmartEX app."
     },
     "suicaCard": "Buy at airport kiosk. ¥2,000 (¥500 deposit + ¥1,500 balance). Works on all metro, JR local, buses, konbini payments.",
     "takkyubin": {
@@ -481,38 +1105,113 @@
       "usedOnDay": 8
     }
   },
-
   "bookings": [
-    { "item": "TeamLab Borderless tickets", "when": "2 months before (opens ~Mar 9)", "priority": "critical", "url": "https://borderless.teamlab.art" },
-    { "item": "Shimanami Kaido bike reservation", "when": "1–2 weeks before", "priority": "high", "url": "https://shimanami-cycle.or.jp" },
-    { "item": "Bokuya Rides Mt Aso e-bike", "when": "1–2 weeks before", "priority": "high", "url": "https://asocalderatourism.com" },
-    { "item": "Shinkansen seat reservations", "when": "Up to 1 month before", "priority": "medium", "note": "At JR ticket counters (midori no madoguchi)" },
-    { "item": "Highway bus to Kawaguchiko", "when": "1 week before", "priority": "medium" },
-    { "item": "Pocket WiFi / eSIM", "when": "Before departure", "priority": "medium" },
-    { "item": "Daigo restaurant (if going)", "when": "2–4 weeks before", "priority": "low" }
+    {
+      "item": "TeamLab Borderless tickets",
+      "when": "2 months before (opens ~Mar 9)",
+      "priority": "critical",
+      "url": "https://borderless.teamlab.art"
+    },
+    {
+      "item": "Shimanami Kaido bike reservation",
+      "when": "1–2 weeks before",
+      "priority": "high",
+      "url": "https://shimanami-cycle.or.jp"
+    },
+    {
+      "item": "Bokuya Rides Mt Aso e-bike",
+      "when": "1–2 weeks before",
+      "priority": "high",
+      "url": "https://asocalderatourism.com"
+    },
+    {
+      "item": "Shinkansen seat reservations",
+      "when": "Up to 1 month before",
+      "priority": "medium",
+      "note": "At JR ticket counters (midori no madoguchi)"
+    },
+    {
+      "item": "Highway bus to Kawaguchiko",
+      "when": "1 week before",
+      "priority": "medium"
+    },
+    {
+      "item": "Pocket WiFi / eSIM",
+      "when": "Before departure",
+      "priority": "medium"
+    },
+    {
+      "item": "Daigo restaurant (if going)",
+      "when": "2–4 weeks before",
+      "priority": "low"
+    }
   ],
-
   "budget": {
     "currency": "JPY",
     "perPerson": {
-      "flights": { "amount": 120000, "note": "Warsaw ↔ Narita round trip (~$800)" },
-      "nex": { "amount": 6500, "note": "Narita Express round trip" },
-      "trains": { "amount": "50000–65000", "note": "Shinkansen + local (individual tickets)" },
-      "localTransit": { "amount": 10000, "note": "Metro, bus, Suica top-ups" },
-      "kawaguchikoBus": { "amount": 4400, "note": "Highway bus round trip" },
-      "hotels": { "amount": 90000, "note": "12 nights × ~¥15,000/room ÷ 2 people" },
-      "meals": { "amount": 65000, "note": "~¥5,000/day × 13 days" },
-      "activities": { "amount": 24000, "note": "TeamLab, bikes, temples, ropeway, etc." },
-      "takkyubin": { "amount": 2500, "note": "Bag forwarding Onomichi → Osaka" },
-      "wifiAndSouvenirs": { "amount": 17500, "note": "eSIM + omiyage" }
+      "flights": {
+        "amount": 120000,
+        "note": "Warsaw ↔ Narita round trip (~$800)"
+      },
+      "domesticFlight": {
+        "amount": 15000,
+        "note": "HND → KMJ one-way (¥8,000–20,000 depending on booking lead time)"
+      },
+      "nex": {
+        "amount": 6500,
+        "note": "Narita Express round trip"
+      },
+      "hanedaBus": {
+        "amount": 1300,
+        "note": "Limousine bus Shibuya → Haneda"
+      },
+      "kumamotoAirportBus": {
+        "amount": 900,
+        "note": "Airport → city center"
+      },
+      "trains": {
+        "amount": "35000–45000",
+        "note": "Shinkansen Kumamoto→Onomichi + Osaka→Tokyo + local trains (no Tokyo→Kumamoto shinkansen)"
+      },
+      "localTransit": {
+        "amount": 10000,
+        "note": "Metro, bus, Suica top-ups"
+      },
+      "kawaguchikoBus": {
+        "amount": 4400,
+        "note": "Highway bus round trip"
+      },
+      "hotels": {
+        "amount": 87000,
+        "note": "13 nights across 5 stays (Kumamoto +1, Osaka -1) ÷ 2 people per room"
+      },
+      "meals": {
+        "amount": 65000,
+        "note": "~¥5,000/day × 13 days"
+      },
+      "activities": {
+        "amount": 24000,
+        "note": "TeamLab, bikes, temples, ropeway, etc."
+      },
+      "takkyubin": {
+        "amount": 2500,
+        "note": "Bag forwarding Onomichi → Osaka"
+      },
+      "wifiAndSouvenirs": {
+        "amount": 17500,
+        "note": "eSIM + omiyage"
+      },
+      "kurokawa": {
+        "amount": 8000,
+        "note": "Kurokawa Onsen day trip: bus RT ¥5,000 + rotenburo pass ¥1,500 + lunch"
+      }
     },
-    "totalPerPerson": "¥370,000–430,000",
-    "totalPerPersonUSD": "~$2,500–2,900",
-    "totalGroup": "¥1,480,000–1,720,000",
-    "totalGroupUSD": "~$10,000–11,500",
-    "note": "Excludes flights. Mid-range estimates. 2 hotel rooms for 4 people."
+    "totalPerPerson": "¥370,000–420,000",
+    "totalPerPersonUSD": "~$2,500–2,800",
+    "totalGroup": "¥1,480,000–1,680,000",
+    "totalGroupUSD": "~$9,900–11,200",
+    "note": "Excludes international flights. Includes domestic HND→KMJ flight. Mid-range estimates. 2 hotel rooms for 4 people."
   },
-
   "packing": [
     "Passport + copies (digital & paper)",
     "Comfortable walking shoes (15,000+ steps/day)",
@@ -527,13 +1226,1803 @@
     "Minimal luggage — lots of stairs and tight trains",
     "Coin purse — Japan uses more coins than expected"
   ],
-
   "stats": [
-    { "value": 14, "label": "Days" },
-    { "value": 8, "label": "Cities" },
-    { "value": 2, "label": "Bike rides" },
-    { "value": 6, "label": "Islands crossed" },
-    { "value": 5, "label": "Nights in Osaka" },
-    { "value": 70, "suffix": "km", "label": "Shimanami Kaido" }
-  ]
+    {
+      "value": 14,
+      "label": "Days"
+    },
+    {
+      "value": 8,
+      "label": "Cities"
+    },
+    {
+      "value": 2,
+      "label": "Bike rides"
+    },
+    {
+      "value": 6,
+      "label": "Islands crossed"
+    },
+    {
+      "value": 3,
+      "label": "Onsen baths"
+    },
+    {
+      "value": 70,
+      "suffix": "km",
+      "label": "Shimanami Kaido"
+    }
+  ],
+  "travels": [
+    {
+      "id": "warsaw-tokyo",
+      "day": 1,
+      "from": {
+        "name": "Warsaw",
+        "country": "PL",
+        "code": "WAW"
+      },
+      "to": {
+        "name": "Tokyo",
+        "area": "Narita",
+        "code": "NRT"
+      },
+      "mode": "plane",
+      "icon": "plane",
+      "carrier": "LOT / connecting flight",
+      "duration": "~14 hrs",
+      "distance": "8,850 km",
+      "cost": null,
+      "costNote": "Included in flight budget",
+      "details": "WAW → NRT, landing 18:30. Then Narita Express to Shibuya (75 min).",
+      "animation": "plane-long-haul"
+    },
+    {
+      "id": "shibuya-kamakura",
+      "day": 3,
+      "from": {
+        "name": "Shibuya",
+        "area": "Tokyo"
+      },
+      "to": {
+        "name": "Kamakura"
+      },
+      "mode": "train",
+      "icon": "train",
+      "line": "JR Yokosuka Line",
+      "duration": "60 min",
+      "distance": "50 km",
+      "cost": 940,
+      "roundTrip": true,
+      "details": "Day trip. Return via Enoden + JR same evening.",
+      "animation": "train-local"
+    },
+    {
+      "id": "shibuya-kawaguchiko",
+      "day": 4,
+      "from": {
+        "name": "Shibuya",
+        "area": "Tokyo"
+      },
+      "to": {
+        "name": "Kawaguchiko",
+        "area": "Mt Fuji"
+      },
+      "mode": "bus",
+      "icon": "bus",
+      "carrier": "Keio / Fujikyu Highway Bus",
+      "duration": "2 hrs",
+      "distance": "100 km",
+      "cost": 2200,
+      "roundTrip": true,
+      "details": "06:30 departure, return ~17:00. Through mountain roads with Fuji views.",
+      "animation": "bus-mountain"
+    },
+    {
+      "id": "tokyo-kumamoto",
+      "day": 5,
+      "from": {
+        "name": "Tokyo",
+        "area": "Haneda",
+        "code": "HND"
+      },
+      "to": {
+        "name": "Kumamoto",
+        "code": "KMJ"
+      },
+      "mode": "plane",
+      "icon": "plane",
+      "carrier": "ANA / JAL / Solaseed",
+      "duration": "1h50",
+      "distance": "900 km",
+      "cost": 15000,
+      "costNote": "¥12,000–20,000 with early-bird discount",
+      "details": "HND → KMJ. Morning flight, arrive by lunch. Way faster than 6hr shinkansen.",
+      "animation": "plane-domestic"
+    },
+    {
+      "id": "kumamoto-aso",
+      "day": 6,
+      "from": {
+        "name": "Kumamoto"
+      },
+      "to": {
+        "name": "Mt Aso"
+      },
+      "mode": "train",
+      "icon": "train",
+      "line": "JR Hōhi Line",
+      "duration": "75 min",
+      "distance": "55 km",
+      "cost": null,
+      "roundTrip": true,
+      "details": "Day trip. Through dramatic mountain valleys. Then e-bike tour at Aso.",
+      "animation": "train-mountain"
+    },
+    {
+      "id": "kumamoto-kurokawa",
+      "day": 7,
+      "from": {
+        "name": "Kumamoto",
+        "area": "Sakuramachi"
+      },
+      "to": {
+        "name": "Kurokawa Onsen"
+      },
+      "mode": "bus",
+      "icon": "bus",
+      "carrier": "Kyushu Sanko Bus",
+      "duration": "2.5 hrs",
+      "distance": "80 km",
+      "cost": 2500,
+      "roundTrip": true,
+      "details": "Day trip. Through mountain roads to the hidden onsen village. Return same evening.",
+      "animation": "bus-mountain"
+    },
+    {
+      "id": "kumamoto-onomichi",
+      "day": 8,
+      "from": {
+        "name": "Kumamoto"
+      },
+      "to": {
+        "name": "Onomichi"
+      },
+      "mode": "shinkansen",
+      "icon": "shinkansen",
+      "line": "Kyushu + Sanyo Shinkansen",
+      "duration": "~3.5 hrs",
+      "distance": "450 km",
+      "cost": 13000,
+      "via": [
+        "Hakata",
+        "Fukuyama"
+      ],
+      "details": "Kumamoto → Hakata (40 min) → Fukuyama (1h30) → local to Onomichi (20 min).",
+      "animation": "shinkansen"
+    },
+    {
+      "id": "onomichi-imabari",
+      "day": 9,
+      "from": {
+        "name": "Onomichi"
+      },
+      "to": {
+        "name": "Imabari"
+      },
+      "mode": "bike",
+      "icon": "bike",
+      "route": "Shimanami Kaido",
+      "duration": "6–8 hrs",
+      "distance": "70 km",
+      "cost": 4000,
+      "costNote": "E-bike rental with one-way drop-off",
+      "details": "Ferry to Mukaishima, then 6 bridges across 6 islands. The ride of a lifetime.",
+      "islands": [
+        "Mukaishima",
+        "Innoshima",
+        "Ikuchijima",
+        "Omishima",
+        "Hakatajima",
+        "Oshima"
+      ],
+      "animation": "bike-island"
+    },
+    {
+      "id": "imabari-osaka",
+      "day": 9,
+      "from": {
+        "name": "Imabari"
+      },
+      "to": {
+        "name": "Osaka",
+        "area": "Namba"
+      },
+      "mode": "train",
+      "icon": "train",
+      "line": "JR Yosan + Seto-Ohashi + Sanyo Shinkansen",
+      "duration": "~3.5 hrs",
+      "distance": "320 km",
+      "cost": 11000,
+      "via": [
+        "Okayama"
+      ],
+      "details": "Drop bikes at Imabari terminal → train across Seto bridge → Shin-Osaka → Namba.",
+      "animation": "train-bridge"
+    },
+    {
+      "id": "osaka-kyoto",
+      "day": 12,
+      "from": {
+        "name": "Osaka",
+        "area": "Namba"
+      },
+      "to": {
+        "name": "Kyoto"
+      },
+      "mode": "train",
+      "icon": "train",
+      "line": "JR Special Rapid",
+      "duration": "30 min",
+      "distance": "45 km",
+      "cost": 580,
+      "roundTrip": true,
+      "details": "Day trip. Quick JR ride, packed day of temples and shrines.",
+      "animation": "train-local"
+    },
+    {
+      "id": "osaka-tokyo",
+      "day": 13,
+      "from": {
+        "name": "Osaka",
+        "area": "Shin-Osaka"
+      },
+      "to": {
+        "name": "Tokyo"
+      },
+      "mode": "shinkansen",
+      "icon": "shinkansen",
+      "line": "Tōkaidō Shinkansen (Nozomi)",
+      "duration": "2h15",
+      "distance": "515 km",
+      "cost": 13870,
+      "details": "Nozomi — fastest bullet train. Views of Mt Fuji from the right side if you're lucky.",
+      "animation": "shinkansen"
+    },
+    {
+      "id": "tokyo-warsaw",
+      "day": 14,
+      "from": {
+        "name": "Tokyo",
+        "area": "Narita",
+        "code": "NRT"
+      },
+      "to": {
+        "name": "Warsaw",
+        "country": "PL",
+        "code": "WAW"
+      },
+      "mode": "plane",
+      "icon": "plane",
+      "carrier": "Return flight",
+      "duration": "~12 hrs",
+      "distance": "8,850 km",
+      "cost": null,
+      "costNote": "Included in flight budget",
+      "details": "Narita Express from Tokyo Station (60 min, ¥3,250). Flight 22:50.",
+      "animation": "plane-long-haul"
+    }
+  ],
+  "hotels": {
+    "budget": "Up to €250/night per room (2 rooms needed)",
+    "note": "Prices are approximate per room per night in May 2026. Book early for best rates. All hotels can receive takkyubin luggage.",
+    "userPreferences": {
+      "lovedHotel": "Hotel Resol Trinity Kyoto",
+      "style": "Design-forward, modern, social vibes, good location",
+      "interestedIn": "lyf Shibuya Tokyo"
+    },
+    "shibuya": {
+      "stayId": "shibuya",
+      "location": "Shibuya, Tokyo",
+      "nights": 4,
+      "dates": "May 9–12",
+      "purpose": "Base for Tokyo sightseeing, TeamLab, Kamakura & Mt Fuji day trips",
+      "options": [
+        {
+          "name": "lyf Shibuya Tokyo",
+          "nameJp": "ライフ渋谷東京",
+          "priceEUR": "€120–160",
+          "priceJPY": "¥18,000–24,000",
+          "style": "Design-forward coliving lifestyle hotel",
+          "location": "7 min walk to Shibuya Station, opposite Shibuya PARCO",
+          "neighborhood": "Organ-zaka",
+          "highlights": [
+            "Opened Dec 2024 — brand new social-first concept",
+            "Co-working spaces & communal kitchen for group hangouts",
+            "Shibuya PARCO has great vegan dining downstairs"
+          ],
+          "url": "https://www.discoverasr.com/en/lyf/japan/lyf-shibuya-tokyo",
+          "travellerPick": true,
+          "pickReason": "Jacek's choice — social vibes perfect for a group of 4",
+          "bookingUrl": "https://www.booking.com/hotel/jp/lyf-shibuya-tokyo.html?checkin=2026-05-09&checkout=2026-05-13&group_adults=4&no_rooms=2",
+          "officialUrl": "https://www.discoverasr.com/en/lyf/japan/lyf-shibuya-tokyo",
+          "totalPerRoom": "€480–640 (4 nights)",
+          "type": "hotel"
+        },
+        {
+          "name": "All Day Place Shibuya",
+          "nameJp": "オール デイ プレイス 渋谷",
+          "priceEUR": "€115–185",
+          "priceJPY": "¥17,000–28,000",
+          "style": "MUJI-designed minimalist boutique",
+          "location": "3 min walk to Shibuya Station",
+          "neighborhood": "Center-gai, near Hachiko",
+          "highlights": [
+            "MUJI aesthetic — clean lines, natural materials, clever layouts",
+            "14 storeys, 160 rooms, highest-quality finishes",
+            "Steps from Shibuya Crossing"
+          ],
+          "url": "https://www.booking.com/hotel/jp/all-day-place-shibuya.html",
+          "travellerPick": false,
+          "bookingUrl": "https://www.booking.com/hotel/jp/all-day-place-shibuya.html?checkin=2026-05-09&checkout=2026-05-13&group_adults=4&no_rooms=2",
+          "officialUrl": "https://www.uds-hotels.com/en/all-day-place/",
+          "totalPerRoom": "€460–740 (4 nights)",
+          "type": "hotel"
+        },
+        {
+          "name": "Shibuya Granbell Hotel",
+          "nameJp": "渋谷グランベルホテル",
+          "priceEUR": "€60–130",
+          "priceJPY": "¥9,000–20,000",
+          "style": "Art-forward design boutique",
+          "location": "3 min walk to Shibuya Station",
+          "neighborhood": "Udagawa, central Shibuya",
+          "highlights": [
+            "Tinted glass & custom lamps — every room feels different",
+            "Rooftop terrace and bar",
+            "Closest vibe to Resol Trinity's design philosophy"
+          ],
+          "url": "https://www.granbellhotel.jp/en/shibuya/",
+          "travellerPick": false,
+          "bookingUrl": "https://www.booking.com/hotel/jp/granbell-shibuya.html?checkin=2026-05-09&checkout=2026-05-13&group_adults=4&no_rooms=2",
+          "officialUrl": "https://en.granbellhotel.jp/shibuya/",
+          "totalPerRoom": "€240–520 (4 nights)",
+          "type": "hotel"
+        },
+        {
+          "name": "Shibuya Stream Excel Hotel Tokyu",
+          "nameJp": "渋谷ストリームエクセルホテル東急",
+          "priceEUR": "€140–200",
+          "priceJPY": "¥21,000–30,000",
+          "style": "Modern sleek lifestyle hotel",
+          "location": "Direct connection to Shibuya Station (South Exit)",
+          "neighborhood": "Shibuya Stream complex",
+          "highlights": [
+            "Directly connected to station — zero rain exposure",
+            "Shibuya Stream complex has restaurants & shops below",
+            "Vintage-modern rooms with great city views"
+          ],
+          "url": "https://www.tokyuhotels.co.jp/en/shibuyastream/",
+          "travellerPick": false,
+          "bookingUrl": "https://www.booking.com/hotel/jp/shibuya-stream-excel-tokyu.html?checkin=2026-05-09&checkout=2026-05-13&group_adults=4&no_rooms=2",
+          "officialUrl": "https://shibuyastreamexceltokyu.hotelsoftokyo.com/en/",
+          "totalPerRoom": "€560–800 (4 nights)",
+          "type": "hotel"
+        },
+        {
+          "name": "Hotel Indigo Tokyo Shibuya",
+          "nameJp": "ホテルインディゴ東京渋谷",
+          "priceEUR": "€55–85",
+          "priceJPY": "¥8,000–13,000",
+          "style": "IHG boutique lifestyle brand",
+          "location": "5 min walk from Shibuya Station",
+          "neighborhood": "Dogenzaka",
+          "highlights": [
+            "Surprisingly affordable for IHG boutique quality",
+            "Contemporary design with spacious bathrooms",
+            "Terrace, restaurant, and fitness center"
+          ],
+          "url": "https://www.ihg.com/hotelindigo/hotels/us/en/tokyo/tyosi/hoteldetail",
+          "travellerPick": false,
+          "bookingUrl": "https://www.booking.com/hotel/jp/indigo-tokyo-shibuya-an-ihg.html?checkin=2026-05-09&checkout=2026-05-13&group_adults=4&no_rooms=2",
+          "officialUrl": "https://www.ihg.com/hotelindigo/hotels/us/en/shibuyaku/hndsh/hoteldetail",
+          "totalPerRoom": "€220–340 (4 nights)",
+          "type": "hotel"
+        },
+        {
+          "name": "Tokyu Stay Shibuya",
+          "nameJp": "東急ステイ渋谷",
+          "priceEUR": "€135–180",
+          "priceJPY": "¥20,000–27,000",
+          "style": "Modern extended-stay with kitchenettes",
+          "location": "2 min walk to Shibuya Station",
+          "neighborhood": "Center-gai",
+          "highlights": [
+            "Washer-dryer in every room — great for mid-trip laundry",
+            "Kitchenettes for self-catering (helps with dietary needs)",
+            "Excellent station proximity"
+          ],
+          "url": "https://www.tokyustay.co.jp/e/hotel/SHB/",
+          "travellerPick": false,
+          "bookingUrl": "https://www.booking.com/hotel/jp/tokyu-stay-shibuya.html?checkin=2026-05-09&checkout=2026-05-13&group_adults=4&no_rooms=2",
+          "officialUrl": "https://www.tokyustay.co.jp/en/hotel/shibuya-shin-minamiguchi-tokyo/",
+          "totalPerRoom": "€540–720 (4 nights)",
+          "type": "hotel"
+        },
+        {
+          "name": "Shibuya Tokyu REI Hotel",
+          "nameJp": "渋谷東急REIホテル",
+          "priceEUR": "€75–115",
+          "priceJPY": "¥11,000–17,000",
+          "style": "Clean modern business hotel",
+          "location": "2 min walk from Shibuya Station",
+          "neighborhood": "Center-gai",
+          "highlights": [
+            "Best value-for-location ratio in Shibuya",
+            "Clean, modern, no-frills reliability",
+            "Trusted Tokyu chain quality"
+          ],
+          "url": "https://www.tokyuhotels.co.jp/en/shibuya-r/",
+          "travellerPick": false,
+          "bookingUrl": "https://www.booking.com/hotel/jp/shibuya-tokyu-inn.html?checkin=2026-05-09&checkout=2026-05-13&group_adults=4&no_rooms=2",
+          "officialUrl": "https://shibuya-tokyu-rei-hotel.h-rez.com/",
+          "totalPerRoom": "€300–460 (4 nights)",
+          "type": "hotel"
+        },
+        {
+          "name": "Hyatt House Tokyo Shibuya",
+          "nameJp": "ハイアットハウス東京渋谷",
+          "priceEUR": "€220–250",
+          "priceJPY": "¥33,000–38,000",
+          "style": "Premium extended-stay lifestyle hotel",
+          "location": "Near Shibuya Scramble Crossing",
+          "neighborhood": "Shibuya Crossing area",
+          "highlights": [
+            "Full kitchens & washer-dryers — apartment-style living",
+            "Spacious living areas ideal for group of 4",
+            "Premium but within budget at top end"
+          ],
+          "url": "https://www.hyatt.com/hyatt-house/en-US/tyosh-hyatt-house-tokyo-shibuya",
+          "travellerPick": false,
+          "bookingUrl": "https://www.booking.com/hotel/jp/hyatt-house-tokyo-shibuya.html?checkin=2026-05-09&checkout=2026-05-13&group_adults=4&no_rooms=2",
+          "officialUrl": "https://www.hyatt.com/hyatt-house/en-US/tyoxs-hyatt-house-tokyo-shibuya",
+          "totalPerRoom": "€880–1,000 (4 nights)",
+          "type": "hotel"
+        },
+        {
+          "name": "Onsen Ryokan Yuen Shinjuku",
+          "nameJp": "温泉旅館 由縁 新宿",
+          "type": "ryokan",
+          "priceEUR": "€140–180",
+          "priceJPY": "¥21,000–27,000",
+          "totalPerRoom": "€560–720 (4 nights)",
+          "style": "Modern city ryokan with real natural hot spring onsen",
+          "location": "5 min walk from Shinjuku-gyoenmae Station, 15 min train to Shibuya",
+          "neighborhood": "Shinjuku",
+          "highlights": [
+            "Real natural hot spring onsen — rare in central Tokyo",
+            "Tatami rooms with futons + modern amenities — best of both worlds",
+            "Rooftop open-air bath with city skyline views"
+          ],
+          "bookingUrl": "https://www.booking.com/hotel/jp/onsen-ryokan-yuen-shinjuku.html?checkin=2026-05-09&checkout=2026-05-13&group_adults=4&no_rooms=2",
+          "officialUrl": "https://www.uds-hotels.com/en/yuen/shinjuku/",
+          "travellerPick": false,
+          "ryokanDetails": {
+            "onsen": true,
+            "onsenType": "Natural hot spring (alkaline)",
+            "privateBath": false,
+            "rooftopBath": true,
+            "meals": "Breakfast available, no dinner service",
+            "tatami": true,
+            "futon": true,
+            "yukata": true
+          },
+          "dietaryNote": "Vegetarian breakfast on request. Gluten-free not guaranteed — contact ahead. No dinner served, so eat out (great for dietary flexibility)."
+        }
+      ],
+      "checkIn": "2026-05-09",
+      "checkOut": "2026-05-13",
+      "searchParams": {
+        "adults": 4,
+        "rooms": 2,
+        "nights": 4
+      },
+      "pricingNote": "May 2026 rates not yet live on most platforms. Estimates based on current/recent pricing. Set a reminder to check in March 2026."
+    },
+    "kumamoto": {
+      "stayId": "kumamoto",
+      "location": "Kumamoto",
+      "nights": 3,
+      "dates": "May 13–15",
+      "purpose": "Base for Kumamoto Castle & Mt Aso bike ride",
+      "options": [
+        {
+          "name": "OMO5 Kumamoto by Hoshino Resorts",
+          "nameJp": "OMO5熊本 by 星野リゾート",
+          "priceEUR": "€65–130",
+          "priceJPY": "¥10,000–21,000",
+          "style": "Ultra-modern design by Japan's coolest hotel group",
+          "location": "Central Kumamoto, near Sakura Machi & castle",
+          "neighborhood": "Downtown, tram accessible",
+          "highlights": [
+            "Hoshino Resorts — Japan's most design-forward chain",
+            "Unique lofted room types inspired by Kumamoto scenery",
+            "3D deck terrace with castle views"
+          ],
+          "url": "https://hoshinoresorts.com/en/hotels/omo5kumamoto/",
+          "travellerPick": true,
+          "pickReason": "Hoshino Resorts is the gold standard for Japanese design hotels",
+          "bookingUrl": "https://www.booking.com/hotel/jp/omo5-kumamoto-by-hoshino-resorts-kumamoto.html?checkin=2026-05-13&checkout=2026-05-16&group_adults=4&no_rooms=2",
+          "officialUrl": "https://hoshinoresorts.com/en/hotels/omo5kumamoto/",
+          "totalPerRoom": "€195–390 (3 nights)",
+          "type": "hotel"
+        },
+        {
+          "name": "REF Kumamoto by VESSEL HOTELS",
+          "nameJp": "REF熊本 by ベッセルホテルズ",
+          "priceEUR": "€56–90",
+          "priceJPY": "¥9,000–14,000",
+          "style": "Modernist minimalist with public baths",
+          "location": "0.7 km from Kumamoto Castle",
+          "neighborhood": "Near Sunroad Shinshigai arcade",
+          "highlights": [
+            "Open-air garden baths — onsen vibes without a ryokan",
+            "Local artist collaborations throughout",
+            "Great value for design quality"
+          ],
+          "url": "https://www.vessel-hotel.jp/en/ref/kumamoto/",
+          "travellerPick": false,
+          "bookingUrl": "https://www.booking.com/hotel/jp/ref-kumamoto-by-vessel-hotels.html?checkin=2026-05-13&checkout=2026-05-16&group_adults=4&no_rooms=2",
+          "officialUrl": "https://www.vessel-hotel.jp/en/ref/kumamoto/",
+          "totalPerRoom": "€168–270 (3 nights)",
+          "type": "hotel"
+        },
+        {
+          "name": "THE BLOSSOM KUMAMOTO",
+          "nameJp": "ザ・ブロッサム熊本",
+          "priceEUR": "€58–100",
+          "priceJPY": "¥9,000–16,000",
+          "style": "Contemporary JR hotel with garden baths",
+          "location": "Adjacent to JR Kumamoto Station",
+          "neighborhood": "Station-side (3.2 km from castle)",
+          "highlights": [
+            "0 min walk to JR Kumamoto Station — best for Mt Aso day trip",
+            "Public bath with garden views",
+            "Modern 9th floor+ rooms with city panoramas"
+          ],
+          "url": "https://www.jrk-hotels.co.jp/en/Kumamoto/",
+          "travellerPick": false,
+          "bookingUrl": "https://www.booking.com/hotel/jp/the-blossom-kumamoto.html?checkin=2026-05-13&checkout=2026-05-16&group_adults=4&no_rooms=2",
+          "officialUrl": "https://www.jrk-hotels.co.jp/en/Kumamoto/",
+          "totalPerRoom": "€174–300 (3 nights)",
+          "type": "hotel"
+        },
+        {
+          "name": "KOKO HOTEL Premier Kumamoto",
+          "nameJp": "KOKO HOTEL Premier 熊本",
+          "priceEUR": "€50–85",
+          "priceJPY": "¥8,000–14,000",
+          "style": "Contemporary hotel in shopping complex",
+          "location": "Steps from Sakura Machi, 1.1 km from castle",
+          "neighborhood": "Sakura Machi downtown",
+          "highlights": [
+            "Integrated with 150+ shops and restaurants",
+            "Castle views from deluxe rooms",
+            "Excellent for evening dining options"
+          ],
+          "url": "https://koko-hotels.com/kumamoto/",
+          "travellerPick": false,
+          "bookingUrl": "https://www.booking.com/hotel/jp/hoterutorasuteipuremiaxiong-ben-kumamoto-city.html?checkin=2026-05-13&checkout=2026-05-16&group_adults=4&no_rooms=2",
+          "officialUrl": "https://koko-hotels.com/kumamoto/",
+          "totalPerRoom": "€150–255 (3 nights)",
+          "type": "hotel"
+        },
+        {
+          "name": "Hotel Nikko Kumamoto",
+          "nameJp": "ホテルニッコー熊本",
+          "priceEUR": "€55–95",
+          "priceJPY": "¥9,000–15,000",
+          "style": "Elegant Japanese luxury, 4-star",
+          "location": "10 min walk to Kumamoto Castle",
+          "neighborhood": "Central downtown",
+          "highlights": [
+            "Luxury 4-star with 191 rooms",
+            "Multiple restaurant options on-site",
+            "Reliable Okura Nikko quality"
+          ],
+          "url": "https://www.okura-nikko.com/japan/kumamoto/hotel-nikko-kumamoto/",
+          "travellerPick": false,
+          "bookingUrl": "https://www.booking.com/hotel/jp/nikko-kumamoto.html?checkin=2026-05-13&checkout=2026-05-16&group_adults=4&no_rooms=2",
+          "officialUrl": "https://www.okura-nikko.com/japan/kumamoto/hotel-nikko-kumamoto/",
+          "totalPerRoom": "€165–285 (3 nights)",
+          "type": "hotel"
+        },
+        {
+          "name": "Mitsui Garden Hotel Kumamoto",
+          "nameJp": "三井ガーデンホテル熊本",
+          "priceEUR": "€44–73",
+          "priceJPY": "¥7,000–12,000",
+          "style": "Modern business hotel — clean reliable design",
+          "location": "Central Kumamoto",
+          "neighborhood": "Near shopping areas",
+          "highlights": [
+            "Most affordable modern option",
+            "Trusted Mitsui Garden brand",
+            "24-hour front desk"
+          ],
+          "url": "https://www.gardenhotels.co.jp/kumamoto/eng/",
+          "travellerPick": false,
+          "bookingUrl": "https://www.booking.com/hotel/jp/mitsui-garden-kumamoto.html?checkin=2026-05-13&checkout=2026-05-16&group_adults=4&no_rooms=2",
+          "officialUrl": "https://www.gardenhotels.co.jp/kumamoto/eng/",
+          "totalPerRoom": "€132–219 (3 nights)",
+          "type": "hotel"
+        },
+        {
+          "name": "Candeo Hotels Kumamoto Shinshigai",
+          "nameJp": "カンデオホテルズ熊本新市街",
+          "priceEUR": "€45–80",
+          "priceJPY": "¥7,000–13,000",
+          "style": "Contemporary spa hotel",
+          "location": "3 min walk from Karashimacho Station",
+          "neighborhood": "Shinshigai entertainment district",
+          "highlights": [
+            "Full spa with hot spring facilities",
+            "Quad rooms available for groups of 4",
+            "Great location in restaurant district"
+          ],
+          "url": "https://www.candeohotels.com/en/kumamoto-shinshigai/",
+          "travellerPick": false,
+          "bookingUrl": "https://www.booking.com/hotel/jp/kandeohoteruzuxiong-ben-xin-shi-jie.html?checkin=2026-05-13&checkout=2026-05-16&group_adults=4&no_rooms=2",
+          "officialUrl": "https://www.candeohotels.com/en/kumamoto-shinshigai/",
+          "totalPerRoom": "€135–240 (3 nights)",
+          "type": "hotel"
+        },
+        {
+          "name": "Grids Premium Hotel Kumamoto",
+          "nameJp": "グリッズプレミアムホテル熊本",
+          "priceEUR": "€40–75",
+          "priceJPY": "¥6,500–12,000",
+          "style": "Modern budget design hotel",
+          "location": "4 min walk from Sakura Machi",
+          "neighborhood": "Central downtown",
+          "highlights": [
+            "Best budget option with modern design",
+            "Walking distance to all major attractions",
+            "Family rooms available"
+          ],
+          "url": "https://www.grfrh.com/kumamoto/",
+          "travellerPick": false,
+          "bookingUrl": "https://www.booking.com/hotel/jp/gurituzupuremiamuhoteruxiong-ben.html?checkin=2026-05-13&checkout=2026-05-16&group_adults=4&no_rooms=2",
+          "officialUrl": "https://gridshotel.com/kumamoto/en/",
+          "totalPerRoom": "€120–225 (3 nights)",
+          "type": "hotel"
+        },
+        {
+          "name": "Ryotei Matsuya Honkan",
+          "nameJp": "料亭松屋本館",
+          "type": "ryokan",
+          "priceEUR": "€130–170",
+          "priceJPY": "¥20,000–26,000",
+          "totalPerRoom": "€390–510 (3 nights)",
+          "style": "Traditional city ryokan with private onsen, next to Suizenji Garden",
+          "location": "Suizenji area, 5 min drive from Kumamoto Castle, 15 min walk from JR Suizenji Station",
+          "neighborhood": "Suizenji, central Kumamoto",
+          "highlights": [
+            "Two private onsen baths — book 50-min sessions, no sharing",
+            "Tatami rooms overlooking traditional Japanese garden",
+            "In the city — no remote onsen town needed, castle walk away"
+          ],
+          "bookingUrl": "https://www.booking.com/hotel/jp/ryotei-matsuya-honkan-suizenji.html?checkin=2026-05-13&checkout=2026-05-16&group_adults=4&no_rooms=2",
+          "officialUrl": "https://www.matsuyahonkan.com/en/",
+          "travellerPick": false,
+          "ryokanDetails": {
+            "onsen": true,
+            "onsenType": "Private reservable baths (50 min sessions)",
+            "privateBath": true,
+            "meals": "Kaiseki dinner and Japanese breakfast available",
+            "tatami": true,
+            "futon": true,
+            "yukata": true
+          },
+          "dietaryNote": "Contact ahead for vegetarian kaiseki. Soy sauce (contains wheat) used heavily in traditional cooking — stress gluten allergy at booking."
+        },
+        {
+          "name": "Yamaga Onsen Seiryuso",
+          "nameJp": "山鹿温泉 清流荘",
+          "type": "ryokan",
+          "priceEUR": "€120–160",
+          "priceJPY": "¥18,000–24,000",
+          "totalPerRoom": "€360–480 (3 nights)",
+          "style": "Historic 1908 onsen ryokan in atmospheric hot spring town",
+          "location": "Yamaga Onsen town, 40 min bus from Kumamoto Sakuramachi terminal",
+          "neighborhood": "Yamaga (onsen town, 30 km north of Kumamoto)",
+          "highlights": [
+            "Private open-air onsen in every room (Suikyoan wing) — the real deal",
+            "Founded 1908 — Edo-period charm in an authentic onsen town",
+            "Yamaga town has 23 public bathhouses — explore the onsen culture"
+          ],
+          "bookingUrl": "https://www.booking.com/hotel/jp/yamaga-onsen-seiryuso.html?checkin=2026-05-13&checkout=2026-05-16&group_adults=4&no_rooms=2",
+          "officialUrl": "https://seiryuso.co.jp/",
+          "travellerPick": true,
+          "pickReason": "The onsen experience you removed from the itinerary — this brings it back without the extra travel day",
+          "ryokanDetails": {
+            "onsen": true,
+            "onsenType": "Private open-air onsen in every room (natural hot spring)",
+            "privateBath": true,
+            "rotenburo": true,
+            "meals": "Kaiseki dinner and breakfast included",
+            "tatami": true,
+            "futon": true,
+            "yukata": true
+          },
+          "dietaryNote": "Contact 2+ weeks ahead for vegetarian kaiseki. Yamaga town has limited veggie restaurants — meals at ryokan are the main option."
+        }
+      ],
+      "checkIn": "2026-05-13",
+      "checkOut": "2026-05-16",
+      "searchParams": {
+        "adults": 4,
+        "rooms": 2,
+        "nights": 3
+      },
+      "pricingNote": "May 2026 rates not yet live. Estimates based on current pricing. Kumamoto is generally affordable."
+    },
+    "onomichi": {
+      "stayId": "onomichi",
+      "location": "Onomichi",
+      "nights": 1,
+      "dates": "May 16",
+      "purpose": "Pre-Shimanami Kaido base — cycling starts 7am next morning",
+      "options": [
+        {
+          "name": "Hotel Cycle (Onomichi U2)",
+          "nameJp": "ホテルサイクル",
+          "priceEUR": "€110–140",
+          "priceJPY": "¥14,000–18,000",
+          "style": "Design boutique built for cyclists",
+          "location": "5 min walk to station & bike rental terminal",
+          "neighborhood": "Waterfront, Onomichi U2 warehouse complex",
+          "highlights": [
+            "Bike hangers IN the rooms — purpose-built for Shimanami riders",
+            "Suppose Design Office renovation of historic warehouse",
+            "U2 complex has restaurants, café, shop — spend the evening here"
+          ],
+          "url": "https://www.onomichi-u2.com/en/hotel-cycle",
+          "travellerPick": true,
+          "pickReason": "Built for exactly what you're doing — cycling Shimanami Kaido",
+          "shimanamiReady": true,
+          "bookingUrl": "https://www.booking.com/hotel/jp/hotel-cycle.html?checkin=2026-05-16&checkout=2026-05-17&group_adults=4&no_rooms=2",
+          "officialUrl": "https://onomichi-u2.com/en/stay/",
+          "totalPerRoom": "€110–140 (1 night)",
+          "type": "hotel"
+        },
+        {
+          "name": "Hotel Beacon Onomichi",
+          "nameJp": "ホテルビーコンおのみち",
+          "priceEUR": "€100–150",
+          "priceJPY": "¥13,000–19,000",
+          "style": "Modern concept hotel, 6 room types",
+          "location": "Inside JR Onomichi Station (2F) — 0 min walk",
+          "neighborhood": "Station building",
+          "highlights": [
+            "Brand new (2022) — literally inside the station",
+            "6 concept room types including Hinoki baths",
+            "Can't get closer to bike rental or takkyubin drop-off"
+          ],
+          "url": "https://www.beacon-onomichi.com/en/",
+          "travellerPick": false,
+          "shimanamiReady": true,
+          "bookingUrl": "https://www.booking.com/hotel/jp/beacon-onomichi-wei-dao-shi1.html?checkin=2026-05-16&checkout=2026-05-17&group_adults=4&no_rooms=2",
+          "officialUrl": "https://www.beacon-onomichi.com/en/",
+          "totalPerRoom": "€100–150 (1 night)",
+          "type": "hotel"
+        },
+        {
+          "name": "LOG (Lantern Onomichi Garden)",
+          "nameJp": "ログ",
+          "priceEUR": "€180–250",
+          "priceJPY": "¥23,000–40,000",
+          "style": "Minimalist luxury by Studio Mumbai architect",
+          "location": "15–20 min walk uphill on Mt Senkoji slopes",
+          "neighborhood": "Temple district hillside",
+          "highlights": [
+            "Only 6 rooms — exclusive, contemplative, stunning",
+            "Washi paper throughout, gallery, Japanese garden",
+            "Splurge option for a special night"
+          ],
+          "url": "https://l-og.jp/en/",
+          "travellerPick": false,
+          "shimanamiReady": false,
+          "bookingUrl": "https://www.booking.com/hotel/jp/log-guang-dao-xian-wei-dao-shi-dong-tu-tang-ting.html?checkin=2026-05-16&checkout=2026-05-17&group_adults=4&no_rooms=2",
+          "officialUrl": "https://l-og.jp/en/stay/",
+          "totalPerRoom": "€180–250 (1 night)",
+          "type": "hotel"
+        },
+        {
+          "name": "Green Hill Hotel Onomichi",
+          "nameJp": "グリーンヒルホテル尾道",
+          "priceEUR": "€55–75",
+          "priceJPY": "¥7,000–9,500",
+          "style": "Traditional Japanese business hotel",
+          "location": "Overlooking JR Onomichi Station",
+          "neighborhood": "Station front, Seto Inland Sea views",
+          "highlights": [
+            "Station views and sea views",
+            "2 restaurants plus coffee shop",
+            "Reliable and affordable"
+          ],
+          "url": "https://www.booking.com/hotel/jp/po-green-hill-hotel-onomichi-onomichi.html",
+          "travellerPick": false,
+          "shimanamiReady": true,
+          "bookingUrl": "https://www.booking.com/hotel/jp/po-green-hill-hotel-onomichi-onomichi.html?checkin=2026-05-16&checkout=2026-05-17&group_adults=4&no_rooms=2",
+          "officialUrl": "https://www.gh-onomichi.co.jp/",
+          "totalPerRoom": "€55–75 (1 night)",
+          "type": "hotel"
+        },
+        {
+          "name": "Sakura Shimanami Hotel Onomichi Ekimae",
+          "nameJp": "桜しまなみホテル尾道駅前",
+          "priceEUR": "€80–110",
+          "priceJPY": "¥10,000–14,000",
+          "style": "Modern budget-friendly business",
+          "location": "Steps from station",
+          "neighborhood": "Station area",
+          "highlights": [
+            "Next to 7-Eleven, bike rental & ferry terminal",
+            "Sea or city view rooms",
+            "Fresh minimalist aesthetic"
+          ],
+          "url": "https://www.booking.com/hotel/jp/sakurahoteruwei-dao-yi-qian.html",
+          "travellerPick": false,
+          "shimanamiReady": true,
+          "bookingUrl": "https://www.booking.com/hotel/jp/sakurahoteruwei-dao-yi-qian.html?checkin=2026-05-16&checkout=2026-05-17&group_adults=4&no_rooms=2",
+          "officialUrl": "https://sakurahotel.co.jp/number01/",
+          "totalPerRoom": "€80–110 (1 night)",
+          "type": "hotel"
+        },
+        {
+          "name": "Onomichi Daiichi Hotel",
+          "nameJp": "尾道第一ホテル",
+          "priceEUR": "€60–85",
+          "priceJPY": "¥7,500–11,000",
+          "style": "Classic Japanese business hotel",
+          "location": "3 min walk from station",
+          "neighborhood": "Central Onomichi",
+          "highlights": [
+            "Affordable and walkable",
+            "Solid basic option",
+            "Near all Shimanami logistics"
+          ],
+          "url": "https://www.booking.com/hotel/jp/daiichi-onomichi.html",
+          "travellerPick": false,
+          "shimanamiReady": true,
+          "bookingUrl": "https://www.booking.com/hotel/jp/onomichi-daiichi.html?checkin=2026-05-16&checkout=2026-05-17&group_adults=4&no_rooms=2",
+          "officialUrl": "https://www.kokusai-hotel.com/daiichi/en/",
+          "totalPerRoom": "€60–85 (1 night)",
+          "type": "hotel"
+        },
+        {
+          "name": "Onomichi Guest House IROHASOU",
+          "nameJp": "尾道ゲストハウスいろは荘",
+          "priceEUR": "€20–35",
+          "priceJPY": "¥3,200–5,000",
+          "style": "Restored Showa-era guesthouse",
+          "location": "10 min walk from station",
+          "neighborhood": "Quiet residential old town",
+          "highlights": [
+            "Authentic nostalgic charm — renovated boarding house",
+            "Shared kitchen and garden",
+            "Ultra-budget with local character"
+          ],
+          "url": "https://irohasou.com/en/",
+          "travellerPick": false,
+          "shimanamiReady": true,
+          "bookingUrl": "https://irohasou.com/en/booking/",
+          "officialUrl": "https://irohasou.com/en/booking/",
+          "totalPerRoom": "€20–35 (1 night)",
+          "type": "hotel"
+        },
+        {
+          "name": "Ryokan Onomichi Nishiyama",
+          "nameJp": "旅館 尾道西山",
+          "type": "ryokan",
+          "priceEUR": "€215–250",
+          "priceJPY": "¥32,000–38,000",
+          "totalPerRoom": "€215–250 (1 night)",
+          "style": "Michelin Key luxury ryokan in restored tea garden — all-inclusive",
+          "location": "10 min cab from Onomichi Station",
+          "neighborhood": "Onomichi hillside",
+          "highlights": [
+            "1 Michelin Key — dinner, breakfast, drinks, bike rental ALL included",
+            "8 rooms in 6 detached buildings around a Japanese garden",
+            "Private stone baths and rotenburo with Seto Inland Sea views"
+          ],
+          "bookingUrl": "https://www.booking.com/hotel/jp/ryokanwei-dao-xi-shan.html?checkin=2026-05-16&checkout=2026-05-17&group_adults=4&no_rooms=2",
+          "officialUrl": "https://o-nishiyama.co.jp/",
+          "travellerPick": true,
+          "pickReason": "Michelin Key all-inclusive — splurge night before the big ride",
+          "shimanamiReady": true,
+          "ryokanDetails": {
+            "onsen": true,
+            "onsenType": "Private stone baths and rotenburo (outdoor)",
+            "privateBath": true,
+            "rotenburo": true,
+            "meals": "Japanese-French fusion dinner + breakfast included",
+            "drinks": "Wine and sake included",
+            "bikeRental": "NAGI bikes included free",
+            "tatami": true,
+            "futon": true,
+            "yukata": true
+          },
+          "dietaryNote": "High-end kitchen — contact ahead for veg/GF kaiseki adaptation. Michelin-level chefs are typically more accommodating."
+        }
+      ],
+      "checkIn": "2026-05-16",
+      "checkOut": "2026-05-17",
+      "searchParams": {
+        "adults": 4,
+        "rooms": 2,
+        "nights": 1
+      },
+      "pricingNote": "Onomichi is a small city — limited inventory. Book early, especially Hotel Cycle."
+    },
+    "osaka": {
+      "stayId": "osaka",
+      "location": "Namba, Osaka",
+      "nights": 4,
+      "dates": "May 17–20",
+      "purpose": "Longest stay — Osaka exploring, Kyoto & Nara day trips",
+      "options": [
+        {
+          "name": "Hotel Resol Trinity Osaka",
+          "nameJp": "ホテルレゾルトリニティ大阪",
+          "priceEUR": "€85–120",
+          "priceJPY": "¥13,000–18,000",
+          "style": "Modern Japanese design meets ryokan — shoes-off rooms",
+          "location": "5 min walk from Yodoyabashi/Kitahama, 10 min to Namba",
+          "neighborhood": "Koraibashi / Chuo",
+          "highlights": [
+            "Same chain you loved in Kyoto — same design philosophy",
+            "All shoe-off rooms for authentic Japanese comfort",
+            "'Living Lobby' connecting modern and traditional worlds"
+          ],
+          "url": "https://en.www.resol-hotel.jp/trinity-osaka/",
+          "travellerPick": true,
+          "pickReason": "Same chain as the Kyoto hotel Jacek loved — design DNA carries through",
+          "bookingUrl": "https://www.booking.com/hotel/jp/hotel-resol-trinity-osaka.html?checkin=2026-05-17&checkout=2026-05-21&group_adults=4&no_rooms=2",
+          "officialUrl": "https://en.www.resol-hotel.jp/trinity-osaka/",
+          "totalPerRoom": "€340–480 (4 nights)",
+          "type": "hotel"
+        },
+        {
+          "name": "Caption by Hyatt Namba Osaka",
+          "nameJp": "キャプションバイハイアット難波大阪",
+          "priceEUR": "€150–200",
+          "priceJPY": "¥23,000–30,000",
+          "style": "Playful Osakan contemporary lifestyle hotel",
+          "location": "3 min walk from Namba Station",
+          "neighborhood": "Namba",
+          "highlights": [
+            "167 rooms with playful Osaka-inspired design",
+            "Shoji-style doors and samurai-sword hardware details",
+            "Hyatt lifestyle brand — great communal spaces"
+          ],
+          "url": "https://www.hyatt.com/caption-by-hyatt/osacp-caption-by-hyatt-namba-osaka/",
+          "travellerPick": false,
+          "bookingUrl": "https://www.booking.com/hotel/jp/caption-by-hyatt-namba-osaka.html?checkin=2026-05-17&checkout=2026-05-21&group_adults=4&no_rooms=2",
+          "officialUrl": "https://www.hyatt.com/caption-by-hyatt/en-US/osacp-caption-by-hyatt-namba-osaka",
+          "totalPerRoom": "€600–800 (4 nights)",
+          "type": "hotel"
+        },
+        {
+          "name": "W Osaka",
+          "nameJp": "W大阪",
+          "priceEUR": "€220–250",
+          "priceJPY": "¥35,000–40,000",
+          "style": "Luxury design — Tadao Ando architecture",
+          "location": "4 min walk from Shinsaibashi Station",
+          "neighborhood": "Shinsaibashi / Midōsuji Boulevard",
+          "highlights": [
+            "27-storey building designed by Tadao Ando",
+            "Spa, pool, fitness center, rooftop bar",
+            "Splurge option — world-class design on Midōsuji"
+          ],
+          "url": "https://www.marriott.com/hotels/travel/osawh-w-osaka/",
+          "travellerPick": false,
+          "bookingUrl": "https://www.booking.com/hotel/jp/w-osaka.html?checkin=2026-05-17&checkout=2026-05-21&group_adults=4&no_rooms=2",
+          "officialUrl": "https://www.marriott.com/en-us/hotels/osaow-w-osaka/overview/",
+          "totalPerRoom": "€880–1000 (4 nights)",
+          "type": "hotel"
+        },
+        {
+          "name": "Hotel the Leben Osaka",
+          "nameJp": "ホテル ザ ライベン 大阪",
+          "priceEUR": "€95–125",
+          "priceJPY": "¥14,000–19,000",
+          "style": "Modern boutique with apartment-style suites",
+          "location": "8 min walk from Shinsaibashi Station",
+          "neighborhood": "Shinsaibashi",
+          "highlights": [
+            "Studio suites with kitchens and washers — great for 5 nights",
+            "Self-catering flexibility helps with dietary needs",
+            "Near Green Earth vegan restaurant"
+          ],
+          "url": "https://leben-hotels.jp/en/",
+          "travellerPick": false,
+          "bookingUrl": "https://www.booking.com/hotel/jp/the-leben-osaka.html?checkin=2026-05-17&checkout=2026-05-21&group_adults=4&no_rooms=2",
+          "officialUrl": "https://leben-hotels.jp/en/",
+          "totalPerRoom": "€380–500 (4 nights)",
+          "type": "hotel"
+        },
+        {
+          "name": "Hotel Forza Osaka Namba Dotonbori",
+          "nameJp": "ホテルフォルツァ大阪難波道頓堀",
+          "priceEUR": "€60–90",
+          "priceJPY": "¥9,000–13,500",
+          "style": "Modern design with usability focus",
+          "location": "6 min walk from Namba Station",
+          "neighborhood": "Dotonbori",
+          "highlights": [
+            "Design-focused rooms on Dotonbori's doorstep",
+            "Triple room options available",
+            "Great value for Dotonbori location"
+          ],
+          "url": "https://www.hotelforza.jp/osakanamba/en/",
+          "travellerPick": false,
+          "bookingUrl": "https://www.booking.com/hotel/jp/hoteruhuorutuada-ban-nanbadao-dun-ku.html?checkin=2026-05-17&checkout=2026-05-21&group_adults=4&no_rooms=2",
+          "officialUrl": "https://www.hotelforza.jp/osakanamba/en/",
+          "totalPerRoom": "€240–360 (4 nights)",
+          "type": "hotel"
+        },
+        {
+          "name": "Hiyori Hotel Osaka Namba Station",
+          "nameJp": "ひよりホテル大阪難波ステーション",
+          "priceEUR": "€85–145",
+          "priceJPY": "¥13,000–22,000",
+          "style": "Soft Japanese resort aesthetic",
+          "location": "In front of Nankai Namba Station",
+          "neighborhood": "Namba",
+          "highlights": [
+            "224 rooms across two buildings (SAKURA & MOMIJI)",
+            "Warm Japanese design without being traditional",
+            "Direct station access"
+          ],
+          "url": "https://namba.hiyori-hotel.jp/lang_en/",
+          "travellerPick": false,
+          "bookingUrl": "https://www.booking.com/hotel/jp/hiyori-hotel-osaka-namba.html?checkin=2026-05-17&checkout=2026-05-21&group_adults=4&no_rooms=2",
+          "officialUrl": "https://namba.hiyori-hotel.jp/lang_en/",
+          "totalPerRoom": "€340–580 (4 nights)",
+          "type": "hotel"
+        },
+        {
+          "name": "KOKO HOTEL Osaka Namba Sennichimae",
+          "nameJp": "ココホテル大阪難波千日前",
+          "priceEUR": "€72–140",
+          "priceJPY": "¥11,000–21,000",
+          "style": "Artistic contemporary design",
+          "location": "250m from Nipponbashi, 8 min to Namba",
+          "neighborhood": "Namba / Sennichimae",
+          "highlights": [
+            "Complete 2021 renovation — refined interiors",
+            "320 rooms including twin options",
+            "Complimentary amenity lobby with 20+ products"
+          ],
+          "url": "https://koko-hotels.com/osaka-namba-sennichimae/",
+          "travellerPick": false,
+          "bookingUrl": "https://www.booking.com/hotel/jp/koko-osaka-namba-sennichimae.html?checkin=2026-05-17&checkout=2026-05-21&group_adults=4&no_rooms=2",
+          "officialUrl": "https://koko-hotels.com/osaka-namba-sennichimae/",
+          "totalPerRoom": "€288–560 (4 nights)",
+          "type": "hotel"
+        },
+        {
+          "name": "Bespoke Hotel Shinsaibashi",
+          "nameJp": "ビスポークホテル心斎橋",
+          "priceEUR": "€50–80",
+          "priceJPY": "¥7,500–12,000",
+          "style": "Modern minimalist boutique",
+          "location": "Adjacent to Shinsaibashi Station",
+          "neighborhood": "Shinsaibashi",
+          "highlights": [
+            "256 soundproofed rooms",
+            "Inside shopping arcade — endless dining options",
+            "Walk to Dotonbori in 5 min"
+          ],
+          "url": "https://bespoke-hotel.com/shinsaibashi/",
+          "travellerPick": false,
+          "bookingUrl": "https://www.booking.com/hotel/jp/bespoke-hotel-shinsaibashi.html?checkin=2026-05-17&checkout=2026-05-21&group_adults=4&no_rooms=2",
+          "officialUrl": "https://bespoke-hotel.com/shinsaibashi/",
+          "totalPerRoom": "€200–320 (4 nights)",
+          "type": "hotel"
+        },
+        {
+          "name": "Vessel Inn Shinsaibashi",
+          "nameJp": "ベッセルイン心斎橋",
+          "priceEUR": "€43–80",
+          "priceJPY": "¥6,500–12,000",
+          "style": "Design-forward business hotel",
+          "location": "Direct access to Shinsaibashi Station",
+          "neighborhood": "Shinsaibashi",
+          "highlights": [
+            "Complimentary drinks 14:00–23:00 in lounge",
+            "Free amenities lobby",
+            "Sister brand to REF Kumamoto"
+          ],
+          "url": "https://www.vessel-hotel.jp/en/inn/shinsaibashi/",
+          "travellerPick": false,
+          "bookingUrl": "https://www.booking.com/hotel/jp/vessel-inn-shinsaibashi.html?checkin=2026-05-17&checkout=2026-05-21&group_adults=4&no_rooms=2",
+          "officialUrl": "https://www.vessel-hotel.jp/en/inn/shinsaibashi/",
+          "totalPerRoom": "€172–320 (4 nights)",
+          "type": "hotel"
+        },
+        {
+          "name": "Centara Grand Hotel Osaka",
+          "nameJp": "センタラグランドホテル大阪",
+          "priceEUR": "€140–200",
+          "priceJPY": "¥22,000–30,000",
+          "style": "Modern luxury — 33-storey architectural statement",
+          "location": "Heart of Namba",
+          "neighborhood": "Namba",
+          "highlights": [
+            "33-storey tower — Thai luxury brand's Japan debut",
+            "8 restaurants and bars on-site",
+            "515 rooms — spacious by Osaka standards"
+          ],
+          "url": "https://www.centarahotelsresorts.com/centaragrand/cgoj",
+          "travellerPick": false,
+          "bookingUrl": "https://www.booking.com/hotel/jp/centara-grand-osaka.html?checkin=2026-05-17&checkout=2026-05-21&group_adults=4&no_rooms=2",
+          "officialUrl": "https://www.centarahotelsresorts.com/centaragrand/cgoj",
+          "totalPerRoom": "€560–800 (4 nights)",
+          "type": "hotel"
+        },
+        {
+          "name": "Kaneyoshi Ryokan",
+          "nameJp": "かねよし旅館",
+          "type": "ryokan",
+          "priceEUR": "€100–135",
+          "priceJPY": "¥15,000–20,000",
+          "totalPerRoom": "€400–540 (4 nights)",
+          "style": "Historic 1919 riverside ryokan on the Dotonbori canal",
+          "location": "7 min walk from Namba Station, directly on Dotonbori river",
+          "neighborhood": "Dotonbori / Namba",
+          "highlights": [
+            "On the Dotonbori canal — watch the neon lights from tatami",
+            "Established 1919 — Showa-era communal bath on 6th floor",
+            "7 min walk to Namba Station — easy Kyoto/Nara day trips"
+          ],
+          "bookingUrl": "https://www.booking.com/hotel/jp/kaneyoshi-ryokan.html?checkin=2026-05-17&checkout=2026-05-21&group_adults=4&no_rooms=2",
+          "officialUrl": "https://kaneyoshi-ryokan.com/",
+          "travellerPick": false,
+          "ryokanDetails": {
+            "onsen": false,
+            "onsenType": "Communal bath (not natural hot spring)",
+            "communalBath": true,
+            "meals": "Breakfast available (¥1,650/person)",
+            "tatami": true,
+            "futon": true,
+            "yukata": true
+          },
+          "dietaryNote": "Veg/GF breakfast possible with advance notice. No dinner — you're on Dotonbori, eat everything in sight."
+        },
+        {
+          "name": "Yamatoya Honten",
+          "nameJp": "やまとや本店",
+          "type": "ryokan",
+          "priceEUR": "€80–110",
+          "priceJPY": "¥12,000–16,500",
+          "totalPerRoom": "€320–440 (4 nights)",
+          "style": "Traditional 39-room ryokan with communal baths in Dotonbori",
+          "location": "13 min walk from Namba Station, 3 min from Nipponbashi Station",
+          "neighborhood": "Dotonbori / Nipponbashi",
+          "highlights": [
+            "39 tatami rooms — upper floors have Dotonbori river views",
+            "Large gender-separated communal baths (15:00–01:00, 06:00–09:00)",
+            "24-hour check-in — rare for a ryokan, great flexibility"
+          ],
+          "bookingUrl": "https://www.booking.com/hotel/jp/yamatoya-honten.html?checkin=2026-05-17&checkout=2026-05-21&group_adults=4&no_rooms=2",
+          "officialUrl": "https://www.yamatoyahonten.co.jp/eng/",
+          "travellerPick": true,
+          "pickReason": "Best value ryokan on Dotonbori — 24hr check-in means no curfew stress for 5 nights",
+          "ryokanDetails": {
+            "onsen": false,
+            "onsenType": "Large communal baths (not natural hot spring)",
+            "communalBath": true,
+            "privateBathInRoom": true,
+            "meals": "Breakfast and dinner available (optional)",
+            "tatami": true,
+            "futon": true,
+            "yukata": true
+          },
+          "dietaryNote": "Veg adaptations with advance notice. Check in by 19:00 if ordering dinner. Gluten-free limited due to soy sauce — communicate at booking."
+        }
+      ],
+      "checkIn": "2026-05-17",
+      "checkOut": "2026-05-21",
+      "searchParams": {
+        "adults": 4,
+        "rooms": 2,
+        "nights": 4
+      },
+      "pricingNote": "May 2026 rates not yet live. Osaka is competitive — great value. Post-Golden Week shoulder season."
+    },
+    "tokyoFinal": {
+      "stayId": "tokyoFinal",
+      "location": "Tokyo (near station)",
+      "nights": 1,
+      "dates": "May 21",
+      "purpose": "Final night — easy Narita Express access, last-minute omiyage shopping",
+      "options": [
+        {
+          "name": "Hotel Metropolitan Tokyo Marunouchi",
+          "nameJp": "ホテルメトロポリタン丸の内",
+          "priceEUR": "€190–230",
+          "priceJPY": "¥30,000–36,000",
+          "style": "Contemporary luxury with skyline views",
+          "location": "Direct underground access to Tokyo Station (Nihonbashi Exit)",
+          "neighborhood": "Marunouchi (Sapia Tower, floors 27–34)",
+          "highlights": [
+            "Walk from hotel to Narita Express platform without going outside",
+            "27th–34th floor rooms with panoramic city views",
+            "Perfect last-night splurge — end the trip in style"
+          ],
+          "url": "https://tokyo-marunouchi.hotel-metropolitan.com/",
+          "travellerPick": true,
+          "pickReason": "Direct underground link to NEX platform — seamless departure day",
+          "naritaAccess": "Direct underground passage to Narita Express — 0 min walk to platform",
+          "bookingUrl": "https://www.booking.com/hotel/jp/metropolitan-marunouchi.html?checkin=2026-05-21&checkout=2026-05-22&group_adults=4&no_rooms=2",
+          "officialUrl": "https://tokyo-marunouchi.hotel-metropolitan.com/",
+          "totalPerRoom": "€190–230 (1 night)",
+          "type": "hotel"
+        },
+        {
+          "name": "The Tokyo Station Hotel",
+          "nameJp": "ザ・東京ステーションホテル",
+          "priceEUR": "€220–250",
+          "priceJPY": "¥35,000–40,000",
+          "style": "Historic luxury — built inside Tokyo Station",
+          "location": "Inside Tokyo Station building",
+          "neighborhood": "Marunouchi",
+          "highlights": [
+            "Iconic — the hotel IS Tokyo Station (Important Cultural Property)",
+            "6 restaurants, full spa",
+            "Walk downstairs to Narita Express or omiyage shops"
+          ],
+          "url": "https://www.thetokyostationhotel.jp/",
+          "travellerPick": false,
+          "naritaAccess": "Elevator down to station concourse — steps to NEX platform",
+          "bookingUrl": "https://www.booking.com/hotel/jp/tokyo-station.html?checkin=2026-05-21&checkout=2026-05-22&group_adults=4&no_rooms=2",
+          "officialUrl": "https://www.thetokyostationhotel.jp/",
+          "totalPerRoom": "€220–250 (1 night)",
+          "type": "hotel"
+        },
+        {
+          "name": "Karaksa Hotel Colors Tokyo Yaesu",
+          "nameJp": "カラクサホテルカラーズ東京八重洲",
+          "priceEUR": "€140–180",
+          "priceJPY": "¥22,000–29,000",
+          "style": "Contemporary design with colorful communal spaces",
+          "location": "6 min walk from Tokyo Station Yaesu Exit",
+          "neighborhood": "Yaesu",
+          "highlights": [
+            "Quad rooms and connecting rooms — ideal for groups",
+            "In-room projectors and washer-dryers",
+            "Modern wood-grain interiors"
+          ],
+          "url": "https://karaksahotels.com/en/tokyoyaesu/",
+          "travellerPick": false,
+          "naritaAccess": "6 min walk to Yaesu Exit, direct NEX access",
+          "bookingUrl": "https://www.booking.com/hotel/jp/karakusahoterukarazudong-jing-ba-zhong-zhou.html?checkin=2026-05-21&checkout=2026-05-22&group_adults=4&no_rooms=2",
+          "officialUrl": "https://karaksahotels.com/en/tokyoyaesu/",
+          "totalPerRoom": "€140–180 (1 night)",
+          "type": "hotel"
+        },
+        {
+          "name": "YOTEL Tokyo Ginza",
+          "nameJp": "ヨーテル東京銀座",
+          "priceEUR": "€135–195",
+          "priceJPY": "¥20,000–30,000",
+          "style": "Tech-forward smart hotel — British design DNA",
+          "location": "3 min walk to Shimbashi Station",
+          "neighborhood": "Ginza / Shimbashi",
+          "highlights": [
+            "SmartBed electric beds and robot luggage service",
+            "Compact, efficient, futuristic — very on-brand for last night in Japan",
+            "Close to Ginza shopping for last-minute gifts"
+          ],
+          "url": "https://www.yotel.com/en/hotels/yotel-tokyo-ginza",
+          "travellerPick": false,
+          "naritaAccess": "3 min to Shimbashi, easy NEX connection",
+          "bookingUrl": "https://www.booking.com/hotel/jp/yotel-tokyo-ginza.html?checkin=2026-05-21&checkout=2026-05-22&group_adults=4&no_rooms=2",
+          "officialUrl": "https://www.yotel.com/en/hotels/yotel-tokyo-ginza",
+          "totalPerRoom": "€135–195 (1 night)",
+          "type": "hotel"
+        },
+        {
+          "name": "Mitsui Garden Hotel Nihonbashi Premier",
+          "nameJp": "三井ガーデンホテル日本橋プレミア",
+          "priceEUR": "€200–240",
+          "priceJPY": "¥32,000–38,000",
+          "style": "Oriental modern — cypress wood, traditional-contemporary blend",
+          "location": "11 min walk to Tokyo Station, above Mitsukoshimae Station",
+          "neighborhood": "Nihonbashi",
+          "highlights": [
+            "Hand-crafted earthenware and seasonal plant displays",
+            "Sensory design experience blending tradition and innovation",
+            "Nihonbashi — historic merchant district, feels special"
+          ],
+          "url": "https://www.gardenhotels.co.jp/nihonbashi-premier/eng/",
+          "travellerPick": false,
+          "naritaAccess": "Ginza Line to Shimbashi (2 stops) for NEX, or 11 min walk to Tokyo Stn",
+          "bookingUrl": "https://www.booking.com/hotel/jp/mitsui-garden-nihonbashi-premier-tokyo.html?checkin=2026-05-21&checkout=2026-05-22&group_adults=4&no_rooms=2",
+          "officialUrl": "https://www.gardenhotels.co.jp/nihonbashi-premier/eng/",
+          "totalPerRoom": "€200–240 (1 night)",
+          "type": "hotel"
+        },
+        {
+          "name": "Super Hotel Premier Tokyo Station Yaesu",
+          "nameJp": "スーパーホテルプレミア東京ステーション八重洲中央口",
+          "priceEUR": "€80–160",
+          "priceJPY": "¥13,000–26,000",
+          "style": "Modern business hotel with premium touches",
+          "location": "300m from Tokyo Station",
+          "neighborhood": "Yaesu",
+          "highlights": [
+            "Keyless entry with pin codes",
+            "Complimentary drinks and ice cream in lounge",
+            "Best budget option this close to Tokyo Station"
+          ],
+          "url": "https://www.superhoteljapan.com/en/s-hotels/yaesu/",
+          "travellerPick": false,
+          "naritaAccess": "300m walk to Tokyo Station, direct NEX",
+          "bookingUrl": "https://www.booking.com/hotel/jp/yaezakuranoyu-super-lohas-tokyo-eki-yaesu-chuoguchi.html?checkin=2026-05-21&checkout=2026-05-22&group_adults=4&no_rooms=2",
+          "officialUrl": "https://www.superhoteljapan.com/en/s-hotels/yaesu/",
+          "totalPerRoom": "€80–160 (1 night)",
+          "type": "hotel"
+        },
+        {
+          "name": "Yaesu Terminal Hotel",
+          "nameJp": "八重洲ターミナルホテル",
+          "priceEUR": "€85–170",
+          "priceJPY": "¥14,000–27,000",
+          "style": "Modern minimalist, clean design",
+          "location": "3 min walk from Tokyo Station Yaesu North Exit",
+          "neighborhood": "Yaesu",
+          "highlights": [
+            "Steps from Tokyo International Forum",
+            "Heart of Yaesu shopping district",
+            "Solid mid-range option"
+          ],
+          "url": "https://yth.jp/en/",
+          "travellerPick": false,
+          "naritaAccess": "3 min walk to Yaesu Exit, direct NEX",
+          "bookingUrl": "https://www.booking.com/hotel/jp/yaesu-terminal-hotel.html?checkin=2026-05-21&checkout=2026-05-22&group_adults=4&no_rooms=2",
+          "officialUrl": "https://yth.jp/en/",
+          "totalPerRoom": "€85–170 (1 night)",
+          "type": "hotel"
+        },
+        {
+          "name": "GINZA HOTEL by GRANBELL",
+          "nameJp": "銀座ホテルバイグランベル",
+          "priceEUR": "€155–200",
+          "priceJPY": "¥25,000–32,000",
+          "style": "Art deco–influenced luxury design",
+          "location": "5 min walk from Shimbashi Station",
+          "neighborhood": "Ginza / Shimbashi",
+          "highlights": [
+            "Sister hotel to Shibuya Granbell (if you stayed there)",
+            "Terrace twin rooms with Lafuma lounge chairs",
+            "Sophisticated Ginza aesthetic"
+          ],
+          "url": "https://en.granbellhotel.jp/ginza/",
+          "travellerPick": false,
+          "naritaAccess": "5 min walk to Shimbashi, easy NEX connection",
+          "bookingUrl": "https://www.booking.com/hotel/jp/ginza-by-granbell.html?checkin=2026-05-21&checkout=2026-05-22&group_adults=4&no_rooms=2",
+          "officialUrl": "https://en.granbellhotel.jp/ginza/",
+          "totalPerRoom": "€155–200 (1 night)",
+          "type": "hotel"
+        },
+        {
+          "name": "Asakusa Ryokan Toukaisou",
+          "nameJp": "浅草旅館 東海荘",
+          "type": "ryokan",
+          "priceEUR": "€65–90",
+          "priceJPY": "¥10,000–13,500",
+          "totalPerRoom": "€65–90 (1 night)",
+          "style": "Traditional 70-year-old ryokan in historic Asakusa, near Sensoji Temple",
+          "location": "5 min walk from Tawaramachi Station",
+          "neighborhood": "Asakusa",
+          "highlights": [
+            "Authentic tatami + futon experience — 70+ years of hospitality",
+            "Steps from Sensoji Temple — magical at night when crowds leave",
+            "Budget-friendly last night — save money for omiyage shopping"
+          ],
+          "bookingUrl": "https://www.booking.com/hotel/jp/asakusa-ryokan-toukaisou.html?checkin=2026-05-21&checkout=2026-05-22&group_adults=4&no_rooms=2",
+          "officialUrl": "https://toukaisou.com/en/",
+          "travellerPick": false,
+          "naritaAccess": "Tawaramachi → Ueno (Hibiya Line, 3 stops) → Tokyo Station (JR, 2 min) → NEX to Narita. ~90 min total.",
+          "ryokanDetails": {
+            "onsen": false,
+            "onsenType": "Traditional communal bath (gender-separated)",
+            "communalBath": true,
+            "meals": "No meals served — Asakusa has incredible street food",
+            "tatami": true,
+            "futon": true,
+            "yukata": true
+          },
+          "dietaryNote": "No meals served — perfect for dietary restrictions, eat wherever you want. Asakusa has good veggie options."
+        }
+      ],
+      "checkIn": "2026-05-21",
+      "checkOut": "2026-05-22",
+      "searchParams": {
+        "adults": 4,
+        "rooms": 2,
+        "nights": 1
+      },
+      "pricingNote": "Thursday night — typically cheaper than weekends. Book for Narita Express convenience."
+    }
+  },
+  "restaurants": {
+    "note": "Curated for vegetarian/vegan travelers with celiac-level gluten allergy. GF = gluten-free. Always carry a Japanese allergy card and tamari packets.",
+    "allergyCardJp": "私はセリアック病です。小麦・大麦・ライ麦を食べられません。醤油の代わりにたまりを使ってください。",
+    "allergyCardEn": "I have celiac disease. I cannot eat wheat, barley, or rye. Please use tamari instead of soy sauce.",
+    "safeFoods": [
+      "Plain rice (gohan) — always GF",
+      "Onigiri — umeboshi, kombu, nattō fillings (check labels for wheat)",
+      "Edamame — naturally GF + vegan",
+      "Mochi/daifuku — glutinous rice ≠ gluten",
+      "Yakiimo — roasted sweet potato from street vendors",
+      "Fresh fruit — Japan's fruit is extraordinary",
+      "Tofu (hiyayakko/yudofu) — ask for tamari instead of soy sauce"
+    ],
+    "dangerFoods": [
+      "Soy sauce (shōyu) — contains wheat. Request tamari.",
+      "Tempura batter — wheat-based",
+      "Ramen/udon/soba noodles — wheat (soba is buckwheat + wheat mix)",
+      "Dashi broth — usually bonito (fish), ask for kombu dashi",
+      "Miso — some contain wheat/barley",
+      "Okonomiyaki — wheat batter unless rice flour specified",
+      "Gyoza wrappers — wheat"
+    ],
+    "apps": [
+      "HappyCow",
+      "Find Me Gluten Free",
+      "Vegewel.com",
+      "Google Translate camera mode"
+    ],
+    "byLocation": {
+      "tokyo": {
+        "label": "Tokyo / Shibuya",
+        "forDays": [
+          1,
+          2,
+          3,
+          4
+        ],
+        "spots": [
+          {
+            "name": "Ain Soph Journey",
+            "nameJp": "アインソフ ジャーニー",
+            "cuisine": "Vegan & GF gourmet fusion",
+            "neighborhood": "Shinjuku",
+            "price": "¥¥",
+            "gf": true,
+            "vegan": true,
+            "vegetarian": true,
+            "mustTry": "Vegan pancakes — over half the menu is GF",
+            "note": "English GF menu. Cross-contact possible in shared kitchen. 1 min from Shinjuku-sanchōme C5 exit.",
+            "url": "https://en.ain-soph.jp/english"
+          },
+          {
+            "name": "Vegan Izakaya Masaka",
+            "nameJp": "ヴィーガン居酒屋マサカ",
+            "cuisine": "All-vegan Japanese izakaya",
+            "neighborhood": "Shibuya PARCO B1F",
+            "price": "¥¥",
+            "gf": true,
+            "vegan": true,
+            "vegetarian": true,
+            "mustTry": "Vegan karaage with teriyaki mayo",
+            "note": "All items vegan. QR code English menu. Small (20 seats), arrive early on weekends.",
+            "url": "https://en.shibuya.parco.jp/shop/detail/?cd=025897"
+          },
+          {
+            "name": "Vegan Bistro Jangara",
+            "nameJp": "ヴィーガンビストロ ジャンガラ",
+            "cuisine": "Vegan ramen",
+            "neighborhood": "Harajuku",
+            "price": "¥¥",
+            "gf": true,
+            "vegan": true,
+            "vegetarian": true,
+            "mustTry": "Vegan ramen with GF noodle swap (small upcharge)",
+            "note": "Fully vegan. Dedicated GF noodle option. 3 min from Harajuku Station.",
+            "url": "https://www.manpuku-veggie.com/en/restaurants/10186"
+          },
+          {
+            "name": "Brown Rice Cafe",
+            "nameJp": "ブラウンライス",
+            "cuisine": "Organic vegan Japanese",
+            "neighborhood": "Omotesandō",
+            "price": "¥¥",
+            "gf": true,
+            "vegan": true,
+            "vegetarian": true,
+            "mustTry": "Seasonal vegan set meal (shoku teishoku)",
+            "note": "Hidden inside Neal's Yard Remedies shop. Walk through the shop, glass door in back. 1 min from Omotesandō A1.",
+            "url": "https://www.nealsyard.co.jp/brownrice/"
+          },
+          {
+            "name": "Tera Cafe",
+            "nameJp": "テラカフェ",
+            "cuisine": "Shōjin ryōri (Buddhist temple food)",
+            "neighborhood": "Daikanyama",
+            "price": "¥¥",
+            "gf": false,
+            "vegan": true,
+            "vegetarian": true,
+            "mustTry": "Seasonal shōjin set — served by monks (Wed–Fri)",
+            "note": "Temple food, no garlic/onion. GF possible with advance notice — soy sauce contains wheat. Ask for tamari.",
+            "url": "https://teracafe.jp/"
+          },
+          {
+            "name": "Magokoro (Kamakura)",
+            "nameJp": "麻ごころ",
+            "cuisine": "Organic hemp vegan cafe",
+            "neighborhood": "Kamakura (Hase, near Great Buddha)",
+            "price": "¥¥",
+            "gf": true,
+            "vegan": true,
+            "vegetarian": true,
+            "mustTry": "Magokoro set: brown rice, tofu 'meat', tempeh, 3 daily sides",
+            "note": "Yuigahama beach views. Farm-to-table. Fri–Sun only. 4 min from Hase Station. Perfect for Day 3 Kamakura trip.",
+            "url": "https://www.instagram.com/magokoro_kamakura/"
+          },
+          {
+            "name": "Choice Kitchen (Kawaguchiko)",
+            "nameJp": "チョイスキッチン",
+            "cuisine": "Plant-based buffet",
+            "neighborhood": "Kawaguchiko (Mt Fuji area)",
+            "price": "¥¥",
+            "gf": true,
+            "vegan": true,
+            "vegetarian": true,
+            "mustTry": "40–50 dish vegetable buffet with local Yamanashi produce",
+            "note": "15 min walk from Kawaguchiko Station. Lunch & dinner buffet. Perfect for Day 4 Mt Fuji trip.",
+            "url": "http://www.choosechoice.co.jp/"
+          }
+        ]
+      },
+      "kumamoto": {
+        "label": "Kumamoto & Kyushu",
+        "forDays": [
+          5,
+          6,
+          7
+        ],
+        "spots": [
+          {
+            "name": "Cafe Pony",
+            "nameJp": "カフェポニー",
+            "cuisine": "All-vegan organic cafe",
+            "neighborhood": "Kumamoto city (Minami Ward)",
+            "price": "¥¥",
+            "gf": true,
+            "vegan": true,
+            "vegetarian": true,
+            "mustTry": "Vegan plant-based burger with brown rice",
+            "note": "Your SAFEST option in Kumamoto. Explicit GF + vegan menu. Macrobiotic focus. 13 min walk from Heisei Station.",
+            "url": "https://www.instagram.com/cafepony_kumamoto_vegan/"
+          },
+          {
+            "name": "Purely Restaurant",
+            "nameJp": "ピュアリィレストラン",
+            "cuisine": "Organic vegetarian kaiseki",
+            "neighborhood": "Near Kumamoto Castle",
+            "price": "¥¥¥",
+            "gf": false,
+            "vegan": true,
+            "vegetarian": true,
+            "mustTry": "Monthly rotating organic kaiseki with zero-pesticide rice",
+            "note": "Beautiful 140-year house. Contact ahead (+81-96-323-1552) for GF protocols — not a dedicated GF kitchen.",
+            "url": "https://purely-restaurant.com/en/"
+          },
+          {
+            "name": "Tofu Kissho (Kurokawa Onsen)",
+            "nameJp": "とうふ吉祥",
+            "cuisine": "Handmade tofu restaurant",
+            "neighborhood": "Kurokawa Onsen village",
+            "price": "¥¥",
+            "gf": false,
+            "vegan": true,
+            "vegetarian": true,
+            "mustTry": "Agedashi tofu, dengaku (miso-glazed), tofu ice cream",
+            "note": "Charming thatched-roof tofu shop. Vegan-friendly but miso contains wheat — NOT celiac-safe without tamari. Bring your own GF soy sauce.",
+            "url": "https://en.japantravel.com/kumamoto/tofu-kissho/18190"
+          }
+        ],
+        "survivalTips": "Kumamoto is rural — GF options are genuinely limited. Stock up at konbini: plain onigiri (ume/kombu), edamame, fresh fruit, yakiimo. For Kurokawa day trip, pack snacks from Kumamoto."
+      },
+      "onomichi": {
+        "label": "Onomichi & Shimanami Kaido",
+        "forDays": [
+          8,
+          9
+        ],
+        "spots": [
+          {
+            "name": "Komedoko Shokudo",
+            "nameJp": "こめどこ食堂",
+            "cuisine": "Japanese contemporary (fermented foods)",
+            "neighborhood": "Onomichi waterfront",
+            "price": "¥¥",
+            "gf": true,
+            "vegan": true,
+            "vegetarian": true,
+            "mustTry": "Vegan GF ramen with rice flour noodles — your best bet in Onomichi",
+            "note": "Owner actively develops GF dishes. Waterfront views. Request advance notice for GF prep. This is the one reliable option.",
+            "url": "https://tabelog.com/en/hiroshima/A3406/A340302/34019916/"
+          },
+          {
+            "name": "Kameyama Goya (Innoshima Island)",
+            "nameJp": "カメヤマゴーヤ",
+            "cuisine": "Asian fusion (Thai/Vietnamese)",
+            "neighborhood": "Innoshima Island (~20km into ride)",
+            "price": "¥¥",
+            "gf": true,
+            "vegan": true,
+            "vegetarian": true,
+            "mustTry": "Green curry (verify no fish sauce) or pho with vegetable broth",
+            "note": "Only real island restaurant option. Confirm GF and ask about fish sauce in curries. Scenic cycling café stop.",
+            "url": "https://touring-shimanami.com/en/lunch-e/"
+          }
+        ],
+        "cyclingFuelGuide": {
+          "whatToPack": [
+            "GF protein bars (2-3)",
+            "Rice crackers or GF granola",
+            "Nuts and dried fruit",
+            "Onigiri from Onomichi konbini (grab 4-5 before starting)",
+            "Individual tamari packets (for any rice dishes you find)",
+            "Electrolyte powder or Pocari Sweat"
+          ],
+          "konbiniStops": "Lawson/FamilyMart/7-Eleven every 15-20km along route. Safe bets: rice balls (check for wheat - 小麦), edamame, bananas, Pocari Sweat.",
+          "tip": "Use Google Translate camera mode to scan konbini labels for 小麦 (wheat). Kanji is your friend."
+        }
+      },
+      "osaka": {
+        "label": "Osaka",
+        "forDays": [
+          10,
+          11
+        ],
+        "spots": [
+          {
+            "name": "Vegan and Gluten Free Osaka",
+            "nameJp": "ビーガンアンドグルテンフリーオオサカ",
+            "cuisine": "Dedicated vegan + GF Japanese fusion",
+            "neighborhood": "Umeda (near JR Osaka Station)",
+            "price": "¥¥¥",
+            "gf": true,
+            "vegan": true,
+            "vegetarian": true,
+            "mustTry": "Everything — ALL menu items are vegan AND gluten-free",
+            "note": "100% dedicated GF + vegan facility. 3 min from JR Osaka Station (B1F Ekimae 4th Building). Reservations recommended. Your safest meal in Osaka.",
+            "url": "https://www.veganandglutenfree-osaka.com/"
+          },
+          {
+            "name": "OKO Fun Okonomiyaki",
+            "nameJp": "OKO オコ",
+            "cuisine": "GF okonomiyaki (rice flour batter)",
+            "neighborhood": "Shinsaibashi",
+            "price": "¥¥",
+            "gf": true,
+            "vegan": true,
+            "vegetarian": true,
+            "mustTry": "Vegan okonomiyaki with okara (soy pulp) batter instead of wheat",
+            "note": "Separate grill for GF orders. The Osaka experience you NEED — okonomiyaki without the wheat.",
+            "url": "https://www.findmeglutenfree.com/biz/oko/6416950664757248"
+          },
+          {
+            "name": "Pivot BASE Cafe",
+            "nameJp": "ピボットベースカフェ",
+            "cuisine": "Vegan street food (takoyaki, okonomiyaki)",
+            "neighborhood": "Dotonbori",
+            "price": "¥¥",
+            "gf": false,
+            "vegan": true,
+            "vegetarian": true,
+            "mustTry": "Vegan takoyaki (¥1,000 for 10 pieces)",
+            "note": "100% vegan. Takoyaki has wheat flour — NOT GF. Okonomiyaki can be made GF on request. English menu.",
+            "url": "https://www.happycow.net/reviews/pivot-base-cafe-and-bar-at-dotonbori-japan-409245"
+          },
+          {
+            "name": "CHIBO Diversity",
+            "nameJp": "ちぼ ダイバーシティ",
+            "cuisine": "Multi-dietary Japanese comfort food",
+            "neighborhood": "Dotonbori (main street)",
+            "price": "¥¥",
+            "gf": true,
+            "vegan": true,
+            "vegetarian": true,
+            "mustTry": "Vegan donburi or shōjin ryōri plate",
+            "note": "Clearly labeled menus for GF/vegan/halal/shōjin. Staff trained on allergies. Right on Dotonbori main drag.",
+            "url": "https://vegewel.com/en/restaurant/1817"
+          }
+        ]
+      },
+      "kyoto": {
+        "label": "Kyoto (day trip)",
+        "forDays": [
+          12
+        ],
+        "spots": [
+          {
+            "name": "Choice Cafe",
+            "nameJp": "チョイス",
+            "cuisine": "Vegan + GF Japanese fusion",
+            "neighborhood": "Higashiyama (Sanjo-Keihan)",
+            "price": "¥¥",
+            "gf": true,
+            "vegan": true,
+            "vegetarian": true,
+            "mustTry": "Grain & bean burger with salad (¥1,100)",
+            "note": "Uses TAMARI throughout (not regular soy sauce). Broth without fish. Best celiac-safe option in Kyoto. Closed Thursdays.",
+            "url": "https://www.findmeglutenfree.com/biz/choice/5516658606342144"
+          },
+          {
+            "name": "Gion Soy Milk Ramen",
+            "nameJp": "祇園豆乳ラーメン うのゆきこ",
+            "cuisine": "Vegan soy milk ramen",
+            "neighborhood": "Gion",
+            "price": "¥¥",
+            "gf": true,
+            "vegan": true,
+            "vegetarian": true,
+            "mustTry": "Soy Milk Snow Ramen with rice flour noodles (¥1,500)",
+            "note": "100% plant-based. Rice flour noodles (GF). Tamari used. Weekday lunch only (11–14:00). World's only soy milk patissier.",
+            "url": "https://en.soymilkramen.com/"
+          },
+          {
+            "name": "Shigetsu at Tenryū-ji",
+            "nameJp": "篩月",
+            "cuisine": "Shōjin ryōri (Buddhist temple cuisine)",
+            "neighborhood": "Arashiyama",
+            "price": "¥¥¥",
+            "gf": false,
+            "vegan": true,
+            "vegetarian": true,
+            "mustTry": "Multi-course shōjin set (¥3,300–¥8,000) in temple garden",
+            "note": "RESERVATION REQUIRED (075-882-9725). Michelin recognized. Inside Tenryū-ji Temple (¥500 garden entry). Standard soy sauce — request tamari at booking (not guaranteed).",
+            "url": "https://www.tenryuji.com/en/shigetsu/"
+          },
+          {
+            "name": "Kyoto Engine Ramen",
+            "nameJp": "京都エンジンラーメン",
+            "cuisine": "Vegan ramen with GF noodles",
+            "neighborhood": "Kawaramachi (Shinkyogoku)",
+            "price": "¥¥",
+            "gf": true,
+            "vegan": true,
+            "vegetarian": true,
+            "mustTry": "Kyoto Beaning Vegan Ramen (edamame-based, ¥1,800) + GF noodles (+¥200)",
+            "note": "In-house broth = wheat-free. GF noodles available. Two vegan options. Safest ramen in Kyoto for celiac.",
+            "url": "https://thejapaneserose.com/kyoto-engine-ramen-vegan-in-kyoto/"
+          },
+          {
+            "name": "Ain Soph Journey Kyoto",
+            "nameJp": "アインソフ ジャーニー京都",
+            "cuisine": "Vegan fusion (same chain as Tokyo)",
+            "neighborhood": "Kawaramachi",
+            "price": "¥¥",
+            "gf": true,
+            "vegan": true,
+            "vegetarian": true,
+            "mustTry": "Matcha pancakes (¥1,800) or cutlet burger",
+            "note": "GF + Oriental Vegan options. Kitchen not allergen-free — cross-contamination possible. 2 min from Hankyu Kawaramachi exit 9.",
+            "url": "https://en.ain-soph.jp/journey-kyoto"
+          }
+        ]
+      }
+    }
+  }
 }
