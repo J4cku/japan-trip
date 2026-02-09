@@ -532,6 +532,13 @@
   cursor: pointer;
   transition: transform 0.2s, filter 0.2s;
 }
+.luggage-tag-clickable.vis .luggage-tag-inner {
+  animation: tagHint 1.5s ease 1.2s 3;
+}
+@keyframes tagHint {
+  0%, 100% { border-color: var(--g2); box-shadow: none; }
+  50% { border-color: var(--red); box-shadow: 0 0 10px rgba(188, 0, 45, 0.25); }
+}
 .luggage-tag-clickable:hover .luggage-tag-inner {
   border-color: var(--red);
   background: rgba(188, 0, 45, 0.08);
@@ -4615,69 +4622,151 @@
 /* ambient-wrap mobile position handled by mobile menu */
 
 /* ══════════════════════════════════════════════
-   Mobile tools menu
+   Tools menu (all screen sizes)
    ══════════════════════════════════════════════ */
+
+/* Trigger button — always visible */
 .mobile-menu-trigger {
-  display: none;
-}
-.mobile-menu-backdrop {
-  display: none;
+  display: flex;
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  z-index: 301;
 }
 
+/* Backdrop overlay (conditionally rendered by React) */
+.mobile-menu-backdrop {
+  display: block;
+  position: fixed;
+  inset: 0;
+  z-index: 299;
+  background: rgba(0, 0, 0, 0.35);
+  -webkit-backdrop-filter: blur(2px);
+  backdrop-filter: blur(2px);
+  animation: menu-fade-in 0.2s ease;
+}
+@keyframes menu-fade-in {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+/* ── Hide all toggles by default ── */
+.sakura-toggle,
+.cc-toggle,
+.japan101-toggle,
+.theme-toggle,
+.weather-toggle {
+  opacity: 0;
+  pointer-events: none;
+  transform: scale(0.4);
+  transition: opacity 0.2s ease, transform 0.2s ease;
+}
+.ambient-wrap {
+  opacity: 0;
+  pointer-events: none;
+  transform: scale(0.4);
+  transition: opacity 0.2s ease, transform 0.2s ease;
+}
+
+/* Hide panels when menu is closed */
+.cc-panel,
+.japan101-panel {
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.15s ease;
+}
+
+/* ── Speed-dial stack when menu is open ── */
+
+/* Slot 1: Sakura */
+body.mobile-menu-open .sakura-toggle {
+  opacity: 0.85;
+  pointer-events: auto;
+  transform: scale(1);
+  bottom: 68px;
+  right: 20px;
+  z-index: 302;
+  transition-delay: 0s;
+}
+
+/* Slot 2: Currency converter */
+body.mobile-menu-open .cc-toggle {
+  opacity: 0.85;
+  pointer-events: auto;
+  transform: scale(1);
+  bottom: 116px;
+  right: 20px;
+  z-index: 302;
+  transition-delay: 0.03s;
+}
+
+/* Slot 3: Ambient sound */
+body.mobile-menu-open .ambient-wrap {
+  opacity: 1;
+  pointer-events: auto;
+  transform: scale(1);
+  bottom: 164px;
+  right: 20px;
+  z-index: 302;
+  transition-delay: 0.06s;
+}
+
+/* Slot 4: Theme toggle */
+body.mobile-menu-open .theme-toggle {
+  opacity: 0.85;
+  pointer-events: auto;
+  transform: scale(1);
+  top: auto;
+  left: auto;
+  bottom: 212px;
+  right: 20px;
+  z-index: 302;
+  transition-delay: 0.09s;
+}
+
+/* Slot 5: Weather */
+body.mobile-menu-open .weather-toggle {
+  opacity: 0.85;
+  pointer-events: auto;
+  transform: scale(1);
+  top: auto;
+  left: auto;
+  bottom: 260px;
+  right: 20px;
+  z-index: 302;
+  transition-delay: 0.12s;
+}
+
+/* Slot 6: Japan101 (/extended only) */
+body.mobile-menu-open .japan101-toggle {
+  opacity: 0.85;
+  pointer-events: auto;
+  transform: scale(1);
+  bottom: 308px;
+  right: 20px;
+  z-index: 302;
+  transition-delay: 0.15s;
+}
+
+/* Panels */
+body.mobile-menu-open .cc-panel {
+  opacity: 1;
+  pointer-events: auto;
+  z-index: 302;
+}
+body.mobile-menu-open .japan101-panel {
+  opacity: 1;
+  pointer-events: auto;
+  z-index: 302;
+}
+
+/* ── Mobile overrides ── */
 @media (max-width: 768px) {
-  /* Menu trigger button */
   .mobile-menu-trigger {
-    display: flex;
-    position: fixed;
     bottom: 16px;
     right: 16px;
-    z-index: 301;
   }
 
-  /* Backdrop overlay */
-  .mobile-menu-backdrop {
-    display: block;
-    position: fixed;
-    inset: 0;
-    z-index: 299;
-    background: rgba(0, 0, 0, 0.35);
-    -webkit-backdrop-filter: blur(2px);
-    backdrop-filter: blur(2px);
-    animation: menu-fade-in 0.2s ease;
-  }
-  @keyframes menu-fade-in {
-    from { opacity: 0; }
-    to { opacity: 1; }
-  }
-
-  /* ── Hide all toggles on mobile by default ── */
-  .sakura-toggle,
-  .cc-toggle,
-  .japan101-toggle,
-  .theme-toggle,
-  .weather-toggle {
-    opacity: 0;
-    pointer-events: none;
-    transform: scale(0.4);
-    transition: opacity 0.2s ease, transform 0.2s ease;
-  }
-
-  .ambient-wrap {
-    opacity: 0;
-    pointer-events: none;
-    transform: scale(0.4);
-    transition: opacity 0.2s ease, transform 0.2s ease;
-  }
-
-  /* Hide panels too when menu is closed */
-  .cc-panel,
-  .japan101-panel {
-    opacity: 0;
-    pointer-events: none;
-    transition: opacity 0.15s ease;
-  }
-
-  /* ── Fixed-links mobile adjustments ── */
   .fixed-links {
     bottom: 14px;
     left: 14px;
@@ -4688,44 +4777,19 @@
     font-size: 0.6rem;
   }
 
-  /* ── When menu is open: vertical speed-dial stack ── */
-
-  /* Slot 1: Sakura (all pages) */
-  body.mobile-menu-open .sakura-toggle {
-    opacity: 0.85;
-    pointer-events: auto;
-    transform: scale(1);
-    bottom: 64px;
-    right: 16px;
-    z-index: 302;
-    transition-delay: 0s;
-  }
-
-  /* Slot 2: Currency converter (all pages) */
-  body.mobile-menu-open .cc-toggle {
-    opacity: 0.85;
-    pointer-events: auto;
-    transform: scale(1);
-    bottom: 112px;
-    right: 16px;
-    z-index: 302;
-    transition-delay: 0.03s;
-  }
-
-  /* Slot 3: Ambient sound (/ and /extended) */
+  body.mobile-menu-open .sakura-toggle { bottom: 64px; right: 16px; }
+  body.mobile-menu-open .cc-toggle { bottom: 112px; right: 16px; }
   body.mobile-menu-open .ambient-wrap {
-    opacity: 1;
-    pointer-events: auto;
-    transform: scale(1);
     bottom: 160px;
     right: 16px;
-    z-index: 302;
-    transition-delay: 0.06s;
     flex-direction: row;
     gap: 8px;
   }
+  body.mobile-menu-open .theme-toggle { bottom: 208px; right: 16px; }
+  body.mobile-menu-open .weather-toggle { bottom: 256px; right: 16px; }
+  body.mobile-menu-open .japan101-toggle { bottom: 304px; right: 16px; }
 
-  /* Horizontal volume slider on mobile — only when shown via toggle */
+  /* Horizontal volume slider on mobile */
   body.mobile-menu-open .ambient-volume-show {
     display: flex;
     padding: 6px 10px;
@@ -4747,62 +4811,17 @@
     margin-left: 0;
   }
 
-  /* Slot 4: Theme toggle (/ and /extended) */
-  body.mobile-menu-open .theme-toggle {
-    opacity: 0.85;
-    pointer-events: auto;
-    transform: scale(1);
-    top: auto;
-    left: auto;
-    bottom: 208px;
-    right: 16px;
-    z-index: 302;
-    transition-delay: 0.09s;
-  }
-
-  /* Slot 5: Weather */
-  body.mobile-menu-open .weather-toggle {
-    opacity: 0.85;
-    pointer-events: auto;
-    transform: scale(1);
-    top: auto;
-    left: auto;
-    bottom: 256px;
-    right: 16px;
-    z-index: 302;
-    transition-delay: 0.12s;
-  }
-
-  /* Slot 6: Japan101 (/extended only) */
-  body.mobile-menu-open .japan101-toggle {
-    opacity: 0.85;
-    pointer-events: auto;
-    transform: scale(1);
-    bottom: 304px;
-    right: 16px;
-    z-index: 302;
-    transition-delay: 0.15s;
-  }
-
-  /* Panels open normally when menu is open */
+  /* Full-width panels on mobile */
   body.mobile-menu-open .cc-panel {
-    opacity: 1;
-    pointer-events: auto;
     right: 10px;
     left: 10px;
     width: auto;
     bottom: 60px;
-    z-index: 302;
   }
   body.mobile-menu-open .japan101-panel {
-    opacity: 1;
-    pointer-events: auto;
     right: 10px;
     left: 10px;
     width: auto;
     bottom: 60px;
-    z-index: 302;
   }
-
-  /* Weather overlay stays visible at top-right regardless of menu state */
 }
