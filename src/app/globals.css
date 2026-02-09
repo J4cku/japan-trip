@@ -100,6 +100,16 @@
   scroll-snap-type: y mandatory;
   scroll-behavior: smooth;
   -webkit-overflow-scrolling: touch;
+  position: relative;
+}
+
+/* ── Seigaiha (wave) background pattern ── */
+.snap-container {
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='80' height='80'%3E%3Ccircle cx='40' cy='80' r='10' fill='none' stroke='%23ffffff' stroke-width='0.5' opacity='0.12'/%3E%3Ccircle cx='40' cy='80' r='20' fill='none' stroke='%23ffffff' stroke-width='0.5' opacity='0.12'/%3E%3Ccircle cx='40' cy='80' r='30' fill='none' stroke='%23ffffff' stroke-width='0.5' opacity='0.12'/%3E%3Ccircle cx='40' cy='80' r='40' fill='none' stroke='%23ffffff' stroke-width='0.5' opacity='0.12'/%3E%3Ccircle cx='0' cy='40' r='10' fill='none' stroke='%23ffffff' stroke-width='0.5' opacity='0.12'/%3E%3Ccircle cx='0' cy='40' r='20' fill='none' stroke='%23ffffff' stroke-width='0.5' opacity='0.12'/%3E%3Ccircle cx='0' cy='40' r='30' fill='none' stroke='%23ffffff' stroke-width='0.5' opacity='0.12'/%3E%3Ccircle cx='0' cy='40' r='40' fill='none' stroke='%23ffffff' stroke-width='0.5' opacity='0.12'/%3E%3Ccircle cx='80' cy='40' r='10' fill='none' stroke='%23ffffff' stroke-width='0.5' opacity='0.12'/%3E%3Ccircle cx='80' cy='40' r='20' fill='none' stroke='%23ffffff' stroke-width='0.5' opacity='0.12'/%3E%3Ccircle cx='80' cy='40' r='30' fill='none' stroke='%23ffffff' stroke-width='0.5' opacity='0.12'/%3E%3Ccircle cx='80' cy='40' r='40' fill='none' stroke='%23ffffff' stroke-width='0.5' opacity='0.12'/%3E%3C/svg%3E");
+  background-size: 80px 80px;
+}
+[data-theme="light"] .snap-container {
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='80' height='80' opacity='0.04'%3E%3Ccircle cx='40' cy='80' r='10' fill='none' stroke='%23000000' stroke-width='0.8'/%3E%3Ccircle cx='40' cy='80' r='20' fill='none' stroke='%23000000' stroke-width='0.8'/%3E%3Ccircle cx='40' cy='80' r='30' fill='none' stroke='%23000000' stroke-width='0.8'/%3E%3Ccircle cx='40' cy='80' r='40' fill='none' stroke='%23000000' stroke-width='0.8'/%3E%3Ccircle cx='0' cy='40' r='10' fill='none' stroke='%23000000' stroke-width='0.8'/%3E%3Ccircle cx='0' cy='40' r='20' fill='none' stroke='%23000000' stroke-width='0.8'/%3E%3Ccircle cx='0' cy='40' r='30' fill='none' stroke='%23000000' stroke-width='0.8'/%3E%3Ccircle cx='0' cy='40' r='40' fill='none' stroke='%23000000' stroke-width='0.8'/%3E%3Ccircle cx='80' cy='40' r='10' fill='none' stroke='%23000000' stroke-width='0.8'/%3E%3Ccircle cx='80' cy='40' r='20' fill='none' stroke='%23000000' stroke-width='0.8'/%3E%3Ccircle cx='80' cy='40' r='30' fill='none' stroke='%23000000' stroke-width='0.8'/%3E%3Ccircle cx='80' cy='40' r='40' fill='none' stroke='%23000000' stroke-width='0.8'/%3E%3C/svg%3E");
 }
 
 /* ── Presentation base ── */
@@ -1223,6 +1233,15 @@
   overflow: hidden;
 }
 
+/* Seigaiha pattern for hotels page */
+.hp-page {
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='80' height='80'%3E%3Ccircle cx='40' cy='80' r='10' fill='none' stroke='%23ffffff' stroke-width='0.5' opacity='0.12'/%3E%3Ccircle cx='40' cy='80' r='20' fill='none' stroke='%23ffffff' stroke-width='0.5' opacity='0.12'/%3E%3Ccircle cx='40' cy='80' r='30' fill='none' stroke='%23ffffff' stroke-width='0.5' opacity='0.12'/%3E%3Ccircle cx='40' cy='80' r='40' fill='none' stroke='%23ffffff' stroke-width='0.5' opacity='0.12'/%3E%3Ccircle cx='0' cy='40' r='10' fill='none' stroke='%23ffffff' stroke-width='0.5' opacity='0.12'/%3E%3Ccircle cx='0' cy='40' r='20' fill='none' stroke='%23ffffff' stroke-width='0.5' opacity='0.12'/%3E%3Ccircle cx='0' cy='40' r='30' fill='none' stroke='%23ffffff' stroke-width='0.5' opacity='0.12'/%3E%3Ccircle cx='0' cy='40' r='40' fill='none' stroke='%23ffffff' stroke-width='0.5' opacity='0.12'/%3E%3Ccircle cx='80' cy='40' r='10' fill='none' stroke='%23ffffff' stroke-width='0.5' opacity='0.12'/%3E%3Ccircle cx='80' cy='40' r='20' fill='none' stroke='%23ffffff' stroke-width='0.5' opacity='0.12'/%3E%3Ccircle cx='80' cy='40' r='30' fill='none' stroke='%23ffffff' stroke-width='0.5' opacity='0.12'/%3E%3Ccircle cx='80' cy='40' r='40' fill='none' stroke='%23ffffff' stroke-width='0.5' opacity='0.12'/%3E%3C/svg%3E");
+  background-size: 80px 80px;
+}
+[data-theme="light"] .hp-page {
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='80' height='80' opacity='0.04'%3E%3Ccircle cx='40' cy='80' r='10' fill='none' stroke='%23000000' stroke-width='0.8'/%3E%3Ccircle cx='40' cy='80' r='20' fill='none' stroke='%23000000' stroke-width='0.8'/%3E%3Ccircle cx='40' cy='80' r='30' fill='none' stroke='%23000000' stroke-width='0.8'/%3E%3Ccircle cx='40' cy='80' r='40' fill='none' stroke='%23000000' stroke-width='0.8'/%3E%3Ccircle cx='0' cy='40' r='10' fill='none' stroke='%23000000' stroke-width='0.8'/%3E%3Ccircle cx='0' cy='40' r='20' fill='none' stroke='%23000000' stroke-width='0.8'/%3E%3Ccircle cx='0' cy='40' r='30' fill='none' stroke='%23000000' stroke-width='0.8'/%3E%3Ccircle cx='0' cy='40' r='40' fill='none' stroke='%23000000' stroke-width='0.8'/%3E%3Ccircle cx='80' cy='40' r='10' fill='none' stroke='%23000000' stroke-width='0.8'/%3E%3Ccircle cx='80' cy='40' r='20' fill='none' stroke='%23000000' stroke-width='0.8'/%3E%3Ccircle cx='80' cy='40' r='30' fill='none' stroke='%23000000' stroke-width='0.8'/%3E%3Ccircle cx='80' cy='40' r='40' fill='none' stroke='%23000000' stroke-width='0.8'/%3E%3C/svg%3E");
+}
+
 /* Japandi enso accent */
 .hp-enso {
   position: fixed;
@@ -1582,6 +1601,14 @@
   background-repeat: no-repeat;
   background-position: center;
   transform: rotate(120deg);
+}
+/* Seigaiha pattern for restaurants page */
+.rx-page {
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='80' height='80'%3E%3Ccircle cx='40' cy='80' r='10' fill='none' stroke='%23ffffff' stroke-width='0.5' opacity='0.12'/%3E%3Ccircle cx='40' cy='80' r='20' fill='none' stroke='%23ffffff' stroke-width='0.5' opacity='0.12'/%3E%3Ccircle cx='40' cy='80' r='30' fill='none' stroke='%23ffffff' stroke-width='0.5' opacity='0.12'/%3E%3Ccircle cx='40' cy='80' r='40' fill='none' stroke='%23ffffff' stroke-width='0.5' opacity='0.12'/%3E%3Ccircle cx='0' cy='40' r='10' fill='none' stroke='%23ffffff' stroke-width='0.5' opacity='0.12'/%3E%3Ccircle cx='0' cy='40' r='20' fill='none' stroke='%23ffffff' stroke-width='0.5' opacity='0.12'/%3E%3Ccircle cx='0' cy='40' r='30' fill='none' stroke='%23ffffff' stroke-width='0.5' opacity='0.12'/%3E%3Ccircle cx='0' cy='40' r='40' fill='none' stroke='%23ffffff' stroke-width='0.5' opacity='0.12'/%3E%3Ccircle cx='80' cy='40' r='10' fill='none' stroke='%23ffffff' stroke-width='0.5' opacity='0.12'/%3E%3Ccircle cx='80' cy='40' r='20' fill='none' stroke='%23ffffff' stroke-width='0.5' opacity='0.12'/%3E%3Ccircle cx='80' cy='40' r='30' fill='none' stroke='%23ffffff' stroke-width='0.5' opacity='0.12'/%3E%3Ccircle cx='80' cy='40' r='40' fill='none' stroke='%23ffffff' stroke-width='0.5' opacity='0.12'/%3E%3C/svg%3E");
+  background-size: 80px 80px;
+}
+[data-theme="light"] .rx-page {
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='80' height='80' opacity='0.04'%3E%3Ccircle cx='40' cy='80' r='10' fill='none' stroke='%23000000' stroke-width='0.8'/%3E%3Ccircle cx='40' cy='80' r='20' fill='none' stroke='%23000000' stroke-width='0.8'/%3E%3Ccircle cx='40' cy='80' r='30' fill='none' stroke='%23000000' stroke-width='0.8'/%3E%3Ccircle cx='40' cy='80' r='40' fill='none' stroke='%23000000' stroke-width='0.8'/%3E%3Ccircle cx='0' cy='40' r='10' fill='none' stroke='%23000000' stroke-width='0.8'/%3E%3Ccircle cx='0' cy='40' r='20' fill='none' stroke='%23000000' stroke-width='0.8'/%3E%3Ccircle cx='0' cy='40' r='30' fill='none' stroke='%23000000' stroke-width='0.8'/%3E%3Ccircle cx='0' cy='40' r='40' fill='none' stroke='%23000000' stroke-width='0.8'/%3E%3Ccircle cx='80' cy='40' r='10' fill='none' stroke='%23000000' stroke-width='0.8'/%3E%3Ccircle cx='80' cy='40' r='20' fill='none' stroke='%23000000' stroke-width='0.8'/%3E%3Ccircle cx='80' cy='40' r='30' fill='none' stroke='%23000000' stroke-width='0.8'/%3E%3Ccircle cx='80' cy='40' r='40' fill='none' stroke='%23000000' stroke-width='0.8'/%3E%3C/svg%3E");
 }
 .rx-header {
   position: sticky;

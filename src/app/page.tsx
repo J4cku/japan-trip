@@ -36,7 +36,7 @@ export default function PresentationPage() {
       id="snap-root"
       className="snap-container"
       style={{
-        background: "var(--black)",
+        backgroundColor: "var(--black)",
         color: "var(--white)",
         overflowX: "hidden",
         WebkitFontSmoothing: "antialiased",
