@@ -2833,7 +2833,7 @@
 /* ── Japan 101 floating card ── */
 .japan101-toggle {
   position: fixed;
-  bottom: 20px;
+  bottom: 72px;
   right: 20px;
   z-index: 200;
   width: 44px;
@@ -2856,7 +2856,7 @@
 }
 .japan101-panel {
   position: fixed;
-  bottom: 76px;
+  bottom: 128px;
   right: 20px;
   z-index: 201;
   width: 320px;
@@ -3072,7 +3072,7 @@
     width: auto;
   }
   .japan101-toggle {
-    bottom: 16px;
+    bottom: 66px;
     right: 16px;
   }
   .split-routes {
