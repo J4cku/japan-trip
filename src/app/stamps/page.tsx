@@ -1,7 +1,6 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 import { StampBook } from "@/components/fun/StampBook";
-import { ThemeToggle } from "@/components/presentation/ThemeToggle";
 
 export const metadata: Metadata = {
   title: "Stamp Rally",
@@ -14,7 +13,6 @@ export default function StampsPage() {
       <Link href="/" className="map-back">
         &larr; Back
       </Link>
-      <ThemeToggle />
       <StampBook />
     </>
   );

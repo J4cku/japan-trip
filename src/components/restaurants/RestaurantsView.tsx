@@ -3,7 +3,6 @@
 import { useState } from "react";
 import type { Restaurants, RestaurantSpot, RestaurantLocation } from "@/types/trip";
 import Link from "next/link";
-import { ThemeToggle } from "@/components/presentation/ThemeToggle";
 
 function DietaryBadge({ label, ok }: { label: string; ok: boolean }) {
   return (
@@ -158,7 +157,6 @@ export function RestaurantsView({ restaurants, extendedRestaurants }: { restaura
 
   return (
     <div className="rx-page">
-      <ThemeToggle />
       <div className="rx-enso" aria-hidden="true" />
       <header className="rx-header">
         <Link href="/" className="rx-back">&larr; Presentation</Link>

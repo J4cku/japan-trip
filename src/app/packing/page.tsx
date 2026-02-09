@@ -1,6 +1,5 @@
 import type { Metadata } from "next";
 import Link from "next/link";
-import { ThemeToggle } from "@/components/presentation/ThemeToggle";
 import { PackingChecklist } from "@/components/fun/PackingChecklist";
 
 export const metadata: Metadata = {
@@ -30,7 +29,6 @@ const PACKING_ITEMS = [
 export default function PackingPage() {
   return (
     <div className="pk-page">
-      <ThemeToggle />
       <div className="pk-wrapper">
         <Link href="/" className="pk-back">
           ← Back

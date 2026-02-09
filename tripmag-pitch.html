@@ -1,0 +1,728 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>TripMag — Product Vision</title>
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=Inter:wght@200;300;400;500;600;700;800;900&display=swap');
+
+  *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+  :root {
+    --bg: #0a0a0a;
+    --card: #141414;
+    --border: #222;
+    --text: #e8e8e8;
+    --muted: #888;
+    --accent: #f97316;
+    --accent2: #3b82f6;
+    --accent3: #10b981;
+    --accent4: #a855f7;
+    --accent5: #ec4899;
+  }
+
+  html { scroll-snap-type: y mandatory; scroll-behavior: smooth; }
+  body {
+    font-family: 'Inter', -apple-system, sans-serif;
+    background: var(--bg);
+    color: var(--text);
+    -webkit-font-smoothing: antialiased;
+    overflow-x: hidden;
+  }
+
+  /* Slides */
+  .slide {
+    min-height: 100vh;
+    scroll-snap-align: start;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 60px 40px;
+    position: relative;
+    overflow: hidden;
+  }
+  .slide-inner {
+    max-width: 1000px;
+    width: 100%;
+    position: relative;
+    z-index: 2;
+  }
+
+  /* Hero */
+  .hero { text-align: center; }
+  .hero-label {
+    font-size: 0.7rem;
+    letter-spacing: 0.25em;
+    text-transform: uppercase;
+    color: var(--accent);
+    margin-bottom: 24px;
+    font-weight: 600;
+  }
+  .hero h1 {
+    font-size: clamp(3rem, 8vw, 6rem);
+    font-weight: 900;
+    line-height: 1;
+    margin-bottom: 16px;
+    background: linear-gradient(135deg, var(--accent), #fb923c, #fbbf24);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+  }
+  .hero-sub {
+    font-size: clamp(1rem, 2.5vw, 1.5rem);
+    font-weight: 200;
+    color: var(--muted);
+    max-width: 600px;
+    margin: 0 auto 40px;
+    line-height: 1.5;
+  }
+  .hero-meta {
+    font-size: 0.75rem;
+    color: var(--muted);
+    letter-spacing: 0.15em;
+    text-transform: uppercase;
+  }
+  .scroll-hint {
+    position: absolute;
+    bottom: 40px;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 8px;
+    color: var(--muted);
+    font-size: 0.65rem;
+    letter-spacing: 0.15em;
+    text-transform: uppercase;
+    animation: bounce 2s infinite;
+  }
+  .scroll-hint svg { opacity: 0.5; }
+  @keyframes bounce {
+    0%, 100% { transform: translateX(-50%) translateY(0); }
+    50% { transform: translateX(-50%) translateY(8px); }
+  }
+
+  /* Section headers */
+  .section-label {
+    font-size: 0.65rem;
+    letter-spacing: 0.3em;
+    text-transform: uppercase;
+    margin-bottom: 12px;
+    font-weight: 600;
+  }
+  .section-title {
+    font-size: clamp(2rem, 5vw, 3.5rem);
+    font-weight: 800;
+    line-height: 1.1;
+    margin-bottom: 32px;
+  }
+
+  /* Cards grid */
+  .cards { display: grid; gap: 16px; }
+  .cards-2 { grid-template-columns: 1fr 1fr; }
+  .cards-3 { grid-template-columns: 1fr 1fr 1fr; }
+  .card {
+    background: var(--card);
+    border: 1px solid var(--border);
+    border-radius: 16px;
+    padding: 28px;
+    transition: border-color 0.3s, transform 0.3s;
+  }
+  .card:hover { border-color: #333; transform: translateY(-2px); }
+  .card-icon {
+    width: 40px;
+    height: 40px;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.2rem;
+    margin-bottom: 16px;
+    font-weight: 700;
+  }
+  .card h3 {
+    font-size: 1rem;
+    font-weight: 700;
+    margin-bottom: 10px;
+  }
+  .card p {
+    font-size: 0.85rem;
+    color: var(--muted);
+    line-height: 1.6;
+  }
+
+  /* Stats row */
+  .stats-row {
+    display: flex;
+    gap: 40px;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin: 40px 0;
+  }
+  .stat { text-align: center; }
+  .stat-value {
+    font-size: clamp(2rem, 5vw, 3rem);
+    font-weight: 900;
+    line-height: 1;
+  }
+  .stat-label {
+    font-size: 0.7rem;
+    color: var(--muted);
+    letter-spacing: 0.15em;
+    text-transform: uppercase;
+    margin-top: 8px;
+  }
+
+  /* Team cards */
+  .team-card {
+    background: var(--card);
+    border: 1px solid var(--border);
+    border-radius: 16px;
+    padding: 32px;
+    margin-bottom: 16px;
+  }
+  .team-card-header {
+    display: flex;
+    align-items: center;
+    gap: 14px;
+    margin-bottom: 16px;
+  }
+  .team-avatar {
+    width: 44px;
+    height: 44px;
+    border-radius: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.1rem;
+    font-weight: 800;
+    color: #fff;
+    flex-shrink: 0;
+  }
+  .team-name { font-weight: 700; font-size: 1rem; }
+  .team-role { font-size: 0.75rem; color: var(--muted); }
+  .team-card p {
+    font-size: 0.85rem;
+    color: #bbb;
+    line-height: 1.7;
+    margin-bottom: 12px;
+  }
+  .team-card p:last-child { margin-bottom: 0; }
+  .team-card strong { color: var(--text); }
+
+  /* Highlight text */
+  .hl-orange { color: var(--accent); }
+  .hl-blue { color: var(--accent2); }
+  .hl-green { color: var(--accent3); }
+  .hl-purple { color: var(--accent4); }
+  .hl-pink { color: var(--accent5); }
+
+  /* Timeline */
+  .timeline { position: relative; padding-left: 32px; }
+  .timeline::before {
+    content: '';
+    position: absolute;
+    left: 7px;
+    top: 8px;
+    bottom: 8px;
+    width: 2px;
+    background: linear-gradient(to bottom, var(--accent), var(--accent2), var(--accent3));
+    border-radius: 2px;
+  }
+  .tl-item { position: relative; margin-bottom: 32px; }
+  .tl-item:last-child { margin-bottom: 0; }
+  .tl-dot {
+    position: absolute;
+    left: -29px;
+    top: 6px;
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    border: 2px solid var(--bg);
+  }
+  .tl-phase {
+    font-size: 0.65rem;
+    letter-spacing: 0.2em;
+    text-transform: uppercase;
+    margin-bottom: 6px;
+    font-weight: 600;
+  }
+  .tl-title {
+    font-size: 1.15rem;
+    font-weight: 700;
+    margin-bottom: 8px;
+  }
+  .tl-desc {
+    font-size: 0.85rem;
+    color: var(--muted);
+    line-height: 1.6;
+  }
+
+  /* Table */
+  .data-table {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 0.85rem;
+    margin-top: 24px;
+  }
+  .data-table th {
+    text-align: left;
+    font-size: 0.65rem;
+    letter-spacing: 0.15em;
+    text-transform: uppercase;
+    color: var(--muted);
+    padding: 12px 16px;
+    border-bottom: 1px solid var(--border);
+    font-weight: 600;
+  }
+  .data-table td {
+    padding: 14px 16px;
+    border-bottom: 1px solid #1a1a1a;
+    color: #ccc;
+  }
+  .data-table tr:last-child td { border-bottom: none; }
+  .data-table .num {
+    font-weight: 700;
+    font-variant-numeric: tabular-nums;
+    color: var(--text);
+  }
+
+  /* Progress bar */
+  .progress-wrap {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 3px;
+    z-index: 999;
+    background: rgba(255,255,255,0.05);
+  }
+  .progress-bar {
+    height: 100%;
+    width: 0%;
+    background: linear-gradient(90deg, var(--accent), var(--accent2));
+    transition: width 0.3s;
+  }
+
+  /* Nav dots */
+  .nav-dots {
+    position: fixed;
+    right: 20px;
+    top: 50%;
+    transform: translateY(-50%);
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    z-index: 100;
+  }
+  .nav-dot {
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    background: #333;
+    border: none;
+    cursor: pointer;
+    transition: background 0.3s, transform 0.3s;
+    padding: 0;
+  }
+  .nav-dot.active {
+    background: var(--accent);
+    transform: scale(1.4);
+  }
+
+  /* Glow effects */
+  .glow {
+    position: absolute;
+    border-radius: 50%;
+    filter: blur(120px);
+    opacity: 0.15;
+    pointer-events: none;
+  }
+  .glow-orange { background: var(--accent); width: 400px; height: 400px; }
+  .glow-blue { background: var(--accent2); width: 350px; height: 350px; }
+  .glow-green { background: var(--accent3); width: 300px; height: 300px; }
+
+  /* Quote */
+  .big-quote {
+    font-size: clamp(1.5rem, 3.5vw, 2.5rem);
+    font-weight: 300;
+    line-height: 1.4;
+    text-align: center;
+    max-width: 700px;
+    margin: 0 auto;
+    color: #ddd;
+  }
+  .big-quote em {
+    font-style: normal;
+    font-weight: 700;
+    background: linear-gradient(135deg, var(--accent), var(--accent2));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+  }
+
+  /* Feature list */
+  .feature-list {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 12px;
+    margin-top: 20px;
+  }
+  .feature-item {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-size: 0.85rem;
+    color: #bbb;
+    padding: 10px 14px;
+    background: var(--card);
+    border: 1px solid var(--border);
+    border-radius: 10px;
+  }
+  .feature-dot {
+    width: 6px;
+    height: 6px;
+    border-radius: 50%;
+    flex-shrink: 0;
+  }
+
+  /* Responsive */
+  @media (max-width: 768px) {
+    .slide { padding: 40px 24px; }
+    .cards-2, .cards-3 { grid-template-columns: 1fr; }
+    .stats-row { gap: 24px; }
+    .feature-list { grid-template-columns: 1fr; }
+    .nav-dots { display: none; }
+    .data-table { font-size: 0.75rem; }
+    .data-table th, .data-table td { padding: 10px 10px; }
+  }
+</style>
+</head>
+<body>
+
+<div class="progress-wrap"><div class="progress-bar" id="progress"></div></div>
+<nav class="nav-dots" id="nav-dots"></nav>
+
+<!-- ========== SLIDE 0: HERO ========== -->
+<section class="slide hero" data-slide="0">
+  <div class="glow glow-orange" style="top:-100px;right:-100px"></div>
+  <div class="slide-inner">
+    <p class="hero-label">Product Vision & Strategy</p>
+    <h1>TripMag</h1>
+    <p class="hero-sub">AI-generated interactive trip magazines.<br>Not PDFs. Not docs. Full web experiences.</p>
+    <p class="hero-meta">Internal Strategy Document &mdash; February 2026</p>
+  </div>
+  <div class="scroll-hint">
+    <span>Scroll</span>
+    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 5v14M19 12l-7 7-7-7"/></svg>
+  </div>
+</section>
+
+<!-- ========== SLIDE 1: THE IDEA ========== -->
+<section class="slide" data-slide="1">
+  <div class="glow glow-blue" style="bottom:-150px;left:-100px"></div>
+  <div class="slide-inner">
+    <p class="section-label hl-orange">The Idea</p>
+    <p class="big-quote">Take a prototype built for a personal Japan trip and turn it into a platform where <em>AI generates personalized interactive trip webpages</em> from user preferences.</p>
+    <div class="stats-row" style="margin-top:60px">
+      <div class="stat"><div class="stat-value hl-orange">38</div><div class="stat-label">React Components</div></div>
+      <div class="stat"><div class="stat-value hl-blue">30+</div><div class="stat-label">TypeScript Interfaces</div></div>
+      <div class="stat"><div class="stat-value hl-green">200+</div><div class="stat-label">Map Pins</div></div>
+      <div class="stat"><div class="stat-value hl-purple">8</div><div class="stat-label">Interactive Pages</div></div>
+      <div class="stat"><div class="stat-value hl-pink">0</div><div class="stat-label">External APIs</div></div>
+    </div>
+  </div>
+</section>
+
+<!-- ========== SLIDE 2: PROTOTYPE FEATURES ========== -->
+<section class="slide" data-slide="2">
+  <div class="slide-inner">
+    <p class="section-label hl-blue">What The Prototype Has</p>
+    <h2 class="section-title">10+ Interactive Features</h2>
+    <div class="feature-list">
+      <div class="feature-item"><div class="feature-dot" style="background:var(--accent)"></div>Snap-scroll presentation slides</div>
+      <div class="feature-item"><div class="feature-dot" style="background:var(--accent2)"></div>Interactive Leaflet map (200+ pins)</div>
+      <div class="feature-item"><div class="feature-dot" style="background:var(--accent3)"></div>Restaurant guide + dietary filters</div>
+      <div class="feature-item"><div class="feature-dot" style="background:var(--accent4)"></div>Hotel comparison with pricing</div>
+      <div class="feature-item"><div class="feature-dot" style="background:var(--accent5)"></div>Stamp rally gamification</div>
+      <div class="feature-item"><div class="feature-dot" style="background:var(--accent)"></div>Language flashcards with mastery</div>
+      <div class="feature-item"><div class="feature-dot" style="background:var(--accent2)"></div>Ambient soundscapes (Web Audio)</div>
+      <div class="feature-item"><div class="feature-dot" style="background:var(--accent3)"></div>Packing checklist (persistent)</div>
+      <div class="feature-item"><div class="feature-dot" style="background:var(--accent4)"></div>Currency converter (PLN/EUR/JPY)</div>
+      <div class="feature-item"><div class="feature-dot" style="background:var(--accent5)"></div>Countdown timer + weather overlay</div>
+    </div>
+    <p style="text-align:center;margin-top:24px;font-size:0.8rem;color:var(--muted)">All driven by a single <strong style="color:var(--text)">trip.json</strong> (308KB) &mdash; data and presentation fully separated.</p>
+  </div>
+</section>
+
+<!-- ========== SLIDE 3: TEAM - PM & CTO ========== -->
+<section class="slide" data-slide="3">
+  <div class="glow glow-orange" style="top:50%;right:-200px"></div>
+  <div class="slide-inner">
+    <p class="section-label hl-green">Team Discussion</p>
+    <h2 class="section-title">Strategy &amp; Architecture</h2>
+    <div class="team-card">
+      <div class="team-card-header">
+        <div class="team-avatar" style="background:linear-gradient(135deg,var(--accent),#fb923c)">PM</div>
+        <div><div class="team-name">Product Manager</div><div class="team-role">Market & MVP</div></div>
+      </div>
+      <p><strong>Target: affluent millennial/Gen-Z travelers</strong> planning $5-15K international trips. They're paying travel agents $150-500/person &mdash; we undercut with better UX. MVP: itinerary + map + restaurants + packing. Price: $79-149/trip or $29/mo.</p>
+      <p><strong>Biggest risk:</strong> AI hallucinating restaurants that don't exist. Mistakes cost real money and vacation days.</p>
+    </div>
+    <div class="team-card">
+      <div class="team-card-header">
+        <div class="team-avatar" style="background:linear-gradient(135deg,var(--accent2),#60a5fa)">CT</div>
+        <div><div class="team-name">CTO</div><div class="team-role">Architecture & Infrastructure</div></div>
+      </div>
+      <p><strong>Static generation is our moat.</strong> URL-based multi-tenancy, edge-deployed. Each trip: ~2MB static assets. Cost: <strong class="hl-green">$0.50-1.00 to generate</strong>, <strong class="hl-green">$0.01/mo to host</strong>. No databases at request time, no scaling nightmares.</p>
+      <p>Multi-stage AI pipeline with TypeScript compiler as quality gate. trip.json schema is the contract.</p>
+    </div>
+  </div>
+</section>
+
+<!-- ========== SLIDE 4: TEAM - Engineer & Marketing ========== -->
+<section class="slide" data-slide="4">
+  <div class="glow glow-green" style="bottom:-100px;left:-150px"></div>
+  <div class="slide-inner">
+    <div class="team-card">
+      <div class="team-card-header">
+        <div class="team-avatar" style="background:linear-gradient(135deg,var(--accent3),#34d399)">EN</div>
+        <div><div class="team-name">Senior Engineer</div><div class="team-role">Refactoring & Generalization</div></div>
+      </div>
+      <p><strong>Core data model is already well-separated</strong> &mdash; biggest win. Need Zod schemas for runtime validation, component registry for conditional features, and dynamic map initialization. Japan-specific components (sakura, stamps, flashcards) become destination templates.</p>
+      <p>Performance concern: 500+ pins needs clustering, 100+ slides needs lazy loading. localStorage won't scale &mdash; need server-side state.</p>
+    </div>
+    <div class="team-card">
+      <div class="team-card-header">
+        <div class="team-avatar" style="background:linear-gradient(135deg,var(--accent5),#f472b6)">MK</div>
+        <div><div class="team-name">Head of Marketing</div><div class="team-role">Positioning & Growth</div></div>
+      </div>
+      <p><strong>"Your Personal Trip Magazine, AI-Generated."</strong> Category: Experience Planners, not trip planners. Wanderlog/TripIt are digital clipboards &mdash; we're Vogue + National Geographic.</p>
+      <p>Viral loop: every trip page has a "Create Your Own" CTA. Launch: 20 micro-influencers &rarr; Reddit &rarr; ProductHunt. Target <strong class="hl-pink">5K waitlist</strong> pre-launch.</p>
+    </div>
+  </div>
+</section>
+
+<!-- ========== SLIDE 5: TEAM - Sales ========== -->
+<section class="slide" data-slide="5">
+  <div class="slide-inner">
+    <div class="team-card">
+      <div class="team-card-header">
+        <div class="team-avatar" style="background:linear-gradient(135deg,var(--accent4),#c084fc)">BD</div>
+        <div><div class="team-name">Head of Sales</div><div class="team-role">Revenue & Partnerships</div></div>
+      </div>
+      <p><strong>The real money is B2B.</strong> Travel agencies need white-label SaaS: $5K-$50K annual contracts. Honeymoon planners, corporate travel ($30K-$200K). Sleeper opportunity: <strong>tourism boards at $50K-$500K/year</strong>.</p>
+      <p>Unit economics: $2-5 cost per trip. Agencies at $200/seat/month = $12-24K ACV, 70%+ gross margin. Year 1 target: <strong class="hl-purple">$500K ARR</strong> from 50 customers.</p>
+    </div>
+    <div style="margin-top:32px">
+      <p class="section-label hl-orange" style="text-align:center">Consensus</p>
+      <div class="cards cards-3" style="margin-top:16px">
+        <div class="card" style="text-align:center;border-color:#333">
+          <h3 class="hl-orange">Moat</h3>
+          <p>Taste & curation quality, not tech</p>
+        </div>
+        <div class="card" style="text-align:center;border-color:#333">
+          <h3 class="hl-blue">Core Insight</h3>
+          <p>trip.json IS the product</p>
+        </div>
+        <div class="card" style="text-align:center;border-color:#333">
+          <h3 class="hl-green">Cost</h3>
+          <p>$2-5 per trip, ~$0 hosting</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ========== SLIDE 6: EXECUTION TIMELINE ========== -->
+<section class="slide" data-slide="6">
+  <div class="glow glow-blue" style="top:-100px;left:50%;transform:translateX(-50%)"></div>
+  <div class="slide-inner">
+    <p class="section-label hl-accent2">Execution Plan</p>
+    <h2 class="section-title">12-Month Roadmap</h2>
+    <div class="timeline">
+      <div class="tl-item">
+        <div class="tl-dot" style="background:var(--accent)"></div>
+        <div class="tl-phase hl-orange">Phase 1 &mdash; Months 1-3</div>
+        <div class="tl-title">MVP Launch</div>
+        <div class="tl-desc">3 engineers. 5 core features, 3 destinations (Tokyo, Paris, Barcelona). Zod schema validation, AI generation pipeline, Cloudflare Pages deployment. Target: 100 trips generated, 40% completion rate.</div>
+      </div>
+      <div class="tl-item">
+        <div class="tl-dot" style="background:var(--accent2)"></div>
+        <div class="tl-phase hl-blue">Phase 2 &mdash; Months 4-6</div>
+        <div class="tl-title">Beta &amp; Platform Hardening</div>
+        <div class="tl-desc">5 engineers. 10 destinations, add flashcards + currency converter. Multi-tenancy, CI/CD, Playwright E2E tests, LLM-as-judge validation. Target: 500 trips/month, 25% WAU/MAU.</div>
+      </div>
+      <div class="tl-item">
+        <div class="tl-dot" style="background:var(--accent3)"></div>
+        <div class="tl-phase hl-green">Phase 3 &mdash; Months 7-12</div>
+        <div class="tl-title">Scale &amp; B2B</div>
+        <div class="tl-desc">8+ engineers. 20 destinations, white-label architecture, public API, Stripe billing. B2B sales motion: agencies, DMOs, enterprise. Target: 5K trips/day, $500K ARR.</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ========== SLIDE 7: TECH ARCHITECTURE ========== -->
+<section class="slide" data-slide="7">
+  <div class="slide-inner">
+    <p class="section-label hl-green">Technical Architecture</p>
+    <h2 class="section-title">Generation Pipeline</h2>
+    <div class="cards cards-2">
+      <div class="card">
+        <div class="card-icon" style="background:rgba(249,115,22,0.15);color:var(--accent)">1</div>
+        <h3>User Input</h3>
+        <p>Multi-step wizard: destination, dates, travelers, dietary needs, budget, interests, travel style</p>
+      </div>
+      <div class="card">
+        <div class="card-icon" style="background:rgba(59,130,246,0.15);color:var(--accent2)">2</div>
+        <h3>AI Generation</h3>
+        <p>Multi-stage LLM pipeline: outline &rarr; itinerary &rarr; hotels/restaurants &rarr; map pins &rarr; fun features. Incremental, not monolithic.</p>
+      </div>
+      <div class="card">
+        <div class="card-icon" style="background:rgba(16,185,129,0.15);color:var(--accent3)">3</div>
+        <h3>Validation</h3>
+        <p>Zod schema validation, geocoding verification, URL health checks, budget consistency, pin-itinerary distance checks (&lt;50km Haversine)</p>
+      </div>
+      <div class="card">
+        <div class="card-icon" style="background:rgba(168,85,247,0.15);color:var(--accent4)">4</div>
+        <h3>Deploy</h3>
+        <p>Static Next.js build &rarr; Cloudflare Pages. Unique URL: tripmag.com/trip/[slug]. OG images via Satori. ~15-30s total build time.</p>
+      </div>
+    </div>
+    <div style="text-align:center;margin-top:24px">
+      <p style="font-size:0.8rem;color:var(--muted)">Cost per trip: <strong class="hl-green">$2-5</strong> (LLM + compute) &nbsp;&bull;&nbsp; Hosting: <strong class="hl-green">$0.01/mo</strong> &nbsp;&bull;&nbsp; Build: <strong class="hl-green">15-30s</strong></p>
+    </div>
+  </div>
+</section>
+
+<!-- ========== SLIDE 8: GO TO MARKET ========== -->
+<section class="slide" data-slide="8">
+  <div class="glow glow-orange" style="bottom:-100px;right:-100px"></div>
+  <div class="slide-inner">
+    <p class="section-label hl-pink">Go-to-Market</p>
+    <h2 class="section-title">$50K Budget, 12 Months</h2>
+    <div class="cards cards-3">
+      <div class="card">
+        <h3 class="hl-orange">Pre-Launch &mdash; $8K</h3>
+        <p>Landing page, waitlist (target 5K signups), 5 micro-influencers ($500 each), Reddit AMAs, Twitter/Meta ads ($3K)</p>
+      </div>
+      <div class="card">
+        <h3 class="hl-blue">Launch &mdash; $12K</h3>
+        <p>ProductHunt (200+ coordinated upvotes), Reddit drops (r/SideProject, r/InternetIsBeautiful), 10 mid-tier influencers ($800 each). Target: 1K trips, 20% share rate.</p>
+      </div>
+      <div class="card">
+        <h3 class="hl-green">Growth &mdash; $30K</h3>
+        <p>SEO engine (50K indexed trip pages by M12), 2 blogs/week, $15K paid ads, 20 macro-influencers, affiliate program ($20/referral). Target: CAC &lt;$15, viral coefficient 1.3+</p>
+      </div>
+    </div>
+    <div style="margin-top:32px;text-align:center">
+      <p style="font-size:0.8rem;color:var(--muted);margin-bottom:16px">Key Growth Metric Targets</p>
+      <div class="stats-row" style="margin:0">
+        <div class="stat"><div class="stat-value hl-orange">&lt;$15</div><div class="stat-label">CAC</div></div>
+        <div class="stat"><div class="stat-value hl-blue">40%</div><div class="stat-label">Activation</div></div>
+        <div class="stat"><div class="stat-value hl-green">25%</div><div class="stat-label">Share Rate</div></div>
+        <div class="stat"><div class="stat-value hl-purple">1.3x</div><div class="stat-label">Viral Coeff</div></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ========== SLIDE 9: REVENUE ========== -->
+<section class="slide" data-slide="9">
+  <div class="slide-inner">
+    <p class="section-label hl-purple">Revenue</p>
+    <h2 class="section-title">Path to $500K ARR</h2>
+    <div class="cards cards-2" style="margin-bottom:32px">
+      <div class="card">
+        <h3>B2B Pricing Tiers</h3>
+        <table class="data-table">
+          <thead><tr><th>Tier</th><th>Price</th><th>Includes</th></tr></thead>
+          <tbody>
+            <tr><td>Starter</td><td class="num">$3K/yr</td><td>50 trips/year</td></tr>
+            <tr><td>Pro</td><td class="num">$8K/yr</td><td>200 trips + API</td></tr>
+            <tr><td>Enterprise</td><td class="num">$25K/yr</td><td>Unlimited + white-label</td></tr>
+            <tr><td>DMO/Tourism</td><td class="num">$50-100K/yr</td><td>Co-branded + data</td></tr>
+          </tbody>
+        </table>
+      </div>
+      <div class="card">
+        <h3>Revenue Build</h3>
+        <table class="data-table">
+          <thead><tr><th>Quarter</th><th>ARR</th><th>Customers</th><th>Team</th></tr></thead>
+          <tbody>
+            <tr><td class="hl-orange">Q1</td><td class="num">$40K</td><td>10</td><td>4</td></tr>
+            <tr><td class="hl-blue">Q2</td><td class="num">$120K</td><td>24</td><td>7</td></tr>
+            <tr><td class="hl-green">Q3</td><td class="num">$300K</td><td>35</td><td>10</td></tr>
+            <tr><td class="hl-purple">Q4</td><td class="num">$500K</td><td>50</td><td>13</td></tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+    <div style="text-align:center">
+      <p style="font-size:0.8rem;color:var(--muted)">Customer mix at M12: <strong style="color:var(--text)">30 agencies</strong> @ $8K &bull; <strong style="color:var(--text)">15 DMOs</strong> @ $60K &bull; <strong style="color:var(--text)">5 Enterprise</strong> @ $100K</p>
+      <p style="font-size:0.8rem;color:var(--muted);margin-top:8px">Year 1 investment: ~$1.2M &bull; Path to profitability: Month 18-24</p>
+    </div>
+  </div>
+</section>
+
+<!-- ========== SLIDE 10: CLOSING ========== -->
+<section class="slide hero" data-slide="10">
+  <div class="glow glow-orange" style="top:40%;left:30%"></div>
+  <div class="glow glow-blue" style="top:50%;right:20%"></div>
+  <div class="slide-inner" style="text-align:center">
+    <p class="big-quote" style="margin-bottom:48px">The prototype proves it works.<br>Now we <em>productize the magic</em>.</p>
+    <div class="stats-row">
+      <div class="stat"><div class="stat-value hl-orange">$2-5</div><div class="stat-label">Cost per trip</div></div>
+      <div class="stat"><div class="stat-value hl-blue">30s</div><div class="stat-label">Generation time</div></div>
+      <div class="stat"><div class="stat-value hl-green">$500K</div><div class="stat-label">Year 1 ARR target</div></div>
+    </div>
+    <p style="margin-top:60px;font-size:0.7rem;letter-spacing:0.2em;text-transform:uppercase;color:var(--muted)">TripMag &mdash; February 2026</p>
+  </div>
+</section>
+
+<script>
+  // Navigation dots
+  const slides = document.querySelectorAll('.slide');
+  const navContainer = document.getElementById('nav-dots');
+  const progressBar = document.getElementById('progress');
+
+  slides.forEach((_, i) => {
+    const dot = document.createElement('button');
+    dot.className = 'nav-dot';
+    dot.setAttribute('aria-label', `Go to slide ${i + 1}`);
+    dot.addEventListener('click', () => slides[i].scrollIntoView({ behavior: 'smooth' }));
+    navContainer.appendChild(dot);
+  });
+
+  const dots = document.querySelectorAll('.nav-dot');
+
+  const observer = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        const idx = parseInt(entry.target.dataset.slide);
+        dots.forEach((d, i) => d.classList.toggle('active', i === idx));
+        progressBar.style.width = `${((idx + 1) / slides.length) * 100}%`;
+      }
+    });
+  }, { threshold: 0.5 });
+
+  slides.forEach(s => observer.observe(s));
+
+  // Keyboard nav
+  document.addEventListener('keydown', (e) => {
+    const current = [...dots].findIndex(d => d.classList.contains('active'));
+    if (e.key === 'ArrowDown' || e.key === ' ') {
+      e.preventDefault();
+      if (current < slides.length - 1) slides[current + 1].scrollIntoView({ behavior: 'smooth' });
+    }
+    if (e.key === 'ArrowUp') {
+      e.preventDefault();
+      if (current > 0) slides[current - 1].scrollIntoView({ behavior: 'smooth' });
+    }
+  });
+</script>
+</body>
+</html>

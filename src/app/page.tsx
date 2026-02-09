@@ -7,8 +7,6 @@ import { ClosingSlide } from "@/components/presentation/ClosingSlide";
 import { NavDots } from "@/components/presentation/NavDots";
 import { ProgressBar } from "@/components/presentation/ProgressBar";
 import { ScrollObserver } from "@/components/presentation/ScrollObserver";
-import { ThemeToggle } from "@/components/presentation/ThemeToggle";
-import { WeatherOverlay } from "@/components/fun/WeatherOverlay";
 import { SplitBanner } from "@/components/extended/SplitBanner";
 import Link from "next/link";
 
@@ -48,8 +46,6 @@ export default function PresentationPage() {
       <ProgressBar />
       <NavDots totalSlides={totalSlides} />
       <ScrollObserver />
-      <ThemeToggle />
-      <WeatherOverlay />
 
       <HeroSlide trip={data.trip} />
       {data.days.map((day, i) => (

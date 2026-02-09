@@ -4,8 +4,6 @@ import { DaySlide } from "@/components/presentation/DaySlide";
 import { NavDots } from "@/components/presentation/NavDots";
 import { ProgressBar } from "@/components/presentation/ProgressBar";
 import { ScrollObserver } from "@/components/presentation/ScrollObserver";
-import { ThemeToggle } from "@/components/presentation/ThemeToggle";
-import { WeatherOverlay } from "@/components/fun/WeatherOverlay";
 import { SplitBanner } from "@/components/extended/SplitBanner";
 import { OnsenGuide } from "@/components/extended/OnsenGuide";
 import { TrailProfile } from "@/components/extended/TrailProfile";
@@ -55,8 +53,6 @@ export default function ExtendedPage() {
       <ProgressBar />
       <NavDots totalSlides={totalSlides} />
       <ScrollObserver />
-      <ThemeToggle />
-      <WeatherOverlay />
       <Japan101Client tips={ext.practicalTips} dietaryReminder={ext.dietaryReminder} />
 
       {/* Hero Slide */}

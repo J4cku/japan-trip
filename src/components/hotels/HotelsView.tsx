@@ -3,7 +3,6 @@
 import { useState } from "react";
 import type { HotelCity, HotelOption } from "@/types/trip";
 import Link from "next/link";
-import { ThemeToggle } from "@/components/presentation/ThemeToggle";
 
 type Filter = "all" | "hotel" | "ryokan";
 type Sort = "picks" | "price-asc" | "price-desc";
@@ -102,7 +101,6 @@ export function HotelsView({ cities }: { cities: HotelCity[] }) {
 
   return (
     <div className="hp-page">
-      <ThemeToggle />
       <div className="hp-enso" aria-hidden="true" />
       <header className="hp-header">
         <Link href="/" className="hp-back">&larr; Presentation</Link>

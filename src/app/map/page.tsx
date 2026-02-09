@@ -4,7 +4,6 @@ import Link from "next/link";
 import tripData from "@/data/trip.json";
 import type { TripData } from "@/types/trip";
 import { MapLoader } from "@/components/map/MapLoader";
-import { ThemeToggle } from "@/components/presentation/ThemeToggle";
 
 export const metadata: Metadata = {
   title: "Map",
@@ -27,7 +26,6 @@ export default function MapPage() {
       <Link href="/" className="map-back">
         &larr; Back
       </Link>
-      <ThemeToggle />
       <Suspense>
         <MapLoader
           pinsData={data.pins}

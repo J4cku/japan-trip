@@ -2,7 +2,6 @@ import type { Metadata } from "next";
 import Link from "next/link";
 import { flashcards } from "@/data/flashcards";
 import { Flashcards } from "@/components/fun/Flashcards";
-import { ThemeToggle } from "@/components/presentation/ThemeToggle";
 
 export const metadata: Metadata = {
   title: "Flashcards",
@@ -24,7 +23,6 @@ export default function FlashcardsPage() {
       <Link href="/" className="map-back">
         &larr; Back
       </Link>
-      <ThemeToggle />
       <header className="fc-header">
         <h1 className="fc-title">Japanese Phrases</h1>
         <p className="fc-subtitle">
