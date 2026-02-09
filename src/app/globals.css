@@ -2396,6 +2396,17 @@
   font-weight: 700;
   font-size: 0.8rem;
 }
+.ms-pin-src {
+  font-size: 0.5rem;
+  font-weight: 700;
+  color: #BC002D;
+  background: rgba(188, 0, 45, 0.12);
+  padding: 1px 4px;
+  border-radius: 2px;
+  margin-left: 4px;
+  vertical-align: middle;
+  letter-spacing: 0.04em;
+}
 
 /* Map back link */
 .map-back {

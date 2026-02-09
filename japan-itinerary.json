@@ -3029,8 +3029,8 @@
     "source": "Google Maps saved places export",
     "exportDate": "2026-02-09",
     "stats": {
-      "total": 166,
-      "matched": 32,
+      "total": 200,
+      "matched": 66,
       "nearRoute": 81,
       "offRoute": 53
     },
@@ -3067,6 +3067,7 @@
       "lake-biwa",
       "narita",
       "nikko",
+      "seto",
       "shikoku",
       "tango",
       "tohoku",
@@ -3096,6 +3097,22 @@
       },
       {
         "id": 2,
+        "name": "Kawaguchiko Ropeway",
+        "note": null,
+        "lat": 35.512,
+        "lng": 138.757,
+        "googleMapsUrl": null,
+        "region": "fuji",
+        "category": "attraction",
+        "status": "matched",
+        "day": 4,
+        "dayLabel": "Day 4 — Mt Fuji",
+        "possibleDays": [],
+        "possibleDayLabels": [],
+        "source": "itinerary"
+      },
+      {
+        "id": 3,
         "name": "Lake Kawaguchi",
         "note": "jeziorko z widokiem na fuji",
         "lat": 35.5161,
@@ -3110,7 +3127,7 @@
         "possibleDayLabels": []
       },
       {
-        "id": 3,
+        "id": 4,
         "name": "Lake Kawaguchi Lavender",
         "note": null,
         "lat": 35.517,
@@ -3125,7 +3142,7 @@
         "possibleDayLabels": []
       },
       {
-        "id": 4,
+        "id": 5,
         "name": "Oishi Park",
         "note": "park z widokiem na fuji",
         "lat": 35.523,
@@ -3140,7 +3157,7 @@
         "possibleDayLabels": []
       },
       {
-        "id": 5,
+        "id": 6,
         "name": "Hiroshima Peace Memorial Museum",
         "note": null,
         "lat": 34.3915,
@@ -3155,7 +3172,7 @@
         "possibleDayLabels": []
       },
       {
-        "id": 6,
+        "id": 7,
         "name": "Itsukushima Jinja",
         "note": null,
         "lat": 34.2964,
@@ -3170,7 +3187,7 @@
         "possibleDayLabels": []
       },
       {
-        "id": 7,
+        "id": 8,
         "name": "Itsukushima Jinja Otorii (Grand Torii Gate)",
         "note": "brama na wodzie",
         "lat": 34.2966,
@@ -3185,7 +3202,23 @@
         "possibleDayLabels": []
       },
       {
-        "id": 8,
+        "id": 9,
+        "name": "Enoshima Island",
+        "note": null,
+        "lat": 35.3007,
+        "lng": 139.4798,
+        "googleMapsUrl": null,
+        "region": "kamakura",
+        "category": "nature",
+        "status": "matched",
+        "day": 3,
+        "dayLabel": "Day 3 — Kamakura",
+        "possibleDays": [],
+        "possibleDayLabels": [],
+        "source": "itinerary"
+      },
+      {
+        "id": 10,
         "name": "Hokokuji Temple",
         "note": null,
         "lat": 35.3196,
@@ -3200,7 +3233,7 @@
         "possibleDayLabels": []
       },
       {
-        "id": 9,
+        "id": 11,
         "name": "Kamakura Hasedera 長谷寺",
         "note": null,
         "lat": 35.3114,
@@ -3215,7 +3248,23 @@
         "possibleDayLabels": []
       },
       {
-        "id": 10,
+        "id": 12,
+        "name": "Komachi-dōri",
+        "note": null,
+        "lat": 35.324,
+        "lng": 139.553,
+        "googleMapsUrl": null,
+        "region": "kamakura",
+        "category": "street",
+        "status": "matched",
+        "day": 3,
+        "dayLabel": "Day 3 — Kamakura",
+        "possibleDays": [],
+        "possibleDayLabels": [],
+        "source": "itinerary"
+      },
+      {
+        "id": 13,
         "name": "Kotoku-in",
         "note": "kamakura budda",
         "lat": 35.3168,
@@ -3230,7 +3279,23 @@
         "possibleDayLabels": []
       },
       {
-        "id": 11,
+        "id": 14,
+        "name": "Tsurugaoka Hachimangū",
+        "note": null,
+        "lat": 35.326,
+        "lng": 139.5564,
+        "googleMapsUrl": null,
+        "region": "kamakura",
+        "category": "shrine",
+        "status": "matched",
+        "day": 3,
+        "dayLabel": "Day 3 — Kamakura",
+        "possibleDays": [],
+        "possibleDayLabels": [],
+        "source": "itinerary"
+      },
+      {
+        "id": 15,
         "name": "Arashiyama",
         "note": "bambusy",
         "lat": 35.0094,
@@ -3245,7 +3310,7 @@
         "possibleDayLabels": []
       },
       {
-        "id": 12,
+        "id": 16,
         "name": "Arashiyama Monkey Park Iwatayama",
         "note": "małpi park",
         "lat": 35.0122,
@@ -3260,7 +3325,7 @@
         "possibleDayLabels": []
       },
       {
-        "id": 13,
+        "id": 17,
         "name": "Fushimi Inari Pathway",
         "note": "przejście kolorowymi kapliczkami",
         "lat": 34.9671,
@@ -3275,7 +3340,7 @@
         "possibleDayLabels": []
       },
       {
-        "id": 14,
+        "id": 18,
         "name": "Fushimi Inari-Taisha",
         "note": "ścieżka kapliczkami",
         "lat": 34.9671,
@@ -3290,7 +3355,7 @@
         "possibleDayLabels": []
       },
       {
-        "id": 15,
+        "id": 19,
         "name": "Gion",
         "note": "dzielnica gejsz",
         "lat": 35.0038,
@@ -3305,7 +3370,7 @@
         "possibleDayLabels": []
       },
       {
-        "id": 16,
+        "id": 20,
         "name": "Hotel Resol Trinity Kyoto",
         "note": null,
         "lat": 35.0042,
@@ -3320,7 +3385,7 @@
         "possibleDayLabels": []
       },
       {
-        "id": 17,
+        "id": 21,
         "name": "Iwatayama Summit Rest Area",
         "note": null,
         "lat": 35.0135,
@@ -3335,7 +3400,7 @@
         "possibleDayLabels": []
       },
       {
-        "id": 18,
+        "id": 22,
         "name": "Kinkaku-ji",
         "note": "złoty pawilon",
         "lat": 35.0394,
@@ -3350,7 +3415,151 @@
         "possibleDayLabels": []
       },
       {
-        "id": 19,
+        "id": 23,
+        "name": "Tenryū-ji Temple",
+        "note": null,
+        "lat": 35.0156,
+        "lng": 135.6744,
+        "googleMapsUrl": null,
+        "region": "kansai-kyoto",
+        "category": "temple",
+        "status": "matched",
+        "day": 12,
+        "dayLabel": "Day 12 — Kyoto",
+        "possibleDays": [],
+        "possibleDayLabels": [],
+        "source": "itinerary"
+      },
+      {
+        "id": 24,
+        "name": "Togetsukyo Bridge",
+        "note": null,
+        "lat": 35.01,
+        "lng": 135.677,
+        "googleMapsUrl": null,
+        "region": "kansai-kyoto",
+        "category": "bridge",
+        "status": "matched",
+        "day": 12,
+        "dayLabel": "Day 12 — Kyoto",
+        "possibleDays": [],
+        "possibleDayLabels": [],
+        "source": "itinerary"
+      },
+      {
+        "id": 25,
+        "name": "Den Den Town",
+        "note": null,
+        "lat": 34.66,
+        "lng": 135.5058,
+        "googleMapsUrl": null,
+        "region": "kansai-osaka",
+        "category": "shopping",
+        "status": "matched",
+        "day": 11,
+        "dayLabel": "Day 11 — Osaka — Castle & Markets",
+        "possibleDays": [],
+        "possibleDayLabels": [],
+        "source": "itinerary"
+      },
+      {
+        "id": 26,
+        "name": "Dōtonbori",
+        "note": null,
+        "lat": 34.6687,
+        "lng": 135.5027,
+        "googleMapsUrl": null,
+        "region": "kansai-osaka",
+        "category": "street",
+        "status": "matched",
+        "day": 10,
+        "dayLabel": "Day 10 — Osaka — Dōtonbori & Shinsekai",
+        "possibleDays": [],
+        "possibleDayLabels": [],
+        "source": "itinerary"
+      },
+      {
+        "id": 27,
+        "name": "Glico Running Man Sign",
+        "note": null,
+        "lat": 34.6686,
+        "lng": 135.5025,
+        "googleMapsUrl": null,
+        "region": "kansai-osaka",
+        "category": "attraction",
+        "status": "matched",
+        "day": 10,
+        "dayLabel": "Day 10 — Osaka — Dōtonbori & Shinsekai",
+        "possibleDays": [],
+        "possibleDayLabels": [],
+        "source": "itinerary"
+      },
+      {
+        "id": 28,
+        "name": "Hozenji Yokocho",
+        "note": null,
+        "lat": 34.6693,
+        "lng": 135.5057,
+        "googleMapsUrl": null,
+        "region": "kansai-osaka",
+        "category": "street",
+        "status": "matched",
+        "day": 10,
+        "dayLabel": "Day 10 — Osaka — Dōtonbori & Shinsekai",
+        "possibleDays": [],
+        "possibleDayLabels": [],
+        "source": "itinerary"
+      },
+      {
+        "id": 29,
+        "name": "Kuromon Market",
+        "note": null,
+        "lat": 34.663,
+        "lng": 135.508,
+        "googleMapsUrl": null,
+        "region": "kansai-osaka",
+        "category": "food",
+        "status": "matched",
+        "day": 11,
+        "dayLabel": "Day 11 — Osaka — Castle & Markets",
+        "possibleDays": [],
+        "possibleDayLabels": [],
+        "source": "itinerary"
+      },
+      {
+        "id": 30,
+        "name": "Osaka Castle",
+        "note": null,
+        "lat": 34.6873,
+        "lng": 135.5262,
+        "googleMapsUrl": null,
+        "region": "kansai-osaka",
+        "category": "attraction",
+        "status": "matched",
+        "day": 11,
+        "dayLabel": "Day 11 — Osaka — Castle & Markets",
+        "possibleDays": [],
+        "possibleDayLabels": [],
+        "source": "itinerary"
+      },
+      {
+        "id": 31,
+        "name": "Shinsaibashi Arcade",
+        "note": null,
+        "lat": 34.675,
+        "lng": 135.502,
+        "googleMapsUrl": null,
+        "region": "kansai-osaka",
+        "category": "shopping",
+        "status": "matched",
+        "day": 11,
+        "dayLabel": "Day 11 — Osaka — Castle & Markets",
+        "possibleDays": [],
+        "possibleDayLabels": [],
+        "source": "itinerary"
+      },
+      {
+        "id": 32,
         "name": "Shinsekai",
         "note": "ciekawa dzielica w osace",
         "lat": 34.6521,
@@ -3365,7 +3574,23 @@
         "possibleDayLabels": []
       },
       {
-        "id": 20,
+        "id": 33,
+        "name": "Tsutenkaku Tower",
+        "note": null,
+        "lat": 34.6522,
+        "lng": 135.5063,
+        "googleMapsUrl": null,
+        "region": "kansai-osaka",
+        "category": "attraction",
+        "status": "matched",
+        "day": 10,
+        "dayLabel": "Day 10 — Osaka — Dōtonbori & Shinsekai",
+        "possibleDays": [],
+        "possibleDayLabels": [],
+        "source": "itinerary"
+      },
+      {
+        "id": 34,
         "name": "Aso",
         "note": null,
         "lat": 32.8842,
@@ -3380,7 +3605,295 @@
         "possibleDayLabels": []
       },
       {
-        "id": 21,
+        "id": 35,
+        "name": "Bokuya Rides E-bike Tour",
+        "note": null,
+        "lat": 32.89,
+        "lng": 131.08,
+        "googleMapsUrl": null,
+        "region": "kyushu",
+        "category": "attraction",
+        "status": "matched",
+        "day": 6,
+        "dayLabel": "Day 6 — Mt Aso & Bike Ride",
+        "possibleDays": [],
+        "possibleDayLabels": [],
+        "source": "itinerary"
+      },
+      {
+        "id": 36,
+        "name": "Kumamoto Castle",
+        "note": null,
+        "lat": 32.806,
+        "lng": 130.7058,
+        "googleMapsUrl": null,
+        "region": "kyushu",
+        "category": "attraction",
+        "status": "matched",
+        "day": 5,
+        "dayLabel": "Day 5 — Tokyo → Kumamoto",
+        "possibleDays": [],
+        "possibleDayLabels": [],
+        "source": "itinerary"
+      },
+      {
+        "id": 37,
+        "name": "Kurokawa Onsen Village",
+        "note": null,
+        "lat": 33.0988,
+        "lng": 131.0758,
+        "googleMapsUrl": null,
+        "region": "kyushu",
+        "category": "onsen",
+        "status": "matched",
+        "day": 7,
+        "dayLabel": "Day 7 — Kurokawa Onsen",
+        "possibleDays": [],
+        "possibleDayLabels": [],
+        "source": "itinerary"
+      },
+      {
+        "id": 38,
+        "name": "Kurokawa-so Cave Bath",
+        "note": null,
+        "lat": 33.0995,
+        "lng": 131.0745,
+        "googleMapsUrl": null,
+        "region": "kyushu",
+        "category": "onsen",
+        "status": "matched",
+        "day": 7,
+        "dayLabel": "Day 7 — Kurokawa Onsen",
+        "possibleDays": [],
+        "possibleDayLabels": [],
+        "source": "itinerary"
+      },
+      {
+        "id": 39,
+        "name": "Kusasenri Grasslands",
+        "note": null,
+        "lat": 32.892,
+        "lng": 131.075,
+        "googleMapsUrl": null,
+        "region": "kyushu",
+        "category": "nature",
+        "status": "matched",
+        "day": 6,
+        "dayLabel": "Day 6 — Mt Aso & Bike Ride",
+        "possibleDays": [],
+        "possibleDayLabels": [],
+        "source": "itinerary"
+      },
+      {
+        "id": 40,
+        "name": "Nakadake Crater",
+        "note": null,
+        "lat": 32.8841,
+        "lng": 131.0884,
+        "googleMapsUrl": null,
+        "region": "kyushu",
+        "category": "nature",
+        "status": "matched",
+        "day": 6,
+        "dayLabel": "Day 6 — Mt Aso & Bike Ride",
+        "possibleDays": [],
+        "possibleDayLabels": [],
+        "source": "itinerary"
+      },
+      {
+        "id": 41,
+        "name": "Shimotori Arcade",
+        "note": null,
+        "lat": 32.7995,
+        "lng": 130.7098,
+        "googleMapsUrl": null,
+        "region": "kyushu",
+        "category": "street",
+        "status": "matched",
+        "day": 5,
+        "dayLabel": "Day 5 — Tokyo → Kumamoto",
+        "possibleDays": [],
+        "possibleDayLabels": [],
+        "source": "itinerary"
+      },
+      {
+        "id": 42,
+        "name": "Yamabiko Ryokan",
+        "note": null,
+        "lat": 33.1005,
+        "lng": 131.073,
+        "googleMapsUrl": null,
+        "region": "kyushu",
+        "category": "onsen",
+        "status": "matched",
+        "day": 7,
+        "dayLabel": "Day 7 — Kurokawa Onsen",
+        "possibleDays": [],
+        "possibleDayLabels": [],
+        "source": "itinerary"
+      },
+      {
+        "id": 43,
+        "name": "Yamamizuki Rotenburo",
+        "note": null,
+        "lat": 33.097,
+        "lng": 131.078,
+        "googleMapsUrl": null,
+        "region": "kyushu",
+        "category": "onsen",
+        "status": "matched",
+        "day": 7,
+        "dayLabel": "Day 7 — Kurokawa Onsen",
+        "possibleDays": [],
+        "possibleDayLabels": [],
+        "source": "itinerary"
+      },
+      {
+        "id": 44,
+        "name": "Cat Alley (Neko no Hosomichi)",
+        "note": null,
+        "lat": 34.4088,
+        "lng": 133.203,
+        "googleMapsUrl": null,
+        "region": "seto",
+        "category": "street",
+        "status": "matched",
+        "day": 8,
+        "dayLabel": "Day 8 — Kumamoto → Onomichi",
+        "possibleDays": [],
+        "possibleDayLabels": [],
+        "source": "itinerary"
+      },
+      {
+        "id": 45,
+        "name": "Imabari Terminal",
+        "note": null,
+        "lat": 34.066,
+        "lng": 132.9976,
+        "googleMapsUrl": null,
+        "region": "seto",
+        "category": "attraction",
+        "status": "matched",
+        "day": 9,
+        "dayLabel": "Day 9 — Shimanami Kaido → Osaka",
+        "possibleDays": [],
+        "possibleDayLabels": [],
+        "source": "itinerary"
+      },
+      {
+        "id": 46,
+        "name": "Omishima Shrines",
+        "note": null,
+        "lat": 34.253,
+        "lng": 133.003,
+        "googleMapsUrl": null,
+        "region": "seto",
+        "category": "shrine",
+        "status": "matched",
+        "day": 9,
+        "dayLabel": "Day 9 — Shimanami Kaido → Osaka",
+        "possibleDays": [],
+        "possibleDayLabels": [],
+        "source": "itinerary"
+      },
+      {
+        "id": 47,
+        "name": "Onomichi Temple Trail",
+        "note": null,
+        "lat": 34.4085,
+        "lng": 133.205,
+        "googleMapsUrl": null,
+        "region": "seto",
+        "category": "temple",
+        "status": "matched",
+        "day": 8,
+        "dayLabel": "Day 8 — Kumamoto → Onomichi",
+        "possibleDays": [],
+        "possibleDayLabels": [],
+        "source": "itinerary"
+      },
+      {
+        "id": 48,
+        "name": "Senkoji Park",
+        "note": null,
+        "lat": 34.41,
+        "lng": 133.202,
+        "googleMapsUrl": null,
+        "region": "seto",
+        "category": "park",
+        "status": "matched",
+        "day": 8,
+        "dayLabel": "Day 8 — Kumamoto → Onomichi",
+        "possibleDays": [],
+        "possibleDayLabels": [],
+        "source": "itinerary"
+      },
+      {
+        "id": 49,
+        "name": "Senkoji Ropeway",
+        "note": null,
+        "lat": 34.4095,
+        "lng": 133.2013,
+        "googleMapsUrl": null,
+        "region": "seto",
+        "category": "attraction",
+        "status": "matched",
+        "day": 8,
+        "dayLabel": "Day 8 — Kumamoto → Onomichi",
+        "possibleDays": [],
+        "possibleDayLabels": [],
+        "source": "itinerary"
+      },
+      {
+        "id": 50,
+        "name": "Setoda (Ikuchijima)",
+        "note": null,
+        "lat": 34.31,
+        "lng": 133.087,
+        "googleMapsUrl": null,
+        "region": "seto",
+        "category": "neighborhood",
+        "status": "matched",
+        "day": 9,
+        "dayLabel": "Day 9 — Shimanami Kaido → Osaka",
+        "possibleDays": [],
+        "possibleDayLabels": [],
+        "source": "itinerary"
+      },
+      {
+        "id": 51,
+        "name": "Shimanami Kaido Start Point",
+        "note": null,
+        "lat": 34.4053,
+        "lng": 133.209,
+        "googleMapsUrl": null,
+        "region": "seto",
+        "category": "attraction",
+        "status": "matched",
+        "day": 9,
+        "dayLabel": "Day 9 — Shimanami Kaido → Osaka",
+        "possibleDays": [],
+        "possibleDayLabels": [],
+        "source": "itinerary"
+      },
+      {
+        "id": 52,
+        "name": "Tatara Bridge Viewpoint",
+        "note": null,
+        "lat": 34.286,
+        "lng": 133.053,
+        "googleMapsUrl": null,
+        "region": "seto",
+        "category": "viewpoint",
+        "status": "matched",
+        "day": 9,
+        "dayLabel": "Day 9 — Shimanami Kaido → Osaka",
+        "possibleDays": [],
+        "possibleDayLabels": [],
+        "source": "itinerary"
+      },
+      {
+        "id": 53,
         "name": "Akihabara",
         "note": "elektronika i otaku (manga + anime)",
         "lat": 35.7023,
@@ -3395,7 +3908,7 @@
         "possibleDayLabels": []
       },
       {
-        "id": 22,
+        "id": 54,
         "name": "Meiji Jingu Gehaiden",
         "note": null,
         "lat": 35.6764,
@@ -3410,7 +3923,7 @@
         "possibleDayLabels": []
       },
       {
-        "id": 23,
+        "id": 55,
         "name": "Meiji Shrine",
         "note": "kapliczki https://www.japan-guide.com/e/e3002.html",
         "lat": 35.6764,
@@ -3425,7 +3938,7 @@
         "possibleDayLabels": []
       },
       {
-        "id": 24,
+        "id": 56,
         "name": "Nakamise-dori Street",
         "note": "sklepy arcade",
         "lat": 35.7118,
@@ -3440,7 +3953,23 @@
         "possibleDayLabels": []
       },
       {
-        "id": 25,
+        "id": 57,
+        "name": "Omotesandō",
+        "note": null,
+        "lat": 35.6654,
+        "lng": 139.7121,
+        "googleMapsUrl": null,
+        "region": "tokyo",
+        "category": "street",
+        "status": "matched",
+        "day": 2,
+        "dayLabel": "Day 2 — TeamLab & Harajuku",
+        "possibleDays": [],
+        "possibleDayLabels": [],
+        "source": "itinerary"
+      },
+      {
+        "id": 58,
         "name": "Roppongi",
         "note": "luksusowa dzielnica tokyo",
         "lat": 35.6628,
@@ -3455,7 +3984,7 @@
         "possibleDayLabels": []
       },
       {
-        "id": 26,
+        "id": 59,
         "name": "Roppongi Hills",
         "note": null,
         "lat": 35.6605,
@@ -3470,7 +3999,7 @@
         "possibleDayLabels": []
       },
       {
-        "id": 27,
+        "id": 60,
         "name": "Sensō-ji",
         "note": "zespół świątyń w asakusie",
         "lat": 35.7148,
@@ -3485,7 +4014,7 @@
         "possibleDayLabels": []
       },
       {
-        "id": 28,
+        "id": 61,
         "name": "Shibuya Scramble Crossing",
         "note": "skrzyżowanie shibuya",
         "lat": 35.6595,
@@ -3500,7 +4029,23 @@
         "possibleDayLabels": []
       },
       {
-        "id": 29,
+        "id": 62,
+        "name": "Shibuya Sky",
+        "note": null,
+        "lat": 35.6584,
+        "lng": 139.7022,
+        "googleMapsUrl": null,
+        "region": "tokyo",
+        "category": "viewpoint",
+        "status": "matched",
+        "day": 2,
+        "dayLabel": "Day 2 — TeamLab & Harajuku",
+        "possibleDays": [],
+        "possibleDayLabels": [],
+        "source": "itinerary"
+      },
+      {
+        "id": 63,
         "name": "Shinjuku Golden Gai",
         "note": "ulica barowa",
         "lat": 35.6938,
@@ -3515,7 +4060,7 @@
         "possibleDayLabels": []
       },
       {
-        "id": 30,
+        "id": 64,
         "name": "Takeshita St",
         "note": "sklepy",
         "lat": 35.6717,
@@ -3530,7 +4075,7 @@
         "possibleDayLabels": []
       },
       {
-        "id": 31,
+        "id": 65,
         "name": "Tsukiji Outer Market",
         "note": "największy targ rybny i nie tylko",
         "lat": 35.6654,
@@ -3545,7 +4090,7 @@
         "possibleDayLabels": []
       },
       {
-        "id": 32,
+        "id": 66,
         "name": "teamLab Planets TOKYO",
         "note": "<3",
         "lat": 35.6386,
@@ -3560,7 +4105,7 @@
         "possibleDayLabels": []
       },
       {
-        "id": 33,
+        "id": 67,
         "name": "Aokigahara",
         "note": "las samobójców",
         "lat": 35.4736,
@@ -3579,7 +4124,7 @@
         ]
       },
       {
-        "id": 34,
+        "id": 68,
         "name": "Byōdō-in",
         "note": null,
         "lat": 34.8893,
@@ -3598,7 +4143,7 @@
         ]
       },
       {
-        "id": 35,
+        "id": 69,
         "name": "Donguri Kyowakoku (Ghibli Store)",
         "note": null,
         "lat": 35.004,
@@ -3617,7 +4162,7 @@
         ]
       },
       {
-        "id": 36,
+        "id": 70,
         "name": "Giō-ji Temple",
         "note": "Świątynia z mchem",
         "lat": 35.0224,
@@ -3636,7 +4181,7 @@
         ]
       },
       {
-        "id": 37,
+        "id": 71,
         "name": "Heian-jingū Shrine",
         "note": "światynia",
         "lat": 35.016,
@@ -3655,7 +4200,7 @@
         ]
       },
       {
-        "id": 38,
+        "id": 72,
         "name": "Higashiyama Jisho-ji",
         "note": "srebrny pawilon ***",
         "lat": 35.027,
@@ -3674,7 +4219,7 @@
         ]
       },
       {
-        "id": 39,
+        "id": 73,
         "name": "Hirobun",
         "note": "pływający udon",
         "lat": 35.1206,
@@ -3693,7 +4238,7 @@
         ]
       },
       {
-        "id": 40,
+        "id": 74,
         "name": "Hōkan-ji Temple",
         "note": "Świątynia która widać z tradycyjnych uliczek",
         "lat": 34.9981,
@@ -3712,7 +4257,7 @@
         ]
       },
       {
-        "id": 41,
+        "id": 75,
         "name": "Hōnen-in Temple",
         "note": "świątynia na ścieżce filozofów",
         "lat": 35.0265,
@@ -3731,7 +4276,7 @@
         ]
       },
       {
-        "id": 42,
+        "id": 76,
         "name": "Kifune-jinja Shrine",
         "note": null,
         "lat": 35.1214,
@@ -3750,7 +4295,7 @@
         ]
       },
       {
-        "id": 43,
+        "id": 77,
         "name": "Kiyomizu-dera",
         "note": "topka świątyń z dużym tarasem i widokiem",
         "lat": 34.9949,
@@ -3769,7 +4314,7 @@
         ]
       },
       {
-        "id": 44,
+        "id": 78,
         "name": "Kuramadera Temple",
         "note": null,
         "lat": 35.1182,
@@ -3788,7 +4333,7 @@
         ]
       },
       {
-        "id": 45,
+        "id": 79,
         "name": "Kyoto International Manga Museum",
         "note": "muzeum mangi",
         "lat": 35.0117,
@@ -3807,7 +4352,7 @@
         ]
       },
       {
-        "id": 46,
+        "id": 80,
         "name": "Ninenzaka",
         "note": "Tradycyjna droga z której widać świątynie",
         "lat": 34.9965,
@@ -3826,7 +4371,7 @@
         ]
       },
       {
-        "id": 47,
+        "id": 81,
         "name": "Nishiki Market",
         "note": "stary market w kyoto",
         "lat": 35.005,
@@ -3845,7 +4390,7 @@
         ]
       },
       {
-        "id": 48,
+        "id": 82,
         "name": "Pettoshoppu Coo & RIKU Kyotokawaramachiten",
         "note": null,
         "lat": 35.0045,
@@ -3864,7 +4409,7 @@
         ]
       },
       {
-        "id": 49,
+        "id": 83,
         "name": "Philosopher's Path",
         "note": "ładna ścieżka przez park",
         "lat": 35.0228,
@@ -3883,7 +4428,7 @@
         ]
       },
       {
-        "id": 50,
+        "id": 84,
         "name": "SAMURAI & NINJA MUSEUM with EXPERIENCE",
         "note": null,
         "lat": 35.0088,
@@ -3902,7 +4447,7 @@
         ]
       },
       {
-        "id": 51,
+        "id": 85,
         "name": "Saihō-ji (Koke-dera) Temple",
         "note": "światynia z parkiem **",
         "lat": 34.992,
@@ -3921,7 +4466,7 @@
         ]
       },
       {
-        "id": 52,
+        "id": 86,
         "name": "Sanjūsangendō Temple",
         "note": null,
         "lat": 34.9878,
@@ -3940,7 +4485,7 @@
         ]
       },
       {
-        "id": 53,
+        "id": 87,
         "name": "Sannenzaka",
         "note": "Druga tradycyjna uliczka z której widać swiatynie",
         "lat": 34.996,
@@ -3959,7 +4504,7 @@
         ]
       },
       {
-        "id": 54,
+        "id": 88,
         "name": "Shūgakuin Imperial Villa (Shūgakuin-rikyū)",
         "note": "światynia z parkiem **",
         "lat": 35.0457,
@@ -3978,7 +4523,7 @@
         ]
       },
       {
-        "id": 55,
+        "id": 89,
         "name": "Tōfuku-ji",
         "note": "świątynia *",
         "lat": 34.9762,
@@ -3997,7 +4542,7 @@
         ]
       },
       {
-        "id": 56,
+        "id": 90,
         "name": "Wazuka Tea Plantation",
         "note": "Plantacja herbaty blisko nary",
         "lat": 34.788,
@@ -4016,7 +4561,7 @@
         ]
       },
       {
-        "id": 57,
+        "id": 91,
         "name": "nijo zamek",
         "note": null,
         "lat": 35.0142,
@@ -4035,7 +4580,7 @@
         ]
       },
       {
-        "id": 58,
+        "id": 92,
         "name": "Beppu",
         "note": null,
         "lat": 33.2792,
@@ -4058,7 +4603,7 @@
         ]
       },
       {
-        "id": 59,
+        "id": 93,
         "name": "Nakatsu Gorge",
         "note": null,
         "lat": 32.99,
@@ -4081,7 +4626,7 @@
         ]
       },
       {
-        "id": 60,
+        "id": 94,
         "name": "Udo Jingu Shrine",
         "note": null,
         "lat": 31.636,
@@ -4104,7 +4649,7 @@
         ]
       },
       {
-        "id": 61,
+        "id": 95,
         "name": "2nd STREET Harajuku",
         "note": "znany second hand",
         "lat": 35.67,
@@ -4129,7 +4674,7 @@
         ]
       },
       {
-        "id": 62,
+        "id": 96,
         "name": "Ameyoko Shopping District",
         "note": "sklepy",
         "lat": 35.7096,
@@ -4154,7 +4699,7 @@
         ]
       },
       {
-        "id": 63,
+        "id": 97,
         "name": "Asahi Group Head Office Building",
         "note": "śmieszny budynek \"złoty język\" Asahi Beer Hall / Philippe Starck",
         "lat": 35.7102,
@@ -4179,7 +4724,7 @@
         ]
       },
       {
-        "id": 64,
+        "id": 98,
         "name": "Asakusa Hanayashiki",
         "note": "Oldschool park rozrywki",
         "lat": 35.7158,
@@ -4204,7 +4749,7 @@
         ]
       },
       {
-        "id": 65,
+        "id": 99,
         "name": "Cross Shinjuku Vision",
         "note": null,
         "lat": 35.6896,
@@ -4229,7 +4774,7 @@
         ]
       },
       {
-        "id": 66,
+        "id": 100,
         "name": "GBL MIYASHITA PARK店",
         "note": "popup store",
         "lat": 35.6625,
@@ -4254,7 +4799,7 @@
         ]
       },
       {
-        "id": 67,
+        "id": 101,
         "name": "GUCCI OSTERIA Tokyo",
         "note": null,
         "lat": 35.66,
@@ -4279,7 +4824,7 @@
         ]
       },
       {
-        "id": 68,
+        "id": 102,
         "name": "Ginza",
         "note": "Dzielnica zakupowa\ngiga muji i uniqlo",
         "lat": 35.6717,
@@ -4304,7 +4849,7 @@
         ]
       },
       {
-        "id": 69,
+        "id": 103,
         "name": "Godzilla Statue",
         "note": "Figurka godzilli",
         "lat": 35.6943,
@@ -4329,7 +4874,7 @@
         ]
       },
       {
-        "id": 70,
+        "id": 104,
         "name": "Gotokuji Temple",
         "note": "Dużo kotków maneki neko",
         "lat": 35.6503,
@@ -4354,7 +4899,7 @@
         ]
       },
       {
-        "id": 71,
+        "id": 105,
         "name": "Hachiko Square",
         "note": null,
         "lat": 35.659,
@@ -4379,7 +4924,7 @@
         ]
       },
       {
-        "id": 72,
+        "id": 106,
         "name": "Itoya",
         "note": "papierniczy premium",
         "lat": 35.6717,
@@ -4404,7 +4949,7 @@
         ]
       },
       {
-        "id": 73,
+        "id": 107,
         "name": "Jonanjima Seaside Park",
         "note": "park przy morzu",
         "lat": 35.5718,
@@ -4429,7 +4974,7 @@
         ]
       },
       {
-        "id": 74,
+        "id": 108,
         "name": "KAMATA Hakensha - Japanese knife store",
         "note": null,
         "lat": 35.7122,
@@ -4454,7 +4999,7 @@
         ]
       },
       {
-        "id": 75,
+        "id": 109,
         "name": "KOFFEE MAMEYA",
         "note": "Dobra kawka",
         "lat": 35.6627,
@@ -4479,7 +5024,7 @@
         ]
       },
       {
-        "id": 76,
+        "id": 110,
         "name": "Kabukicho",
         "note": "rozrywka w shinjuku",
         "lat": 35.6945,
@@ -4504,7 +5049,7 @@
         ]
       },
       {
-        "id": 77,
+        "id": 111,
         "name": "Kappabashi Dougu Street",
         "note": "plastikowe jedzonko",
         "lat": 35.717,
@@ -4529,7 +5074,7 @@
         ]
       },
       {
-        "id": 78,
+        "id": 112,
         "name": "Kisetsu Ryori Funayado",
         "note": "pływający udon",
         "lat": 35.6353,
@@ -4554,7 +5099,7 @@
         ]
       },
       {
-        "id": 79,
+        "id": 113,
         "name": "Kōkoku-ji",
         "note": "Kolumbarium",
         "lat": 35.6785,
@@ -4579,7 +5124,7 @@
         ]
       },
       {
-        "id": 80,
+        "id": 114,
         "name": "Mikura",
         "note": null,
         "lat": 35.7114,
@@ -4604,7 +5149,7 @@
         ]
       },
       {
-        "id": 81,
+        "id": 115,
         "name": "Mori Art Museum",
         "note": null,
         "lat": 35.6605,
@@ -4629,7 +5174,7 @@
         ]
       },
       {
-        "id": 82,
+        "id": 116,
         "name": "Mount Takao",
         "note": "odpoczynek od miasta a niedaleko",
         "lat": 35.6251,
@@ -4654,7 +5199,7 @@
         ]
       },
       {
-        "id": 83,
+        "id": 117,
         "name": "Museum of Contemporary Art Tokyo (MOT)",
         "note": null,
         "lat": 35.6806,
@@ -4679,7 +5224,7 @@
         ]
       },
       {
-        "id": 84,
+        "id": 118,
         "name": "Muzeum Ghibli",
         "note": null,
         "lat": 35.6962,
@@ -4704,7 +5249,7 @@
         ]
       },
       {
-        "id": 85,
+        "id": 119,
         "name": "Nakameguro",
         "note": "sakury przy rzece",
         "lat": 35.6436,
@@ -4729,7 +5274,7 @@
         ]
       },
       {
-        "id": 86,
+        "id": 120,
         "name": "Nakano Broadway",
         "note": "centrum handlowe z anime i robotami",
         "lat": 35.7087,
@@ -4754,7 +5299,7 @@
         ]
       },
       {
-        "id": 87,
+        "id": 121,
         "name": "Niimi Cooker",
         "note": null,
         "lat": 35.7127,
@@ -4779,7 +5324,7 @@
         ]
       },
       {
-        "id": 88,
+        "id": 122,
         "name": "Omoide Yokochō",
         "note": "uliczka oldschoolowa",
         "lat": 35.6936,
@@ -4804,7 +5349,7 @@
         ]
       },
       {
-        "id": 89,
+        "id": 123,
         "name": "Park Ueno",
         "note": null,
         "lat": 35.7146,
@@ -4829,7 +5374,7 @@
         ]
       },
       {
-        "id": 90,
+        "id": 124,
         "name": "Pałac Cesarski w Tokio",
         "note": null,
         "lat": 35.6852,
@@ -4854,7 +5399,7 @@
         ]
       },
       {
-        "id": 91,
+        "id": 125,
         "name": "Philly Tokyo",
         "note": null,
         "lat": 35.6614,
@@ -4879,7 +5424,7 @@
         ]
       },
       {
-        "id": 92,
+        "id": 126,
         "name": "Pokémon Center Mega Tokyo",
         "note": "największe/najstarsze centrum pokemon",
         "lat": 35.7294,
@@ -4904,7 +5449,7 @@
         ]
       },
       {
-        "id": 93,
+        "id": 127,
         "name": "Rainbow Bridge",
         "note": "Most z widokiem na miasto - warto przejść pieszo",
         "lat": 35.6369,
@@ -4929,7 +5474,7 @@
         ]
       },
       {
-        "id": 94,
+        "id": 128,
         "name": "Shibuya Parco",
         "note": "park",
         "lat": 35.6616,
@@ -4954,7 +5499,7 @@
         ]
       },
       {
-        "id": 95,
+        "id": 129,
         "name": "Shimokitazawa",
         "note": "thrift shopping",
         "lat": 35.6613,
@@ -4979,7 +5524,7 @@
         ]
       },
       {
-        "id": 96,
+        "id": 130,
         "name": "Shinjuku",
         "note": "centrum biznesowo rozrywkowe",
         "lat": 35.6896,
@@ -5004,7 +5549,7 @@
         ]
       },
       {
-        "id": 97,
+        "id": 131,
         "name": "Shinjuku Gyoen National Garden",
         "note": "ogród na shinjuku - polecany",
         "lat": 35.6852,
@@ -5029,7 +5574,7 @@
         ]
       },
       {
-        "id": 98,
+        "id": 132,
         "name": "Suga Jinja",
         "note": "animkowe miejsce",
         "lat": 35.6873,
@@ -5054,7 +5599,7 @@
         ]
       },
       {
-        "id": 99,
+        "id": 133,
         "name": "THE NORTH FACE LAB",
         "note": null,
         "lat": 35.665,
@@ -5079,7 +5624,7 @@
         ]
       },
       {
-        "id": 100,
+        "id": 134,
         "name": "The National Museum of Emerging Science and Innovation",
         "note": null,
         "lat": 35.6191,
@@ -5104,7 +5649,7 @@
         ]
       },
       {
-        "id": 101,
+        "id": 135,
         "name": "The Seiko Museum Ginza",
         "note": "muzeum zegarków seiko",
         "lat": 35.6709,
@@ -5129,7 +5674,7 @@
         ]
       },
       {
-        "id": 102,
+        "id": 136,
         "name": "The Sumida Hokusai Museum",
         "note": "muzeum hokusaia",
         "lat": 35.696,
@@ -5154,7 +5699,7 @@
         ]
       },
       {
-        "id": 103,
+        "id": 137,
         "name": "Thousand Toriis",
         "note": "czerowne tori w tokio",
         "lat": 35.6718,
@@ -5179,7 +5724,7 @@
         ]
       },
       {
-        "id": 104,
+        "id": 138,
         "name": "Toei Animation Museum",
         "note": "muzeum animacji toei",
         "lat": 35.7562,
@@ -5204,7 +5749,7 @@
         ]
       },
       {
-        "id": 105,
+        "id": 139,
         "name": "Tokyo Milk Cheese Factory",
         "note": null,
         "lat": 35.6591,
@@ -5229,7 +5774,7 @@
         ]
       },
       {
-        "id": 106,
+        "id": 140,
         "name": "Tokyo Skytree",
         "note": "najwyższa wieża na świecie",
         "lat": 35.7101,
@@ -5254,7 +5799,7 @@
         ]
       },
       {
-        "id": 107,
+        "id": 141,
         "name": "Tokyo Tower",
         "note": "wieża telewizyjna",
         "lat": 35.6586,
@@ -5279,7 +5824,7 @@
         ]
       },
       {
-        "id": 108,
+        "id": 142,
         "name": "Uobei Shibuya Dogenzaka Store",
         "note": "polecane tanie sushi",
         "lat": 35.6582,
@@ -5304,7 +5849,7 @@
         ]
       },
       {
-        "id": 109,
+        "id": 143,
         "name": "Wakasu Seaside Park",
         "note": "park przy morzu",
         "lat": 35.6278,
@@ -5329,7 +5874,7 @@
         ]
       },
       {
-        "id": 110,
+        "id": 144,
         "name": "Yanaka Ginza",
         "note": "Stara ulica - zakupy oldschool",
         "lat": 35.7261,
@@ -5354,7 +5899,7 @@
         ]
       },
       {
-        "id": 111,
+        "id": 145,
         "name": "Yoyogi Park",
         "note": "park miejski z sakurami",
         "lat": 35.6718,
@@ -5379,7 +5924,7 @@
         ]
       },
       {
-        "id": 112,
+        "id": 146,
         "name": "クロスフォー築地",
         "note": "Sklep z miseczkami",
         "lat": 35.6654,
@@ -5404,7 +5949,7 @@
         ]
       },
       {
-        "id": 113,
+        "id": 147,
         "name": "ポケモンセンターシブヤ",
         "note": "centrum pokemon",
         "lat": 35.6612,
@@ -5429,7 +5974,7 @@
         ]
       },
       {
-        "id": 114,
+        "id": 148,
         "name": "Alpy Japońskie",
         "note": null,
         "lat": 36.29,
@@ -5444,7 +5989,7 @@
         "possibleDayLabels": []
       },
       {
-        "id": 115,
+        "id": 149,
         "name": "Kenroku-en",
         "note": null,
         "lat": 36.5624,
@@ -5459,7 +6004,7 @@
         "possibleDayLabels": []
       },
       {
-        "id": 116,
+        "id": 150,
         "name": "Magome",
         "note": "miasteczko górskie",
         "lat": 35.531,
@@ -5474,7 +6019,7 @@
         "possibleDayLabels": []
       },
       {
-        "id": 117,
+        "id": 151,
         "name": "Meoto Falls",
         "note": null,
         "lat": 36.304,
@@ -5489,7 +6034,7 @@
         "possibleDayLabels": []
       },
       {
-        "id": 118,
+        "id": 152,
         "name": "Mount Mitake",
         "note": null,
         "lat": 35.8,
@@ -5504,7 +6049,7 @@
         "possibleDayLabels": []
       },
       {
-        "id": 119,
+        "id": 153,
         "name": "Shirakawa-go",
         "note": null,
         "lat": 36.2578,
@@ -5519,7 +6064,7 @@
         "possibleDayLabels": []
       },
       {
-        "id": 120,
+        "id": 154,
         "name": "Tsumago-juku",
         "note": "stare miasto drwali",
         "lat": 35.5796,
@@ -5534,7 +6079,7 @@
         "possibleDayLabels": []
       },
       {
-        "id": 121,
+        "id": 155,
         "name": "Zamek Matsumoto",
         "note": null,
         "lat": 36.2388,
@@ -5549,7 +6094,7 @@
         "possibleDayLabels": []
       },
       {
-        "id": 122,
+        "id": 156,
         "name": "Awaji Yumebutai",
         "note": null,
         "lat": 34.5963,
@@ -5564,7 +6109,7 @@
         "possibleDayLabels": []
       },
       {
-        "id": 123,
+        "id": 157,
         "name": "Daihonzan Eiheiji",
         "note": null,
         "lat": 36.0922,
@@ -5579,7 +6124,7 @@
         "possibleDayLabels": []
       },
       {
-        "id": 124,
+        "id": 158,
         "name": "Echizen Daibutsu",
         "note": null,
         "lat": 36.0568,
@@ -5594,7 +6139,7 @@
         "possibleDayLabels": []
       },
       {
-        "id": 125,
+        "id": 159,
         "name": "Fukui City Art Museum",
         "note": null,
         "lat": 36.0625,
@@ -5609,7 +6154,7 @@
         "possibleDayLabels": []
       },
       {
-        "id": 126,
+        "id": 160,
         "name": "Kusatsu Onsen Netsunoyu",
         "note": null,
         "lat": 36.6215,
@@ -5624,7 +6169,7 @@
         "possibleDayLabels": []
       },
       {
-        "id": 127,
+        "id": 161,
         "name": "Takaragawa Onsen Osenkaku",
         "note": null,
         "lat": 36.8211,
@@ -5639,7 +6184,7 @@
         "possibleDayLabels": []
       },
       {
-        "id": 128,
+        "id": 162,
         "name": "Amasake Tea House",
         "note": "Ostatni test stop dla podróżujących tokaido road",
         "lat": 35.2386,
@@ -5654,7 +6199,7 @@
         "possibleDayLabels": []
       },
       {
-        "id": 129,
+        "id": 163,
         "name": "Fuji-Hakone-Izu National Park",
         "note": null,
         "lat": 35.22,
@@ -5669,7 +6214,7 @@
         "possibleDayLabels": []
       },
       {
-        "id": 130,
+        "id": 164,
         "name": "Hakone Mototsumiya Shrine",
         "note": null,
         "lat": 35.218,
@@ -5684,7 +6229,7 @@
         "possibleDayLabels": []
       },
       {
-        "id": 131,
+        "id": 165,
         "name": "Hakone Onsen Sanso Nakamura",
         "note": "Onsen gdzie śpimy",
         "lat": 35.2481,
@@ -5699,7 +6244,7 @@
         "possibleDayLabels": []
       },
       {
-        "id": 132,
+        "id": 166,
         "name": "Hakone-en Station",
         "note": null,
         "lat": 35.2075,
@@ -5714,7 +6259,7 @@
         "possibleDayLabels": []
       },
       {
-        "id": 133,
+        "id": 167,
         "name": "Kuzuryū Shrine Hongū",
         "note": "paliki na jeziorze hakone",
         "lat": 35.2036,
@@ -5729,7 +6274,7 @@
         "possibleDayLabels": []
       },
       {
-        "id": 134,
+        "id": 168,
         "name": "Lake Ashi",
         "note": "jezioro z widokiem na fuji",
         "lat": 35.206,
@@ -5744,7 +6289,7 @@
         "possibleDayLabels": []
       },
       {
-        "id": 135,
+        "id": 169,
         "name": "Owakudani",
         "note": null,
         "lat": 35.2431,
@@ -5759,7 +6304,7 @@
         "possibleDayLabels": []
       },
       {
-        "id": 136,
+        "id": 170,
         "name": "The Hakone Open-Air Museum",
         "note": null,
         "lat": 35.2452,
@@ -5774,7 +6319,7 @@
         "possibleDayLabels": []
       },
       {
-        "id": 137,
+        "id": 171,
         "name": "Kōfuku-ji",
         "note": "świątynia nara",
         "lat": 34.6832,
@@ -5789,7 +6334,7 @@
         "possibleDayLabels": []
       },
       {
-        "id": 138,
+        "id": 172,
         "name": "Nara",
         "note": null,
         "lat": 34.6851,
@@ -5804,7 +6349,7 @@
         "possibleDayLabels": []
       },
       {
-        "id": 139,
+        "id": 173,
         "name": "Nara Park",
         "note": "park jeleni",
         "lat": 34.6851,
@@ -5819,7 +6364,7 @@
         "possibleDayLabels": []
       },
       {
-        "id": 140,
+        "id": 174,
         "name": "Tōdai-ji",
         "note": "świątynie nara",
         "lat": 34.689,
@@ -5834,7 +6379,7 @@
         "possibleDayLabels": []
       },
       {
-        "id": 141,
+        "id": 175,
         "name": "Fudonanae Waterfall Observation Deck",
         "note": null,
         "lat": 34.13,
@@ -5849,7 +6394,7 @@
         "possibleDayLabels": []
       },
       {
-        "id": 142,
+        "id": 176,
         "name": "Mikimoto Pearl Island",
         "note": "wyspa pereł",
         "lat": 34.4783,
@@ -5864,7 +6409,7 @@
         "possibleDayLabels": []
       },
       {
-        "id": 143,
+        "id": 177,
         "name": "Yokoyama View Point",
         "note": null,
         "lat": 34.33,
@@ -5879,7 +6424,7 @@
         "possibleDayLabels": []
       },
       {
-        "id": 144,
+        "id": 178,
         "name": "Yoshino Kumano National Park",
         "note": null,
         "lat": 33.94,
@@ -5894,7 +6439,7 @@
         "possibleDayLabels": []
       },
       {
-        "id": 145,
+        "id": 179,
         "name": "小木森滝",
         "note": null,
         "lat": 34.12,
@@ -5909,7 +6454,7 @@
         "possibleDayLabels": []
       },
       {
-        "id": 146,
+        "id": 180,
         "name": "Biwako Terrace The Main-Grand Terrace",
         "note": "taras widokowy biwa",
         "lat": 35.243,
@@ -5924,7 +6469,7 @@
         "possibleDayLabels": []
       },
       {
-        "id": 147,
+        "id": 181,
         "name": "沖の白石",
         "note": "skałki na jeziorze biwa",
         "lat": 35.18,
@@ -5939,7 +6484,7 @@
         "possibleDayLabels": []
       },
       {
-        "id": 148,
+        "id": 182,
         "name": "Naritasan Shinsho-ji",
         "note": "kolorowe pagody i światynie",
         "lat": 35.7847,
@@ -5954,7 +6499,7 @@
         "possibleDayLabels": []
       },
       {
-        "id": 149,
+        "id": 183,
         "name": "Double Flowered Wisteria",
         "note": null,
         "lat": 36.351,
@@ -5969,7 +6514,7 @@
         "possibleDayLabels": []
       },
       {
-        "id": 150,
+        "id": 184,
         "name": "Kanmangafuchi Abyss",
         "note": null,
         "lat": 36.7465,
@@ -5984,7 +6529,7 @@
         "possibleDayLabels": []
       },
       {
-        "id": 151,
+        "id": 185,
         "name": "Kirifuri Falls",
         "note": null,
         "lat": 36.7591,
@@ -5999,7 +6544,7 @@
         "possibleDayLabels": []
       },
       {
-        "id": 152,
+        "id": 186,
         "name": "Nikko National Park",
         "note": null,
         "lat": 36.7411,
@@ -6014,7 +6559,7 @@
         "possibleDayLabels": []
       },
       {
-        "id": 153,
+        "id": 187,
         "name": "Nikkō Tōshō-gū",
         "note": "mauzoleum w górach",
         "lat": 36.7582,
@@ -6029,7 +6574,7 @@
         "possibleDayLabels": []
       },
       {
-        "id": 154,
+        "id": 188,
         "name": "Onogawafudotaki Falls",
         "note": null,
         "lat": 36.63,
@@ -6044,7 +6589,7 @@
         "possibleDayLabels": []
       },
       {
-        "id": 155,
+        "id": 189,
         "name": "Ryuzu Cascades",
         "note": null,
         "lat": 36.7881,
@@ -6059,7 +6604,7 @@
         "possibleDayLabels": []
       },
       {
-        "id": 156,
+        "id": 190,
         "name": "Shinkyo Bridge",
         "note": null,
         "lat": 36.7568,
@@ -6074,7 +6619,7 @@
         "possibleDayLabels": []
       },
       {
-        "id": 157,
+        "id": 191,
         "name": "Kojima Jeans Street",
         "note": "ulica z jeansami",
         "lat": 34.453,
@@ -6089,7 +6634,7 @@
         "possibleDayLabels": []
       },
       {
-        "id": 158,
+        "id": 192,
         "name": "Ritsurin Garden",
         "note": null,
         "lat": 34.3303,
@@ -6104,7 +6649,7 @@
         "possibleDayLabels": []
       },
       {
-        "id": 159,
+        "id": 193,
         "name": "Saidouji Temple",
         "note": null,
         "lat": 34.659,
@@ -6119,7 +6664,7 @@
         "possibleDayLabels": []
       },
       {
-        "id": 160,
+        "id": 194,
         "name": "Umaji",
         "note": "YUZU\nhttps://visitkochijapan.com/en/see-and-do/10489",
         "lat": 33.5472,
@@ -6134,7 +6679,7 @@
         "possibleDayLabels": []
       },
       {
-        "id": 161,
+        "id": 195,
         "name": "Ama-no-hashidate",
         "note": "mierzejaw widokowa",
         "lat": 35.5608,
@@ -6149,7 +6694,7 @@
         "possibleDayLabels": []
       },
       {
-        "id": 162,
+        "id": 196,
         "name": "Ginzan Onsen",
         "note": null,
         "lat": 38.5681,
@@ -6164,7 +6709,7 @@
         "possibleDayLabels": []
       },
       {
-        "id": 163,
+        "id": 197,
         "name": "Park Narodowy Towada-Hachimantai",
         "note": null,
         "lat": 39.9511,
@@ -6179,7 +6724,7 @@
         "possibleDayLabels": []
       },
       {
-        "id": 164,
+        "id": 198,
         "name": "Tsurunoyu Onsen",
         "note": null,
         "lat": 39.7953,
@@ -6194,7 +6739,7 @@
         "possibleDayLabels": []
       },
       {
-        "id": 165,
+        "id": 199,
         "name": "Cup Noodles Museum Yokohama (Momofuku Ando Invention Memorial)",
         "note": "muzeum zupek chinskich",
         "lat": 35.4544,
@@ -6209,7 +6754,7 @@
         "possibleDayLabels": []
       },
       {
-        "id": 166,
+        "id": 200,
         "name": "Yokohama Chinatown",
         "note": "chinatown",
         "lat": 35.4423,
@@ -6223,6 +6768,10 @@
         "possibleDays": [],
         "possibleDayLabels": []
       }
-    ]
+    ],
+    "sourceDescriptions": {
+      "google-maps": "Saved from Google Maps by the traveler",
+      "itinerary": "Generated from the itinerary — planned activity without a Google Maps save"
+    }
   }
 }

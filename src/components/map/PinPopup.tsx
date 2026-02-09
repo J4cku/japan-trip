@@ -27,8 +27,13 @@ export function PinPopup({ pin }: { pin: Pin }) {
         <span style={{ fontSize: 16 }}>{icon}</span>
         <span style={{ fontSize: 14, fontWeight: 500, color: "#fff" }}>{pin.name}</span>
       </div>
-      <div style={{ fontSize: 12, color: "#888", marginBottom: 8 }}>
-        {pin.category} &middot; {pin.region}
+      <div style={{ fontSize: 12, color: "#888", marginBottom: 8, display: "flex", alignItems: "center", gap: 6 }}>
+        <span>{pin.category} &middot; {pin.region}</span>
+        {pin.source === "itinerary" && (
+          <span style={{ fontSize: 10, fontWeight: 600, color: "#BC002D", background: "rgba(188,0,45,0.12)", padding: "1px 5px", borderRadius: 3, letterSpacing: "0.04em" }}>
+            ITINERARY
+          </span>
+        )}
       </div>
 
       {pin.status === "matched" && (
@@ -65,14 +70,16 @@ export function PinPopup({ pin }: { pin: Pin }) {
         </div>
       )}
 
-      <a
-        href={pin.googleMapsUrl}
-        target="_blank"
-        rel="noopener noreferrer"
-        style={{ fontSize: 12, color: "#BC002D", textDecoration: "none", fontWeight: 600 }}
-      >
-        Open in Google Maps {"\u{2197}"}
-      </a>
+      {pin.googleMapsUrl && (
+        <a
+          href={pin.googleMapsUrl}
+          target="_blank"
+          rel="noopener noreferrer"
+          style={{ fontSize: 12, color: "#BC002D", textDecoration: "none", fontWeight: 600 }}
+        >
+          Open in Google Maps {"\u{2197}"}
+        </a>
+      )}
     </div>
   );
 }

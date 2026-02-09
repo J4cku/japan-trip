@@ -28,9 +28,9 @@ const pages = [
   {
     name: "og-map",
     title: "MAP",
-    subtitle: "166 Saved Pins",
+    subtitle: "200 Pins",
     description: "Interactive map of temples, shrines, restaurants & more",
-    route: "32 in plan · 81 nearby · 53 off-route",
+    route: "66 in plan · 81 nearby · 53 off-route",
   },
   {
     name: "og-hotels",

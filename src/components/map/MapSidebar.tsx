@@ -87,7 +87,10 @@ export function MapSidebar({
                   onClick={() => onFlyTo(pin)}
                 >
                   <span className="ms-pin-icon">{CATEGORY_ICONS[pin.category] || "\u{1F4CD}"}</span>
-                  <span className="ms-pin-name">{pin.name}</span>
+                  <span className="ms-pin-name">
+                    {pin.name}
+                    {pin.source === "itinerary" && <span className="ms-pin-src">ITN</span>}
+                  </span>
                   <span
                     className="ms-pin-status"
                     style={{ color: STATUS_COLOR[pin.status] }}

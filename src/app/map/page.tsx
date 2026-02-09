@@ -7,10 +7,10 @@ import { MapLoader } from "@/components/map/MapLoader";
 
 export const metadata: Metadata = {
   title: "Map",
-  description: "166 saved pins across Japan — temples, shrines, restaurants & more on an interactive map.",
+  description: "200 pins across Japan — temples, shrines, restaurants & more on an interactive map.",
   openGraph: {
     title: "Map — Japan 2026",
-    description: "166 saved pins across Japan — temples, shrines, restaurants & more.",
+    description: "200 pins across Japan — temples, shrines, restaurants & more.",
     images: [{ url: "/og-map.png", width: 1200, height: 630, alt: "Japan 2026 Map" }],
   },
   twitter: {

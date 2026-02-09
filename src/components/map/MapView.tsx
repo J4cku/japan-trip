@@ -154,9 +154,10 @@ export default function MapView({ pinsData, totalDays, initialDay = null }: MapV
               pathOptions={{
                 fillColor: style.color,
                 fillOpacity: opacity,
-                color: style.borderColor,
+                color: pin.source === "itinerary" ? "#BC002D" : style.borderColor,
                 weight: style.borderWidth,
                 opacity: opacity,
+                dashArray: pin.source === "itinerary" ? "3,3" : undefined,
                 className: isGlowing ? "pin-glow" : undefined,
               }}
             >

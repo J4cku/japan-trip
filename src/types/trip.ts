@@ -281,7 +281,7 @@ export interface Pin {
   note: string | null;
   lat: number;
   lng: number;
-  googleMapsUrl: string;
+  googleMapsUrl: string | null;
   region: string;
   category: PinCategory;
   status: PinStatus;
@@ -289,6 +289,7 @@ export interface Pin {
   dayLabel: string | null;
   possibleDays: number[];
   possibleDayLabels: string[];
+  source?: "itinerary";
 }
 
 export interface PinsData {
