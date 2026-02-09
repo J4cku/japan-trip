@@ -13,7 +13,7 @@ export const metadata: Metadata = {
     template: "%s — Japan 2026",
   },
   description: "May 9-22, 2026 — 14 Days, 4 Travelers. Tokyo → Kumamoto → Onomichi → Shimanami Kaido → Osaka → Kyoto → Tokyo.",
-  metadataBase: new URL("https://japan.jacek.co"),
+  metadataBase: new URL("https://jpn.leszczynski.me"),
   openGraph: {
     type: "website",
     siteName: "Japan 2026",
