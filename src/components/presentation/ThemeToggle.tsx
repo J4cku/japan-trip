@@ -27,7 +27,7 @@ export function ThemeToggle() {
 
   return (
     <button
-      className="theme-toggle"
+      className="ui-toggle theme-toggle"
       onClick={toggle}
       title={light ? "Switch to dark mode" : "Switch to light mode"}
     >

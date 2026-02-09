@@ -8,6 +8,7 @@ import { NavDots } from "@/components/presentation/NavDots";
 import { ProgressBar } from "@/components/presentation/ProgressBar";
 import { ScrollObserver } from "@/components/presentation/ScrollObserver";
 import { ThemeToggle } from "@/components/presentation/ThemeToggle";
+import { WeatherOverlay } from "@/components/fun/WeatherOverlay";
 import { SplitBanner } from "@/components/extended/SplitBanner";
 import Link from "next/link";
 
@@ -48,6 +49,7 @@ export default function PresentationPage() {
       <NavDots totalSlides={totalSlides} />
       <ScrollObserver />
       <ThemeToggle />
+      <WeatherOverlay />
 
       <HeroSlide trip={data.trip} />
       {data.days.map((day, i) => (
@@ -77,6 +79,15 @@ export default function PresentationPage() {
         </Link>
         <Link href="/map" className="itinerary-link">
           Map
+        </Link>
+        <Link href="/packing" className="itinerary-link">
+          Packing
+        </Link>
+        <Link href="/flashcards" className="itinerary-link" style={{ borderColor: "rgba(188,143,183,0.3)", color: "#bc8fb7" }}>
+          Flashcards
+        </Link>
+        <Link href="/stamps" className="itinerary-link" style={{ borderColor: "rgba(188,0,45,0.3)", color: "#bc002d" }}>
+          Stamps
         </Link>
         <Link href="/extended" className="itinerary-link" style={{ borderColor: "rgba(196,149,106,0.3)", color: "#c4956a" }}>
           Extended

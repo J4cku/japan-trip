@@ -1,6 +1,11 @@
 import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 import "./globals.css";
+import { SakuraParticles } from "@/components/fun/SakuraParticles";
+import { KonamiEgg } from "@/components/fun/KonamiEgg";
+import { CurrencyConverter } from "@/components/fun/CurrencyConverter";
+import { StampCollector } from "@/components/fun/StampCollector";
+import { AmbientSound } from "@/components/fun/AmbientSound";
 
 const inter = Inter({
   subsets: ["latin"],
@@ -39,7 +44,14 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className={inter.className}>{children}</body>
+      <body className={inter.className}>
+        {children}
+        <SakuraParticles />
+        <KonamiEgg />
+        <CurrencyConverter />
+        <StampCollector />
+        <AmbientSound />
+      </body>
     </html>
   );
 }

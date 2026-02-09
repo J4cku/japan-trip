@@ -2,6 +2,7 @@ import { HERO_STICKERS } from "@/data/stickers";
 import { HERO_TAGS } from "@/data/luggage-tags";
 import { Sticker } from "./Sticker";
 import { LuggageTag } from "./LuggageTag";
+import { Countdown } from "./Countdown";
 import type { TripData } from "@/types/trip";
 
 export function HeroSlide({ trip }: { trip: TripData["trip"] }) {
@@ -33,6 +34,7 @@ export function HeroSlide({ trip }: { trip: TripData["trip"] }) {
         <div className="hero-line rv-l d4" />
         <p className="hero-meta rv d5">{trip.travelers} Travelers &middot; {trip.durationDays} Days</p>
         <p className="hero-route rv d6">{trip.route.join(" \u2192 ")}</p>
+        <Countdown />
       </div>
       <div className="scroll-cue">
         <svg viewBox="0 0 24 24">
