@@ -4641,6 +4641,7 @@
     inset: 0;
     z-index: 299;
     background: rgba(0, 0, 0, 0.35);
+    -webkit-backdrop-filter: blur(2px);
     backdrop-filter: blur(2px);
     animation: menu-fade-in 0.2s ease;
   }
@@ -4696,7 +4697,7 @@
     transform: scale(1);
     bottom: 64px;
     right: 16px;
-    z-index: 300;
+    z-index: 302;
     transition-delay: 0s;
   }
 
@@ -4707,7 +4708,7 @@
     transform: scale(1);
     bottom: 112px;
     right: 16px;
-    z-index: 300;
+    z-index: 302;
     transition-delay: 0.03s;
   }
 
@@ -4718,7 +4719,7 @@
     transform: scale(1);
     bottom: 160px;
     right: 16px;
-    z-index: 300;
+    z-index: 302;
     transition-delay: 0.06s;
     flex-direction: row;
     gap: 8px;
@@ -4755,7 +4756,7 @@
     left: auto;
     bottom: 208px;
     right: 16px;
-    z-index: 300;
+    z-index: 302;
     transition-delay: 0.09s;
   }
 
@@ -4768,7 +4769,7 @@
     left: auto;
     bottom: 256px;
     right: 16px;
-    z-index: 300;
+    z-index: 302;
     transition-delay: 0.12s;
   }
 
@@ -4779,7 +4780,7 @@
     transform: scale(1);
     bottom: 304px;
     right: 16px;
-    z-index: 300;
+    z-index: 302;
     transition-delay: 0.15s;
   }
 
