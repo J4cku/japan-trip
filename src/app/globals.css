@@ -2184,7 +2184,7 @@
 .ms-toggle {
   position: fixed;
   top: 16px;
-  left: 16px;
+  left: 72px;
   z-index: 1001;
   width: 40px;
   height: 40px;
@@ -2202,7 +2202,7 @@
   transition: all 0.2s;
 }
 .ms-toggle-open {
-  left: 356px;
+  left: 348px;
   background: rgba(0, 0, 0, 0.6);
 }
 .ms-toggle:hover {
