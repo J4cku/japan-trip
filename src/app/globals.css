@@ -2201,8 +2201,8 @@
   gap: 6px;
   transition: all 0.2s;
 }
-.map-sidebar-open .ms-toggle {
-  left: 292px;
+.ms-toggle-open {
+  left: 356px;
   background: rgba(0, 0, 0, 0.6);
 }
 .ms-toggle:hover {
@@ -2431,6 +2431,96 @@
   border-color: #BC002D;
 }
 
+/* ── Map light mode ── */
+[data-theme="light"] .map-page {
+  background: #f2efe9;
+}
+[data-theme="light"] .map-page .leaflet-container {
+  background: #f2efe9;
+}
+[data-theme="light"] .map-popup .leaflet-popup-content-wrapper {
+  background: #fff;
+  border-color: #ddd9d2;
+  color: #1a1a1a;
+  box-shadow: 0 4px 24px rgba(0, 0, 0, 0.12);
+}
+[data-theme="light"] .map-popup .leaflet-popup-tip {
+  background: #fff;
+  border-color: #ddd9d2;
+}
+[data-theme="light"] .map-sidebar {
+  background: rgba(245, 243, 238, 0.95);
+  border-right-color: #ddd9d2;
+}
+[data-theme="light"] .ms-toggle {
+  background: rgba(245, 243, 238, 0.9);
+  border-color: #ddd9d2;
+  color: #1a1a1a;
+}
+[data-theme="light"] .ms-toggle:hover {
+  border-color: #BC002D;
+}
+[data-theme="light"] .map-back {
+  background: rgba(245, 243, 238, 0.9);
+  border-color: #ddd9d2;
+  color: #555;
+}
+[data-theme="light"] .map-back:hover {
+  color: #1a1a1a;
+  border-color: #BC002D;
+}
+[data-theme="light"] .mf-stats {
+  color: #555;
+  border-bottom-color: #ddd9d2;
+}
+[data-theme="light"] .mf-label {
+  color: #999;
+}
+[data-theme="light"] .mf-btn {
+  border-color: #ddd9d2;
+  color: #999;
+}
+[data-theme="light"] .mf-btn:hover {
+  border-color: #999;
+  color: #333;
+}
+[data-theme="light"] .mf-chip {
+  border-color: #ddd9d2;
+  color: #999;
+}
+[data-theme="light"] .mf-chip:hover {
+  border-color: #999;
+  color: #333;
+}
+[data-theme="light"] .mf-chip-active {
+  background: rgba(188, 0, 45, 0.08);
+  border-color: rgba(188, 0, 45, 0.25);
+  color: #333;
+}
+[data-theme="light"] .mf-day {
+  border-color: #ddd9d2;
+  color: #999;
+}
+[data-theme="light"] .mf-day:hover {
+  border-color: #999;
+  color: #333;
+}
+[data-theme="light"] .ms-list {
+  border-top-color: #ddd9d2;
+}
+[data-theme="light"] .ms-region-name {
+  color: #999;
+}
+[data-theme="light"] .ms-pin {
+  color: #333;
+}
+[data-theme="light"] .ms-pin:hover {
+  background: rgba(0, 0, 0, 0.04);
+}
+[data-theme="light"] .theme-toggle {
+  background: #f5f3ee;
+}
+
 /* ── Map mobile ── */
 @media (max-width: 768px) {
   .map-sidebar {
@@ -2456,7 +2546,7 @@
   .ms-toggle-label {
     display: inline;
   }
-  .map-sidebar-open .ms-toggle {
+  .ms-toggle-open {
     left: 16px;
     top: auto;
     bottom: calc(70vh + 8px);

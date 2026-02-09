@@ -56,11 +56,11 @@ export function MapSidebar({
   const regionKeys = Object.keys(byRegion).sort();
 
   return (
+    <>
+    <button className={`ms-toggle ${isOpen ? "ms-toggle-open" : ""}`} onClick={onToggleOpen}>
+      {isOpen ? "\u{2715}" : "\u{2630}"} {!isOpen && <span className="ms-toggle-label">Filters</span>}
+    </button>
     <div className={`map-sidebar ${isOpen ? "map-sidebar-open" : ""}`}>
-      <button className="ms-toggle" onClick={onToggleOpen}>
-        {isOpen ? "\u{2715}" : "\u{2630}"} {!isOpen && <span className="ms-toggle-label">Filters</span>}
-      </button>
-
       <div className="ms-inner">
         <MapFilters
           statusFilters={statusFilters}
@@ -104,5 +104,6 @@ export function MapSidebar({
         </div>
       </div>
     </div>
+    </>
   );
 }

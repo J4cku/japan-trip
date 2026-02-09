@@ -8,11 +8,31 @@ import { PinPopup } from "./PinPopup";
 import { RouteOverlay } from "./RouteOverlay";
 import { MapSidebar } from "./MapSidebar";
 
-const STATUS_STYLE: Record<PinStatus, { color: string; radius: number; opacity: number; borderColor: string; borderWidth: number }> = {
-  matched:   { color: "#BC002D", radius: 6, opacity: 1.0, borderColor: "#fff", borderWidth: 2 },
-  nearRoute: { color: "#c4956a", radius: 5, opacity: 0.75, borderColor: "#fff", borderWidth: 1 },
-  offRoute:  { color: "#888",    radius: 4, opacity: 0.4, borderColor: "#444", borderWidth: 1 },
+const TILES = {
+  dark: "https://{s}.basemaps.cartocdn.com/dark_all/{z}/{x}/{y}{r}.png",
+  light: "https://{s}.basemaps.cartocdn.com/light_all/{z}/{x}/{y}{r}.png",
 };
+
+const STATUS_STYLE: Record<PinStatus, { color: string; radius: number; opacity: number; borderColor: Record<string, string>; borderWidth: number }> = {
+  matched:   { color: "#BC002D", radius: 6, opacity: 1.0, borderColor: { dark: "#fff", light: "#fff" }, borderWidth: 2 },
+  nearRoute: { color: "#c4956a", radius: 5, opacity: 0.75, borderColor: { dark: "#fff", light: "#8b7355" }, borderWidth: 1 },
+  offRoute:  { color: "#888",    radius: 4, opacity: 0.4, borderColor: { dark: "#444", light: "#bbb" }, borderWidth: 1 },
+};
+
+function useTheme() {
+  const [theme, setTheme] = useState<"dark" | "light">("dark");
+  useEffect(() => {
+    const check = () => {
+      const t = document.documentElement.getAttribute("data-theme");
+      setTheme(t === "light" ? "light" : "dark");
+    };
+    check();
+    const observer = new MutationObserver(check);
+    observer.observe(document.documentElement, { attributes: true, attributeFilter: ["data-theme"] });
+    return () => observer.disconnect();
+  }, []);
+  return theme;
+}
 
 function FlyToHandler({ target }: { target: { lat: number; lng: number } | null }) {
   const map = useMap();
@@ -53,11 +73,12 @@ interface MapViewProps {
 export default function MapView({ pinsData, totalDays, initialDay = null }: MapViewProps) {
   const allPins = pinsData.items;
   const mapRef = useRef<LeafletMap | null>(null);
+  const theme = useTheme();
 
   const [statusFilters, setStatusFilters] = useState<Record<PinStatus, boolean>>({
     matched: true,
     nearRoute: true,
-    offRoute: false,
+    offRoute: true,
   });
   const [categoryFilters, setCategoryFilters] = useState<Set<PinCategory>>(
     () => new Set(pinsData.categories as PinCategory[])
@@ -125,13 +146,14 @@ export default function MapView({ pinsData, totalDays, initialDay = null }: MapV
         maxBoundsViscosity={1.0}
         minZoom={5}
         maxZoom={18}
-        style={{ width: "100%", height: "100%", background: "#0d1117" }}
+        style={{ width: "100%", height: "100%", background: theme === "light" ? "#f2efe9" : "#0d1117" }}
         ref={mapRef}
         zoomControl={false}
       >
         <TileLayer
+          key={theme}
           attribution='&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> &copy; <a href="https://carto.com/">CARTO</a>'
-          url="https://{s}.basemaps.cartocdn.com/dark_all/{z}/{x}/{y}{r}.png"
+          url={TILES[theme]}
         />
 
         <RouteOverlay selectedDay={selectedDay} />
@@ -154,7 +176,7 @@ export default function MapView({ pinsData, totalDays, initialDay = null }: MapV
               pathOptions={{
                 fillColor: style.color,
                 fillOpacity: opacity,
-                color: pin.source === "itinerary" ? "#BC002D" : style.borderColor,
+                color: pin.source === "itinerary" ? "#BC002D" : style.borderColor[theme],
                 weight: style.borderWidth,
                 opacity: opacity,
                 dashArray: pin.source === "itinerary" ? "3,3" : undefined,
