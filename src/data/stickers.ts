@@ -40,6 +40,10 @@ export const STICKERS: Record<string, string> = {
   station: S + "n2_21.png",
   suitcase: S + "n2_22.png",
   couple: S + "n2_23.png",
+  bonsai: S + "n3_05.png",
+  taiko: S + "n3_06.png",
+  coffee: S + "n3_08.png",
+  pocky: S + "n3_10.png",
 };
 
 export interface StickerPlacement {
@@ -66,22 +70,22 @@ export const HERO_STICKERS: StickerPlacement[] = [
   { src: "daruma", size: "clamp(60px,8vw,100px)", top: "35%", left: "2%", rot: "12deg", op: 0.6, dur: "7s", drift: "-8px", swing: "6deg" },
   { src: "sakura", size: "clamp(60px,8vw,100px)", top: "30%", right: "3%", rot: "-10deg", op: 0.65, dur: "8s", drift: "-16px", swing: "4deg" },
   { src: "neko", size: "clamp(60px,9vw,110px)", bottom: "28%", right: "12%", rot: "8deg", op: 0.65, dur: "6s", drift: "-12px", swing: "-5deg" },
-  { src: "fan", size: "clamp(55px,7vw,90px)", bottom: "25%", left: "14%", rot: "-15deg", op: 0.6, dur: "7s", drift: "-10px", swing: "3deg" },
+  { src: "neko", size: "clamp(55px,7vw,90px)", bottom: "25%", left: "14%", rot: "-15deg", op: 0.6, dur: "7s", drift: "-10px", swing: "3deg" },
 ];
 
 export const CLOSING_STICKERS: StickerPlacement[] = [
   { src: "couple", size: "clamp(100px,14vw,180px)", top: "10%", right: "5%", rot: "5deg", op: 0.85, dur: "8s", drift: "-15px", swing: "-3deg" },
-  { src: "sakura", size: "clamp(80px,11vw,140px)", bottom: "15%", left: "6%", rot: "-8deg", op: 0.75, dur: "7s", drift: "-12px", swing: "4deg" },
+  { src: "sushi2", size: "clamp(80px,11vw,140px)", bottom: "15%", left: "6%", rot: "-8deg", op: 0.75, dur: "7s", drift: "-12px", swing: "4deg" },
   { src: "flag", size: "clamp(70px,9vw,110px)", top: "15%", left: "4%", rot: "10deg", op: 0.7, dur: "6s", drift: "-10px", swing: "5deg" },
   { src: "daruma", size: "clamp(65px,8vw,100px)", bottom: "20%", right: "8%", rot: "-6deg", op: 0.65, dur: "9s", drift: "-14px", swing: "-4deg" },
-  { src: "branch", size: "clamp(60px,8vw,100px)", top: "40%", right: "15%", rot: "15deg", op: 0.6, dur: "7s", drift: "-8px", swing: "3deg" },
+  { src: "fan", size: "clamp(60px,8vw,100px)", top: "40%", right: "15%", rot: "15deg", op: 0.6, dur: "7s", drift: "-8px", swing: "3deg" },
 ];
 
 export const DAY_STICKERS: Record<string, StickerPlacement[]> = {
   "01": [
     { src: "ticket", size: "clamp(90px,14vw,180px)", top: "10%", right: "4vw", rot: "-8deg", op: 0.85 },
     { src: "mapPin", size: "clamp(60px,8vw,110px)", bottom: "18%", right: "8vw", rot: "12deg", op: 0.7 },
-    { src: "flag", size: "clamp(50px,6vw,80px)", top: "60%", right: "2vw", rot: "-5deg", op: 0.55 },
+    { src: "suitcase", size: "clamp(50px,6vw,80px)", top: "60%", right: "2vw", rot: "-5deg", op: 0.55 },
   ],
   "02": [
     { src: "daruma", size: "clamp(100px,14vw,180px)", top: "8%", right: "3vw", rot: "6deg", op: 0.85 },
@@ -90,37 +94,37 @@ export const DAY_STICKERS: Record<string, StickerPlacement[]> = {
   ],
   "03": [
     { src: "pagoda", size: "clamp(90px,14vw,180px)", top: "10%", right: "4vw", rot: "-5deg", op: 0.85 },
-    { src: "sakura", size: "clamp(65px,9vw,110px)", bottom: "20%", right: "6vw", rot: "8deg", op: 0.7 },
+    { src: "bonsai", size: "clamp(65px,9vw,110px)", bottom: "20%", right: "6vw", rot: "8deg", op: 0.7 },
     { src: "geta", size: "clamp(45px,6vw,75px)", top: "55%", right: "2vw", rot: "-12deg", op: 0.55 },
   ],
   "04": [
     { src: "fuji", size: "clamp(110px,16vw,200px)", top: "8%", right: "2vw", rot: "4deg", op: 0.9 },
-    { src: "fuji2", size: "clamp(60px,8vw,100px)", bottom: "18%", right: "12vw", rot: "-6deg", op: 0.6 },
+    { src: "bowl", size: "clamp(60px,8vw,100px)", bottom: "18%", right: "12vw", rot: "-6deg", op: 0.6 },
     { src: "camera", size: "clamp(50px,6vw,80px)", bottom: "35%", right: "3vw", rot: "10deg", op: 0.55 },
   ],
   "05": [
     { src: "train", size: "clamp(100px,14vw,180px)", top: "10%", right: "3vw", rot: "-3deg", op: 0.85 },
-    { src: "sushi", size: "clamp(65px,9vw,110px)", bottom: "15%", right: "8vw", rot: "8deg", op: 0.7 },
-    { src: "castle", size: "clamp(55px,7vw,90px)", top: "55%", right: "1vw", rot: "-10deg", op: 0.55 },
+    { src: "castle", size: "clamp(65px,9vw,110px)", bottom: "15%", right: "8vw", rot: "8deg", op: 0.7 },
+    { src: "flag2", size: "clamp(55px,7vw,90px)", top: "55%", right: "1vw", rot: "-10deg", op: 0.55 },
   ],
   "06": [
-    { src: "lantern", size: "clamp(90px,13vw,170px)", top: "8%", right: "4vw", rot: "8deg", op: 0.85 },
+    { src: "taiko", size: "clamp(90px,13vw,170px)", top: "8%", right: "4vw", rot: "8deg", op: 0.85 },
     { src: "tea", size: "clamp(60px,8vw,100px)", bottom: "20%", right: "6vw", rot: "-5deg", op: 0.7 },
-    { src: "fan", size: "clamp(50px,6vw,80px)", top: "50%", right: "2vw", rot: "15deg", op: 0.55 },
+    { src: "fan", size: "clamp(55px,7vw,90px)", top: "50%", right: "2vw", rot: "5deg", op: 0.55 },
   ],
   "07": [
-    { src: "camera", size: "clamp(90px,13vw,170px)", top: "10%", right: "3vw", rot: "-6deg", op: 0.85, anim: "spin" },
-    { src: "map", size: "clamp(60px,8vw,100px)", bottom: "18%", right: "8vw", rot: "10deg", op: 0.7 },
-    { src: "peace", size: "clamp(55px,7vw,85px)", top: "55%", right: "1vw", rot: "-8deg", op: 0.55 },
+    { src: "tea", size: "clamp(90px,13vw,170px)", top: "10%", right: "3vw", rot: "-6deg", op: 0.85 },
+    { src: "bonsai", size: "clamp(60px,8vw,100px)", bottom: "18%", right: "8vw", rot: "10deg", op: 0.7 },
+    { src: "coffee", size: "clamp(55px,7vw,85px)", top: "55%", right: "1vw", rot: "-8deg", op: 0.55 },
   ],
   "08": [
-    { src: "castle2", size: "clamp(90px,14vw,180px)", top: "10%", right: "4vw", rot: "5deg", op: 0.85 },
+    { src: "torii", size: "clamp(90px,14vw,180px)", top: "10%", right: "4vw", rot: "5deg", op: 0.85 },
     { src: "origami", size: "clamp(60px,8vw,100px)", bottom: "15%", right: "10vw", rot: "-12deg", op: 0.7 },
-    { src: "notebook", size: "clamp(50px,6vw,80px)", top: "55%", right: "2vw", rot: "8deg", op: 0.55 },
+    { src: "pocky", size: "clamp(50px,6vw,80px)", top: "55%", right: "2vw", rot: "8deg", op: 0.55 },
   ],
   "09": [
     { src: "flag", size: "clamp(90px,13vw,170px)", top: "8%", right: "3vw", rot: "-4deg", op: 0.85 },
-    { src: "peace", size: "clamp(70px,10vw,120px)", bottom: "18%", right: "6vw", rot: "10deg", op: 0.7 },
+    { src: "sushi2", size: "clamp(70px,10vw,120px)", bottom: "18%", right: "6vw", rot: "10deg", op: 0.7 },
     { src: "branch", size: "clamp(55px,7vw,90px)", top: "52%", right: "1vw", rot: "-15deg", op: 0.55 },
   ],
   "10": [
@@ -131,23 +135,23 @@ export const DAY_STICKERS: Record<string, StickerPlacement[]> = {
   "11": [
     { src: "castle", size: "clamp(100px,14vw,180px)", top: "8%", right: "3vw", rot: "-5deg", op: 0.85 },
     { src: "kimono", size: "clamp(65px,9vw,110px)", bottom: "20%", right: "10vw", rot: "8deg", op: 0.7 },
-    { src: "bowl", size: "clamp(50px,6vw,80px)", top: "55%", right: "1vw", rot: "-10deg", op: 0.55 },
+    { src: "pocky", size: "clamp(50px,6vw,80px)", top: "55%", right: "1vw", rot: "-10deg", op: 0.55 },
   ],
   "12": [
     { src: "torii", size: "clamp(100px,15vw,190px)", top: "8%", right: "3vw", rot: "4deg", op: 0.9 },
     { src: "fan", size: "clamp(60px,8vw,100px)", bottom: "15%", right: "8vw", rot: "-12deg", op: 0.7 },
-    { src: "crane", size: "clamp(55px,7vw,90px)", top: "52%", right: "2vw", rot: "10deg", op: 0.55 },
+    { src: "tea", size: "clamp(55px,7vw,90px)", top: "52%", right: "2vw", rot: "10deg", op: 0.55 },
   ],
   "13": [
     { src: "train", size: "clamp(100px,14vw,180px)", top: "10%", right: "4vw", rot: "-3deg", op: 0.85 },
     { src: "logo", size: "clamp(65px,9vw,110px)", bottom: "18%", right: "6vw", rot: "8deg", op: 0.7 },
-    { src: "shrine", size: "clamp(50px,6vw,80px)", top: "55%", right: "2vw", rot: "-8deg", op: 0.55 },
+    { src: "suitcase", size: "clamp(50px,6vw,80px)", top: "55%", right: "2vw", rot: "-8deg", op: 0.55 },
   ],
   "14": [
     { src: "ticket", size: "clamp(100px,14vw,180px)", top: "8%", right: "3vw", rot: "5deg", op: 0.85 },
     { src: "sakura", size: "clamp(70px,10vw,120px)", bottom: "15%", right: "8vw", rot: "-8deg", op: 0.75 },
     { src: "girl", size: "clamp(60px,8vw,100px)", top: "50%", right: "1vw", rot: "6deg", op: 0.6 },
-    { src: "boy", size: "clamp(55px,7vw,90px)", bottom: "30%", right: "14vw", rot: "-10deg", op: 0.6 },
+    { src: "neko", size: "clamp(55px,7vw,90px)", bottom: "30%", right: "14vw", rot: "-10deg", op: 0.6 },
   ],
 };
 
@@ -157,9 +161,9 @@ export const DAY_LABEL_ICON: Record<string, string> = {
   "03": "pagoda",
   "04": "fuji",
   "05": "train",
-  "06": "lantern",
-  "07": "camera",
-  "08": "castle2",
+  "06": "taiko",
+  "07": "tea",
+  "08": "torii",
   "09": "flag",
   "10": "ramen",
   "11": "castle",
