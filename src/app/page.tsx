@@ -70,6 +70,9 @@ export default function PresentationPage() {
         <Link href="/restaurants" className="itinerary-link">
           Restaurants
         </Link>
+        <Link href="/map" className="itinerary-link">
+          Map
+        </Link>
       </div>
     </div>
   );

@@ -1,0 +1,118 @@
+"use client";
+import type { PinCategory, PinStatus } from "@/types/trip";
+
+const CATEGORY_ICONS: Record<PinCategory, string> = {
+  temple: "\u{26E9}\uFE0F",
+  shrine: "\u{26E9}\uFE0F",
+  museum: "\u{1F3DB}\uFE0F",
+  food: "\u{1F374}",
+  shopping: "\u{1F6CD}\uFE0F",
+  nature: "\u{1F33F}",
+  park: "\u{1F333}",
+  onsen: "\u{2668}\uFE0F",
+  attraction: "\u{2B50}",
+  hotel: "\u{1F3E8}",
+  viewpoint: "\u{1F441}\uFE0F",
+  neighborhood: "\u{1F4CD}",
+  street: "\u{1F6B6}",
+  bridge: "\u{1F309}",
+};
+
+const ALL_CATEGORIES: PinCategory[] = [
+  "temple", "shrine", "museum", "food", "shopping",
+  "nature", "park", "onsen", "attraction", "hotel",
+  "viewpoint", "neighborhood", "street", "bridge",
+];
+
+interface MapFiltersProps {
+  statusFilters: Record<PinStatus, boolean>;
+  onToggleStatus: (s: PinStatus) => void;
+  categoryFilters: Set<PinCategory>;
+  onToggleCategory: (c: PinCategory) => void;
+  selectedDay: number | null;
+  onSelectDay: (d: number | null) => void;
+  totalDays: number;
+  stats: { total: number; matched: number; nearRoute: number; offRoute: number };
+}
+
+export function MapFilters({
+  statusFilters,
+  onToggleStatus,
+  categoryFilters,
+  onToggleCategory,
+  selectedDay,
+  onSelectDay,
+  totalDays,
+  stats,
+}: MapFiltersProps) {
+  return (
+    <div className="map-filters">
+      <div className="mf-stats">
+        {stats.total} saved pins &middot;{" "}
+        <span style={{ color: "#4a9" }}>{stats.matched} in plan</span> &middot;{" "}
+        <span style={{ color: "#c4956a" }}>{stats.nearRoute} nearby</span> &middot;{" "}
+        <span style={{ color: "#888" }}>{stats.offRoute} off-route</span>
+      </div>
+
+      <div className="mf-section">
+        <div className="mf-label">Status</div>
+        <div className="mf-row">
+          <button
+            className={`mf-btn ${statusFilters.matched ? "mf-btn-active-matched" : ""}`}
+            onClick={() => onToggleStatus("matched")}
+          >
+            Matched
+          </button>
+          <button
+            className={`mf-btn ${statusFilters.nearRoute ? "mf-btn-active-near" : ""}`}
+            onClick={() => onToggleStatus("nearRoute")}
+          >
+            Near Route
+          </button>
+          <button
+            className={`mf-btn ${statusFilters.offRoute ? "mf-btn-active-off" : ""}`}
+            onClick={() => onToggleStatus("offRoute")}
+          >
+            Off Route
+          </button>
+        </div>
+      </div>
+
+      <div className="mf-section">
+        <div className="mf-label">Category</div>
+        <div className="mf-chips">
+          {ALL_CATEGORIES.map((cat) => (
+            <button
+              key={cat}
+              className={`mf-chip ${categoryFilters.has(cat) ? "mf-chip-active" : ""}`}
+              onClick={() => onToggleCategory(cat)}
+            >
+              <span className="mf-chip-icon">{CATEGORY_ICONS[cat]}</span> {cat}
+            </button>
+          ))}
+        </div>
+      </div>
+
+      <div className="mf-section">
+        <div className="mf-label">Day</div>
+        <div className="mf-days">
+          <button
+            className={`mf-day ${selectedDay === null ? "mf-day-active" : ""}`}
+            onClick={() => onSelectDay(null)}
+          >
+            All
+          </button>
+          {Array.from({ length: totalDays }, (_, i) => i + 1).map((d) => (
+            <button
+              key={d}
+              className={`mf-day ${selectedDay === d ? "mf-day-active" : ""}`}
+              onClick={() => onSelectDay(d)}
+            >
+              {d}
+            </button>
+          ))}
+        </div>
+      </div>
+    </div>
+  );
+}

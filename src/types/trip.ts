@@ -268,6 +268,39 @@ export interface Travel {
   animation: string;
 }
 
+export type PinCategory =
+  | "temple" | "shrine" | "museum" | "food" | "shopping"
+  | "nature" | "park" | "onsen" | "attraction" | "hotel"
+  | "viewpoint" | "neighborhood" | "street" | "bridge";
+
+export type PinStatus = "matched" | "nearRoute" | "offRoute";
+
+export interface Pin {
+  id: number;
+  name: string;
+  note: string | null;
+  lat: number;
+  lng: number;
+  googleMapsUrl: string;
+  region: string;
+  category: PinCategory;
+  status: PinStatus;
+  day: number | null;
+  dayLabel: string | null;
+  possibleDays: number[];
+  possibleDayLabels: string[];
+}
+
+export interface PinsData {
+  source: string;
+  exportDate: string;
+  stats: { total: number; matched: number; nearRoute: number; offRoute: number };
+  categories: PinCategory[];
+  regions: string[];
+  statusDescriptions: Record<PinStatus, string>;
+  items: Pin[];
+}
+
 export interface TripData {
   trip: Trip;
   stays: Stay[];
@@ -281,4 +314,5 @@ export interface TripData {
   hotels: Hotels;
   travels: Travel[];
   restaurants: Restaurants;
+  pins: PinsData;
 }

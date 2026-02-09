@@ -96,14 +96,22 @@ export function DaySlide({
             </div>
           )}
         </div>
-        {restaurantInfo && (
+        <div style={{ display: "flex", gap: 8, flexWrap: "wrap" }}>
+          {restaurantInfo && (
+            <Link
+              href={`/restaurants#rx-${restaurantInfo.locationId}`}
+              className="day-dining rv d9"
+            >
+              {restaurantInfo.count} dining spots for this area
+            </Link>
+          )}
           <Link
-            href={`/restaurants#rx-${restaurantInfo.locationId}`}
-            className="day-dining rv d9"
+            href={`/map?day=${day.day}`}
+            className="day-dining day-map-link rv d9"
           >
-            {restaurantInfo.count} dining spots for this area
+            Show on map
           </Link>
-        )}
+        </div>
         {day.tip && <p className="day-tip rv d9">{day.tip}</p>}
       </div>
     </section>
