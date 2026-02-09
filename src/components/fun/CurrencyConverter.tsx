@@ -26,6 +26,12 @@ export function CurrencyConverter() {
 
   useEffect(() => setMounted(true), []);
 
+  useEffect(() => {
+    const close = () => setOpen(false);
+    window.addEventListener("mobile-menu-close", close);
+    return () => window.removeEventListener("mobile-menu-close", close);
+  }, []);
+
   if (!mounted) return null;
 
   const numAmount = parseFloat(amount) || 0;

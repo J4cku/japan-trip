@@ -5,6 +5,7 @@ import { NavDots } from "@/components/presentation/NavDots";
 import { ProgressBar } from "@/components/presentation/ProgressBar";
 import { ScrollObserver } from "@/components/presentation/ScrollObserver";
 import { ThemeToggle } from "@/components/presentation/ThemeToggle";
+import { WeatherOverlay } from "@/components/fun/WeatherOverlay";
 import { SplitBanner } from "@/components/extended/SplitBanner";
 import { OnsenGuide } from "@/components/extended/OnsenGuide";
 import { TrailProfile } from "@/components/extended/TrailProfile";
@@ -55,6 +56,7 @@ export default function ExtendedPage() {
       <NavDots totalSlides={totalSlides} />
       <ScrollObserver />
       <ThemeToggle />
+      <WeatherOverlay />
       <Japan101Client tips={ext.practicalTips} dietaryReminder={ext.dietaryReminder} />
 
       {/* Hero Slide */}
@@ -117,8 +119,13 @@ export default function ExtendedPage() {
 
       <div className="fixed-links">
         <Link href="/" className="itinerary-link">Main Trip</Link>
+        <Link href="/itinerary" className="itinerary-link">Itinerary</Link>
+        <Link href="/hotels" className="itinerary-link">Hotels</Link>
         <Link href="/restaurants" className="itinerary-link">Restaurants</Link>
         <Link href="/map" className="itinerary-link">Map</Link>
+        <Link href="/packing" className="itinerary-link">Packing</Link>
+        <Link href="/flashcards" className="itinerary-link" style={{ borderColor: "rgba(188,143,183,0.3)", color: "#bc8fb7" }}>Flashcards</Link>
+        <Link href="/stamps" className="itinerary-link" style={{ borderColor: "rgba(188,0,45,0.3)", color: "#bc002d" }}>Stamps</Link>
       </div>
     </div>
   );

@@ -155,6 +155,7 @@ export function AmbientSound() {
   const toggle = useCallback(() => {
     const next = !enabled;
     setEnabled(next);
+    setShowVolume(next);
 
     if (next) {
       // Turning on — create context on user gesture, start current soundscape
@@ -202,6 +203,12 @@ export function AmbientSound() {
     localStorage.setItem("ambient-volume", String(v));
   }, []);
 
+  useEffect(() => {
+    const close = () => setShowVolume(false);
+    window.addEventListener("mobile-menu-close", close);
+    return () => window.removeEventListener("mobile-menu-close", close);
+  }, []);
+
   if (!mounted) return null;
 
   // Only show on the main presentation page
@@ -213,20 +220,18 @@ export function AmbientSound() {
       onMouseEnter={() => setShowVolume(true)}
       onMouseLeave={() => setShowVolume(false)}
     >
-      {showVolume && (
-        <div className="ambient-volume">
-          <input
-            type="range"
-            min="0"
-            max="1"
-            step="0.01"
-            value={volume}
-            onChange={handleVolumeChange}
-            className="ambient-slider"
-            aria-label="Ambient volume"
-          />
-        </div>
-      )}
+      <div className={`ambient-volume${showVolume ? " ambient-volume-show" : ""}`}>
+        <input
+          type="range"
+          min="0"
+          max="1"
+          step="0.01"
+          value={volume}
+          onChange={handleVolumeChange}
+          className="ambient-slider"
+          aria-label="Ambient volume"
+        />
+      </div>
       <button
         className={`ui-toggle ambient-toggle${enabled ? " active" : ""}`}
         onClick={toggle}

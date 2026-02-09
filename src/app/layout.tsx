@@ -6,6 +6,7 @@ import { KonamiEgg } from "@/components/fun/KonamiEgg";
 import { CurrencyConverter } from "@/components/fun/CurrencyConverter";
 import { StampCollector } from "@/components/fun/StampCollector";
 import { AmbientSound } from "@/components/fun/AmbientSound";
+import { MobileMenu } from "@/components/MobileMenu";
 
 const inter = Inter({
   subsets: ["latin"],
@@ -51,6 +52,7 @@ export default function RootLayout({
         <CurrencyConverter />
         <StampCollector />
         <AmbientSound />
+        <MobileMenu />
       </body>
     </html>
   );

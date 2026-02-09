@@ -1,9 +1,15 @@
 "use client";
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import type { ExtendedPracticalTips } from "@/types/trip";
 
 export function Japan101({ tips, dietaryReminder }: { tips: ExtendedPracticalTips; dietaryReminder: string }) {
   const [isOpen, setIsOpen] = useState(false);
+
+  useEffect(() => {
+    const close = () => setIsOpen(false);
+    window.addEventListener("mobile-menu-close", close);
+    return () => window.removeEventListener("mobile-menu-close", close);
+  }, []);
 
   return (
     <>
