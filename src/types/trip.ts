@@ -271,13 +271,15 @@ export interface Travel {
 export type PinCategory =
   | "temple" | "shrine" | "museum" | "food" | "shopping"
   | "nature" | "park" | "onsen" | "attraction" | "hotel"
-  | "viewpoint" | "neighborhood" | "street" | "bridge";
+  | "viewpoint" | "neighborhood" | "street" | "bridge"
+  | "ryokan";
 
 export type PinStatus = "matched" | "nearRoute" | "offRoute";
 
 export interface Pin {
   id: number;
   name: string;
+  nameJp?: string;
   note: string | null;
   lat: number;
   lng: number;
@@ -289,7 +291,12 @@ export interface Pin {
   dayLabel: string | null;
   possibleDays: number[];
   possibleDayLabels: string[];
-  source?: "itinerary";
+  source?: "itinerary" | "hotels";
+  hotelLocation?: string;
+  chosen?: boolean;
+  extendedStatus?: PinStatus;
+  extendedDay?: number | null;
+  extendedDayLabel?: string | null;
 }
 
 export interface PinsData {
@@ -300,6 +307,67 @@ export interface PinsData {
   regions: string[];
   statusDescriptions: Record<PinStatus, string>;
   items: Pin[];
+}
+
+export interface OnsenEtiquette {
+  rules: string[];
+  tip: string;
+}
+
+export interface NakasendoTrail {
+  distance: string;
+  duration: string;
+  difficulty: string;
+  elevationStart: number;
+  elevationPass: number;
+  elevationEnd: number;
+  terrain: string;
+  whatToPack: string[];
+}
+
+export interface ExtendedDay extends Day {
+  splitNote?: string;
+  isHikingDay?: boolean;
+  onsenEtiquette?: OnsenEtiquette;
+  nakasendoTrail?: NakasendoTrail;
+}
+
+export interface ExtendedStay {
+  location: string;
+  nights: number;
+  dates: string;
+  area: string;
+  note: string;
+}
+
+export interface ExtendedPracticalTips {
+  forLessExperienced: string[];
+  emergencyFood?: string[];
+  jrPassNote?: string;
+}
+
+export interface ExtendedTrip {
+  note: string;
+  travelers: number;
+  rooms: number;
+  splitDay: number;
+  splitDate: string;
+  splitNote: string;
+  dates: string;
+  extendedDays: number;
+  extendedNights: number;
+  dietaryReminder: string;
+  returnFlight: {
+    from: string;
+    to: string;
+    date: string;
+    departs: string;
+  };
+  stays: ExtendedStay[];
+  days: ExtendedDay[];
+  travels: Travel[];
+  restaurants: Restaurants;
+  practicalTips: ExtendedPracticalTips;
 }
 
 export interface TripData {
@@ -316,4 +384,5 @@ export interface TripData {
   travels: Travel[];
   restaurants: Restaurants;
   pins: PinsData;
+  extended: ExtendedTrip;
 }

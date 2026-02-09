@@ -1,10 +1,11 @@
 "use client";
 import { useState, useCallback, useRef, useEffect, useMemo } from "react";
-import { MapContainer, TileLayer, CircleMarker, Popup, useMap } from "react-leaflet";
+import { MapContainer, TileLayer, CircleMarker, Marker, Popup, useMap } from "react-leaflet";
+import L from "leaflet";
 import type { Map as LeafletMap } from "leaflet";
 import "leaflet/dist/leaflet.css";
 import type { Pin, PinCategory, PinStatus, PinsData } from "@/types/trip";
-import { PinPopup } from "./PinPopup";
+import { PinPopup, HotelPinPopup } from "./PinPopup";
 import { RouteOverlay } from "./RouteOverlay";
 import { MapSidebar } from "./MapSidebar";
 
@@ -18,6 +19,26 @@ const STATUS_STYLE: Record<PinStatus, { color: string; radius: number; opacity: 
   nearRoute: { color: "#c4956a", radius: 5, opacity: 0.75, borderColor: { dark: "#fff", light: "#8b7355" }, borderWidth: 1 },
   offRoute:  { color: "#888",    radius: 4, opacity: 0.4, borderColor: { dark: "#444", light: "#bbb" }, borderWidth: 1 },
 };
+
+function createHotelIcon(pin: Pin) {
+  const fill = pin.chosen ? "#c4956a" : "#666";
+  const isRyokan = pin.category === "ryokan";
+  const markerClass = isRyokan ? "ryokan-marker" : "hotel-marker";
+
+  return L.divIcon({
+    html: `<div class="${markerClass}" style="
+      width: 12px;
+      height: 12px;
+      background: ${fill};
+      border: 2px solid ${pin.chosen ? "#fff" : "#999"};
+      ${isRyokan ? "transform: rotate(45deg);" : ""}
+      box-sizing: border-box;
+    "></div>`,
+    className: "",
+    iconSize: [16, 16],
+    iconAnchor: [8, 8],
+  });
+}
 
 function useTheme() {
   const [theme, setTheme] = useState<"dark" | "light">("dark");
@@ -56,7 +77,6 @@ function InitialDayHandler({ day, pins }: { day: number | null; pins: Pin[] }) {
       );
       if (dayPins.length > 0) {
         const bounds = dayPins.map((p) => [p.lat, p.lng] as [number, number]);
-        const L = require("leaflet");
         map.flyToBounds(L.latLngBounds(bounds).pad(0.3), { duration: 1.5 });
       }
     }
@@ -67,10 +87,11 @@ function InitialDayHandler({ day, pins }: { day: number | null; pins: Pin[] }) {
 interface MapViewProps {
   pinsData: PinsData;
   totalDays: number;
+  extendedTotalDays?: number;
   initialDay?: number | null;
 }
 
-export default function MapView({ pinsData, totalDays, initialDay = null }: MapViewProps) {
+export default function MapView({ pinsData, totalDays, extendedTotalDays = 21, initialDay = null }: MapViewProps) {
   const allPins = pinsData.items;
   const mapRef = useRef<LeafletMap | null>(null);
   const theme = useTheme();
@@ -86,6 +107,8 @@ export default function MapView({ pinsData, totalDays, initialDay = null }: MapV
   const [selectedDay, setSelectedDay] = useState<number | null>(initialDay);
   const [flyTarget, setFlyTarget] = useState<{ lat: number; lng: number } | null>(null);
   const [sidebarOpen, setSidebarOpen] = useState(false);
+  const [showHotels, setShowHotels] = useState(false);
+  const [showExtended, setShowExtended] = useState(false);
 
   const toggleStatus = useCallback((s: PinStatus) => {
     setStatusFilters((prev) => ({ ...prev, [s]: !prev[s] }));
@@ -100,21 +123,36 @@ export default function MapView({ pinsData, totalDays, initialDay = null }: MapV
     });
   }, []);
 
+  const toggleHotels = useCallback(() => {
+    setShowHotels((prev) => !prev);
+  }, []);
+
+  const toggleExtended = useCallback(() => {
+    setShowExtended((prev) => !prev);
+  }, []);
+
   const visiblePins = useMemo(() => {
     return allPins.filter((pin) => {
-      if (!statusFilters[pin.status]) return false;
+      if (pin.source === "hotels" && !showHotels) return false;
+      const effectiveStatus = showExtended && pin.extendedStatus ? pin.extendedStatus : pin.status;
+      if (!statusFilters[effectiveStatus]) return false;
       if (!categoryFilters.has(pin.category)) return false;
       return true;
     });
-  }, [allPins, statusFilters, categoryFilters]);
+  }, [allPins, statusFilters, categoryFilters, showHotels, showExtended]);
+
+  const regularPins = useMemo(() => visiblePins.filter((p) => p.source !== "hotels"), [visiblePins]);
+  const hotelPins = useMemo(() => visiblePins.filter((p) => p.source === "hotels"), [visiblePins]);
 
   const getPinOpacity = useCallback((pin: Pin) => {
-    if (selectedDay === null) return STATUS_STYLE[pin.status].opacity;
+    const effectiveStatus = showExtended && pin.extendedStatus ? pin.extendedStatus : pin.status;
+    if (selectedDay === null) return STATUS_STYLE[effectiveStatus].opacity;
     const isActive =
       (pin.status === "matched" && pin.day === selectedDay) ||
-      (pin.status === "nearRoute" && pin.possibleDays.includes(selectedDay));
+      (pin.status === "nearRoute" && pin.possibleDays.includes(selectedDay)) ||
+      (showExtended && pin.extendedDay === selectedDay);
     return isActive ? 1.0 : 0.15;
-  }, [selectedDay]);
+  }, [selectedDay, showExtended]);
 
   const handleFlyTo = useCallback((pin: Pin) => {
     setFlyTarget({ lat: pin.lat, lng: pin.lng });
@@ -133,10 +171,15 @@ export default function MapView({ pinsData, totalDays, initialDay = null }: MapV
         selectedDay={selectedDay}
         onSelectDay={setSelectedDay}
         totalDays={totalDays}
+        extendedTotalDays={extendedTotalDays}
         stats={pinsData.stats}
         onFlyTo={handleFlyTo}
         isOpen={sidebarOpen}
         onToggleOpen={() => setSidebarOpen((o) => !o)}
+        showHotels={showHotels}
+        onToggleHotels={toggleHotels}
+        showExtended={showExtended}
+        onToggleExtended={toggleExtended}
       />
 
       <MapContainer
@@ -156,17 +199,40 @@ export default function MapView({ pinsData, totalDays, initialDay = null }: MapV
           url={TILES[theme]}
         />
 
-        <RouteOverlay selectedDay={selectedDay} />
+        <RouteOverlay selectedDay={selectedDay} showExtended={showExtended} />
         <FlyToHandler target={flyTarget} />
         <InitialDayHandler day={initialDay} pins={allPins} />
 
-        {visiblePins.map((pin) => {
-          const style = STATUS_STYLE[pin.status];
+        {/* Hotel pins - rendered first (below regular pins) */}
+        {showHotels && hotelPins.map((pin) => {
+          const opacity = getPinOpacity(pin);
+          return (
+            <Marker
+              key={`hotel-${pin.id}`}
+              position={[pin.lat, pin.lng]}
+              icon={createHotelIcon(pin)}
+              opacity={opacity}
+              zIndexOffset={-1000}
+            >
+              <Popup
+                closeButton={false}
+                className="map-popup"
+              >
+                <HotelPinPopup pin={pin} />
+              </Popup>
+            </Marker>
+          );
+        })}
+
+        {/* Regular pins */}
+        {regularPins.map((pin) => {
+          const effectiveStatus = showExtended && pin.extendedStatus ? pin.extendedStatus : pin.status;
+          const style = STATUS_STYLE[effectiveStatus];
           const opacity = getPinOpacity(pin);
           const isGlowing =
             selectedDay !== null &&
-            pin.status === "matched" &&
-            pin.day === selectedDay;
+            ((pin.status === "matched" && pin.day === selectedDay) ||
+             (showExtended && pin.extendedDay === selectedDay));
 
           return (
             <CircleMarker

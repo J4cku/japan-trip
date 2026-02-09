@@ -7,7 +7,7 @@ const CATEGORY_ICONS: Record<string, string> = {
   food: "\u{1F374}", shopping: "\u{1F6CD}\uFE0F", nature: "\u{1F33F}",
   park: "\u{1F333}", onsen: "\u{2668}\uFE0F", attraction: "\u{2B50}",
   hotel: "\u{1F3E8}", viewpoint: "\u{1F441}\uFE0F", neighborhood: "\u{1F4CD}",
-  street: "\u{1F6B6}", bridge: "\u{1F309}",
+  street: "\u{1F6B6}", bridge: "\u{1F309}", ryokan: "\u{2668}\uFE0F",
 };
 
 const STATUS_COLOR: Record<PinStatus, string> = {
@@ -26,10 +26,15 @@ interface MapSidebarProps {
   selectedDay: number | null;
   onSelectDay: (d: number | null) => void;
   totalDays: number;
+  extendedTotalDays?: number;
   stats: { total: number; matched: number; nearRoute: number; offRoute: number };
   onFlyTo: (pin: Pin) => void;
   isOpen: boolean;
   onToggleOpen: () => void;
+  showHotels: boolean;
+  onToggleHotels: () => void;
+  showExtended: boolean;
+  onToggleExtended: () => void;
 }
 
 export function MapSidebar({
@@ -41,10 +46,15 @@ export function MapSidebar({
   selectedDay,
   onSelectDay,
   totalDays,
+  extendedTotalDays,
   stats,
   onFlyTo,
   isOpen,
   onToggleOpen,
+  showHotels,
+  onToggleHotels,
+  showExtended,
+  onToggleExtended,
 }: MapSidebarProps) {
   // Group visible pins by region
   const byRegion = visiblePins.reduce<Record<string, Pin[]>>((acc, pin) => {
@@ -70,7 +80,12 @@ export function MapSidebar({
           selectedDay={selectedDay}
           onSelectDay={onSelectDay}
           totalDays={totalDays}
+          extendedTotalDays={extendedTotalDays}
           stats={stats}
+          showHotels={showHotels}
+          onToggleHotels={onToggleHotels}
+          showExtended={showExtended}
+          onToggleExtended={onToggleExtended}
         />
 
         <div className="ms-list">
@@ -90,6 +105,7 @@ export function MapSidebar({
                   <span className="ms-pin-name">
                     {pin.name}
                     {pin.source === "itinerary" && <span className="ms-pin-src">ITN</span>}
+                    {pin.source === "hotels" && <span className="ms-pin-src" style={{ color: "#c4956a", background: "rgba(196,149,106,0.12)" }}>HTL</span>}
                   </span>
                   <span
                     className="ms-pin-status"

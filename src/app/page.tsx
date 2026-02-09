@@ -1,3 +1,4 @@
+import React from "react";
 import tripData from "@/data/trip.json";
 import type { TripData, Travel, RestaurantLocation } from "@/types/trip";
 import { HeroSlide } from "@/components/presentation/HeroSlide";
@@ -7,6 +8,7 @@ import { NavDots } from "@/components/presentation/NavDots";
 import { ProgressBar } from "@/components/presentation/ProgressBar";
 import { ScrollObserver } from "@/components/presentation/ScrollObserver";
 import { ThemeToggle } from "@/components/presentation/ThemeToggle";
+import { SplitBanner } from "@/components/extended/SplitBanner";
 import Link from "next/link";
 
 const data = tripData as unknown as TripData;
@@ -49,14 +51,17 @@ export default function PresentationPage() {
 
       <HeroSlide trip={data.trip} />
       {data.days.map((day, i) => (
-        <DaySlide
-          key={day.day}
-          day={day}
-          index={i}
-          hotels={data.hotels}
-          travels={travelsByDay[day.day]}
-          restaurantInfo={restaurantsByDay[day.day]}
-        />
+        <React.Fragment key={day.day}>
+          <DaySlide
+            day={day}
+            index={i}
+            hotels={data.hotels}
+            travels={travelsByDay[day.day]}
+            restaurantInfo={restaurantsByDay[day.day]}
+          >
+            {day.day === 13 && <SplitBanner />}
+          </DaySlide>
+        </React.Fragment>
       ))}
       <ClosingSlide stats={data.stats} totalDays={data.days.length} />
 
@@ -72,6 +77,9 @@ export default function PresentationPage() {
         </Link>
         <Link href="/map" className="itinerary-link">
           Map
+        </Link>
+        <Link href="/extended" className="itinerary-link" style={{ borderColor: "rgba(196,149,106,0.3)", color: "#c4956a" }}>
+          Extended
         </Link>
       </div>
     </div>

@@ -20,11 +20,27 @@ const DAY_TRIPS: { from: LatLngExpression; to: LatLngExpression }[] = [
   { from: [34.6937, 135.5023], to: [35.0116, 135.7681] },  // Osaka → Kyoto
 ];
 
+const EXTENDED_ROUTE: LatLngExpression[] = [
+  [34.6937, 135.5023],  // Osaka
+  [34.6851, 135.8048],  // Nara
+  [35.0116, 135.7681],  // Kyoto
+  [35.1280, 135.7700],  // Kurama
+  [35.2367, 139.0530],  // Hakone/Odawara area
+  [35.2047, 139.0229],  // Lake Ashi
+  [35.2473, 139.0237],  // Owakudani
+  [36.2381, 137.9720],  // Matsumoto
+  [35.5275, 137.5692],  // Magome
+  [35.5789, 137.5975],  // Tsumago
+  [35.6762, 139.6503],  // Tokyo
+  [35.7720, 140.3929],  // Narita
+];
+
 interface RouteOverlayProps {
   selectedDay: number | null;
+  showExtended?: boolean;
 }
 
-export function RouteOverlay({ selectedDay }: RouteOverlayProps) {
+export function RouteOverlay({ selectedDay, showExtended = false }: RouteOverlayProps) {
   const isHighlighted = selectedDay !== null;
   const mainOpacity = isHighlighted ? 0.3 : 0.6;
   const dayTripOpacity = isHighlighted ? 0.2 : 0.45;
@@ -52,6 +68,17 @@ export function RouteOverlay({ selectedDay }: RouteOverlayProps) {
           }}
         />
       ))}
+      {showExtended && (
+        <Polyline
+          positions={EXTENDED_ROUTE}
+          pathOptions={{
+            color: "#c4956a",
+            weight: 2,
+            opacity: isHighlighted ? 0.3 : 0.6,
+            dashArray: "6,8",
+          }}
+        />
+      )}
     </>
   );
 }

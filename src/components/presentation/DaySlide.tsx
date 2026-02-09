@@ -12,12 +12,18 @@ export function DaySlide({
   hotels,
   travels,
   restaurantInfo,
+  accentColor,
+  children,
+  slideClassName,
 }: {
   day: Day;
   index: number;
   hotels?: Hotels;
   travels?: Travel[];
   restaurantInfo?: { count: number; locationId: string };
+  accentColor?: string;
+  children?: React.ReactNode;
+  slideClassName?: string;
 }) {
   const num = String(day.day).padStart(2, "0");
   const dayStickers = DAY_STICKERS[num] || [];
@@ -31,7 +37,11 @@ export function DaySlide({
       : undefined;
 
   return (
-    <section className="slide" id={`slide-${index + 1}`}>
+    <section
+      className={`slide${slideClassName ? ` ${slideClassName}` : ""}`}
+      id={`slide-${index + 1}`}
+      {...(accentColor ? { style: { "--red": accentColor } as React.CSSProperties } : {})}
+    >
       <div className="day-bg-num rv-s">{num}</div>
       {dayStickers.map((s, j) => (
         <Sticker key={j} s={{ ...s, delay: `${0.3 + j * 0.2}s` }} />
@@ -78,6 +88,7 @@ export function DaySlide({
             </div>
           ))}
         </div>
+        {children}
         <div className="day-footer rv d8">
           <div className="df-item">
             <span className="df-label">Transport</span>

@@ -16,12 +16,13 @@ const CATEGORY_ICONS: Record<PinCategory, string> = {
   neighborhood: "\u{1F4CD}",
   street: "\u{1F6B6}",
   bridge: "\u{1F309}",
+  ryokan: "\u{2668}\uFE0F",
 };
 
 const ALL_CATEGORIES: PinCategory[] = [
   "temple", "shrine", "museum", "food", "shopping",
   "nature", "park", "onsen", "attraction", "hotel",
-  "viewpoint", "neighborhood", "street", "bridge",
+  "ryokan", "viewpoint", "neighborhood", "street", "bridge",
 ];
 
 interface MapFiltersProps {
@@ -32,7 +33,12 @@ interface MapFiltersProps {
   selectedDay: number | null;
   onSelectDay: (d: number | null) => void;
   totalDays: number;
+  extendedTotalDays?: number;
   stats: { total: number; matched: number; nearRoute: number; offRoute: number };
+  showHotels: boolean;
+  onToggleHotels: () => void;
+  showExtended: boolean;
+  onToggleExtended: () => void;
 }
 
 export function MapFilters({
@@ -43,8 +49,15 @@ export function MapFilters({
   selectedDay,
   onSelectDay,
   totalDays,
+  extendedTotalDays = totalDays,
   stats,
+  showHotels,
+  onToggleHotels,
+  showExtended,
+  onToggleExtended,
 }: MapFiltersProps) {
+  const dayCount = showExtended ? extendedTotalDays : totalDays;
+
   return (
     <div className="map-filters">
       <div className="mf-stats">
@@ -52,6 +65,25 @@ export function MapFilters({
         <span style={{ color: "#4a9" }}>{stats.matched} in plan</span> &middot;{" "}
         <span style={{ color: "#c4956a" }}>{stats.nearRoute} nearby</span> &middot;{" "}
         <span style={{ color: "#888" }}>{stats.offRoute} off-route</span>
+      </div>
+
+      <div className="mf-section">
+        <div className="mf-row" style={{ gap: 6 }}>
+          <button
+            className={`mf-btn ${showHotels ? "mf-btn-active-near" : ""}`}
+            onClick={onToggleHotels}
+            style={{ fontSize: 12 }}
+          >
+            Hotels {showHotels ? "ON" : "OFF"}
+          </button>
+          <button
+            className={`mf-btn ${showExtended ? "mf-btn-active-near" : ""}`}
+            onClick={onToggleExtended}
+            style={showExtended ? { fontSize: 12, borderColor: "#c4956a", color: "#c4956a" } : { fontSize: 12 }}
+          >
+            Extended Trip {showExtended ? "ON" : "OFF"}
+          </button>
+        </div>
       </div>
 
       <div className="mf-section">
@@ -102,11 +134,12 @@ export function MapFilters({
           >
             All
           </button>
-          {Array.from({ length: totalDays }, (_, i) => i + 1).map((d) => (
+          {Array.from({ length: dayCount }, (_, i) => i + 1).map((d) => (
             <button
               key={d}
               className={`mf-day ${selectedDay === d ? "mf-day-active" : ""}`}
               onClick={() => onSelectDay(d)}
+              style={d > totalDays ? { borderColor: "#c4956a33", color: "#c4956a" } : undefined}
             >
               {d}
             </button>

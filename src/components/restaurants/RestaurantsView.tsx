@@ -85,12 +85,12 @@ function CyclingFuel({ guide }: { guide: NonNullable<RestaurantLocation["cycling
   );
 }
 
-function LocationSection({ id, loc }: { id: string; loc: RestaurantLocation }) {
+function LocationSection({ id, loc, accent }: { id: string; loc: RestaurantLocation; accent?: string }) {
   return (
     <section id={`rx-${id}`} className="rx-location">
       <div className="rx-loc-header">
-        <h2 className="rx-loc-name">{loc.label}</h2>
-        <span className="rx-loc-days">
+        <h2 className="rx-loc-name" style={accent ? { color: accent } : undefined}>{loc.label}</h2>
+        <span className="rx-loc-days" style={accent ? { color: accent } : undefined}>
           Days {loc.forDays.join(", ")}
         </span>
       </div>
@@ -150,9 +150,11 @@ function SafetyColumns({ safe, danger }: { safe: string[]; danger: string[] }) {
   );
 }
 
-export function RestaurantsView({ restaurants }: { restaurants: Restaurants }) {
+export function RestaurantsView({ restaurants, extendedRestaurants }: { restaurants: Restaurants; extendedRestaurants?: Restaurants }) {
   const locations = Object.entries(restaurants.byLocation);
-  const totalSpots = locations.reduce((n, [, loc]) => n + loc.spots.length, 0);
+  const extendedLocations = extendedRestaurants ? Object.entries(extendedRestaurants.byLocation) : [];
+  const totalSpots = locations.reduce((n, [, loc]) => n + loc.spots.length, 0)
+    + extendedLocations.reduce((n, [, loc]) => n + loc.spots.length, 0);
 
   return (
     <div className="rx-page">
@@ -162,12 +164,18 @@ export function RestaurantsView({ restaurants }: { restaurants: Restaurants }) {
         <Link href="/" className="rx-back">&larr; Presentation</Link>
         <h1 className="rx-title">Dining Guide</h1>
         <p className="rx-subtitle">
-          {totalSpots} restaurants across {locations.length} areas
+          {totalSpots} restaurants across {locations.length + extendedLocations.length} areas
         </p>
         <p className="rx-note-top">{restaurants.note}</p>
         <nav className="rx-nav">
           {locations.map(([id, loc]) => (
             <a key={id} href={`#rx-${id}`} className="rx-nav-link">
+              {loc.label}
+              <span className="rx-nav-count">{loc.spots.length}</span>
+            </a>
+          ))}
+          {extendedRestaurants && Object.entries(extendedRestaurants.byLocation).map(([id, loc]) => (
+            <a key={`ext-${id}`} href={`#rx-ext-${id}`} className="rx-nav-link" style={{ borderColor: "rgba(196,149,106,0.3)" }}>
               {loc.label}
               <span className="rx-nav-count">{loc.spots.length}</span>
             </a>
@@ -191,6 +199,22 @@ export function RestaurantsView({ restaurants }: { restaurants: Restaurants }) {
         {locations.map(([id, loc]) => (
           <LocationSection key={id} id={id} loc={loc} />
         ))}
+
+        {extendedRestaurants && Object.keys(extendedRestaurants.byLocation).length > 0 && (
+          <>
+            <div className="rx-extended-divider">
+              <div className="rx-extended-line" />
+              <span className="rx-extended-label">Extended Trip Restaurants</span>
+              <div className="rx-extended-line" />
+            </div>
+            {extendedRestaurants.note && (
+              <p className="rx-note-top" style={{ color: "#c4956a" }}>{extendedRestaurants.note}</p>
+            )}
+            {Object.entries(extendedRestaurants.byLocation).map(([id, loc]) => (
+              <LocationSection key={id} id={`ext-${id}`} loc={loc} accent="#c4956a" />
+            ))}
+          </>
+        )}
       </main>
     </div>
   );

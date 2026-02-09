@@ -32,6 +32,7 @@ export default function MapPage() {
         <MapLoader
           pinsData={data.pins}
           totalDays={data.days.length}
+          extendedTotalDays={21}
         />
       </Suspense>
     </>

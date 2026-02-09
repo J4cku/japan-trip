@@ -9,9 +9,10 @@ const MapView = dynamic(() => import("@/components/map/MapView"), { ssr: false }
 interface MapLoaderProps {
   pinsData: PinsData;
   totalDays: number;
+  extendedTotalDays?: number;
 }
 
-export function MapLoader({ pinsData, totalDays }: MapLoaderProps) {
+export function MapLoader({ pinsData, totalDays, extendedTotalDays = 21 }: MapLoaderProps) {
   const searchParams = useSearchParams();
   const initialDay = useMemo(() => {
     const raw = searchParams.get("day");
@@ -21,6 +22,6 @@ export function MapLoader({ pinsData, totalDays }: MapLoaderProps) {
   }, [searchParams, totalDays]);
 
   return (
-    <MapView pinsData={pinsData} totalDays={totalDays} initialDay={initialDay} />
+    <MapView pinsData={pinsData} totalDays={totalDays} extendedTotalDays={extendedTotalDays} initialDay={initialDay} />
   );
 }

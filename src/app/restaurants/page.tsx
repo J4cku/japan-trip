@@ -19,5 +19,10 @@ export const metadata: Metadata = {
 const data = tripData as unknown as TripData;
 
 export default function RestaurantsPage() {
-  return <RestaurantsView restaurants={data.restaurants} />;
+  return (
+    <RestaurantsView
+      restaurants={data.restaurants}
+      extendedRestaurants={data.extended?.restaurants}
+    />
+  );
 }

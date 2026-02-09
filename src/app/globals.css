@@ -2556,3 +2556,525 @@
     right: 16px;
   }
 }
+
+/* ── Extended page accent override ── */
+.extended-page { --red: #c4956a; }
+
+/* ── Hotel map markers ── */
+.hotel-marker {
+  width: 12px;
+  height: 12px;
+  border: 2px solid #fff;
+  background: #666;
+  box-shadow: 0 1px 4px rgba(0,0,0,0.4);
+}
+.hotel-marker.chosen { background: #c4956a; }
+.ryokan-marker { transform: rotate(45deg); }
+[data-theme="light"] .hotel-marker {
+  border-color: #fff;
+  box-shadow: 0 1px 4px rgba(0,0,0,0.2);
+}
+
+/* ── Split banner ── */
+.split-banner {
+  margin-top: 28px;
+  padding: 20px 0;
+}
+.split-line {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-bottom: 16px;
+}
+.split-scissors {
+  font-size: 1rem;
+  color: var(--g3);
+}
+.split-dash {
+  flex: 1;
+  height: 1px;
+  background: repeating-linear-gradient(90deg, var(--g3) 0, var(--g3) 8px, transparent 8px, transparent 16px);
+}
+.split-content {
+  text-align: center;
+}
+.split-title {
+  font-size: 0.8rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.12em;
+  color: var(--g4);
+  margin: 0 0 12px;
+}
+.split-routes {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.split-route {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+.split-route-label {
+  font-size: 0.72rem;
+  font-weight: 700;
+  color: var(--white);
+}
+.split-route-desc {
+  font-size: 0.65rem;
+  color: var(--g3);
+}
+.split-divider {
+  color: var(--g2);
+  font-size: 1.2rem;
+}
+.split-cta {
+  display: inline-block;
+  margin-top: 16px;
+  font-size: 0.7rem;
+  font-weight: 600;
+  color: #c4956a;
+  text-decoration: none;
+  padding: 8px 20px;
+  border: 1px solid rgba(196, 149, 106, 0.3);
+  border-radius: 6px;
+  transition: all 0.2s;
+  letter-spacing: 0.04em;
+}
+.split-cta:hover {
+  background: rgba(196, 149, 106, 0.1);
+  border-color: #c4956a;
+}
+
+/* ── Onsen guide ── */
+.onsen-guide {
+  margin-top: 24px;
+  padding: 18px;
+  background: rgba(61, 43, 31, 0.15);
+  border: 1px solid rgba(196, 149, 106, 0.2);
+  border-radius: 10px;
+}
+.onsen-guide-header {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-bottom: 12px;
+}
+.onsen-guide-icon {
+  font-size: 1.3rem;
+}
+.onsen-guide-title {
+  font-size: 0.85rem;
+  font-weight: 700;
+  color: #c4956a;
+  margin: 0;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+}
+.onsen-guide-rules {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+.onsen-guide-rule {
+  display: flex;
+  align-items: flex-start;
+  gap: 8px;
+  font-size: 0.75rem;
+  color: var(--text-hl);
+  line-height: 1.4;
+}
+.onsen-guide-check {
+  color: #c4956a;
+  font-weight: 700;
+  flex-shrink: 0;
+  margin-top: 1px;
+}
+.onsen-guide-tip {
+  margin: 12px 0 0;
+  font-size: 0.68rem;
+  color: var(--g3);
+  font-style: italic;
+  padding-left: 12px;
+  border-left: 2px solid rgba(196, 149, 106, 0.3);
+}
+
+/* ── Trail profile ── */
+.trail-profile {
+  margin-top: 24px;
+  padding: 18px;
+  background: rgba(26, 46, 23, 0.15);
+  border: 1px solid rgba(106, 196, 90, 0.15);
+  border-radius: 10px;
+}
+.trail-header {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-bottom: 12px;
+}
+.trail-icon { font-size: 1.2rem; }
+.trail-title {
+  font-size: 0.85rem;
+  font-weight: 700;
+  color: #c4956a;
+  margin: 0;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+}
+.trail-badge {
+  font-size: 0.55rem;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  padding: 2px 8px;
+  border-radius: 3px;
+  background: rgba(196, 149, 106, 0.12);
+  color: #c4956a;
+}
+.trail-stats {
+  display: flex;
+  gap: 24px;
+  margin-bottom: 16px;
+}
+.trail-stat {
+  display: flex;
+  flex-direction: column;
+}
+.trail-stat-val {
+  font-size: 0.9rem;
+  font-weight: 700;
+  color: var(--white);
+}
+.trail-stat-label {
+  font-size: 0.55rem;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  color: var(--g3);
+}
+.trail-elevation {
+  margin: 12px 0;
+  position: relative;
+  height: 80px;
+}
+.trail-elevation-bar {
+  position: relative;
+  width: 4px;
+  height: 100%;
+  background: linear-gradient(to bottom, #c4956a 0%, rgba(196,149,106,0.3) 100%);
+  border-radius: 2px;
+  margin-left: 60px;
+}
+.trail-point {
+  position: absolute;
+  left: 12px;
+  display: flex;
+  gap: 6px;
+  font-size: 0.6rem;
+  color: var(--g4);
+  white-space: nowrap;
+}
+.trail-point-label {
+  color: var(--g3);
+  font-weight: 600;
+}
+.trail-terrain {
+  font-size: 0.68rem;
+  color: var(--g4);
+  margin: 8px 0;
+}
+.trail-terrain-label {
+  font-weight: 600;
+  color: var(--g3);
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  font-size: 0.6rem;
+}
+.trail-packing {
+  margin-top: 12px;
+}
+.trail-packing-label {
+  font-size: 0.6rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  color: var(--g3);
+}
+.trail-packing-list {
+  list-style: none;
+  padding: 0;
+  margin: 6px 0 0;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 4px;
+}
+.trail-packing-list li {
+  font-size: 0.62rem;
+  padding: 3px 8px;
+  background: rgba(196, 149, 106, 0.08);
+  border: 1px solid rgba(196, 149, 106, 0.15);
+  border-radius: 4px;
+  color: var(--g4);
+}
+
+/* ── Japan 101 floating card ── */
+.japan101-toggle {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  z-index: 200;
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  border: 2px solid #c4956a;
+  background: var(--black);
+  cursor: pointer;
+  font-size: 1.1rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  backdrop-filter: blur(8px);
+  transition: transform 0.2s, box-shadow 0.2s;
+  box-shadow: 0 2px 12px rgba(196, 149, 106, 0.3);
+}
+.japan101-toggle:hover {
+  transform: scale(1.15);
+  box-shadow: 0 4px 20px rgba(196, 149, 106, 0.5);
+}
+.japan101-panel {
+  position: fixed;
+  bottom: 76px;
+  right: 20px;
+  z-index: 201;
+  width: 320px;
+  max-height: 60vh;
+  overflow-y: auto;
+  background: var(--card-bg);
+  border: 1px solid rgba(196, 149, 106, 0.3);
+  border-radius: 12px;
+  padding: 18px;
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.4);
+  animation: modalSlide 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+}
+.japan101-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 12px;
+}
+.japan101-title {
+  font-size: 0.9rem;
+  font-weight: 800;
+  color: #c4956a;
+  margin: 0;
+  letter-spacing: 0.04em;
+}
+.japan101-close {
+  background: none;
+  border: none;
+  color: var(--g4);
+  font-size: 1rem;
+  cursor: pointer;
+  padding: 4px;
+}
+.japan101-close:hover { color: var(--white); }
+.japan101-dietary {
+  display: flex;
+  gap: 8px;
+  padding: 10px 12px;
+  background: rgba(188, 0, 45, 0.06);
+  border: 1px solid rgba(188, 0, 45, 0.15);
+  border-radius: 8px;
+  margin-bottom: 12px;
+  font-size: 0.7rem;
+  line-height: 1.4;
+  color: var(--g4);
+}
+.japan101-dietary-icon { flex-shrink: 0; font-size: 1rem; }
+.japan101-dietary p { margin: 0; }
+.japan101-tips {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+.japan101-tips li {
+  font-size: 0.7rem;
+  color: var(--text-hl);
+  line-height: 1.5;
+  padding-left: 16px;
+  position: relative;
+}
+.japan101-tips li::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 7px;
+  width: 4px;
+  height: 4px;
+  border-radius: 50%;
+  background: #c4956a;
+}
+.japan101-emergency {
+  margin-top: 12px;
+  padding-top: 12px;
+  border-top: 1px solid var(--card-border);
+}
+.japan101-emergency-label {
+  font-size: 0.6rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  color: var(--g3);
+}
+.japan101-emergency-items {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 4px;
+  margin-top: 6px;
+}
+.japan101-emergency-item {
+  font-size: 0.6rem;
+  padding: 2px 8px;
+  background: rgba(196, 149, 106, 0.08);
+  border: 1px solid rgba(196, 149, 106, 0.15);
+  border-radius: 4px;
+  color: var(--g4);
+}
+
+/* ── Hiking/Onsen day tints ── */
+.slide-hiking {
+  background: linear-gradient(135deg, var(--black) 0%, #1a2e17 100%);
+}
+.slide-onsen {
+  background: linear-gradient(135deg, var(--black) 0%, #3d2b1f 100%);
+}
+[data-theme="light"] .slide-hiking {
+  background: linear-gradient(135deg, var(--black) 0%, #eef5ed 100%);
+}
+[data-theme="light"] .slide-onsen {
+  background: linear-gradient(135deg, var(--black) 0%, #f5efe8 100%);
+}
+
+/* ── Extended restaurants divider ── */
+.rx-extended-divider {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  margin: 48px 0 24px;
+}
+.rx-extended-line {
+  flex: 1;
+  height: 1px;
+  background: rgba(196, 149, 106, 0.3);
+}
+.rx-extended-label {
+  font-size: 0.7rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.12em;
+  color: #c4956a;
+  white-space: nowrap;
+}
+
+/* ── Extended map route ── */
+/* gold dashed route handled inline via RouteOverlay props */
+
+/* ── Hotel toggle pills (map) ── */
+.mf-toggle {
+  display: flex;
+  gap: 6px;
+  margin-bottom: 4px;
+}
+.mf-toggle-btn {
+  font-size: 0.6rem;
+  font-weight: 600;
+  padding: 5px 12px;
+  border-radius: 20px;
+  border: 1px solid #333;
+  background: transparent;
+  color: #666;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+.mf-toggle-btn:hover {
+  border-color: #555;
+  color: #aaa;
+}
+.mf-toggle-btn.mf-toggle-active {
+  background: rgba(196, 149, 106, 0.15);
+  border-color: rgba(196, 149, 106, 0.4);
+  color: #c4956a;
+}
+.mf-toggle-btn.mf-toggle-hotel {
+  border-color: #333;
+}
+.mf-toggle-btn.mf-toggle-hotel.mf-toggle-active {
+  background: rgba(196, 149, 106, 0.15);
+  border-color: rgba(196, 149, 106, 0.4);
+  color: #c4956a;
+}
+.mf-toggle-btn.mf-toggle-extended.mf-toggle-active {
+  background: rgba(196, 149, 106, 0.15);
+  border-color: rgba(196, 149, 106, 0.4);
+  color: #c4956a;
+}
+[data-theme="light"] .mf-toggle-btn {
+  border-color: #ddd9d2;
+  color: #999;
+}
+[data-theme="light"] .mf-toggle-btn:hover {
+  border-color: #999;
+  color: #333;
+}
+[data-theme="light"] .mf-toggle-btn.mf-toggle-active {
+  background: rgba(196, 149, 106, 0.1);
+  border-color: rgba(196, 149, 106, 0.35);
+  color: #8b6b3d;
+}
+
+/* ── Light mode for extended components ── */
+[data-theme="light"] .japan101-panel {
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.12);
+}
+[data-theme="light"] .japan101-toggle {
+  background: #f5f3ee;
+}
+[data-theme="light"] .onsen-guide {
+  background: rgba(245, 239, 232, 0.8);
+  border-color: rgba(196, 149, 106, 0.15);
+}
+[data-theme="light"] .trail-profile {
+  background: rgba(238, 245, 237, 0.8);
+  border-color: rgba(106, 196, 90, 0.1);
+}
+
+/* ── Extended page mobile ── */
+@media (max-width: 768px) {
+  .japan101-panel {
+    right: 10px;
+    left: 10px;
+    width: auto;
+  }
+  .japan101-toggle {
+    bottom: 16px;
+    right: 16px;
+  }
+  .split-routes {
+    flex-direction: column;
+    gap: 8px;
+  }
+  .split-divider { display: none; }
+  .trail-stats {
+    flex-wrap: wrap;
+    gap: 12px;
+  }
+}
