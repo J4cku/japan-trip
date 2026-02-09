@@ -2017,6 +2017,22 @@
   .sticker.mobile-keep {
     display: block;
   }
+  /* Move transport strip to right side on mobile */
+  .transport-strip {
+    left: auto;
+    right: clamp(10px, 3vw, 24px);
+  }
+  .ts-item {
+    transform: translateX(20px);
+  }
+  .ts-item.vis {
+    transform: translateX(0);
+  }
+  /* Move luggage tags to bottom-right on mobile */
+  .luggage-tag {
+    left: auto !important;
+    right: 5% !important;
+  }
   /* Hotels page responsive */
   .hp-page {
     padding: 16px;
