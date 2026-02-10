@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import { Inter, Playfair_Display, Space_Mono } from "next/font/google";
+import { Inter } from "next/font/google";
 import "./globals.css";
 import { SakuraParticles } from "@/components/fun/SakuraParticles";
 import { KonamiEgg } from "@/components/fun/KonamiEgg";
@@ -15,40 +15,28 @@ const inter = Inter({
   weight: ["200", "300", "400", "600", "800", "900"],
 });
 
-const playfair = Playfair_Display({
-  subsets: ["latin"],
-  weight: ["400", "600", "700"],
-  variable: "--font-display",
-});
-
-const spaceMono = Space_Mono({
-  subsets: ["latin"],
-  weight: ["700"],
-  variable: "--font-mono",
-});
-
 export const metadata: Metadata = {
   title: {
-    default: "TripMag — Your Trip. Perfectly Personalized.",
-    template: "%s — TripMag",
+    default: "Japan 2026",
+    template: "%s — Japan 2026",
   },
-  description: "AI-powered personalized trip magazines. Skip the travel research and get a stunning interactive magazine with curated recommendations, custom itineraries, and everything you need.",
+  description: "May 9-22, 2026 — 14 Days, 4 Travelers. Tokyo → Kumamoto → Onomichi → Shimanami Kaido → Osaka → Kyoto → Tokyo.",
   metadataBase: new URL("https://jpn.leszczynski.me"),
   openGraph: {
     type: "website",
-    siteName: "TripMag",
-    title: "TripMag — Your Trip. Perfectly Personalized.",
-    description: "AI-powered personalized trip magazines for the modern traveler.",
-    images: [{ url: "/og.png", width: 1200, height: 630, alt: "TripMag" }],
+    siteName: "Japan 2026",
+    title: "Japan 2026",
+    description: "May 9-22 — 14 Days, 4 Travelers across Japan",
+    images: [{ url: "/og.png", width: 1200, height: 630, alt: "Japan 2026 Trip" }],
   },
   twitter: {
     card: "summary_large_image",
-    title: "TripMag",
-    description: "AI-powered personalized trip magazines for the modern traveler.",
+    title: "Japan 2026",
+    description: "May 9-22 — 14 Days, 4 Travelers across Japan",
     images: ["/og.png"],
   },
   other: {
-    "theme-color": "#0A0E27",
+    "theme-color": "#000000",
   },
 };
 
@@ -59,7 +47,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className={`${inter.className} ${playfair.variable} ${spaceMono.variable}`}>
+      <body className={inter.className}>
         {children}
         <SakuraParticles />
         <KonamiEgg />
