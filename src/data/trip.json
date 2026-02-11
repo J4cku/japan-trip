@@ -84,7 +84,7 @@
     {
       "day": 1,
       "date": "2026-05-09",
-      "dateLabel": "Fri, May 9",
+      "dateLabel": "Sat, May 9",
       "title": "Arrival in Tokyo",
       "region": "tokyo",
       "tagline": "Touch down at Narita. Neon lights and konbini runs await.",
@@ -134,7 +134,7 @@
     {
       "day": 2,
       "date": "2026-05-10",
-      "dateLabel": "Sat, May 10",
+      "dateLabel": "Sun, May 10",
       "title": "TeamLab & Harajuku",
       "region": "tokyo",
       "tagline": "Immersive digital art, then the sensory overload of Shibuya at night.",
@@ -197,7 +197,7 @@
     {
       "day": 3,
       "date": "2026-05-11",
-      "dateLabel": "Sun, May 11",
+      "dateLabel": "Mon, May 11",
       "title": "Kamakura",
       "region": "tokyo",
       "tagline": "13th-century capital. Giant Buddha, ocean temples, island at sunset.",
@@ -264,7 +264,7 @@
     {
       "day": 4,
       "date": "2026-05-12",
-      "dateLabel": "Mon, May 12",
+      "dateLabel": "Tue, May 12",
       "title": "Mt Fuji",
       "region": "fuji",
       "tagline": "The iconic pagoda-and-peak view. Fuji is famously shy — go early.",
@@ -322,7 +322,7 @@
     {
       "day": 5,
       "date": "2026-05-13",
-      "dateLabel": "Tue, May 13",
+      "dateLabel": "Wed, May 13",
       "title": "Tokyo → Kumamoto",
       "region": "kyushu",
       "tagline": "A quick flight south. By lunch, you're in Kyushu.",
@@ -403,7 +403,7 @@
     {
       "day": 6,
       "date": "2026-05-14",
-      "dateLabel": "Wed, May 14",
+      "dateLabel": "Thu, May 14",
       "title": "Mt Aso & Bike Ride",
       "region": "kyushu",
       "tagline": "Active volcano, vast caldera, then e-bikes through landscapes most tourists never see.",
@@ -462,7 +462,7 @@
     {
       "day": 7,
       "date": "2026-05-15",
-      "dateLabel": "Thu, May 15",
+      "dateLabel": "Fri, May 15",
       "title": "Kurokawa Onsen",
       "region": "kyushu",
       "tagline": "Mountain onsen village. Soak in open-air baths hidden among cedar forests.",
@@ -537,7 +537,7 @@
     {
       "day": 8,
       "date": "2026-05-16",
-      "dateLabel": "Fri, May 16",
+      "dateLabel": "Sat, May 16",
       "title": "Kumamoto → Onomichi",
       "region": "seto",
       "tagline": "Shinkansen north. A hillside port town of cats, temples, and sea views.",
@@ -610,7 +610,7 @@
     {
       "day": 9,
       "date": "2026-05-17",
-      "dateLabel": "Sat, May 17",
+      "dateLabel": "Sun, May 17",
       "title": "Shimanami Kaido → Osaka",
       "region": "seto",
       "tagline": "70 km across 6 islands. Then straight to Japan's kitchen.",
@@ -697,7 +697,7 @@
     {
       "day": 10,
       "date": "2026-05-18",
-      "dateLabel": "Sun, May 18",
+      "dateLabel": "Mon, May 18",
       "title": "Osaka — Dōtonbori & Shinsekai",
       "region": "kansai",
       "tagline": "Neon canals, retro towers, and the art of eating till you drop.",
@@ -751,7 +751,7 @@
     {
       "day": 11,
       "date": "2026-05-19",
-      "dateLabel": "Mon, May 19",
+      "dateLabel": "Tue, May 19",
       "title": "Osaka — Castle & Markets",
       "region": "kansai",
       "tagline": "Castle parks, market stalls, and the city that never stops eating.",
@@ -801,7 +801,7 @@
     {
       "day": 12,
       "date": "2026-05-20",
-      "dateLabel": "Tue, May 20",
+      "dateLabel": "Wed, May 20",
       "title": "Kyoto",
       "region": "kansai",
       "tagline": "Thousands of torii gates. Gold temples. Bamboo forests. Geisha at dusk.",
@@ -876,7 +876,7 @@
     {
       "day": 13,
       "date": "2026-05-21",
-      "dateLabel": "Wed, May 21",
+      "dateLabel": "Thu, May 21",
       "title": "Osaka → Tokyo",
       "region": "tokyo",
       "tagline": "Final bullet train. Choose your Tokyo finale.",
@@ -932,7 +932,7 @@
     {
       "day": 14,
       "date": "2026-05-22",
-      "dateLabel": "Thu, May 22",
+      "dateLabel": "Fri, May 22",
       "title": "Departure",
       "region": "tokyo",
       "tagline": "One last Tokyo morning. Then Narita. Then memories.",
@@ -2706,7 +2706,7 @@
         "rooms": 2,
         "nights": 1
       },
-      "pricingNote": "Thursday night — typically cheaper than weekends. Book for Narita Express convenience."
+      "pricingNote": "Friday night — Book for Narita Express convenience."
     }
   },
   "restaurants": {
@@ -3077,8 +3077,8 @@
     "source": "Google Maps saved places export",
     "exportDate": "2026-02-09",
     "stats": {
-      "total": 252,
-      "matched": 114,
+      "total": 300,
+      "matched": 162,
       "nearRoute": 81,
       "offRoute": 57
     },
@@ -8322,6 +8322,1337 @@
         "source": "hotels",
         "hotelLocation": "tokyoFinal",
         "chosen": false
+      },
+      {
+        "id": 253,
+        "name": "lyf Shibuya Tokyo",
+        "nameJp": "ライフ渋谷東京",
+        "note": "Design-forward coliving lifestyle hotel — €120–160",
+        "lat": 35.6614,
+        "lng": 139.6983,
+        "googleMapsUrl": null,
+        "region": "tokyo",
+        "category": "hotel",
+        "status": "matched",
+        "day": 1,
+        "dayLabel": "Days 1–4 — Tokyo",
+        "possibleDays": [
+          1,
+          2,
+          3,
+          4
+        ],
+        "possibleDayLabels": [
+          "Days 1–4 — Tokyo"
+        ],
+        "extendedStatus": "matched",
+        "extendedDay": null,
+        "extendedDayLabel": null,
+        "source": "hotels",
+        "hotelLocation": "shibuya",
+        "chosen": true
+      },
+      {
+        "id": 254,
+        "name": "All Day Place Shibuya",
+        "nameJp": "オール デイ プレイス 渋谷",
+        "note": "MUJI-designed minimalist boutique — €115–185",
+        "lat": 35.6594,
+        "lng": 139.7005,
+        "googleMapsUrl": null,
+        "region": "tokyo",
+        "category": "hotel",
+        "status": "matched",
+        "day": 1,
+        "dayLabel": "Days 1–4 — Tokyo",
+        "possibleDays": [
+          1,
+          2,
+          3,
+          4
+        ],
+        "possibleDayLabels": [
+          "Days 1–4 — Tokyo"
+        ],
+        "extendedStatus": "matched",
+        "extendedDay": null,
+        "extendedDayLabel": null,
+        "source": "hotels",
+        "hotelLocation": "shibuya",
+        "chosen": false
+      },
+      {
+        "id": 255,
+        "name": "Shibuya Granbell Hotel",
+        "nameJp": "渋谷グランベルホテル",
+        "note": "Art-forward design boutique — €60–130",
+        "lat": 35.6582,
+        "lng": 139.699,
+        "googleMapsUrl": null,
+        "region": "tokyo",
+        "category": "hotel",
+        "status": "matched",
+        "day": 1,
+        "dayLabel": "Days 1–4 — Tokyo",
+        "possibleDays": [
+          1,
+          2,
+          3,
+          4
+        ],
+        "possibleDayLabels": [
+          "Days 1–4 — Tokyo"
+        ],
+        "extendedStatus": "matched",
+        "extendedDay": null,
+        "extendedDayLabel": null,
+        "source": "hotels",
+        "hotelLocation": "shibuya",
+        "chosen": false
+      },
+      {
+        "id": 256,
+        "name": "Shibuya Stream Excel Hotel Tokyu",
+        "nameJp": "渋谷ストリームエクセルホテル東急",
+        "note": "Modern sleek lifestyle hotel — €140–200",
+        "lat": 35.6577,
+        "lng": 139.703,
+        "googleMapsUrl": null,
+        "region": "tokyo",
+        "category": "hotel",
+        "status": "matched",
+        "day": 1,
+        "dayLabel": "Days 1–4 — Tokyo",
+        "possibleDays": [
+          1,
+          2,
+          3,
+          4
+        ],
+        "possibleDayLabels": [
+          "Days 1–4 — Tokyo"
+        ],
+        "extendedStatus": "matched",
+        "extendedDay": null,
+        "extendedDayLabel": null,
+        "source": "hotels",
+        "hotelLocation": "shibuya",
+        "chosen": false
+      },
+      {
+        "id": 257,
+        "name": "Hotel Indigo Tokyo Shibuya",
+        "nameJp": "ホテルインディゴ東京渋谷",
+        "note": "IHG boutique lifestyle brand — €55–85",
+        "lat": 35.6567,
+        "lng": 139.6965,
+        "googleMapsUrl": null,
+        "region": "tokyo",
+        "category": "hotel",
+        "status": "matched",
+        "day": 1,
+        "dayLabel": "Days 1–4 — Tokyo",
+        "possibleDays": [
+          1,
+          2,
+          3,
+          4
+        ],
+        "possibleDayLabels": [
+          "Days 1–4 — Tokyo"
+        ],
+        "extendedStatus": "matched",
+        "extendedDay": null,
+        "extendedDayLabel": null,
+        "source": "hotels",
+        "hotelLocation": "shibuya",
+        "chosen": false
+      },
+      {
+        "id": 258,
+        "name": "Tokyu Stay Shibuya",
+        "nameJp": "東急ステイ渋谷",
+        "note": "Modern extended-stay with kitchenettes — €135–180",
+        "lat": 35.6562,
+        "lng": 139.6978,
+        "googleMapsUrl": null,
+        "region": "tokyo",
+        "category": "hotel",
+        "status": "matched",
+        "day": 1,
+        "dayLabel": "Days 1–4 — Tokyo",
+        "possibleDays": [
+          1,
+          2,
+          3,
+          4
+        ],
+        "possibleDayLabels": [
+          "Days 1–4 — Tokyo"
+        ],
+        "extendedStatus": "matched",
+        "extendedDay": null,
+        "extendedDayLabel": null,
+        "source": "hotels",
+        "hotelLocation": "shibuya",
+        "chosen": false
+      },
+      {
+        "id": 259,
+        "name": "Shibuya Tokyu REI Hotel",
+        "nameJp": "渋谷東急REIホテル",
+        "note": "Clean modern business hotel — €75–115",
+        "lat": 35.6586,
+        "lng": 139.6994,
+        "googleMapsUrl": null,
+        "region": "tokyo",
+        "category": "hotel",
+        "status": "matched",
+        "day": 1,
+        "dayLabel": "Days 1–4 — Tokyo",
+        "possibleDays": [
+          1,
+          2,
+          3,
+          4
+        ],
+        "possibleDayLabels": [
+          "Days 1–4 — Tokyo"
+        ],
+        "extendedStatus": "matched",
+        "extendedDay": null,
+        "extendedDayLabel": null,
+        "source": "hotels",
+        "hotelLocation": "shibuya",
+        "chosen": false
+      },
+      {
+        "id": 260,
+        "name": "Hyatt House Tokyo Shibuya",
+        "nameJp": "ハイアットハウス東京渋谷",
+        "note": "Premium extended-stay lifestyle hotel — €220–250",
+        "lat": 35.6609,
+        "lng": 139.6944,
+        "googleMapsUrl": null,
+        "region": "tokyo",
+        "category": "hotel",
+        "status": "matched",
+        "day": 1,
+        "dayLabel": "Days 1–4 — Tokyo",
+        "possibleDays": [
+          1,
+          2,
+          3,
+          4
+        ],
+        "possibleDayLabels": [
+          "Days 1–4 — Tokyo"
+        ],
+        "extendedStatus": "matched",
+        "extendedDay": null,
+        "extendedDayLabel": null,
+        "source": "hotels",
+        "hotelLocation": "shibuya",
+        "chosen": false
+      },
+      {
+        "id": 261,
+        "name": "Onsen Ryokan Yuen Shinjuku",
+        "nameJp": "温泉旅館 由縁 新宿",
+        "note": "Modern city ryokan with real natural hot spring onsen — €140–180",
+        "lat": 35.6972,
+        "lng": 139.7203,
+        "googleMapsUrl": null,
+        "region": "tokyo",
+        "category": "ryokan",
+        "status": "matched",
+        "day": 1,
+        "dayLabel": "Days 1–4 — Tokyo",
+        "possibleDays": [
+          1,
+          2,
+          3,
+          4
+        ],
+        "possibleDayLabels": [
+          "Days 1–4 — Tokyo"
+        ],
+        "extendedStatus": "matched",
+        "extendedDay": null,
+        "extendedDayLabel": null,
+        "source": "hotels",
+        "hotelLocation": "shibuya",
+        "chosen": false
+      },
+      {
+        "id": 262,
+        "name": "OMO5 Kumamoto by Hoshino Resorts",
+        "nameJp": "OMO5熊本 by 星野リゾート",
+        "note": "Ultra-modern design by Japan's coolest hotel group — €65–130",
+        "lat": 32.8005,
+        "lng": 130.7052,
+        "googleMapsUrl": null,
+        "region": "kumamoto",
+        "category": "hotel",
+        "status": "matched",
+        "day": 5,
+        "dayLabel": "Days 5–7 — Kumamoto",
+        "possibleDays": [
+          5,
+          6,
+          7
+        ],
+        "possibleDayLabels": [
+          "Days 5–7 — Kumamoto"
+        ],
+        "extendedStatus": "matched",
+        "extendedDay": null,
+        "extendedDayLabel": null,
+        "source": "hotels",
+        "hotelLocation": "kumamoto",
+        "chosen": true
+      },
+      {
+        "id": 263,
+        "name": "REF Kumamoto by VESSEL HOTELS",
+        "nameJp": "REF熊本 by ベッセルホテルズ",
+        "note": "Modernist minimalist with public baths — €56–90",
+        "lat": 32.8028,
+        "lng": 130.7095,
+        "googleMapsUrl": null,
+        "region": "kumamoto",
+        "category": "hotel",
+        "status": "matched",
+        "day": 5,
+        "dayLabel": "Days 5–7 — Kumamoto",
+        "possibleDays": [
+          5,
+          6,
+          7
+        ],
+        "possibleDayLabels": [
+          "Days 5–7 — Kumamoto"
+        ],
+        "extendedStatus": "matched",
+        "extendedDay": null,
+        "extendedDayLabel": null,
+        "source": "hotels",
+        "hotelLocation": "kumamoto",
+        "chosen": false
+      },
+      {
+        "id": 264,
+        "name": "THE BLOSSOM KUMAMOTO",
+        "nameJp": "ザ・ブロッサム熊本",
+        "note": "Contemporary JR hotel with garden baths — €58–100",
+        "lat": 32.7997,
+        "lng": 130.6901,
+        "googleMapsUrl": null,
+        "region": "kumamoto",
+        "category": "hotel",
+        "status": "matched",
+        "day": 5,
+        "dayLabel": "Days 5–7 — Kumamoto",
+        "possibleDays": [
+          5,
+          6,
+          7
+        ],
+        "possibleDayLabels": [
+          "Days 5–7 — Kumamoto"
+        ],
+        "extendedStatus": "matched",
+        "extendedDay": null,
+        "extendedDayLabel": null,
+        "source": "hotels",
+        "hotelLocation": "kumamoto",
+        "chosen": false
+      },
+      {
+        "id": 265,
+        "name": "KOKO HOTEL Premier Kumamoto",
+        "nameJp": "KOKO HOTEL Premier 熊本",
+        "note": "Contemporary hotel in shopping complex — €50–85",
+        "lat": 32.8032,
+        "lng": 130.708,
+        "googleMapsUrl": null,
+        "region": "kumamoto",
+        "category": "hotel",
+        "status": "matched",
+        "day": 5,
+        "dayLabel": "Days 5–7 — Kumamoto",
+        "possibleDays": [
+          5,
+          6,
+          7
+        ],
+        "possibleDayLabels": [
+          "Days 5–7 — Kumamoto"
+        ],
+        "extendedStatus": "matched",
+        "extendedDay": null,
+        "extendedDayLabel": null,
+        "source": "hotels",
+        "hotelLocation": "kumamoto",
+        "chosen": false
+      },
+      {
+        "id": 266,
+        "name": "Hotel Nikko Kumamoto",
+        "nameJp": "ホテルニッコー熊本",
+        "note": "Elegant Japanese luxury, 4-star — €55–95",
+        "lat": 32.8003,
+        "lng": 130.7112,
+        "googleMapsUrl": null,
+        "region": "kumamoto",
+        "category": "hotel",
+        "status": "matched",
+        "day": 5,
+        "dayLabel": "Days 5–7 — Kumamoto",
+        "possibleDays": [
+          5,
+          6,
+          7
+        ],
+        "possibleDayLabels": [
+          "Days 5–7 — Kumamoto"
+        ],
+        "extendedStatus": "matched",
+        "extendedDay": null,
+        "extendedDayLabel": null,
+        "source": "hotels",
+        "hotelLocation": "kumamoto",
+        "chosen": false
+      },
+      {
+        "id": 267,
+        "name": "Mitsui Garden Hotel Kumamoto",
+        "nameJp": "三井ガーデンホテル熊本",
+        "note": "Modern business hotel — clean reliable design — €44–73",
+        "lat": 32.8015,
+        "lng": 130.7105,
+        "googleMapsUrl": null,
+        "region": "kumamoto",
+        "category": "hotel",
+        "status": "matched",
+        "day": 5,
+        "dayLabel": "Days 5–7 — Kumamoto",
+        "possibleDays": [
+          5,
+          6,
+          7
+        ],
+        "possibleDayLabels": [
+          "Days 5–7 — Kumamoto"
+        ],
+        "extendedStatus": "matched",
+        "extendedDay": null,
+        "extendedDayLabel": null,
+        "source": "hotels",
+        "hotelLocation": "kumamoto",
+        "chosen": false
+      },
+      {
+        "id": 268,
+        "name": "Candeo Hotels Kumamoto Shinshigai",
+        "nameJp": "カンデオホテルズ熊本新市街",
+        "note": "Contemporary spa hotel — €45–80",
+        "lat": 32.8047,
+        "lng": 130.7115,
+        "googleMapsUrl": null,
+        "region": "kumamoto",
+        "category": "hotel",
+        "status": "matched",
+        "day": 5,
+        "dayLabel": "Days 5–7 — Kumamoto",
+        "possibleDays": [
+          5,
+          6,
+          7
+        ],
+        "possibleDayLabels": [
+          "Days 5–7 — Kumamoto"
+        ],
+        "extendedStatus": "matched",
+        "extendedDay": null,
+        "extendedDayLabel": null,
+        "source": "hotels",
+        "hotelLocation": "kumamoto",
+        "chosen": false
+      },
+      {
+        "id": 269,
+        "name": "Grids Premium Hotel Kumamoto",
+        "nameJp": "グリッズプレミアムホテル熊本",
+        "note": "Modern budget design hotel — €40–75",
+        "lat": 32.8021,
+        "lng": 130.7098,
+        "googleMapsUrl": null,
+        "region": "kumamoto",
+        "category": "hotel",
+        "status": "matched",
+        "day": 5,
+        "dayLabel": "Days 5–7 — Kumamoto",
+        "possibleDays": [
+          5,
+          6,
+          7
+        ],
+        "possibleDayLabels": [
+          "Days 5–7 — Kumamoto"
+        ],
+        "extendedStatus": "matched",
+        "extendedDay": null,
+        "extendedDayLabel": null,
+        "source": "hotels",
+        "hotelLocation": "kumamoto",
+        "chosen": false
+      },
+      {
+        "id": 270,
+        "name": "Ryotei Matsuya Honkan",
+        "nameJp": "料亭松屋本館",
+        "note": "Traditional city ryokan with private onsen, next to Suizenji Garden — €130–170",
+        "lat": 32.8012,
+        "lng": 130.7068,
+        "googleMapsUrl": null,
+        "region": "kumamoto",
+        "category": "ryokan",
+        "status": "matched",
+        "day": 5,
+        "dayLabel": "Days 5–7 — Kumamoto",
+        "possibleDays": [
+          5,
+          6,
+          7
+        ],
+        "possibleDayLabels": [
+          "Days 5–7 — Kumamoto"
+        ],
+        "extendedStatus": "matched",
+        "extendedDay": null,
+        "extendedDayLabel": null,
+        "source": "hotels",
+        "hotelLocation": "kumamoto",
+        "chosen": false
+      },
+      {
+        "id": 271,
+        "name": "Yamaga Onsen Seiryuso",
+        "nameJp": "山鹿温泉 清流荘",
+        "note": "Historic 1908 onsen ryokan in atmospheric hot spring town — €120–160",
+        "lat": 33.0194,
+        "lng": 130.688,
+        "googleMapsUrl": null,
+        "region": "kumamoto",
+        "category": "ryokan",
+        "status": "matched",
+        "day": 5,
+        "dayLabel": "Days 5–7 — Kumamoto",
+        "possibleDays": [
+          5,
+          6,
+          7
+        ],
+        "possibleDayLabels": [
+          "Days 5–7 — Kumamoto"
+        ],
+        "extendedStatus": "matched",
+        "extendedDay": null,
+        "extendedDayLabel": null,
+        "source": "hotels",
+        "hotelLocation": "kumamoto",
+        "chosen": true
+      },
+      {
+        "id": 272,
+        "name": "Hotel Cycle (Onomichi U2)",
+        "nameJp": "ホテルサイクル",
+        "note": "Design boutique built for cyclists — €110–140",
+        "lat": 34.4098,
+        "lng": 133.1955,
+        "googleMapsUrl": null,
+        "region": "onomichi",
+        "category": "hotel",
+        "status": "matched",
+        "day": 8,
+        "dayLabel": "Day 8 — Onomichi",
+        "possibleDays": [
+          8
+        ],
+        "possibleDayLabels": [
+          "Day 8 — Onomichi"
+        ],
+        "extendedStatus": "matched",
+        "extendedDay": null,
+        "extendedDayLabel": null,
+        "source": "hotels",
+        "hotelLocation": "onomichi",
+        "chosen": true
+      },
+      {
+        "id": 273,
+        "name": "Hotel Beacon Onomichi",
+        "nameJp": "ホテルビーコンおのみち",
+        "note": "Modern concept hotel, 6 room types — €100–150",
+        "lat": 34.4092,
+        "lng": 133.198,
+        "googleMapsUrl": null,
+        "region": "onomichi",
+        "category": "hotel",
+        "status": "matched",
+        "day": 8,
+        "dayLabel": "Day 8 — Onomichi",
+        "possibleDays": [
+          8
+        ],
+        "possibleDayLabels": [
+          "Day 8 — Onomichi"
+        ],
+        "extendedStatus": "matched",
+        "extendedDay": null,
+        "extendedDayLabel": null,
+        "source": "hotels",
+        "hotelLocation": "onomichi",
+        "chosen": false
+      },
+      {
+        "id": 274,
+        "name": "LOG (Lantern Onomichi Garden)",
+        "nameJp": "ログ",
+        "note": "Minimalist luxury by Studio Mumbai architect — €180–250",
+        "lat": 34.4078,
+        "lng": 133.2012,
+        "googleMapsUrl": null,
+        "region": "onomichi",
+        "category": "hotel",
+        "status": "matched",
+        "day": 8,
+        "dayLabel": "Day 8 — Onomichi",
+        "possibleDays": [
+          8
+        ],
+        "possibleDayLabels": [
+          "Day 8 — Onomichi"
+        ],
+        "extendedStatus": "matched",
+        "extendedDay": null,
+        "extendedDayLabel": null,
+        "source": "hotels",
+        "hotelLocation": "onomichi",
+        "chosen": false
+      },
+      {
+        "id": 275,
+        "name": "Green Hill Hotel Onomichi",
+        "nameJp": "グリーンヒルホテル尾道",
+        "note": "Traditional Japanese business hotel — €55–75",
+        "lat": 34.4087,
+        "lng": 133.1943,
+        "googleMapsUrl": null,
+        "region": "onomichi",
+        "category": "hotel",
+        "status": "matched",
+        "day": 8,
+        "dayLabel": "Day 8 — Onomichi",
+        "possibleDays": [
+          8
+        ],
+        "possibleDayLabels": [
+          "Day 8 — Onomichi"
+        ],
+        "extendedStatus": "matched",
+        "extendedDay": null,
+        "extendedDayLabel": null,
+        "source": "hotels",
+        "hotelLocation": "onomichi",
+        "chosen": false
+      },
+      {
+        "id": 276,
+        "name": "Sakura Shimanami Hotel Onomichi Ekimae",
+        "nameJp": "桜しまなみホテル尾道駅前",
+        "note": "Modern budget-friendly business — €80–110",
+        "lat": 34.409,
+        "lng": 133.1952,
+        "googleMapsUrl": null,
+        "region": "onomichi",
+        "category": "hotel",
+        "status": "matched",
+        "day": 8,
+        "dayLabel": "Day 8 — Onomichi",
+        "possibleDays": [
+          8
+        ],
+        "possibleDayLabels": [
+          "Day 8 — Onomichi"
+        ],
+        "extendedStatus": "matched",
+        "extendedDay": null,
+        "extendedDayLabel": null,
+        "source": "hotels",
+        "hotelLocation": "onomichi",
+        "chosen": false
+      },
+      {
+        "id": 277,
+        "name": "Onomichi Daiichi Hotel",
+        "nameJp": "尾道第一ホテル",
+        "note": "Classic Japanese business hotel — €60–85",
+        "lat": 34.4095,
+        "lng": 133.196,
+        "googleMapsUrl": null,
+        "region": "onomichi",
+        "category": "hotel",
+        "status": "matched",
+        "day": 8,
+        "dayLabel": "Day 8 — Onomichi",
+        "possibleDays": [
+          8
+        ],
+        "possibleDayLabels": [
+          "Day 8 — Onomichi"
+        ],
+        "extendedStatus": "matched",
+        "extendedDay": null,
+        "extendedDayLabel": null,
+        "source": "hotels",
+        "hotelLocation": "onomichi",
+        "chosen": false
+      },
+      {
+        "id": 278,
+        "name": "Onomichi Guest House IROHASOU",
+        "nameJp": "尾道ゲストハウスいろは荘",
+        "note": "Restored Showa-era guesthouse — €20–35",
+        "lat": 34.407,
+        "lng": 133.2005,
+        "googleMapsUrl": null,
+        "region": "onomichi",
+        "category": "hotel",
+        "status": "matched",
+        "day": 8,
+        "dayLabel": "Day 8 — Onomichi",
+        "possibleDays": [
+          8
+        ],
+        "possibleDayLabels": [
+          "Day 8 — Onomichi"
+        ],
+        "extendedStatus": "matched",
+        "extendedDay": null,
+        "extendedDayLabel": null,
+        "source": "hotels",
+        "hotelLocation": "onomichi",
+        "chosen": false
+      },
+      {
+        "id": 279,
+        "name": "Ryokan Onomichi Nishiyama",
+        "nameJp": "旅館 尾道西山",
+        "note": "Michelin Key luxury ryokan in restored tea garden — all-inclusive — €215–250",
+        "lat": 34.4082,
+        "lng": 133.202,
+        "googleMapsUrl": null,
+        "region": "onomichi",
+        "category": "ryokan",
+        "status": "matched",
+        "day": 8,
+        "dayLabel": "Day 8 — Onomichi",
+        "possibleDays": [
+          8
+        ],
+        "possibleDayLabels": [
+          "Day 8 — Onomichi"
+        ],
+        "extendedStatus": "matched",
+        "extendedDay": null,
+        "extendedDayLabel": null,
+        "source": "hotels",
+        "hotelLocation": "onomichi",
+        "chosen": true
+      },
+      {
+        "id": 280,
+        "name": "Hotel Resol Trinity Osaka",
+        "nameJp": "ホテルレゾルトリニティ大阪",
+        "note": "Modern Japanese design meets ryokan — shoes-off rooms — €85–120",
+        "lat": 34.669,
+        "lng": 135.5022,
+        "googleMapsUrl": null,
+        "region": "osaka",
+        "category": "hotel",
+        "status": "matched",
+        "day": 9,
+        "dayLabel": "Days 9–12 — Osaka",
+        "possibleDays": [
+          9,
+          10,
+          11,
+          12
+        ],
+        "possibleDayLabels": [
+          "Days 9–12 — Osaka"
+        ],
+        "extendedStatus": "matched",
+        "extendedDay": 13,
+        "extendedDayLabel": "Day 13 — Nara Day Trip",
+        "source": "hotels",
+        "hotelLocation": "osaka",
+        "chosen": true
+      },
+      {
+        "id": 281,
+        "name": "Caption by Hyatt Namba Osaka",
+        "nameJp": "キャプションバイハイアット難波大阪",
+        "note": "Playful Osakan contemporary lifestyle hotel — €150–200",
+        "lat": 34.6625,
+        "lng": 135.5043,
+        "googleMapsUrl": null,
+        "region": "osaka",
+        "category": "hotel",
+        "status": "matched",
+        "day": 9,
+        "dayLabel": "Days 9–12 — Osaka",
+        "possibleDays": [
+          9,
+          10,
+          11,
+          12
+        ],
+        "possibleDayLabels": [
+          "Days 9–12 — Osaka"
+        ],
+        "extendedStatus": "matched",
+        "extendedDay": 13,
+        "extendedDayLabel": "Day 13 — Nara Day Trip",
+        "source": "hotels",
+        "hotelLocation": "osaka",
+        "chosen": false
+      },
+      {
+        "id": 282,
+        "name": "W Osaka",
+        "nameJp": "W大阪",
+        "note": "Luxury design — Tadao Ando architecture — €220–250",
+        "lat": 34.674,
+        "lng": 135.4985,
+        "googleMapsUrl": null,
+        "region": "osaka",
+        "category": "hotel",
+        "status": "matched",
+        "day": 9,
+        "dayLabel": "Days 9–12 — Osaka",
+        "possibleDays": [
+          9,
+          10,
+          11,
+          12
+        ],
+        "possibleDayLabels": [
+          "Days 9–12 — Osaka"
+        ],
+        "extendedStatus": "matched",
+        "extendedDay": 13,
+        "extendedDayLabel": "Day 13 — Nara Day Trip",
+        "source": "hotels",
+        "hotelLocation": "osaka",
+        "chosen": false
+      },
+      {
+        "id": 283,
+        "name": "Hotel the Leben Osaka",
+        "nameJp": "ホテル ザ ライベン 大阪",
+        "note": "Modern boutique with apartment-style suites — €95–125",
+        "lat": 34.6685,
+        "lng": 135.5015,
+        "googleMapsUrl": null,
+        "region": "osaka",
+        "category": "hotel",
+        "status": "matched",
+        "day": 9,
+        "dayLabel": "Days 9–12 — Osaka",
+        "possibleDays": [
+          9,
+          10,
+          11,
+          12
+        ],
+        "possibleDayLabels": [
+          "Days 9–12 — Osaka"
+        ],
+        "extendedStatus": "matched",
+        "extendedDay": 13,
+        "extendedDayLabel": "Day 13 — Nara Day Trip",
+        "source": "hotels",
+        "hotelLocation": "osaka",
+        "chosen": false
+      },
+      {
+        "id": 284,
+        "name": "Hotel Forza Osaka Namba Dotonbori",
+        "nameJp": "ホテルフォルツァ大阪難波道頓堀",
+        "note": "Modern design with usability focus — €60–90",
+        "lat": 34.668,
+        "lng": 135.5018,
+        "googleMapsUrl": null,
+        "region": "osaka",
+        "category": "hotel",
+        "status": "matched",
+        "day": 9,
+        "dayLabel": "Days 9–12 — Osaka",
+        "possibleDays": [
+          9,
+          10,
+          11,
+          12
+        ],
+        "possibleDayLabels": [
+          "Days 9–12 — Osaka"
+        ],
+        "extendedStatus": "matched",
+        "extendedDay": 13,
+        "extendedDayLabel": "Day 13 — Nara Day Trip",
+        "source": "hotels",
+        "hotelLocation": "osaka",
+        "chosen": false
+      },
+      {
+        "id": 285,
+        "name": "Hiyori Hotel Osaka Namba Station",
+        "nameJp": "ひよりホテル大阪難波ステーション",
+        "note": "Soft Japanese resort aesthetic — €85–145",
+        "lat": 34.662,
+        "lng": 135.502,
+        "googleMapsUrl": null,
+        "region": "osaka",
+        "category": "hotel",
+        "status": "matched",
+        "day": 9,
+        "dayLabel": "Days 9–12 — Osaka",
+        "possibleDays": [
+          9,
+          10,
+          11,
+          12
+        ],
+        "possibleDayLabels": [
+          "Days 9–12 — Osaka"
+        ],
+        "extendedStatus": "matched",
+        "extendedDay": 13,
+        "extendedDayLabel": "Day 13 — Nara Day Trip",
+        "source": "hotels",
+        "hotelLocation": "osaka",
+        "chosen": false
+      },
+      {
+        "id": 286,
+        "name": "KOKO HOTEL Osaka Namba Sennichimae",
+        "nameJp": "ココホテル大阪難波千日前",
+        "note": "Artistic contemporary design — €72–140",
+        "lat": 34.6668,
+        "lng": 135.504,
+        "googleMapsUrl": null,
+        "region": "osaka",
+        "category": "hotel",
+        "status": "matched",
+        "day": 9,
+        "dayLabel": "Days 9–12 — Osaka",
+        "possibleDays": [
+          9,
+          10,
+          11,
+          12
+        ],
+        "possibleDayLabels": [
+          "Days 9–12 — Osaka"
+        ],
+        "extendedStatus": "matched",
+        "extendedDay": 13,
+        "extendedDayLabel": "Day 13 — Nara Day Trip",
+        "source": "hotels",
+        "hotelLocation": "osaka",
+        "chosen": false
+      },
+      {
+        "id": 287,
+        "name": "Bespoke Hotel Shinsaibashi",
+        "nameJp": "ビスポークホテル心斎橋",
+        "note": "Modern minimalist boutique — €50–80",
+        "lat": 34.6738,
+        "lng": 135.502,
+        "googleMapsUrl": null,
+        "region": "osaka",
+        "category": "hotel",
+        "status": "matched",
+        "day": 9,
+        "dayLabel": "Days 9–12 — Osaka",
+        "possibleDays": [
+          9,
+          10,
+          11,
+          12
+        ],
+        "possibleDayLabels": [
+          "Days 9–12 — Osaka"
+        ],
+        "extendedStatus": "matched",
+        "extendedDay": 13,
+        "extendedDayLabel": "Day 13 — Nara Day Trip",
+        "source": "hotels",
+        "hotelLocation": "osaka",
+        "chosen": false
+      },
+      {
+        "id": 288,
+        "name": "Vessel Inn Shinsaibashi",
+        "nameJp": "ベッセルイン心斎橋",
+        "note": "Design-forward business hotel — €43–80",
+        "lat": 34.6718,
+        "lng": 135.5015,
+        "googleMapsUrl": null,
+        "region": "osaka",
+        "category": "hotel",
+        "status": "matched",
+        "day": 9,
+        "dayLabel": "Days 9–12 — Osaka",
+        "possibleDays": [
+          9,
+          10,
+          11,
+          12
+        ],
+        "possibleDayLabels": [
+          "Days 9–12 — Osaka"
+        ],
+        "extendedStatus": "matched",
+        "extendedDay": 13,
+        "extendedDayLabel": "Day 13 — Nara Day Trip",
+        "source": "hotels",
+        "hotelLocation": "osaka",
+        "chosen": false
+      },
+      {
+        "id": 289,
+        "name": "Centara Grand Hotel Osaka",
+        "nameJp": "センタラグランドホテル大阪",
+        "note": "Modern luxury — 33-storey architectural statement — €140–200",
+        "lat": 34.6692,
+        "lng": 135.5042,
+        "googleMapsUrl": null,
+        "region": "osaka",
+        "category": "hotel",
+        "status": "matched",
+        "day": 9,
+        "dayLabel": "Days 9–12 — Osaka",
+        "possibleDays": [
+          9,
+          10,
+          11,
+          12
+        ],
+        "possibleDayLabels": [
+          "Days 9–12 — Osaka"
+        ],
+        "extendedStatus": "matched",
+        "extendedDay": 13,
+        "extendedDayLabel": "Day 13 — Nara Day Trip",
+        "source": "hotels",
+        "hotelLocation": "osaka",
+        "chosen": false
+      },
+      {
+        "id": 290,
+        "name": "Kaneyoshi Ryokan",
+        "nameJp": "かねよし旅館",
+        "note": "Historic 1919 riverside ryokan on the Dotonbori canal — €100–135",
+        "lat": 34.6655,
+        "lng": 135.5058,
+        "googleMapsUrl": null,
+        "region": "osaka",
+        "category": "ryokan",
+        "status": "matched",
+        "day": 9,
+        "dayLabel": "Days 9–12 — Osaka",
+        "possibleDays": [
+          9,
+          10,
+          11,
+          12
+        ],
+        "possibleDayLabels": [
+          "Days 9–12 — Osaka"
+        ],
+        "extendedStatus": "matched",
+        "extendedDay": 13,
+        "extendedDayLabel": "Day 13 — Nara Day Trip",
+        "source": "hotels",
+        "hotelLocation": "osaka",
+        "chosen": false
+      },
+      {
+        "id": 291,
+        "name": "Yamatoya Honten",
+        "nameJp": "やまとや本店",
+        "note": "Traditional 39-room ryokan with communal baths in Dotonbori — €80–110",
+        "lat": 34.6662,
+        "lng": 135.5032,
+        "googleMapsUrl": null,
+        "region": "osaka",
+        "category": "ryokan",
+        "status": "matched",
+        "day": 9,
+        "dayLabel": "Days 9–12 — Osaka",
+        "possibleDays": [
+          9,
+          10,
+          11,
+          12
+        ],
+        "possibleDayLabels": [
+          "Days 9–12 — Osaka"
+        ],
+        "extendedStatus": "matched",
+        "extendedDay": 13,
+        "extendedDayLabel": "Day 13 — Nara Day Trip",
+        "source": "hotels",
+        "hotelLocation": "osaka",
+        "chosen": true
+      },
+      {
+        "id": 292,
+        "name": "Hotel Metropolitan Tokyo Marunouchi",
+        "nameJp": "ホテルメトロポリタン丸の内",
+        "note": "Contemporary luxury with skyline views — €190–230",
+        "lat": 35.6812,
+        "lng": 139.7695,
+        "googleMapsUrl": null,
+        "region": "tokyo",
+        "category": "hotel",
+        "status": "matched",
+        "day": 13,
+        "dayLabel": "Day 13 — Tokyo (final)",
+        "possibleDays": [
+          13
+        ],
+        "possibleDayLabels": [
+          "Day 13 — Tokyo (final)"
+        ],
+        "extendedStatus": "matched",
+        "extendedDay": null,
+        "extendedDayLabel": null,
+        "source": "hotels",
+        "hotelLocation": "tokyoFinal",
+        "chosen": true
+      },
+      {
+        "id": 293,
+        "name": "The Tokyo Station Hotel",
+        "nameJp": "ザ・東京ステーションホテル",
+        "note": "Historic luxury — built inside Tokyo Station — €220–250",
+        "lat": 35.6812,
+        "lng": 139.7671,
+        "googleMapsUrl": null,
+        "region": "tokyo",
+        "category": "hotel",
+        "status": "matched",
+        "day": 13,
+        "dayLabel": "Day 13 — Tokyo (final)",
+        "possibleDays": [
+          13
+        ],
+        "possibleDayLabels": [
+          "Day 13 — Tokyo (final)"
+        ],
+        "extendedStatus": "matched",
+        "extendedDay": null,
+        "extendedDayLabel": null,
+        "source": "hotels",
+        "hotelLocation": "tokyoFinal",
+        "chosen": false
+      },
+      {
+        "id": 294,
+        "name": "Karaksa Hotel Colors Tokyo Yaesu",
+        "nameJp": "カラクサホテルカラーズ東京八重洲",
+        "note": "Contemporary design with colorful communal spaces — €140–180",
+        "lat": 35.6798,
+        "lng": 139.771,
+        "googleMapsUrl": null,
+        "region": "tokyo",
+        "category": "hotel",
+        "status": "matched",
+        "day": 13,
+        "dayLabel": "Day 13 — Tokyo (final)",
+        "possibleDays": [
+          13
+        ],
+        "possibleDayLabels": [
+          "Day 13 — Tokyo (final)"
+        ],
+        "extendedStatus": "matched",
+        "extendedDay": null,
+        "extendedDayLabel": null,
+        "source": "hotels",
+        "hotelLocation": "tokyoFinal",
+        "chosen": false
+      },
+      {
+        "id": 295,
+        "name": "YOTEL Tokyo Ginza",
+        "nameJp": "ヨーテル東京銀座",
+        "note": "Tech-forward smart hotel — British design DNA — €135–195",
+        "lat": 35.6705,
+        "lng": 139.766,
+        "googleMapsUrl": null,
+        "region": "tokyo",
+        "category": "hotel",
+        "status": "matched",
+        "day": 13,
+        "dayLabel": "Day 13 — Tokyo (final)",
+        "possibleDays": [
+          13
+        ],
+        "possibleDayLabels": [
+          "Day 13 — Tokyo (final)"
+        ],
+        "extendedStatus": "matched",
+        "extendedDay": null,
+        "extendedDayLabel": null,
+        "source": "hotels",
+        "hotelLocation": "tokyoFinal",
+        "chosen": false
+      },
+      {
+        "id": 296,
+        "name": "Mitsui Garden Hotel Nihonbashi Premier",
+        "nameJp": "三井ガーデンホテル日本橋プレミア",
+        "note": "Oriental modern — cypress wood, traditional-contemporary blend — €200–240",
+        "lat": 35.6845,
+        "lng": 139.7742,
+        "googleMapsUrl": null,
+        "region": "tokyo",
+        "category": "hotel",
+        "status": "matched",
+        "day": 13,
+        "dayLabel": "Day 13 — Tokyo (final)",
+        "possibleDays": [
+          13
+        ],
+        "possibleDayLabels": [
+          "Day 13 — Tokyo (final)"
+        ],
+        "extendedStatus": "matched",
+        "extendedDay": null,
+        "extendedDayLabel": null,
+        "source": "hotels",
+        "hotelLocation": "tokyoFinal",
+        "chosen": false
+      },
+      {
+        "id": 297,
+        "name": "Super Hotel Premier Tokyo Station Yaesu",
+        "nameJp": "スーパーホテルプレミア東京ステーション八重洲中央口",
+        "note": "Modern business hotel with premium touches — €80–160",
+        "lat": 35.679,
+        "lng": 139.7718,
+        "googleMapsUrl": null,
+        "region": "tokyo",
+        "category": "hotel",
+        "status": "matched",
+        "day": 13,
+        "dayLabel": "Day 13 — Tokyo (final)",
+        "possibleDays": [
+          13
+        ],
+        "possibleDayLabels": [
+          "Day 13 — Tokyo (final)"
+        ],
+        "extendedStatus": "matched",
+        "extendedDay": null,
+        "extendedDayLabel": null,
+        "source": "hotels",
+        "hotelLocation": "tokyoFinal",
+        "chosen": false
+      },
+      {
+        "id": 298,
+        "name": "Yaesu Terminal Hotel",
+        "nameJp": "八重洲ターミナルホテル",
+        "note": "Modern minimalist, clean design — €85–170",
+        "lat": 35.6802,
+        "lng": 139.7705,
+        "googleMapsUrl": null,
+        "region": "tokyo",
+        "category": "hotel",
+        "status": "matched",
+        "day": 13,
+        "dayLabel": "Day 13 — Tokyo (final)",
+        "possibleDays": [
+          13
+        ],
+        "possibleDayLabels": [
+          "Day 13 — Tokyo (final)"
+        ],
+        "extendedStatus": "matched",
+        "extendedDay": null,
+        "extendedDayLabel": null,
+        "source": "hotels",
+        "hotelLocation": "tokyoFinal",
+        "chosen": false
+      },
+      {
+        "id": 299,
+        "name": "GINZA HOTEL by GRANBELL",
+        "nameJp": "銀座ホテルバイグランベル",
+        "note": "Art deco–influenced luxury design — €155–200",
+        "lat": 35.6685,
+        "lng": 139.764,
+        "googleMapsUrl": null,
+        "region": "tokyo",
+        "category": "hotel",
+        "status": "matched",
+        "day": 13,
+        "dayLabel": "Day 13 — Tokyo (final)",
+        "possibleDays": [
+          13
+        ],
+        "possibleDayLabels": [
+          "Day 13 — Tokyo (final)"
+        ],
+        "extendedStatus": "matched",
+        "extendedDay": null,
+        "extendedDayLabel": null,
+        "source": "hotels",
+        "hotelLocation": "tokyoFinal",
+        "chosen": false
+      },
+      {
+        "id": 300,
+        "name": "Asakusa Ryokan Toukaisou",
+        "nameJp": "浅草旅館 東海荘",
+        "note": "Traditional 70-year-old ryokan in historic Asakusa, near Sensoji Temple — €65–90",
+        "lat": 35.7148,
+        "lng": 139.796,
+        "googleMapsUrl": null,
+        "region": "tokyo",
+        "category": "ryokan",
+        "status": "matched",
+        "day": 13,
+        "dayLabel": "Day 13 — Tokyo (final)",
+        "possibleDays": [
+          13
+        ],
+        "possibleDayLabels": [
+          "Day 13 — Tokyo (final)"
+        ],
+        "extendedStatus": "matched",
+        "extendedDay": null,
+        "extendedDayLabel": null,
+        "source": "hotels",
+        "hotelLocation": "tokyoFinal",
+        "chosen": false
       }
     ],
     "sourceDescriptions": {
@@ -8388,7 +9719,7 @@
       {
         "day": 13,
         "date": "2026-05-21",
-        "dateLabel": "Wed, May 21",
+        "dateLabel": "Thu, May 21",
         "title": "Nara Day Trip",
         "region": "kansai",
         "tagline": "Ancient capital, giant Buddha, sacred deer. The day trip that got its own day.",
@@ -8464,7 +9795,7 @@
       {
         "day": 14,
         "date": "2026-05-22",
-        "dateLabel": "Thu, May 22",
+        "dateLabel": "Fri, May 22",
         "title": "Osaka → Kyoto — Higashiyama",
         "region": "kansai",
         "tagline": "Trading neon for tradition. Three days in Japan's cultural heart.",
@@ -8546,7 +9877,7 @@
       {
         "day": 15,
         "date": "2026-05-23",
-        "dateLabel": "Fri, May 23",
+        "dateLabel": "Sat, May 23",
         "title": "Kyoto — Mountain Temples & Markets",
         "region": "kansai",
         "tagline": "Hike between mountain temples, then hunt for treasures at Nishiki Market.",
@@ -8622,7 +9953,7 @@
       {
         "day": 16,
         "date": "2026-05-24",
-        "dateLabel": "Sat, May 24",
+        "dateLabel": "Sun, May 24",
         "title": "Kyoto — Moss, Gold & Geisha",
         "region": "kansai",
         "tagline": "The temples the day-trippers never reach. Plus Gion at its most atmospheric.",
@@ -8691,7 +10022,7 @@
       {
         "day": 17,
         "date": "2026-05-25",
-        "dateLabel": "Sun, May 25",
+        "dateLabel": "Mon, May 25",
         "title": "Kyoto → Hakone",
         "region": "hakone",
         "tagline": "Bullet train east, then hot springs in the mountains. Buy the Hakone Free Pass.",
@@ -8776,7 +10107,7 @@
       {
         "day": 18,
         "date": "2026-05-26",
-        "dateLabel": "Mon, May 26",
+        "dateLabel": "Tue, May 26",
         "title": "Hakone — Hiking & Hot Springs",
         "region": "hakone",
         "tagline": "Volcanic valleys, sacred lakes, and the old Tokaido highway through cedar forests.",
@@ -8854,7 +10185,7 @@
       {
         "day": 19,
         "date": "2026-05-27",
-        "dateLabel": "Tue, May 27",
+        "dateLabel": "Wed, May 27",
         "title": "Hakone → Matsumoto",
         "region": "alps",
         "tagline": "From volcanic hot springs to samurai castle. The Japanese Alps are calling.",
@@ -8918,7 +10249,7 @@
       {
         "day": 20,
         "date": "2026-05-28",
-        "dateLabel": "Wed, May 28",
+        "dateLabel": "Thu, May 28",
         "title": "Nakasendo Trail — Magome to Tsumago",
         "region": "alps",
         "tagline": "Walk the 400-year-old postal road through mountain forests. Edo-period Japan, preserved.",
@@ -9021,7 +10352,7 @@
       {
         "day": 21,
         "date": "2026-05-29",
-        "dateLabel": "Thu, May 29",
+        "dateLabel": "Fri, May 29",
         "title": "Matsumoto → Tokyo → Home",
         "region": "tokyo",
         "tagline": "One last castle view, one last konbini run, then sayonara.",
@@ -9405,5 +10736,985 @@
       "Hakone: Open-Air Museum, Owakudani, Lake Ashi, Hakone Shrine, Kuzuryū Shrine, Amasake Tea House, Hakone Onsen (9 pins → all visited)",
       "Alps: Matsumoto Castle, Tsumago-juku, Magome (3 of 8 pins visited)"
     ]
+  },
+  "theme": {
+    "accent": "#BC002D",
+    "accentAlt": "#c4956a",
+    "extendedAccent": "#c4956a",
+    "hikingGreen": "#2d5a27",
+    "onsenWarm": "#3d2b1f",
+    "heroGradient": "linear-gradient(135deg, #BC002D, #c4956a)",
+    "particleEffect": "sakura",
+    "mapTiles": "cartodb-dark",
+    "mapTileUrl": "https://{s}.basemaps.cartocdn.com/dark_all/{z}/{x}/{y}{r}.png",
+    "mapAttribution": "© OpenStreetMap contributors © CARTO"
+  },
+  "capabilities": {
+    "hasExtendedTrip": true,
+    "hasSplitGroup": true,
+    "hasStampRally": true,
+    "hasFlashcards": true,
+    "hasAmbientSound": true,
+    "hasCurrencyConverter": true,
+    "hasWeatherOverlay": true,
+    "hasCountdown": true,
+    "hasStickers": true,
+    "hasLuggageTags": true,
+    "hasKonamiEgg": true,
+    "hasHotelSelection": true,
+    "hasDietaryFilters": true,
+    "hasPackingChecklist": true
+  },
+  "mapConfig": {
+    "defaultCenter": [
+      36.5,
+      137.0
+    ],
+    "defaultZoom": 6,
+    "minZoom": 5,
+    "maxZoom": 18,
+    "maxBounds": [
+      [
+        24,
+        122
+      ],
+      [
+        46,
+        154
+      ]
+    ],
+    "maxBoundsViscosity": 1.0,
+    "fitBoundsFromPins": true,
+    "fitBoundsPadding": [
+      50,
+      50
+    ]
+  },
+  "routes": {
+    "main": {
+      "label": "Main Route",
+      "color": "#BC002D",
+      "opacity": 0.6,
+      "weight": 2,
+      "dashArray": "8, 6",
+      "coordinates": [
+        {
+          "lat": 35.6762,
+          "lng": 139.6503,
+          "label": "Tokyo"
+        },
+        {
+          "lat": 32.8032,
+          "lng": 130.7079,
+          "label": "Kumamoto"
+        },
+        {
+          "lat": 34.409,
+          "lng": 133.205,
+          "label": "Onomichi"
+        },
+        {
+          "lat": 34.066,
+          "lng": 132.9976,
+          "label": "Imabari"
+        },
+        {
+          "lat": 34.6937,
+          "lng": 135.5023,
+          "label": "Osaka"
+        },
+        {
+          "lat": 35.6762,
+          "lng": 139.6503,
+          "label": "Tokyo (return)"
+        },
+        {
+          "lat": 35.772,
+          "lng": 140.3929,
+          "label": "Narita"
+        }
+      ]
+    },
+    "dayTrips": [
+      {
+        "label": "Tokyo → Kamakura",
+        "day": 2,
+        "from": {
+          "lat": 35.6762,
+          "lng": 139.6503
+        },
+        "to": {
+          "lat": 35.3197,
+          "lng": 139.5466
+        }
+      },
+      {
+        "label": "Tokyo → Kawaguchiko (Mt Fuji)",
+        "day": 4,
+        "from": {
+          "lat": 35.6762,
+          "lng": 139.6503
+        },
+        "to": {
+          "lat": 35.5161,
+          "lng": 138.7556
+        }
+      },
+      {
+        "label": "Kumamoto → Mt Aso",
+        "day": 6,
+        "from": {
+          "lat": 32.8032,
+          "lng": 130.7079
+        },
+        "to": {
+          "lat": 32.8842,
+          "lng": 131.1041
+        }
+      },
+      {
+        "label": "Kumamoto → Kurokawa Onsen",
+        "day": 7,
+        "from": {
+          "lat": 32.8032,
+          "lng": 130.7079
+        },
+        "to": {
+          "lat": 33.0988,
+          "lng": 131.0758
+        }
+      },
+      {
+        "label": "Osaka → Kyoto",
+        "day": 12,
+        "from": {
+          "lat": 34.6937,
+          "lng": 135.5023
+        },
+        "to": {
+          "lat": 35.0116,
+          "lng": 135.7681
+        }
+      }
+    ],
+    "extended": {
+      "label": "Extended Route (Magda & Damian)",
+      "color": "#c4956a",
+      "opacity": 0.5,
+      "weight": 2,
+      "dashArray": "4, 8",
+      "coordinates": [
+        {
+          "lat": 34.6937,
+          "lng": 135.5023,
+          "label": "Osaka"
+        },
+        {
+          "lat": 34.6851,
+          "lng": 135.8048,
+          "label": "Nara"
+        },
+        {
+          "lat": 35.0116,
+          "lng": 135.7681,
+          "label": "Kyoto"
+        },
+        {
+          "lat": 35.128,
+          "lng": 135.77,
+          "label": "Kurama"
+        },
+        {
+          "lat": 35.2367,
+          "lng": 139.053,
+          "label": "Hakone"
+        },
+        {
+          "lat": 35.2047,
+          "lng": 139.0229,
+          "label": "Lake Ashi"
+        },
+        {
+          "lat": 35.2473,
+          "lng": 139.0237,
+          "label": "Owakudani"
+        },
+        {
+          "lat": 36.2381,
+          "lng": 137.972,
+          "label": "Matsumoto"
+        },
+        {
+          "lat": 35.5275,
+          "lng": 137.5692,
+          "label": "Magome"
+        },
+        {
+          "lat": 35.5789,
+          "lng": 137.5975,
+          "label": "Tsumago"
+        },
+        {
+          "lat": 35.6762,
+          "lng": 139.6503,
+          "label": "Tokyo"
+        },
+        {
+          "lat": 35.772,
+          "lng": 140.3929,
+          "label": "Narita"
+        }
+      ]
+    }
+  },
+  "regionStyles": {
+    "tokyo": {
+      "bg": "bg-blue-50",
+      "border": "border-blue-200",
+      "badge": "bg-blue-600",
+      "accent": "text-blue-700",
+      "hex": "#2563eb"
+    },
+    "fuji": {
+      "bg": "bg-violet-50",
+      "border": "border-violet-200",
+      "badge": "bg-violet-600",
+      "accent": "text-violet-700",
+      "hex": "#7c3aed"
+    },
+    "kyushu": {
+      "bg": "bg-emerald-50",
+      "border": "border-emerald-200",
+      "badge": "bg-emerald-600",
+      "accent": "text-emerald-700",
+      "hex": "#059669"
+    },
+    "seto": {
+      "bg": "bg-cyan-50",
+      "border": "border-cyan-200",
+      "badge": "bg-cyan-600",
+      "accent": "text-cyan-700",
+      "hex": "#0891b2"
+    },
+    "kansai": {
+      "bg": "bg-amber-50",
+      "border": "border-amber-200",
+      "badge": "bg-amber-600",
+      "accent": "text-amber-700",
+      "hex": "#d97706"
+    },
+    "travel": {
+      "bg": "bg-slate-50",
+      "border": "border-slate-200",
+      "badge": "bg-slate-500",
+      "accent": "text-slate-600",
+      "hex": "#64748b"
+    }
+  },
+  "routeStops": [
+    {
+      "name": "Warsaw",
+      "sub": "May 8",
+      "icon": "✈️",
+      "type": "origin"
+    },
+    {
+      "name": "Tokyo",
+      "sub": "May 9–12",
+      "icon": "🏨",
+      "type": "stay",
+      "region": "tokyo"
+    },
+    {
+      "name": "Kamakura",
+      "sub": "Day trip",
+      "icon": "🗿",
+      "type": "dayTrip",
+      "region": "tokyo"
+    },
+    {
+      "name": "Mt Fuji",
+      "sub": "Day trip",
+      "icon": "🗻",
+      "type": "dayTrip",
+      "region": "fuji"
+    },
+    {
+      "name": "Kumamoto",
+      "sub": "May 13–14",
+      "icon": "🏯",
+      "type": "stay",
+      "region": "kyushu"
+    },
+    {
+      "name": "Mt Aso",
+      "sub": "May 14",
+      "icon": "🌋",
+      "type": "dayTrip",
+      "region": "kyushu"
+    },
+    {
+      "name": "Onomichi",
+      "sub": "May 15",
+      "icon": "🏖️",
+      "type": "stay",
+      "region": "seto"
+    },
+    {
+      "name": "Shimanami",
+      "sub": "May 16",
+      "icon": "🚴",
+      "type": "transit",
+      "region": "seto"
+    },
+    {
+      "name": "Osaka",
+      "sub": "May 16–20",
+      "icon": "🌟",
+      "type": "stay",
+      "region": "kansai"
+    },
+    {
+      "name": "Kyoto",
+      "sub": "Day trip",
+      "icon": "⛩️",
+      "type": "dayTrip",
+      "region": "kansai"
+    },
+    {
+      "name": "Nara",
+      "sub": "Day trip",
+      "icon": "🦌",
+      "type": "dayTrip",
+      "region": "kansai"
+    },
+    {
+      "name": "Tokyo",
+      "sub": "May 21–22",
+      "icon": "🏨",
+      "type": "stay",
+      "region": "tokyo"
+    },
+    {
+      "name": "Warsaw",
+      "sub": "May 23",
+      "icon": "🏠",
+      "type": "origin"
+    }
+  ],
+  "stickers": {
+    "hero": [
+      {
+        "src": "/trips/japan-2026/stickers/n1_03.png",
+        "size": "clamp(100px,14vw,180px)",
+        "top": "8%",
+        "left": "6%",
+        "rot": "-8deg",
+        "op": 0.85,
+        "dur": "7s",
+        "drift": "-12px",
+        "swing": "3deg"
+      },
+      {
+        "src": "/trips/japan-2026/stickers/n1_07.png",
+        "size": "clamp(80px,10vw,140px)",
+        "bottom": "15%",
+        "right": "8%",
+        "rot": "12deg",
+        "op": 0.75,
+        "dur": "9s",
+        "drift": "-10px",
+        "swing": "-2deg"
+      },
+      {
+        "src": "/trips/japan-2026/stickers/n2_01.png",
+        "size": "clamp(60px,8vw,110px)",
+        "top": "20%",
+        "right": "15%",
+        "rot": "5deg",
+        "op": 0.7,
+        "dur": "8s",
+        "drift": "-8px",
+        "swing": "2deg"
+      }
+    ],
+    "closing": [
+      {
+        "src": "/trips/japan-2026/stickers/n2_23.png",
+        "size": "clamp(100px,14vw,180px)",
+        "top": "10%",
+        "right": "5%",
+        "rot": "5deg",
+        "op": 0.85,
+        "dur": "8s",
+        "drift": "-15px",
+        "swing": "-3deg"
+      },
+      {
+        "src": "/trips/japan-2026/stickers/n1_15.png",
+        "size": "clamp(90px,12vw,160px)",
+        "bottom": "12%",
+        "left": "4%",
+        "rot": "-10deg",
+        "op": 0.8,
+        "dur": "7s",
+        "drift": "-12px",
+        "swing": "4deg"
+      }
+    ],
+    "days": {
+      "01": [
+        {
+          "src": "/trips/japan-2026/stickers/n1_11.png",
+          "size": "clamp(90px,14vw,180px)",
+          "top": "10%",
+          "right": "4vw",
+          "rot": "-8deg",
+          "op": 0.85
+        }
+      ],
+      "02": [
+        {
+          "src": "/trips/japan-2026/stickers/n1_13.png",
+          "size": "clamp(80px,12vw,150px)",
+          "top": "12%",
+          "right": "5vw",
+          "rot": "6deg",
+          "op": 0.8
+        }
+      ],
+      "03": [
+        {
+          "src": "/trips/japan-2026/stickers/n1_05.png",
+          "size": "clamp(90px,13vw,170px)",
+          "top": "8%",
+          "left": "5vw",
+          "rot": "-5deg",
+          "op": 0.85
+        }
+      ],
+      "04": [
+        {
+          "src": "/trips/japan-2026/stickers/n1_01.png",
+          "size": "clamp(100px,15vw,200px)",
+          "top": "6%",
+          "right": "3vw",
+          "rot": "4deg",
+          "op": 0.9,
+          "dur": "10s",
+          "drift": "-8px",
+          "swing": "2deg"
+        }
+      ],
+      "05": [
+        {
+          "src": "/trips/japan-2026/stickers/n1_09.png",
+          "size": "clamp(80px,12vw,160px)",
+          "bottom": "10%",
+          "right": "4vw",
+          "rot": "8deg",
+          "op": 0.8
+        }
+      ],
+      "06": [
+        {
+          "src": "/trips/japan-2026/stickers/n2_05.png",
+          "size": "clamp(90px,13vw,170px)",
+          "top": "10%",
+          "right": "5vw",
+          "rot": "-7deg",
+          "op": 0.85
+        }
+      ],
+      "07": [
+        {
+          "src": "/trips/japan-2026/stickers/n2_09.png",
+          "size": "clamp(85px,12vw,160px)",
+          "top": "8%",
+          "left": "4vw",
+          "rot": "5deg",
+          "op": 0.85
+        }
+      ],
+      "08": [
+        {
+          "src": "/trips/japan-2026/stickers/n2_11.png",
+          "size": "clamp(80px,11vw,150px)",
+          "top": "12%",
+          "right": "6vw",
+          "rot": "-6deg",
+          "op": 0.8
+        }
+      ],
+      "09": [
+        {
+          "src": "/trips/japan-2026/stickers/n2_13.png",
+          "size": "clamp(90px,14vw,180px)",
+          "top": "8%",
+          "right": "4vw",
+          "rot": "7deg",
+          "op": 0.85,
+          "dur": "8s",
+          "drift": "-10px",
+          "swing": "-3deg"
+        }
+      ],
+      "10": [
+        {
+          "src": "/trips/japan-2026/stickers/n1_17.png",
+          "size": "clamp(85px,12vw,160px)",
+          "top": "10%",
+          "left": "5vw",
+          "rot": "-8deg",
+          "op": 0.85
+        }
+      ],
+      "11": [
+        {
+          "src": "/trips/japan-2026/stickers/n1_19.png",
+          "size": "clamp(90px,13vw,170px)",
+          "top": "8%",
+          "right": "4vw",
+          "rot": "5deg",
+          "op": 0.8
+        }
+      ],
+      "12": [
+        {
+          "src": "/trips/japan-2026/stickers/n1_21.png",
+          "size": "clamp(100px,14vw,180px)",
+          "top": "6%",
+          "right": "3vw",
+          "rot": "-4deg",
+          "op": 0.9,
+          "dur": "9s",
+          "drift": "-12px",
+          "swing": "3deg"
+        }
+      ],
+      "13": [
+        {
+          "src": "/trips/japan-2026/stickers/n2_17.png",
+          "size": "clamp(80px,11vw,150px)",
+          "bottom": "12%",
+          "right": "5vw",
+          "rot": "10deg",
+          "op": 0.75
+        }
+      ],
+      "14": [
+        {
+          "src": "/trips/japan-2026/stickers/n2_19.png",
+          "size": "clamp(90px,12vw,160px)",
+          "top": "10%",
+          "left": "4vw",
+          "rot": "-6deg",
+          "op": 0.85,
+          "anim": "spin"
+        }
+      ]
+    },
+    "dayIcons": {
+      "01": "/trips/japan-2026/stickers/n1_11.png",
+      "02": "/trips/japan-2026/stickers/n1_13.png",
+      "03": "/trips/japan-2026/stickers/n1_05.png",
+      "04": "/trips/japan-2026/stickers/n1_01.png",
+      "05": "/trips/japan-2026/stickers/n1_09.png",
+      "06": "/trips/japan-2026/stickers/n2_05.png",
+      "07": "/trips/japan-2026/stickers/n2_09.png",
+      "08": "/trips/japan-2026/stickers/n2_11.png",
+      "09": "/trips/japan-2026/stickers/n2_13.png",
+      "10": "/trips/japan-2026/stickers/n1_17.png",
+      "11": "/trips/japan-2026/stickers/n1_19.png",
+      "12": "/trips/japan-2026/stickers/n1_21.png",
+      "13": "/trips/japan-2026/stickers/n2_17.png",
+      "14": "/trips/japan-2026/stickers/n2_19.png"
+    }
+  },
+  "luggageTags": {
+    "hero": [
+      {
+        "city": "Warsaw",
+        "code": "WAW",
+        "date": "May 8",
+        "bottom": "22%",
+        "right": "4%",
+        "rot": "5deg",
+        "delay": "0.6s"
+      },
+      {
+        "city": "Narita",
+        "code": "NRT",
+        "date": "May 9",
+        "top": "18%",
+        "left": "3%",
+        "rot": "-4deg",
+        "delay": "0.8s"
+      }
+    ],
+    "closing": [
+      {
+        "city": "Narita",
+        "code": "NRT",
+        "date": "May 22",
+        "bottom": "12%",
+        "right": "4%",
+        "rot": "6deg",
+        "delay": "0.7s"
+      },
+      {
+        "city": "Warsaw",
+        "code": "WAW",
+        "date": "May 23",
+        "bottom": "24%",
+        "left": "5%",
+        "rot": "-5deg",
+        "delay": "1.0s"
+      }
+    ],
+    "days": {
+      "01": {
+        "city": "Tokyo",
+        "code": "NRT",
+        "date": "Day 01",
+        "bottom": "8%",
+        "left": "8%",
+        "rot": "-5deg",
+        "delay": "0.4s"
+      },
+      "02": {
+        "city": "Harajuku",
+        "code": "TYO",
+        "date": "Day 02",
+        "bottom": "10%",
+        "left": "8%",
+        "rot": "3deg",
+        "delay": "0.5s"
+      },
+      "03": {
+        "city": "Kamakura",
+        "code": "KMK",
+        "date": "Day 03",
+        "bottom": "8%",
+        "right": "6%",
+        "rot": "-4deg",
+        "delay": "0.4s"
+      },
+      "04": {
+        "city": "Mt Fuji",
+        "code": "FUJ",
+        "date": "Day 04",
+        "bottom": "10%",
+        "left": "6%",
+        "rot": "5deg",
+        "delay": "0.5s"
+      },
+      "05": {
+        "city": "Kumamoto",
+        "code": "KMJ",
+        "date": "Day 05",
+        "bottom": "8%",
+        "left": "8%",
+        "rot": "-3deg",
+        "delay": "0.6s"
+      },
+      "06": {
+        "city": "Mt Aso",
+        "code": "ASO",
+        "date": "Day 06",
+        "bottom": "10%",
+        "right": "5%",
+        "rot": "4deg",
+        "delay": "0.4s"
+      },
+      "07": {
+        "city": "Kurokawa",
+        "code": "KRK",
+        "date": "Day 07",
+        "bottom": "8%",
+        "left": "7%",
+        "rot": "-6deg",
+        "delay": "0.5s"
+      },
+      "08": {
+        "city": "Onomichi",
+        "code": "ONO",
+        "date": "Day 08",
+        "bottom": "10%",
+        "left": "8%",
+        "rot": "3deg",
+        "delay": "0.4s"
+      },
+      "09": {
+        "city": "Shimanami",
+        "code": "SMN",
+        "date": "Day 09",
+        "bottom": "8%",
+        "right": "6%",
+        "rot": "-5deg",
+        "delay": "0.5s"
+      },
+      "10": {
+        "city": "Osaka",
+        "code": "KIX",
+        "date": "Day 10",
+        "bottom": "10%",
+        "left": "6%",
+        "rot": "4deg",
+        "delay": "0.6s"
+      },
+      "11": {
+        "city": "Osaka",
+        "code": "OSA",
+        "date": "Day 11",
+        "bottom": "8%",
+        "right": "7%",
+        "rot": "-3deg",
+        "delay": "0.4s"
+      },
+      "12": {
+        "city": "Kyoto",
+        "code": "KYO",
+        "date": "Day 12",
+        "bottom": "10%",
+        "left": "8%",
+        "rot": "5deg",
+        "delay": "0.5s"
+      },
+      "13": {
+        "city": "Tokyo",
+        "code": "TYO",
+        "date": "Day 13",
+        "bottom": "8%",
+        "left": "6%",
+        "rot": "-4deg",
+        "delay": "0.6s"
+      },
+      "14": {
+        "city": "Narita",
+        "code": "NRT",
+        "date": "Day 14",
+        "bottom": "10%",
+        "right": "5%",
+        "rot": "6deg",
+        "delay": "0.4s"
+      }
+    }
+  },
+  "weather": [
+    {
+      "day": 1,
+      "location": "Tokyo",
+      "highC": 22,
+      "lowC": 14,
+      "condition": "partly-cloudy",
+      "rainChance": 30,
+      "humidity": 58,
+      "sunrise": "4:42",
+      "sunset": "18:38",
+      "tip": "Mild evening arrival — konbini run weather is perfect.",
+      "icon": "⛅"
+    },
+    {
+      "day": 2,
+      "location": "Tokyo",
+      "highC": 24,
+      "lowC": 16,
+      "condition": "sunny",
+      "rainChance": 10,
+      "humidity": 52,
+      "sunrise": "4:41",
+      "sunset": "18:39",
+      "tip": "Perfect day for outdoor Harajuku wandering. Sunscreen for TeamLab queue.",
+      "icon": "☀️"
+    },
+    {
+      "day": 3,
+      "location": "Kamakura",
+      "highC": 21,
+      "lowC": 15,
+      "condition": "partly-cloudy",
+      "rainChance": 35,
+      "humidity": 64,
+      "sunrise": "4:40",
+      "sunset": "18:40",
+      "tip": "Coastal breeze — layer up for the Great Buddha. Light rain possible afternoon.",
+      "icon": "⛅"
+    },
+    {
+      "day": 4,
+      "location": "Mt Fuji",
+      "highC": 18,
+      "lowC": 8,
+      "condition": "partly-cloudy",
+      "rainChance": 25,
+      "humidity": 55,
+      "sunrise": "4:39",
+      "sunset": "18:41",
+      "tip": "Altitude makes it 6-8°C cooler — fleece essential. Clear morning = best Fuji views.",
+      "icon": "⛅"
+    },
+    {
+      "day": 5,
+      "location": "Kumamoto",
+      "highC": 25,
+      "lowC": 16,
+      "condition": "sunny",
+      "rainChance": 15,
+      "humidity": 60,
+      "sunrise": "5:22",
+      "sunset": "19:09",
+      "tip": "Kyushu is warmer. Short sleeves and sunscreen for castle grounds.",
+      "icon": "☀️"
+    },
+    {
+      "day": 6,
+      "location": "Aso",
+      "highC": 22,
+      "lowC": 12,
+      "condition": "variable",
+      "rainChance": 40,
+      "humidity": 65,
+      "sunrise": "5:21",
+      "sunset": "19:10",
+      "tip": "Mountain weather shifts fast — pack rain jacket for bike ride. Fog possible at crater.",
+      "icon": "🌤️"
+    },
+    {
+      "day": 7,
+      "location": "Kurokawa Onsen",
+      "highC": 23,
+      "lowC": 13,
+      "condition": "misty",
+      "rainChance": 45,
+      "humidity": 78,
+      "sunrise": "5:20",
+      "sunset": "19:11",
+      "tip": "Mountain mist adds magic to the onsen. Perfect hot spring weather.",
+      "icon": "🌫️"
+    },
+    {
+      "day": 8,
+      "location": "Onomichi",
+      "highC": 24,
+      "lowC": 16,
+      "condition": "sunny",
+      "rainChance": 15,
+      "humidity": 55,
+      "sunrise": "5:13",
+      "sunset": "19:04",
+      "tip": "Clear skies for Seto Inland Sea views. Great light for temple walk photos.",
+      "icon": "☀️"
+    },
+    {
+      "day": 9,
+      "location": "Shimanami Kaido",
+      "highC": 23,
+      "lowC": 17,
+      "condition": "sunny",
+      "rainChance": 10,
+      "humidity": 58,
+      "sunrise": "5:12",
+      "sunset": "19:05",
+      "tip": "Ideal cycling weather! Sea breeze keeps it cool. Stay hydrated — 70km is no joke.",
+      "icon": "☀️"
+    },
+    {
+      "day": 10,
+      "location": "Osaka",
+      "highC": 25,
+      "lowC": 17,
+      "condition": "partly-cloudy",
+      "rainChance": 25,
+      "humidity": 60,
+      "sunrise": "5:04",
+      "sunset": "18:58",
+      "tip": "Warm evening for Dōtonbori neon crawl. No umbrella needed.",
+      "icon": "⛅"
+    },
+    {
+      "day": 11,
+      "location": "Osaka",
+      "highC": 26,
+      "lowC": 18,
+      "condition": "sunny",
+      "rainChance": 10,
+      "humidity": 54,
+      "sunrise": "5:03",
+      "sunset": "18:59",
+      "tip": "Warmest day of the trip — hat and water for castle grounds and market walking.",
+      "icon": "☀️"
+    },
+    {
+      "day": 12,
+      "location": "Kyoto",
+      "highC": 24,
+      "lowC": 16,
+      "condition": "partly-cloudy",
+      "rainChance": 30,
+      "humidity": 62,
+      "sunrise": "5:02",
+      "sunset": "19:00",
+      "tip": "Comfortable temple-hopping weather. Bamboo Grove best before 9am crowd.",
+      "icon": "⛅"
+    },
+    {
+      "day": 13,
+      "location": "Tokyo",
+      "highC": 23,
+      "lowC": 15,
+      "condition": "rainy",
+      "rainChance": 70,
+      "humidity": 75,
+      "sunrise": "4:34",
+      "sunset": "18:46",
+      "tip": "Rain expected — grab a konbini umbrella. Good day for Akihabara indoor browsing.",
+      "icon": "🌧️"
+    },
+    {
+      "day": 14,
+      "location": "Tokyo",
+      "highC": 21,
+      "lowC": 14,
+      "condition": "cloudy",
+      "rainChance": 40,
+      "humidity": 68,
+      "sunrise": "4:33",
+      "sunset": "18:47",
+      "tip": "Overcast departure day. Allow extra time — Narita Express runs every 30min.",
+      "icon": "☁️"
+    }
+  ],
+  "currency": {
+    "currencies": [
+      "PLN",
+      "EUR",
+      "JPY"
+    ],
+    "symbols": {
+      "PLN": "zł",
+      "EUR": "€",
+      "JPY": "¥"
+    },
+    "rates": {
+      "EUR": {
+        "EUR": 1,
+        "JPY": 162,
+        "PLN": 4.3
+      },
+      "PLN": {
+        "PLN": 1,
+        "JPY": 37,
+        "EUR": 0.233
+      },
+      "JPY": {
+        "JPY": 1,
+        "PLN": 0.027,
+        "EUR": 0.00617
+      }
+    },
+    "defaultFrom": "EUR",
+    "defaultAmount": 100,
+    "rateNote": "1 EUR ≈ 162 JPY | 1 EUR ≈ 4.3 PLN"
   }
 }
