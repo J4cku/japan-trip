@@ -464,6 +464,12 @@
     opacity: 1;
   }
 }
+@media (max-width: 1200px) {
+  .polaroid { transform-origin: right top; scale: 0.75; }
+}
+@media (max-width: 1024px) {
+  .polaroid { display: none; }
+}
 
 /* Floating stickers — hero & closing: pop in then float */
 .sticker-float {

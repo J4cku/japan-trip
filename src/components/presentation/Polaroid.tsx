@@ -3,9 +3,9 @@ import type { PolaroidPhoto } from "@/types/trip";
 const SIZE_MAP = { sm: 260, md: 320, lg: 380 };
 
 const POSITION_SLOTS = [
-  { top: "8%", right: "35%" },
-  { top: "22%", right: "42%" },
-  { top: "40%", right: "32%" },
+  { top: "8%", right: "4%" },
+  { top: "28%", right: "12%" },
+  { top: "52%", right: "2%" },
 ];
 
 export function Polaroid({ photo, delay, index = 0 }: { photo: PolaroidPhoto; delay?: string; index?: number }) {
