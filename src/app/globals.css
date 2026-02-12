@@ -412,7 +412,7 @@
   animation-delay: var(--pop-delay, 0.4s);
 }
 .polaroid:hover {
-  z-index: 30;
+  z-index: 30 !important;
 }
 .polaroid-frame {
   background: #fff;
