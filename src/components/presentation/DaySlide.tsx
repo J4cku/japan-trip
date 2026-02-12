@@ -49,9 +49,6 @@ export function DaySlide({
       {dayStickers.map((s, j) => (
         <Sticker key={j} s={{ ...s, delay: `${0.3 + j * 0.2}s` }} />
       ))}
-      {polaroids?.map((p, j) => (
-        <Polaroid key={j} photo={p} index={j} delay={`${0.5 + j * 0.25}s`} />
-      ))}
       {tag && (
         <LuggageTag
           city={tag.city}
@@ -75,6 +72,7 @@ export function DaySlide({
       {travels && travels.length > 0 && (
         <TransportStrip travels={travels} />
       )}
+      <div className="day-split">
       <div className="day-content">
         <p className="day-label rv">
           {iconSrc && (
@@ -130,6 +128,14 @@ export function DaySlide({
           </Link>
         </div>
         {day.tip && <p className="day-tip rv d9">{day.tip}</p>}
+      </div>
+      {polaroids && polaroids.length > 0 && (
+        <div className="day-polaroids">
+          {polaroids.map((p, j) => (
+            <Polaroid key={j} photo={p} index={j} delay={`${0.5 + j * 0.25}s`} />
+          ))}
+        </div>
+      )}
       </div>
     </section>
   );

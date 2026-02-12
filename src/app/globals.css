@@ -235,11 +235,24 @@
   pointer-events: none;
   user-select: none;
 }
+.day-split {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  gap: 2rem;
+}
 .day-content {
   position: relative;
   z-index: 2;
   max-width: 580px;
   width: 100%;
+  flex-shrink: 0;
+}
+.day-polaroids {
+  position: relative;
+  flex: 1;
+  min-width: 0;
+  height: 80dvh;
 }
 .day-label {
   font-size: 0.7rem;
@@ -464,11 +477,9 @@
     opacity: 1;
   }
 }
-@media (max-width: 1200px) {
-  .polaroid { transform-origin: right top; scale: 0.75; }
-}
 @media (max-width: 1024px) {
-  .polaroid { display: none; }
+  .day-split { display: block; }
+  .day-polaroids { display: none; }
 }
 
 /* Floating stickers — hero & closing: pop in then float */
@@ -2147,9 +2158,6 @@
   }
   .sticker.mobile-keep {
     display: block;
-  }
-  .polaroid {
-    display: none;
   }
   /* Move transport strip to right side on mobile */
   .transport-strip {
