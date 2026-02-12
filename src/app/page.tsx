@@ -1,6 +1,7 @@
 import React from "react";
 import tripData from "@/data/trip.json";
 import type { TripData, Travel, RestaurantLocation } from "@/types/trip";
+import { DAY_POLAROIDS } from "@/data/polaroids";
 import { HeroSlide } from "@/components/presentation/HeroSlide";
 import { DaySlide } from "@/components/presentation/DaySlide";
 import { ClosingSlide } from "@/components/presentation/ClosingSlide";
@@ -56,6 +57,7 @@ export default function PresentationPage() {
             hotels={data.hotels}
             travels={travelsByDay[day.day]}
             restaurantInfo={restaurantsByDay[day.day]}
+            polaroids={DAY_POLAROIDS[String(day.day).padStart(2, "0")]}
           >
             {day.day === 13 && <SplitBanner />}
           </DaySlide>

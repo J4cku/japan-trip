@@ -13,9 +13,9 @@ export function ScrollObserver() {
         entries.forEach((e) => {
           if (e.isIntersecting) {
             e.target.querySelectorAll(".rv,.rv-s,.rv-l").forEach((el) => el.classList.add("v"));
-            e.target.querySelectorAll(".sticker,.sticker-float,.sticker-spin,.luggage-tag,.ts-item").forEach((el) => el.classList.add("vis"));
+            e.target.querySelectorAll(".sticker,.sticker-float,.sticker-spin,.luggage-tag,.ts-item,.polaroid").forEach((el) => el.classList.add("vis"));
           } else {
-            e.target.querySelectorAll(".sticker,.sticker-float,.sticker-spin,.luggage-tag,.ts-item").forEach((el) => el.classList.remove("vis"));
+            e.target.querySelectorAll(".sticker,.sticker-float,.sticker-spin,.luggage-tag,.ts-item,.polaroid").forEach((el) => el.classList.remove("vis"));
           }
         });
       },

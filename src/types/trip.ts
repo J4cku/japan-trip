@@ -370,6 +370,16 @@ export interface ExtendedTrip {
   practicalTips: ExtendedPracticalTips;
 }
 
+export interface PolaroidPhoto {
+  src: string;
+  caption: string;
+  rotation: number;
+  position: { top?: string; bottom?: string; left?: string; right?: string };
+  size: "sm" | "md" | "lg";
+}
+
+export type PolaroidsData = Record<string, PolaroidPhoto[]>;
+
 export interface TripData {
   trip: Trip;
   stays: Stay[];

@@ -1,9 +1,10 @@
 import { DAY_STICKERS, DAY_LABEL_ICON, STICKERS } from "@/data/stickers";
 import { DAY_TAGS, DAY_HOTEL_KEY } from "@/data/luggage-tags";
 import { Sticker } from "./Sticker";
+import { Polaroid } from "./Polaroid";
 import { LuggageTag } from "./LuggageTag";
 import { TransportStrip } from "./TransportStrip";
-import type { Day, Hotels, Travel, HotelCity } from "@/types/trip";
+import type { Day, Hotels, Travel, HotelCity, PolaroidPhoto } from "@/types/trip";
 import Link from "next/link";
 
 export function DaySlide({
@@ -15,6 +16,7 @@ export function DaySlide({
   accentColor,
   children,
   slideClassName,
+  polaroids,
 }: {
   day: Day;
   index: number;
@@ -24,6 +26,7 @@ export function DaySlide({
   accentColor?: string;
   children?: React.ReactNode;
   slideClassName?: string;
+  polaroids?: PolaroidPhoto[];
 }) {
   const num = String(day.day).padStart(2, "0");
   const dayStickers = DAY_STICKERS[num] || [];
@@ -45,6 +48,9 @@ export function DaySlide({
       <div className="day-bg-num rv-s">{num}</div>
       {dayStickers.map((s, j) => (
         <Sticker key={j} s={{ ...s, delay: `${0.3 + j * 0.2}s` }} />
+      ))}
+      {polaroids?.map((p, j) => (
+        <Polaroid key={j} photo={p} index={j} delay={`${0.5 + j * 0.25}s`} />
       ))}
       {tag && (
         <LuggageTag

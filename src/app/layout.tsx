@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import { Inter } from "next/font/google";
+import { Inter, Caveat } from "next/font/google";
 import "./globals.css";
 import { SakuraParticles } from "@/components/fun/SakuraParticles";
 import { KonamiEgg } from "@/components/fun/KonamiEgg";
@@ -13,6 +13,12 @@ import { WeatherOverlay } from "@/components/fun/WeatherOverlay";
 const inter = Inter({
   subsets: ["latin"],
   weight: ["200", "300", "400", "600", "800", "900"],
+});
+
+const caveat = Caveat({
+  subsets: ["latin"],
+  weight: ["400", "700"],
+  variable: "--font-caveat",
 });
 
 export const metadata: Metadata = {
@@ -47,7 +53,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className={inter.className}>
+      <body className={`${inter.className} ${caveat.variable}`}>
         {children}
         <SakuraParticles />
         <KonamiEgg />
