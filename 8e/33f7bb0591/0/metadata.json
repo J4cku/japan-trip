@@ -1,0 +1,20 @@
+{
+  "cli_version": "0.4.5",
+  "checkpoint_id": "8e33f7bb0591",
+  "session_id": "697a0733-5a3e-411c-84f4-c5e2941f1dcf",
+  "strategy": "manual-commit",
+  "created_at": "2026-02-17T21:23:25.076318Z",
+  "branch": "test/empty-commit",
+  "checkpoints_count": 0,
+  "files_touched": null,
+  "agent": "Claude Code",
+  "turn_id": "f66d5233d27f",
+  "token_usage": {
+    "input_tokens": 16,
+    "cache_creation_tokens": 6842,
+    "cache_read_tokens": 142479,
+    "output_tokens": 78,
+    "api_call_count": 6
+  },
+  "transcript_path": ".claude/projects/-Users-jacek-repos-jpn/697a0733-5a3e-411c-84f4-c5e2941f1dcf.jsonl"
+}
