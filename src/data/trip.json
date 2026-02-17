@@ -2,17 +2,17 @@
   "trip": {
     "title": "Japan Adventure",
     "titleJp": "アドベンチャー",
-    "dates": "May 9 – 22, 2026",
+    "dates": "May 8 – 22, 2026",
     "travelers": 4,
-    "durationDays": 14,
-    "durationNights": 13,
+    "durationDays": 15,
+    "durationNights": 14,
     "origin": "Warsaw",
     "flights": {
       "outbound": {
         "from": "WAW",
         "to": "NRT",
-        "date": "2026-05-08",
-        "arrives": "2026-05-09T18:30",
+        "date": "2026-05-07",
+        "arrives": "2026-05-08T18:30",
         "note": "Landing Narita Terminal 1"
       },
       "return": {
@@ -47,14 +47,14 @@
     {
       "location": "Shibuya, Tokyo",
       "nights": 4,
-      "dates": "May 9–12",
+      "dates": "May 8–11",
       "area": "Near Shibuya Station",
       "budget": "¥15,000–20,000/room/night"
     },
     {
       "location": "Kumamoto",
-      "nights": 3,
-      "dates": "May 13–15",
+      "nights": 4,
+      "dates": "May 12–15",
       "area": "Near Kumamoto Castle",
       "budget": "¥12,000–16,000/room/night"
     },
@@ -83,8 +83,8 @@
   "days": [
     {
       "day": 1,
-      "date": "2026-05-09",
-      "dateLabel": "Sat, May 9",
+      "date": "2026-05-08",
+      "dateLabel": "Fri, May 8",
       "title": "Arrival in Tokyo",
       "region": "tokyo",
       "tagline": "Touch down at Narita. Neon lights and konbini runs await.",
@@ -133,8 +133,8 @@
     },
     {
       "day": 2,
-      "date": "2026-05-10",
-      "dateLabel": "Sun, May 10",
+      "date": "2026-05-09",
+      "dateLabel": "Sat, May 9",
       "title": "TeamLab & Harajuku",
       "region": "tokyo",
       "tagline": "Immersive digital art, then the sensory overload of Shibuya at night.",
@@ -196,8 +196,8 @@
     },
     {
       "day": 3,
-      "date": "2026-05-11",
-      "dateLabel": "Mon, May 11",
+      "date": "2026-05-10",
+      "dateLabel": "Sun, May 10",
       "title": "Kamakura",
       "region": "tokyo",
       "tagline": "13th-century capital. Giant Buddha, ocean temples, island at sunset.",
@@ -263,8 +263,8 @@
     },
     {
       "day": 4,
-      "date": "2026-05-12",
-      "dateLabel": "Tue, May 12",
+      "date": "2026-05-11",
+      "dateLabel": "Mon, May 11",
       "title": "Mt Fuji",
       "region": "fuji",
       "tagline": "The iconic pagoda-and-peak view. Fuji is famously shy — go early.",
@@ -321,8 +321,8 @@
     },
     {
       "day": 5,
-      "date": "2026-05-13",
-      "dateLabel": "Wed, May 13",
+      "date": "2026-05-12",
+      "dateLabel": "Tue, May 12",
       "title": "Tokyo → Kumamoto",
       "region": "kyushu",
       "tagline": "A quick flight south. By lunch, you're in Kyushu.",
@@ -402,8 +402,8 @@
     },
     {
       "day": 6,
-      "date": "2026-05-14",
-      "dateLabel": "Thu, May 14",
+      "date": "2026-05-13",
+      "dateLabel": "Wed, May 13",
       "title": "Mt Aso & Bike Ride",
       "region": "kyushu",
       "tagline": "Active volcano, vast caldera, then e-bikes through landscapes most tourists never see.",
@@ -461,6 +461,77 @@
     },
     {
       "day": 7,
+      "date": "2026-05-14",
+      "dateLabel": "Thu, May 14",
+      "title": "Amakusa Beach Day",
+      "region": "kyushu",
+      "tagline": "Crystal-clear waters and island bridges. Leave the volcano behind — today is sea and sand.",
+      "stay": "Kumamoto hotel",
+      "highlights": [
+        "Rent a car or join a tour — Amakusa is 2 hours south across five bridges",
+        "Amakusa Gokyo (Five Bridges) — iconic chain linking mainland to the islands",
+        "Shirahama Beach — white sand, turquoise water, almost no tourists",
+        "Fresh seafood lunch at the port — Amakusa is famous for kuruma-ebi (tiger prawns)",
+        "Dolphin watching cruise — pods of wild Indo-Pacific bottlenose dolphins year-round",
+        "Golden hour drive back across the bridges"
+      ],
+      "activities": [
+        {
+          "time": "08:00",
+          "name": "Rent car / join Amakusa tour",
+          "type": "transport"
+        },
+        {
+          "time": "10:00",
+          "name": "Cross Amakusa Gokyo (Five Bridges)",
+          "type": "explore"
+        },
+        {
+          "time": "11:00",
+          "name": "Shirahama Beach",
+          "type": "explore"
+        },
+        {
+          "time": "12:30",
+          "name": "Seafood lunch at port",
+          "type": "food"
+        },
+        {
+          "time": "14:00",
+          "name": "Dolphin watching cruise",
+          "duration": "1.5 hrs",
+          "cost": 3000,
+          "type": "attraction"
+        },
+        {
+          "time": "16:00",
+          "name": "Explore Sakitsu village & church",
+          "note": "UNESCO World Heritage — hidden Christian site",
+          "type": "attraction"
+        },
+        {
+          "time": "17:30",
+          "name": "Drive back to Kumamoto",
+          "duration": "2 hrs",
+          "type": "transport"
+        }
+      ],
+      "transport": {
+        "mode": "Rental car / tour",
+        "from": "Kumamoto",
+        "to": "Amakusa Islands",
+        "duration": "2 hrs each way",
+        "cost": 5000,
+        "costNote": "Car rental ~¥5,000/day or ¥3,000/person tour",
+        "jrPass": false,
+        "roundTrip": true
+      },
+      "food": "Amakusa sea urchin and kuruma-ebi are legendary. Port restaurants serve the freshest seafood in Kyushu. For veggie options, bring snacks — choices are limited in rural Amakusa.",
+      "tip": "Dolphin watching has 98% sighting rate year-round. Book at Amakusa Dolphin Center. Best light for the Five Bridges is golden hour on the return drive.",
+      "keyCost": 8000
+    },
+    {
+      "day": 8,
       "date": "2026-05-15",
       "dateLabel": "Fri, May 15",
       "title": "Kurokawa Onsen",
@@ -535,7 +606,7 @@
       "keyCost": 6500
     },
     {
-      "day": 8,
+      "day": 9,
       "date": "2026-05-16",
       "dateLabel": "Sat, May 16",
       "title": "Kumamoto → Onomichi",
@@ -608,7 +679,7 @@
       }
     },
     {
-      "day": 9,
+      "day": 10,
       "date": "2026-05-17",
       "dateLabel": "Sun, May 17",
       "title": "Shimanami Kaido → Osaka",
@@ -695,7 +766,7 @@
       }
     },
     {
-      "day": 10,
+      "day": 11,
       "date": "2026-05-18",
       "dateLabel": "Mon, May 18",
       "title": "Osaka — Dōtonbori & Shinsekai",
@@ -749,7 +820,7 @@
       "tip": "Osaka's motto is kuidaore — eat till you drop. Dōtonbori at night is pure electricity."
     },
     {
-      "day": 11,
+      "day": 12,
       "date": "2026-05-19",
       "dateLabel": "Tue, May 19",
       "title": "Osaka — Castle & Markets",
@@ -799,7 +870,7 @@
       "keyCost": 600
     },
     {
-      "day": 12,
+      "day": 13,
       "date": "2026-05-20",
       "dateLabel": "Wed, May 20",
       "title": "Kyoto",
@@ -874,7 +945,7 @@
       "keyCost": 580
     },
     {
-      "day": 13,
+      "day": 14,
       "date": "2026-05-21",
       "dateLabel": "Thu, May 21",
       "title": "Osaka → Tokyo",
@@ -930,7 +1001,7 @@
       "keyCost": 13870
     },
     {
-      "day": 14,
+      "day": 15,
       "date": "2026-05-22",
       "dateLabel": "Fri, May 22",
       "title": "Departure",
@@ -1102,7 +1173,7 @@
       "cost": "~¥2,000–3,000 per bag",
       "how": "Drop at any konbini (7-Eleven, FamilyMart) or Yamato Transport office",
       "delivery": "Next day by evening",
-      "usedOnDay": 8
+      "usedOnDay": 9
     }
   },
   "bookings": [
@@ -1183,11 +1254,11 @@
       },
       "hotels": {
         "amount": 87000,
-        "note": "13 nights across 5 stays (Kumamoto +1, Osaka -1) ÷ 2 people per room"
+        "note": "14 nights across 5 stays (Kumamoto +1) ÷ 2 people per room"
       },
       "meals": {
-        "amount": 65000,
-        "note": "~¥5,000/day × 13 days"
+        "amount": 70000,
+        "note": "~¥5,000/day × 14 days"
       },
       "activities": {
         "amount": 24000,
@@ -1204,6 +1275,10 @@
       "kurokawa": {
         "amount": 8000,
         "note": "Kurokawa Onsen day trip: bus RT ¥5,000 + rotenburo pass ¥1,500 + lunch"
+      },
+      "amakusa": {
+        "amount": 8000,
+        "note": "Amakusa day trip: car rental ¥5,000 + dolphin cruise ¥3,000"
       }
     },
     "totalPerPerson": "¥370,000–420,000",
@@ -1228,7 +1303,7 @@
   ],
   "stats": [
     {
-      "value": 14,
+      "value": 15,
       "label": "Days"
     },
     {
@@ -1360,8 +1435,26 @@
       "animation": "train-mountain"
     },
     {
-      "id": "kumamoto-kurokawa",
+      "id": "kumamoto-amakusa",
       "day": 7,
+      "from": {
+        "name": "Kumamoto"
+      },
+      "to": {
+        "name": "Amakusa Islands"
+      },
+      "mode": "car",
+      "icon": "car",
+      "duration": "2 hrs",
+      "distance": "100 km",
+      "cost": 5000,
+      "roundTrip": true,
+      "details": "Day trip. Drive across 5 bridges to the Amakusa Islands. Crystal seas, dolphins, white sand.",
+      "animation": "car-coastal"
+    },
+    {
+      "id": "kumamoto-kurokawa",
+      "day": 8,
       "from": {
         "name": "Kumamoto",
         "area": "Sakuramachi"
@@ -1381,7 +1474,7 @@
     },
     {
       "id": "kumamoto-onomichi",
-      "day": 8,
+      "day": 9,
       "from": {
         "name": "Kumamoto"
       },
@@ -1403,7 +1496,7 @@
     },
     {
       "id": "onomichi-imabari",
-      "day": 9,
+      "day": 10,
       "from": {
         "name": "Onomichi"
       },
@@ -1430,7 +1523,7 @@
     },
     {
       "id": "imabari-osaka",
-      "day": 9,
+      "day": 10,
       "from": {
         "name": "Imabari"
       },
@@ -1452,7 +1545,7 @@
     },
     {
       "id": "osaka-kyoto",
-      "day": 12,
+      "day": 13,
       "from": {
         "name": "Osaka",
         "area": "Namba"
@@ -1472,7 +1565,7 @@
     },
     {
       "id": "osaka-tokyo",
-      "day": 13,
+      "day": 14,
       "from": {
         "name": "Osaka",
         "area": "Shin-Osaka"
@@ -1491,7 +1584,7 @@
     },
     {
       "id": "tokyo-warsaw",
-      "day": 14,
+      "day": 15,
       "from": {
         "name": "Tokyo",
         "area": "Narita",
@@ -1525,7 +1618,7 @@
       "stayId": "shibuya",
       "location": "Shibuya, Tokyo",
       "nights": 4,
-      "dates": "May 9–12",
+      "dates": "May 8–11",
       "purpose": "Base for Tokyo sightseeing, TeamLab, Kamakura & Mt Fuji day trips",
       "options": [
         {
@@ -1544,7 +1637,7 @@
           "url": "https://www.discoverasr.com/en/lyf/japan/lyf-shibuya-tokyo",
           "travellerPick": true,
           "pickReason": "Jacek's choice — social vibes perfect for a group of 4",
-          "bookingUrl": "https://www.booking.com/hotel/jp/lyf-shibuya-tokyo.html?checkin=2026-05-09&checkout=2026-05-13&group_adults=4&no_rooms=2",
+          "bookingUrl": "https://www.booking.com/hotel/jp/lyf-shibuya-tokyo.html?checkin=2026-05-08&checkout=2026-05-12&group_adults=4&no_rooms=2",
           "officialUrl": "https://www.discoverasr.com/en/lyf/japan/lyf-shibuya-tokyo",
           "totalPerRoom": "€480–640 (4 nights)",
           "type": "hotel",
@@ -1565,7 +1658,7 @@
           ],
           "url": "https://www.booking.com/hotel/jp/all-day-place-shibuya.html",
           "travellerPick": false,
-          "bookingUrl": "https://www.booking.com/hotel/jp/all-day-place-shibuya.html?checkin=2026-05-09&checkout=2026-05-13&group_adults=4&no_rooms=2",
+          "bookingUrl": "https://www.booking.com/hotel/jp/all-day-place-shibuya.html?checkin=2026-05-08&checkout=2026-05-12&group_adults=4&no_rooms=2",
           "officialUrl": "https://www.uds-hotels.com/en/all-day-place/",
           "totalPerRoom": "€460–740 (4 nights)",
           "type": "hotel",
@@ -1586,7 +1679,7 @@
           ],
           "url": "https://www.granbellhotel.jp/en/shibuya/",
           "travellerPick": false,
-          "bookingUrl": "https://www.booking.com/hotel/jp/granbell-shibuya.html?checkin=2026-05-09&checkout=2026-05-13&group_adults=4&no_rooms=2",
+          "bookingUrl": "https://www.booking.com/hotel/jp/granbell-shibuya.html?checkin=2026-05-08&checkout=2026-05-12&group_adults=4&no_rooms=2",
           "officialUrl": "https://en.granbellhotel.jp/shibuya/",
           "totalPerRoom": "€240–520 (4 nights)",
           "type": "hotel",
@@ -1607,7 +1700,7 @@
           ],
           "url": "https://www.tokyuhotels.co.jp/en/shibuyastream/",
           "travellerPick": false,
-          "bookingUrl": "https://www.booking.com/hotel/jp/shibuya-stream-excel-tokyu.html?checkin=2026-05-09&checkout=2026-05-13&group_adults=4&no_rooms=2",
+          "bookingUrl": "https://www.booking.com/hotel/jp/shibuya-stream-excel-tokyu.html?checkin=2026-05-08&checkout=2026-05-12&group_adults=4&no_rooms=2",
           "officialUrl": "https://shibuyastreamexceltokyu.hotelsoftokyo.com/en/",
           "totalPerRoom": "€560–800 (4 nights)",
           "type": "hotel",
@@ -1628,7 +1721,7 @@
           ],
           "url": "https://www.ihg.com/hotelindigo/hotels/us/en/tokyo/tyosi/hoteldetail",
           "travellerPick": false,
-          "bookingUrl": "https://www.booking.com/hotel/jp/indigo-tokyo-shibuya-an-ihg.html?checkin=2026-05-09&checkout=2026-05-13&group_adults=4&no_rooms=2",
+          "bookingUrl": "https://www.booking.com/hotel/jp/indigo-tokyo-shibuya-an-ihg.html?checkin=2026-05-08&checkout=2026-05-12&group_adults=4&no_rooms=2",
           "officialUrl": "https://www.ihg.com/hotelindigo/hotels/us/en/shibuyaku/hndsh/hoteldetail",
           "totalPerRoom": "€220–340 (4 nights)",
           "type": "hotel",
@@ -1649,7 +1742,7 @@
           ],
           "url": "https://www.tokyustay.co.jp/e/hotel/SHB/",
           "travellerPick": false,
-          "bookingUrl": "https://www.booking.com/hotel/jp/tokyu-stay-shibuya.html?checkin=2026-05-09&checkout=2026-05-13&group_adults=4&no_rooms=2",
+          "bookingUrl": "https://www.booking.com/hotel/jp/tokyu-stay-shibuya.html?checkin=2026-05-08&checkout=2026-05-12&group_adults=4&no_rooms=2",
           "officialUrl": "https://www.tokyustay.co.jp/en/hotel/shibuya-shin-minamiguchi-tokyo/",
           "totalPerRoom": "€540–720 (4 nights)",
           "type": "hotel",
@@ -1670,7 +1763,7 @@
           ],
           "url": "https://www.tokyuhotels.co.jp/en/shibuya-r/",
           "travellerPick": false,
-          "bookingUrl": "https://www.booking.com/hotel/jp/shibuya-tokyu-inn.html?checkin=2026-05-09&checkout=2026-05-13&group_adults=4&no_rooms=2",
+          "bookingUrl": "https://www.booking.com/hotel/jp/shibuya-tokyu-inn.html?checkin=2026-05-08&checkout=2026-05-12&group_adults=4&no_rooms=2",
           "officialUrl": "https://shibuya-tokyu-rei-hotel.h-rez.com/",
           "totalPerRoom": "€300–460 (4 nights)",
           "type": "hotel",
@@ -1691,7 +1784,7 @@
           ],
           "url": "https://www.hyatt.com/hyatt-house/en-US/tyosh-hyatt-house-tokyo-shibuya",
           "travellerPick": false,
-          "bookingUrl": "https://www.booking.com/hotel/jp/hyatt-house-tokyo-shibuya.html?checkin=2026-05-09&checkout=2026-05-13&group_adults=4&no_rooms=2",
+          "bookingUrl": "https://www.booking.com/hotel/jp/hyatt-house-tokyo-shibuya.html?checkin=2026-05-08&checkout=2026-05-12&group_adults=4&no_rooms=2",
           "officialUrl": "https://www.hyatt.com/hyatt-house/en-US/tyoxs-hyatt-house-tokyo-shibuya",
           "totalPerRoom": "€880–1,000 (4 nights)",
           "type": "hotel",
@@ -1712,7 +1805,7 @@
             "Tatami rooms with futons + modern amenities — best of both worlds",
             "Rooftop open-air bath with city skyline views"
           ],
-          "bookingUrl": "https://www.booking.com/hotel/jp/onsen-ryokan-yuen-shinjuku.html?checkin=2026-05-09&checkout=2026-05-13&group_adults=4&no_rooms=2",
+          "bookingUrl": "https://www.booking.com/hotel/jp/onsen-ryokan-yuen-shinjuku.html?checkin=2026-05-08&checkout=2026-05-12&group_adults=4&no_rooms=2",
           "officialUrl": "https://www.uds-hotels.com/en/yuen/shinjuku/",
           "travellerPick": false,
           "ryokanDetails": {
@@ -1729,8 +1822,8 @@
           "chosen": false
         }
       ],
-      "checkIn": "2026-05-09",
-      "checkOut": "2026-05-13",
+      "checkIn": "2026-05-08",
+      "checkOut": "2026-05-12",
       "searchParams": {
         "adults": 4,
         "rooms": 2,
@@ -1741,8 +1834,8 @@
     "kumamoto": {
       "stayId": "kumamoto",
       "location": "Kumamoto",
-      "nights": 3,
-      "dates": "May 13–15",
+      "nights": 4,
+      "dates": "May 12–15",
       "purpose": "Base for Kumamoto Castle & Mt Aso bike ride",
       "options": [
         {
@@ -1761,9 +1854,9 @@
           "url": "https://hoshinoresorts.com/en/hotels/omo5kumamoto/",
           "travellerPick": true,
           "pickReason": "Hoshino Resorts is the gold standard for Japanese design hotels",
-          "bookingUrl": "https://www.booking.com/hotel/jp/omo5-kumamoto-by-hoshino-resorts-kumamoto.html?checkin=2026-05-13&checkout=2026-05-16&group_adults=4&no_rooms=2",
+          "bookingUrl": "https://www.booking.com/hotel/jp/omo5-kumamoto-by-hoshino-resorts-kumamoto.html?checkin=2026-05-12&checkout=2026-05-16&group_adults=4&no_rooms=2",
           "officialUrl": "https://hoshinoresorts.com/en/hotels/omo5kumamoto/",
-          "totalPerRoom": "€195–390 (3 nights)",
+          "totalPerRoom": "€195–390 (4 nights)",
           "type": "hotel",
           "chosen": true
         },
@@ -1782,9 +1875,9 @@
           ],
           "url": "https://www.vessel-hotel.jp/en/ref/kumamoto/",
           "travellerPick": false,
-          "bookingUrl": "https://www.booking.com/hotel/jp/ref-kumamoto-by-vessel-hotels.html?checkin=2026-05-13&checkout=2026-05-16&group_adults=4&no_rooms=2",
+          "bookingUrl": "https://www.booking.com/hotel/jp/ref-kumamoto-by-vessel-hotels.html?checkin=2026-05-12&checkout=2026-05-16&group_adults=4&no_rooms=2",
           "officialUrl": "https://www.vessel-hotel.jp/en/ref/kumamoto/",
-          "totalPerRoom": "€168–270 (3 nights)",
+          "totalPerRoom": "€168–270 (4 nights)",
           "type": "hotel",
           "chosen": false
         },
@@ -1803,9 +1896,9 @@
           ],
           "url": "https://www.jrk-hotels.co.jp/en/Kumamoto/",
           "travellerPick": false,
-          "bookingUrl": "https://www.booking.com/hotel/jp/the-blossom-kumamoto.html?checkin=2026-05-13&checkout=2026-05-16&group_adults=4&no_rooms=2",
+          "bookingUrl": "https://www.booking.com/hotel/jp/the-blossom-kumamoto.html?checkin=2026-05-12&checkout=2026-05-16&group_adults=4&no_rooms=2",
           "officialUrl": "https://www.jrk-hotels.co.jp/en/Kumamoto/",
-          "totalPerRoom": "€174–300 (3 nights)",
+          "totalPerRoom": "€174–300 (4 nights)",
           "type": "hotel",
           "chosen": false
         },
@@ -1824,9 +1917,9 @@
           ],
           "url": "https://koko-hotels.com/kumamoto/",
           "travellerPick": false,
-          "bookingUrl": "https://www.booking.com/hotel/jp/hoterutorasuteipuremiaxiong-ben-kumamoto-city.html?checkin=2026-05-13&checkout=2026-05-16&group_adults=4&no_rooms=2",
+          "bookingUrl": "https://www.booking.com/hotel/jp/hoterutorasuteipuremiaxiong-ben-kumamoto-city.html?checkin=2026-05-12&checkout=2026-05-16&group_adults=4&no_rooms=2",
           "officialUrl": "https://koko-hotels.com/kumamoto/",
-          "totalPerRoom": "€150–255 (3 nights)",
+          "totalPerRoom": "€150–255 (4 nights)",
           "type": "hotel",
           "chosen": false
         },
@@ -1845,9 +1938,9 @@
           ],
           "url": "https://www.okura-nikko.com/japan/kumamoto/hotel-nikko-kumamoto/",
           "travellerPick": false,
-          "bookingUrl": "https://www.booking.com/hotel/jp/nikko-kumamoto.html?checkin=2026-05-13&checkout=2026-05-16&group_adults=4&no_rooms=2",
+          "bookingUrl": "https://www.booking.com/hotel/jp/nikko-kumamoto.html?checkin=2026-05-12&checkout=2026-05-16&group_adults=4&no_rooms=2",
           "officialUrl": "https://www.okura-nikko.com/japan/kumamoto/hotel-nikko-kumamoto/",
-          "totalPerRoom": "€165–285 (3 nights)",
+          "totalPerRoom": "€165–285 (4 nights)",
           "type": "hotel",
           "chosen": false
         },
@@ -1866,9 +1959,9 @@
           ],
           "url": "https://www.gardenhotels.co.jp/kumamoto/eng/",
           "travellerPick": false,
-          "bookingUrl": "https://www.booking.com/hotel/jp/mitsui-garden-kumamoto.html?checkin=2026-05-13&checkout=2026-05-16&group_adults=4&no_rooms=2",
+          "bookingUrl": "https://www.booking.com/hotel/jp/mitsui-garden-kumamoto.html?checkin=2026-05-12&checkout=2026-05-16&group_adults=4&no_rooms=2",
           "officialUrl": "https://www.gardenhotels.co.jp/kumamoto/eng/",
-          "totalPerRoom": "€132–219 (3 nights)",
+          "totalPerRoom": "€132–219 (4 nights)",
           "type": "hotel",
           "chosen": false
         },
@@ -1887,9 +1980,9 @@
           ],
           "url": "https://www.candeohotels.com/en/kumamoto-shinshigai/",
           "travellerPick": false,
-          "bookingUrl": "https://www.booking.com/hotel/jp/kandeohoteruzuxiong-ben-xin-shi-jie.html?checkin=2026-05-13&checkout=2026-05-16&group_adults=4&no_rooms=2",
+          "bookingUrl": "https://www.booking.com/hotel/jp/kandeohoteruzuxiong-ben-xin-shi-jie.html?checkin=2026-05-12&checkout=2026-05-16&group_adults=4&no_rooms=2",
           "officialUrl": "https://www.candeohotels.com/en/kumamoto-shinshigai/",
-          "totalPerRoom": "€135–240 (3 nights)",
+          "totalPerRoom": "€135–240 (4 nights)",
           "type": "hotel",
           "chosen": false
         },
@@ -1908,9 +2001,9 @@
           ],
           "url": "https://www.grfrh.com/kumamoto/",
           "travellerPick": false,
-          "bookingUrl": "https://www.booking.com/hotel/jp/gurituzupuremiamuhoteruxiong-ben.html?checkin=2026-05-13&checkout=2026-05-16&group_adults=4&no_rooms=2",
+          "bookingUrl": "https://www.booking.com/hotel/jp/gurituzupuremiamuhoteruxiong-ben.html?checkin=2026-05-12&checkout=2026-05-16&group_adults=4&no_rooms=2",
           "officialUrl": "https://gridshotel.com/kumamoto/en/",
-          "totalPerRoom": "€120–225 (3 nights)",
+          "totalPerRoom": "€120–225 (4 nights)",
           "type": "hotel",
           "chosen": false
         },
@@ -1920,7 +2013,7 @@
           "type": "ryokan",
           "priceEUR": "€130–170",
           "priceJPY": "¥20,000–26,000",
-          "totalPerRoom": "€390–510 (3 nights)",
+          "totalPerRoom": "€390–510 (4 nights)",
           "style": "Traditional city ryokan with private onsen, next to Suizenji Garden",
           "location": "Suizenji area, 5 min drive from Kumamoto Castle, 15 min walk from JR Suizenji Station",
           "neighborhood": "Suizenji, central Kumamoto",
@@ -1929,7 +2022,7 @@
             "Tatami rooms overlooking traditional Japanese garden",
             "In the city — no remote onsen town needed, castle walk away"
           ],
-          "bookingUrl": "https://www.booking.com/hotel/jp/ryotei-matsuya-honkan-suizenji.html?checkin=2026-05-13&checkout=2026-05-16&group_adults=4&no_rooms=2",
+          "bookingUrl": "https://www.booking.com/hotel/jp/ryotei-matsuya-honkan-suizenji.html?checkin=2026-05-12&checkout=2026-05-16&group_adults=4&no_rooms=2",
           "officialUrl": "https://www.matsuyahonkan.com/en/",
           "travellerPick": false,
           "ryokanDetails": {
@@ -1950,7 +2043,7 @@
           "type": "ryokan",
           "priceEUR": "€120–160",
           "priceJPY": "¥18,000–24,000",
-          "totalPerRoom": "€360–480 (3 nights)",
+          "totalPerRoom": "€360–480 (4 nights)",
           "style": "Historic 1908 onsen ryokan in atmospheric hot spring town",
           "location": "Yamaga Onsen town, 40 min bus from Kumamoto Sakuramachi terminal",
           "neighborhood": "Yamaga (onsen town, 30 km north of Kumamoto)",
@@ -1959,7 +2052,7 @@
             "Founded 1908 — Edo-period charm in an authentic onsen town",
             "Yamaga town has 23 public bathhouses — explore the onsen culture"
           ],
-          "bookingUrl": "https://www.booking.com/hotel/jp/yamaga-onsen-seiryuso.html?checkin=2026-05-13&checkout=2026-05-16&group_adults=4&no_rooms=2",
+          "bookingUrl": "https://www.booking.com/hotel/jp/yamaga-onsen-seiryuso.html?checkin=2026-05-12&checkout=2026-05-16&group_adults=4&no_rooms=2",
           "officialUrl": "https://seiryuso.co.jp/",
           "travellerPick": true,
           "pickReason": "The onsen experience you removed from the itinerary — this brings it back without the extra travel day",
@@ -1977,12 +2070,12 @@
           "chosen": true
         }
       ],
-      "checkIn": "2026-05-13",
+      "checkIn": "2026-05-12",
       "checkOut": "2026-05-16",
       "searchParams": {
         "adults": 4,
         "rooms": 2,
-        "nights": 3
+        "nights": 4
       },
       "pricingNote": "May 2026 rates not yet live. Estimates based on current pricing. Kumamoto is generally affordable."
     },
@@ -3215,8 +3308,8 @@
         "region": "hiroshima",
         "category": "museum",
         "status": "matched",
-        "day": 8,
-        "dayLabel": "Day 8 — Kumamoto → Onomichi (optional detour)",
+        "day": 9,
+        "dayLabel": "Day 9 — Kumamoto → Onomichi (optional detour)",
         "possibleDays": [],
         "possibleDayLabels": []
       },
@@ -3230,8 +3323,8 @@
         "region": "hiroshima",
         "category": "shrine",
         "status": "matched",
-        "day": 8,
-        "dayLabel": "Day 8 — Kumamoto → Onomichi (optional detour)",
+        "day": 9,
+        "dayLabel": "Day 9 — Kumamoto → Onomichi (optional detour)",
         "possibleDays": [],
         "possibleDayLabels": []
       },
@@ -3245,8 +3338,8 @@
         "region": "hiroshima",
         "category": "shrine",
         "status": "matched",
-        "day": 8,
-        "dayLabel": "Day 8 — Kumamoto → Onomichi (optional detour)",
+        "day": 9,
+        "dayLabel": "Day 9 — Kumamoto → Onomichi (optional detour)",
         "possibleDays": [],
         "possibleDayLabels": []
       },
@@ -3353,8 +3446,8 @@
         "region": "kansai-kyoto",
         "category": "nature",
         "status": "matched",
-        "day": 12,
-        "dayLabel": "Day 12 — Kyoto",
+        "day": 13,
+        "dayLabel": "Day 13 — Kyoto",
         "possibleDays": [],
         "possibleDayLabels": []
       },
@@ -3368,8 +3461,8 @@
         "region": "kansai-kyoto",
         "category": "attraction",
         "status": "matched",
-        "day": 12,
-        "dayLabel": "Day 12 — Kyoto",
+        "day": 13,
+        "dayLabel": "Day 13 — Kyoto",
         "possibleDays": [],
         "possibleDayLabels": []
       },
@@ -3383,8 +3476,8 @@
         "region": "kansai-kyoto",
         "category": "shrine",
         "status": "matched",
-        "day": 12,
-        "dayLabel": "Day 12 — Kyoto",
+        "day": 13,
+        "dayLabel": "Day 13 — Kyoto",
         "possibleDays": [],
         "possibleDayLabels": []
       },
@@ -3398,8 +3491,8 @@
         "region": "kansai-kyoto",
         "category": "shrine",
         "status": "matched",
-        "day": 12,
-        "dayLabel": "Day 12 — Kyoto",
+        "day": 13,
+        "dayLabel": "Day 13 — Kyoto",
         "possibleDays": [],
         "possibleDayLabels": []
       },
@@ -3413,8 +3506,8 @@
         "region": "kansai-kyoto",
         "category": "neighborhood",
         "status": "matched",
-        "day": 12,
-        "dayLabel": "Day 12 — Kyoto",
+        "day": 13,
+        "dayLabel": "Day 13 — Kyoto",
         "possibleDays": [],
         "possibleDayLabels": []
       },
@@ -3428,8 +3521,8 @@
         "region": "kansai-kyoto",
         "category": "hotel",
         "status": "matched",
-        "day": 12,
-        "dayLabel": "Day 12 — Kyoto",
+        "day": 13,
+        "dayLabel": "Day 13 — Kyoto",
         "possibleDays": [],
         "possibleDayLabels": []
       },
@@ -3443,8 +3536,8 @@
         "region": "kansai-kyoto",
         "category": "viewpoint",
         "status": "matched",
-        "day": 12,
-        "dayLabel": "Day 12 — Kyoto",
+        "day": 13,
+        "dayLabel": "Day 13 — Kyoto",
         "possibleDays": [],
         "possibleDayLabels": []
       },
@@ -3458,8 +3551,8 @@
         "region": "kansai-kyoto",
         "category": "temple",
         "status": "matched",
-        "day": 12,
-        "dayLabel": "Day 12 — Kyoto",
+        "day": 13,
+        "dayLabel": "Day 13 — Kyoto",
         "possibleDays": [],
         "possibleDayLabels": []
       },
@@ -3473,8 +3566,8 @@
         "region": "kansai-kyoto",
         "category": "temple",
         "status": "matched",
-        "day": 12,
-        "dayLabel": "Day 12 — Kyoto",
+        "day": 13,
+        "dayLabel": "Day 13 — Kyoto",
         "possibleDays": [],
         "possibleDayLabels": [],
         "source": "itinerary"
@@ -3489,8 +3582,8 @@
         "region": "kansai-kyoto",
         "category": "bridge",
         "status": "matched",
-        "day": 12,
-        "dayLabel": "Day 12 — Kyoto",
+        "day": 13,
+        "dayLabel": "Day 13 — Kyoto",
         "possibleDays": [],
         "possibleDayLabels": [],
         "source": "itinerary"
@@ -3505,8 +3598,8 @@
         "region": "kansai-osaka",
         "category": "shopping",
         "status": "matched",
-        "day": 11,
-        "dayLabel": "Day 11 — Osaka — Castle & Markets",
+        "day": 12,
+        "dayLabel": "Day 12 — Osaka — Castle & Markets",
         "possibleDays": [],
         "possibleDayLabels": [],
         "source": "itinerary"
@@ -3521,8 +3614,8 @@
         "region": "kansai-osaka",
         "category": "street",
         "status": "matched",
-        "day": 10,
-        "dayLabel": "Day 10 — Osaka — Dōtonbori & Shinsekai",
+        "day": 11,
+        "dayLabel": "Day 11 — Osaka — Dōtonbori & Shinsekai",
         "possibleDays": [],
         "possibleDayLabels": [],
         "source": "itinerary"
@@ -3537,8 +3630,8 @@
         "region": "kansai-osaka",
         "category": "attraction",
         "status": "matched",
-        "day": 10,
-        "dayLabel": "Day 10 — Osaka — Dōtonbori & Shinsekai",
+        "day": 11,
+        "dayLabel": "Day 11 — Osaka — Dōtonbori & Shinsekai",
         "possibleDays": [],
         "possibleDayLabels": [],
         "source": "itinerary"
@@ -3553,8 +3646,8 @@
         "region": "kansai-osaka",
         "category": "street",
         "status": "matched",
-        "day": 10,
-        "dayLabel": "Day 10 — Osaka — Dōtonbori & Shinsekai",
+        "day": 11,
+        "dayLabel": "Day 11 — Osaka — Dōtonbori & Shinsekai",
         "possibleDays": [],
         "possibleDayLabels": [],
         "source": "itinerary"
@@ -3569,8 +3662,8 @@
         "region": "kansai-osaka",
         "category": "food",
         "status": "matched",
-        "day": 11,
-        "dayLabel": "Day 11 — Osaka — Castle & Markets",
+        "day": 12,
+        "dayLabel": "Day 12 — Osaka — Castle & Markets",
         "possibleDays": [],
         "possibleDayLabels": [],
         "source": "itinerary"
@@ -3585,8 +3678,8 @@
         "region": "kansai-osaka",
         "category": "attraction",
         "status": "matched",
-        "day": 11,
-        "dayLabel": "Day 11 — Osaka — Castle & Markets",
+        "day": 12,
+        "dayLabel": "Day 12 — Osaka — Castle & Markets",
         "possibleDays": [],
         "possibleDayLabels": [],
         "source": "itinerary"
@@ -3601,8 +3694,8 @@
         "region": "kansai-osaka",
         "category": "shopping",
         "status": "matched",
-        "day": 11,
-        "dayLabel": "Day 11 — Osaka — Castle & Markets",
+        "day": 12,
+        "dayLabel": "Day 12 — Osaka — Castle & Markets",
         "possibleDays": [],
         "possibleDayLabels": [],
         "source": "itinerary"
@@ -3617,8 +3710,8 @@
         "region": "kansai-osaka",
         "category": "neighborhood",
         "status": "matched",
-        "day": 10,
-        "dayLabel": "Day 10 — Osaka — Dōtonbori & Shinsekai",
+        "day": 11,
+        "dayLabel": "Day 11 — Osaka — Dōtonbori & Shinsekai",
         "possibleDays": [],
         "possibleDayLabels": []
       },
@@ -3632,8 +3725,8 @@
         "region": "kansai-osaka",
         "category": "attraction",
         "status": "matched",
-        "day": 10,
-        "dayLabel": "Day 10 — Osaka — Dōtonbori & Shinsekai",
+        "day": 11,
+        "dayLabel": "Day 11 — Osaka — Dōtonbori & Shinsekai",
         "possibleDays": [],
         "possibleDayLabels": [],
         "source": "itinerary"
@@ -3695,8 +3788,8 @@
         "region": "kyushu",
         "category": "onsen",
         "status": "matched",
-        "day": 7,
-        "dayLabel": "Day 7 — Kurokawa Onsen",
+        "day": 8,
+        "dayLabel": "Day 8 — Kurokawa Onsen",
         "possibleDays": [],
         "possibleDayLabels": [],
         "source": "itinerary"
@@ -3711,8 +3804,8 @@
         "region": "kyushu",
         "category": "onsen",
         "status": "matched",
-        "day": 7,
-        "dayLabel": "Day 7 — Kurokawa Onsen",
+        "day": 8,
+        "dayLabel": "Day 8 — Kurokawa Onsen",
         "possibleDays": [],
         "possibleDayLabels": [],
         "source": "itinerary"
@@ -3775,8 +3868,8 @@
         "region": "kyushu",
         "category": "onsen",
         "status": "matched",
-        "day": 7,
-        "dayLabel": "Day 7 — Kurokawa Onsen",
+        "day": 8,
+        "dayLabel": "Day 8 — Kurokawa Onsen",
         "possibleDays": [],
         "possibleDayLabels": [],
         "source": "itinerary"
@@ -3791,8 +3884,8 @@
         "region": "kyushu",
         "category": "onsen",
         "status": "matched",
-        "day": 7,
-        "dayLabel": "Day 7 — Kurokawa Onsen",
+        "day": 8,
+        "dayLabel": "Day 8 — Kurokawa Onsen",
         "possibleDays": [],
         "possibleDayLabels": [],
         "source": "itinerary"
@@ -3807,8 +3900,8 @@
         "region": "seto",
         "category": "street",
         "status": "matched",
-        "day": 8,
-        "dayLabel": "Day 8 — Kumamoto → Onomichi",
+        "day": 9,
+        "dayLabel": "Day 9 — Kumamoto → Onomichi",
         "possibleDays": [],
         "possibleDayLabels": [],
         "source": "itinerary"
@@ -3823,8 +3916,8 @@
         "region": "seto",
         "category": "attraction",
         "status": "matched",
-        "day": 9,
-        "dayLabel": "Day 9 — Shimanami Kaido → Osaka",
+        "day": 10,
+        "dayLabel": "Day 10 — Shimanami Kaido → Osaka",
         "possibleDays": [],
         "possibleDayLabels": [],
         "source": "itinerary"
@@ -3839,8 +3932,8 @@
         "region": "seto",
         "category": "shrine",
         "status": "matched",
-        "day": 9,
-        "dayLabel": "Day 9 — Shimanami Kaido → Osaka",
+        "day": 10,
+        "dayLabel": "Day 10 — Shimanami Kaido → Osaka",
         "possibleDays": [],
         "possibleDayLabels": [],
         "source": "itinerary"
@@ -3855,8 +3948,8 @@
         "region": "seto",
         "category": "temple",
         "status": "matched",
-        "day": 8,
-        "dayLabel": "Day 8 — Kumamoto → Onomichi",
+        "day": 9,
+        "dayLabel": "Day 9 — Kumamoto → Onomichi",
         "possibleDays": [],
         "possibleDayLabels": [],
         "source": "itinerary"
@@ -3871,8 +3964,8 @@
         "region": "seto",
         "category": "park",
         "status": "matched",
-        "day": 8,
-        "dayLabel": "Day 8 — Kumamoto → Onomichi",
+        "day": 9,
+        "dayLabel": "Day 9 — Kumamoto → Onomichi",
         "possibleDays": [],
         "possibleDayLabels": [],
         "source": "itinerary"
@@ -3887,8 +3980,8 @@
         "region": "seto",
         "category": "attraction",
         "status": "matched",
-        "day": 8,
-        "dayLabel": "Day 8 — Kumamoto → Onomichi",
+        "day": 9,
+        "dayLabel": "Day 9 — Kumamoto → Onomichi",
         "possibleDays": [],
         "possibleDayLabels": [],
         "source": "itinerary"
@@ -3903,8 +3996,8 @@
         "region": "seto",
         "category": "neighborhood",
         "status": "matched",
-        "day": 9,
-        "dayLabel": "Day 9 — Shimanami Kaido → Osaka",
+        "day": 10,
+        "dayLabel": "Day 10 — Shimanami Kaido → Osaka",
         "possibleDays": [],
         "possibleDayLabels": [],
         "source": "itinerary"
@@ -3919,8 +4012,8 @@
         "region": "seto",
         "category": "attraction",
         "status": "matched",
-        "day": 9,
-        "dayLabel": "Day 9 — Shimanami Kaido → Osaka",
+        "day": 10,
+        "dayLabel": "Day 10 — Shimanami Kaido → Osaka",
         "possibleDays": [],
         "possibleDayLabels": [],
         "source": "itinerary"
@@ -3935,8 +4028,8 @@
         "region": "seto",
         "category": "viewpoint",
         "status": "matched",
-        "day": 9,
-        "dayLabel": "Day 9 — Shimanami Kaido → Osaka",
+        "day": 10,
+        "dayLabel": "Day 10 — Shimanami Kaido → Osaka",
         "possibleDays": [],
         "possibleDayLabels": [],
         "source": "itinerary"
@@ -3951,8 +4044,8 @@
         "region": "tokyo",
         "category": "neighborhood",
         "status": "matched",
-        "day": 13,
-        "dayLabel": "Day 13 — Osaka → Tokyo",
+        "day": 14,
+        "dayLabel": "Day 14 — Osaka → Tokyo",
         "possibleDays": [],
         "possibleDayLabels": []
       },
@@ -3996,8 +4089,8 @@
         "region": "tokyo",
         "category": "street",
         "status": "matched",
-        "day": 13,
-        "dayLabel": "Day 13 — Osaka → Tokyo",
+        "day": 14,
+        "dayLabel": "Day 14 — Osaka → Tokyo",
         "possibleDays": [],
         "possibleDayLabels": []
       },
@@ -4057,8 +4150,8 @@
         "region": "tokyo",
         "category": "temple",
         "status": "matched",
-        "day": 13,
-        "dayLabel": "Day 13 — Osaka → Tokyo",
+        "day": 14,
+        "dayLabel": "Day 14 — Osaka → Tokyo",
         "possibleDays": [],
         "possibleDayLabels": []
       },
@@ -4133,8 +4226,8 @@
         "region": "tokyo",
         "category": "food",
         "status": "matched",
-        "day": 14,
-        "dayLabel": "Day 14 — Departure",
+        "day": 15,
+        "dayLabel": "Day 15 — Departure",
         "possibleDays": [],
         "possibleDayLabels": []
       },
@@ -4185,10 +4278,10 @@
         "day": null,
         "dayLabel": null,
         "possibleDays": [
-          12
+          13
         ],
         "possibleDayLabels": [
-          "Day 12 — Kyoto"
+          "Day 13 — Kyoto"
         ]
       },
       {
@@ -4204,10 +4297,10 @@
         "day": null,
         "dayLabel": null,
         "possibleDays": [
-          12
+          13
         ],
         "possibleDayLabels": [
-          "Day 12 — Kyoto"
+          "Day 13 — Kyoto"
         ],
         "extendedDay": 16,
         "extendedDayLabel": "Day 16 (ext) — Kyoto Shopping",
@@ -4226,10 +4319,10 @@
         "day": null,
         "dayLabel": null,
         "possibleDays": [
-          12
+          13
         ],
         "possibleDayLabels": [
-          "Day 12 — Kyoto"
+          "Day 13 — Kyoto"
         ]
       },
       {
@@ -4245,10 +4338,10 @@
         "day": null,
         "dayLabel": null,
         "possibleDays": [
-          12
+          13
         ],
         "possibleDayLabels": [
-          "Day 12 — Kyoto"
+          "Day 13 — Kyoto"
         ],
         "extendedDay": 14,
         "extendedDayLabel": "Day 14 (ext) — Kyoto Higashiyama",
@@ -4267,10 +4360,10 @@
         "day": null,
         "dayLabel": null,
         "possibleDays": [
-          12
+          13
         ],
         "possibleDayLabels": [
-          "Day 12 — Kyoto"
+          "Day 13 — Kyoto"
         ],
         "extendedDay": 14,
         "extendedDayLabel": "Day 14 (ext) — Kyoto Silver Pavilion",
@@ -4289,10 +4382,10 @@
         "day": null,
         "dayLabel": null,
         "possibleDays": [
-          12
+          13
         ],
         "possibleDayLabels": [
-          "Day 12 — Kyoto"
+          "Day 13 — Kyoto"
         ]
       },
       {
@@ -4308,10 +4401,10 @@
         "day": null,
         "dayLabel": null,
         "possibleDays": [
-          12
+          13
         ],
         "possibleDayLabels": [
-          "Day 12 — Kyoto"
+          "Day 13 — Kyoto"
         ],
         "extendedDay": 14,
         "extendedDayLabel": "Day 14 (ext) — Kyoto Higashiyama",
@@ -4330,10 +4423,10 @@
         "day": null,
         "dayLabel": null,
         "possibleDays": [
-          12
+          13
         ],
         "possibleDayLabels": [
-          "Day 12 — Kyoto"
+          "Day 13 — Kyoto"
         ],
         "extendedDay": 14,
         "extendedDayLabel": "Day 14 (ext) — Kyoto Higashiyama",
@@ -4352,10 +4445,10 @@
         "day": null,
         "dayLabel": null,
         "possibleDays": [
-          12
+          13
         ],
         "possibleDayLabels": [
-          "Day 12 — Kyoto"
+          "Day 13 — Kyoto"
         ],
         "extendedDay": 15,
         "extendedDayLabel": "Day 15 (ext) — Kyoto Mountain Temples",
@@ -4374,10 +4467,10 @@
         "day": null,
         "dayLabel": null,
         "possibleDays": [
-          12
+          13
         ],
         "possibleDayLabels": [
-          "Day 12 — Kyoto"
+          "Day 13 — Kyoto"
         ],
         "extendedDay": 14,
         "extendedDayLabel": "Day 14 (ext) — Kyoto Higashiyama",
@@ -4396,10 +4489,10 @@
         "day": null,
         "dayLabel": null,
         "possibleDays": [
-          12
+          13
         ],
         "possibleDayLabels": [
-          "Day 12 — Kyoto"
+          "Day 13 — Kyoto"
         ],
         "extendedDay": 15,
         "extendedDayLabel": "Day 15 (ext) — Kyoto Mountain Temples",
@@ -4418,10 +4511,10 @@
         "day": null,
         "dayLabel": null,
         "possibleDays": [
-          12
+          13
         ],
         "possibleDayLabels": [
-          "Day 12 — Kyoto"
+          "Day 13 — Kyoto"
         ],
         "extendedDay": 15,
         "extendedDayLabel": "Day 15 (ext) — Kyoto",
@@ -4440,10 +4533,10 @@
         "day": null,
         "dayLabel": null,
         "possibleDays": [
-          12
+          13
         ],
         "possibleDayLabels": [
-          "Day 12 — Kyoto"
+          "Day 13 — Kyoto"
         ],
         "extendedDay": 14,
         "extendedDayLabel": "Day 14 (ext) — Kyoto Higashiyama",
@@ -4462,10 +4555,10 @@
         "day": null,
         "dayLabel": null,
         "possibleDays": [
-          12
+          13
         ],
         "possibleDayLabels": [
-          "Day 12 — Kyoto"
+          "Day 13 — Kyoto"
         ],
         "extendedDay": 15,
         "extendedDayLabel": "Day 15 (ext) — Kyoto Markets",
@@ -4484,10 +4577,10 @@
         "day": null,
         "dayLabel": null,
         "possibleDays": [
-          12
+          13
         ],
         "possibleDayLabels": [
-          "Day 12 — Kyoto"
+          "Day 13 — Kyoto"
         ]
       },
       {
@@ -4503,10 +4596,10 @@
         "day": null,
         "dayLabel": null,
         "possibleDays": [
-          12
+          13
         ],
         "possibleDayLabels": [
-          "Day 12 — Kyoto"
+          "Day 13 — Kyoto"
         ],
         "extendedDay": 14,
         "extendedDayLabel": "Day 14 (ext) — Kyoto Higashiyama",
@@ -4525,10 +4618,10 @@
         "day": null,
         "dayLabel": null,
         "possibleDays": [
-          12
+          13
         ],
         "possibleDayLabels": [
-          "Day 12 — Kyoto"
+          "Day 13 — Kyoto"
         ]
       },
       {
@@ -4544,10 +4637,10 @@
         "day": null,
         "dayLabel": null,
         "possibleDays": [
-          12
+          13
         ],
         "possibleDayLabels": [
-          "Day 12 — Kyoto"
+          "Day 13 — Kyoto"
         ],
         "extendedDay": 16,
         "extendedDayLabel": "Day 16 (ext) — Kyoto Moss Temple",
@@ -4566,10 +4659,10 @@
         "day": null,
         "dayLabel": null,
         "possibleDays": [
-          12
+          13
         ],
         "possibleDayLabels": [
-          "Day 12 — Kyoto"
+          "Day 13 — Kyoto"
         ],
         "extendedDay": 16,
         "extendedDayLabel": "Day 16 (ext) — Kyoto Temples",
@@ -4588,10 +4681,10 @@
         "day": null,
         "dayLabel": null,
         "possibleDays": [
-          12
+          13
         ],
         "possibleDayLabels": [
-          "Day 12 — Kyoto"
+          "Day 13 — Kyoto"
         ],
         "extendedDay": 14,
         "extendedDayLabel": "Day 14 (ext) — Kyoto Higashiyama",
@@ -4610,10 +4703,10 @@
         "day": null,
         "dayLabel": null,
         "possibleDays": [
-          12
+          13
         ],
         "possibleDayLabels": [
-          "Day 12 — Kyoto"
+          "Day 13 — Kyoto"
         ]
       },
       {
@@ -4629,10 +4722,10 @@
         "day": null,
         "dayLabel": null,
         "possibleDays": [
-          12
+          13
         ],
         "possibleDayLabels": [
-          "Day 12 — Kyoto"
+          "Day 13 — Kyoto"
         ],
         "extendedDay": 16,
         "extendedDayLabel": "Day 16 (ext) — Kyoto Temples",
@@ -4651,10 +4744,10 @@
         "day": null,
         "dayLabel": null,
         "possibleDays": [
-          12
+          13
         ],
         "possibleDayLabels": [
-          "Day 12 — Kyoto"
+          "Day 13 — Kyoto"
         ]
       },
       {
@@ -4670,10 +4763,10 @@
         "day": null,
         "dayLabel": null,
         "possibleDays": [
-          12
+          13
         ],
         "possibleDayLabels": [
-          "Day 12 — Kyoto"
+          "Day 13 — Kyoto"
         ],
         "extendedDay": 15,
         "extendedDayLabel": "Day 15 (ext) — Kyoto Nijo Castle",
@@ -4694,12 +4787,12 @@
         "possibleDays": [
           5,
           6,
-          7
+          8
         ],
         "possibleDayLabels": [
           "Day 5 — Tokyo → Kumamoto",
           "Day 6 — Mt Aso & Bike Ride",
-          "Day 7 — Kurokawa Onsen"
+          "Day 8 — Kurokawa Onsen"
         ]
       },
       {
@@ -4717,12 +4810,12 @@
         "possibleDays": [
           5,
           6,
-          7
+          8
         ],
         "possibleDayLabels": [
           "Day 5 — Tokyo → Kumamoto",
           "Day 6 — Mt Aso & Bike Ride",
-          "Day 7 — Kurokawa Onsen"
+          "Day 8 — Kurokawa Onsen"
         ]
       },
       {
@@ -4740,12 +4833,12 @@
         "possibleDays": [
           5,
           6,
-          7
+          8
         ],
         "possibleDayLabels": [
           "Day 5 — Tokyo → Kumamoto",
           "Day 6 — Mt Aso & Bike Ride",
-          "Day 7 — Kurokawa Onsen"
+          "Day 8 — Kurokawa Onsen"
         ]
       },
       {
@@ -4763,14 +4856,14 @@
         "possibleDays": [
           1,
           2,
-          13,
-          14
+          14,
+          15
         ],
         "possibleDayLabels": [
           "Day 1 — Arrival in Tokyo",
           "Day 2 — TeamLab & Harajuku",
-          "Day 13 — Osaka → Tokyo",
-          "Day 14 — Departure"
+          "Day 14 — Osaka → Tokyo",
+          "Day 15 — Departure"
         ]
       },
       {
@@ -4788,14 +4881,14 @@
         "possibleDays": [
           1,
           2,
-          13,
-          14
+          14,
+          15
         ],
         "possibleDayLabels": [
           "Day 1 — Arrival in Tokyo",
           "Day 2 — TeamLab & Harajuku",
-          "Day 13 — Osaka → Tokyo",
-          "Day 14 — Departure"
+          "Day 14 — Osaka → Tokyo",
+          "Day 15 — Departure"
         ]
       },
       {
@@ -4813,14 +4906,14 @@
         "possibleDays": [
           1,
           2,
-          13,
-          14
+          14,
+          15
         ],
         "possibleDayLabels": [
           "Day 1 — Arrival in Tokyo",
           "Day 2 — TeamLab & Harajuku",
-          "Day 13 — Osaka → Tokyo",
-          "Day 14 — Departure"
+          "Day 14 — Osaka → Tokyo",
+          "Day 15 — Departure"
         ]
       },
       {
@@ -4838,14 +4931,14 @@
         "possibleDays": [
           1,
           2,
-          13,
-          14
+          14,
+          15
         ],
         "possibleDayLabels": [
           "Day 1 — Arrival in Tokyo",
           "Day 2 — TeamLab & Harajuku",
-          "Day 13 — Osaka → Tokyo",
-          "Day 14 — Departure"
+          "Day 14 — Osaka → Tokyo",
+          "Day 15 — Departure"
         ]
       },
       {
@@ -4863,14 +4956,14 @@
         "possibleDays": [
           1,
           2,
-          13,
-          14
+          14,
+          15
         ],
         "possibleDayLabels": [
           "Day 1 — Arrival in Tokyo",
           "Day 2 — TeamLab & Harajuku",
-          "Day 13 — Osaka → Tokyo",
-          "Day 14 — Departure"
+          "Day 14 — Osaka → Tokyo",
+          "Day 15 — Departure"
         ]
       },
       {
@@ -4888,14 +4981,14 @@
         "possibleDays": [
           1,
           2,
-          13,
-          14
+          14,
+          15
         ],
         "possibleDayLabels": [
           "Day 1 — Arrival in Tokyo",
           "Day 2 — TeamLab & Harajuku",
-          "Day 13 — Osaka → Tokyo",
-          "Day 14 — Departure"
+          "Day 14 — Osaka → Tokyo",
+          "Day 15 — Departure"
         ]
       },
       {
@@ -4913,14 +5006,14 @@
         "possibleDays": [
           1,
           2,
-          13,
-          14
+          14,
+          15
         ],
         "possibleDayLabels": [
           "Day 1 — Arrival in Tokyo",
           "Day 2 — TeamLab & Harajuku",
-          "Day 13 — Osaka → Tokyo",
-          "Day 14 — Departure"
+          "Day 14 — Osaka → Tokyo",
+          "Day 15 — Departure"
         ]
       },
       {
@@ -4938,14 +5031,14 @@
         "possibleDays": [
           1,
           2,
-          13,
-          14
+          14,
+          15
         ],
         "possibleDayLabels": [
           "Day 1 — Arrival in Tokyo",
           "Day 2 — TeamLab & Harajuku",
-          "Day 13 — Osaka → Tokyo",
-          "Day 14 — Departure"
+          "Day 14 — Osaka → Tokyo",
+          "Day 15 — Departure"
         ]
       },
       {
@@ -4963,14 +5056,14 @@
         "possibleDays": [
           1,
           2,
-          13,
-          14
+          14,
+          15
         ],
         "possibleDayLabels": [
           "Day 1 — Arrival in Tokyo",
           "Day 2 — TeamLab & Harajuku",
-          "Day 13 — Osaka → Tokyo",
-          "Day 14 — Departure"
+          "Day 14 — Osaka → Tokyo",
+          "Day 15 — Departure"
         ]
       },
       {
@@ -4988,14 +5081,14 @@
         "possibleDays": [
           1,
           2,
-          13,
-          14
+          14,
+          15
         ],
         "possibleDayLabels": [
           "Day 1 — Arrival in Tokyo",
           "Day 2 — TeamLab & Harajuku",
-          "Day 13 — Osaka → Tokyo",
-          "Day 14 — Departure"
+          "Day 14 — Osaka → Tokyo",
+          "Day 15 — Departure"
         ]
       },
       {
@@ -5013,14 +5106,14 @@
         "possibleDays": [
           1,
           2,
-          13,
-          14
+          14,
+          15
         ],
         "possibleDayLabels": [
           "Day 1 — Arrival in Tokyo",
           "Day 2 — TeamLab & Harajuku",
-          "Day 13 — Osaka → Tokyo",
-          "Day 14 — Departure"
+          "Day 14 — Osaka → Tokyo",
+          "Day 15 — Departure"
         ]
       },
       {
@@ -5038,14 +5131,14 @@
         "possibleDays": [
           1,
           2,
-          13,
-          14
+          14,
+          15
         ],
         "possibleDayLabels": [
           "Day 1 — Arrival in Tokyo",
           "Day 2 — TeamLab & Harajuku",
-          "Day 13 — Osaka → Tokyo",
-          "Day 14 — Departure"
+          "Day 14 — Osaka → Tokyo",
+          "Day 15 — Departure"
         ]
       },
       {
@@ -5063,14 +5156,14 @@
         "possibleDays": [
           1,
           2,
-          13,
-          14
+          14,
+          15
         ],
         "possibleDayLabels": [
           "Day 1 — Arrival in Tokyo",
           "Day 2 — TeamLab & Harajuku",
-          "Day 13 — Osaka → Tokyo",
-          "Day 14 — Departure"
+          "Day 14 — Osaka → Tokyo",
+          "Day 15 — Departure"
         ]
       },
       {
@@ -5088,14 +5181,14 @@
         "possibleDays": [
           1,
           2,
-          13,
-          14
+          14,
+          15
         ],
         "possibleDayLabels": [
           "Day 1 — Arrival in Tokyo",
           "Day 2 — TeamLab & Harajuku",
-          "Day 13 — Osaka → Tokyo",
-          "Day 14 — Departure"
+          "Day 14 — Osaka → Tokyo",
+          "Day 15 — Departure"
         ]
       },
       {
@@ -5113,14 +5206,14 @@
         "possibleDays": [
           1,
           2,
-          13,
-          14
+          14,
+          15
         ],
         "possibleDayLabels": [
           "Day 1 — Arrival in Tokyo",
           "Day 2 — TeamLab & Harajuku",
-          "Day 13 — Osaka → Tokyo",
-          "Day 14 — Departure"
+          "Day 14 — Osaka → Tokyo",
+          "Day 15 — Departure"
         ]
       },
       {
@@ -5138,14 +5231,14 @@
         "possibleDays": [
           1,
           2,
-          13,
-          14
+          14,
+          15
         ],
         "possibleDayLabels": [
           "Day 1 — Arrival in Tokyo",
           "Day 2 — TeamLab & Harajuku",
-          "Day 13 — Osaka → Tokyo",
-          "Day 14 — Departure"
+          "Day 14 — Osaka → Tokyo",
+          "Day 15 — Departure"
         ]
       },
       {
@@ -5163,14 +5256,14 @@
         "possibleDays": [
           1,
           2,
-          13,
-          14
+          14,
+          15
         ],
         "possibleDayLabels": [
           "Day 1 — Arrival in Tokyo",
           "Day 2 — TeamLab & Harajuku",
-          "Day 13 — Osaka → Tokyo",
-          "Day 14 — Departure"
+          "Day 14 — Osaka → Tokyo",
+          "Day 15 — Departure"
         ]
       },
       {
@@ -5188,14 +5281,14 @@
         "possibleDays": [
           1,
           2,
-          13,
-          14
+          14,
+          15
         ],
         "possibleDayLabels": [
           "Day 1 — Arrival in Tokyo",
           "Day 2 — TeamLab & Harajuku",
-          "Day 13 — Osaka → Tokyo",
-          "Day 14 — Departure"
+          "Day 14 — Osaka → Tokyo",
+          "Day 15 — Departure"
         ]
       },
       {
@@ -5213,14 +5306,14 @@
         "possibleDays": [
           1,
           2,
-          13,
-          14
+          14,
+          15
         ],
         "possibleDayLabels": [
           "Day 1 — Arrival in Tokyo",
           "Day 2 — TeamLab & Harajuku",
-          "Day 13 — Osaka → Tokyo",
-          "Day 14 — Departure"
+          "Day 14 — Osaka → Tokyo",
+          "Day 15 — Departure"
         ]
       },
       {
@@ -5238,14 +5331,14 @@
         "possibleDays": [
           1,
           2,
-          13,
-          14
+          14,
+          15
         ],
         "possibleDayLabels": [
           "Day 1 — Arrival in Tokyo",
           "Day 2 — TeamLab & Harajuku",
-          "Day 13 — Osaka → Tokyo",
-          "Day 14 — Departure"
+          "Day 14 — Osaka → Tokyo",
+          "Day 15 — Departure"
         ]
       },
       {
@@ -5263,14 +5356,14 @@
         "possibleDays": [
           1,
           2,
-          13,
-          14
+          14,
+          15
         ],
         "possibleDayLabels": [
           "Day 1 — Arrival in Tokyo",
           "Day 2 — TeamLab & Harajuku",
-          "Day 13 — Osaka → Tokyo",
-          "Day 14 — Departure"
+          "Day 14 — Osaka → Tokyo",
+          "Day 15 — Departure"
         ]
       },
       {
@@ -5288,14 +5381,14 @@
         "possibleDays": [
           1,
           2,
-          13,
-          14
+          14,
+          15
         ],
         "possibleDayLabels": [
           "Day 1 — Arrival in Tokyo",
           "Day 2 — TeamLab & Harajuku",
-          "Day 13 — Osaka → Tokyo",
-          "Day 14 — Departure"
+          "Day 14 — Osaka → Tokyo",
+          "Day 15 — Departure"
         ]
       },
       {
@@ -5313,14 +5406,14 @@
         "possibleDays": [
           1,
           2,
-          13,
-          14
+          14,
+          15
         ],
         "possibleDayLabels": [
           "Day 1 — Arrival in Tokyo",
           "Day 2 — TeamLab & Harajuku",
-          "Day 13 — Osaka → Tokyo",
-          "Day 14 — Departure"
+          "Day 14 — Osaka → Tokyo",
+          "Day 15 — Departure"
         ]
       },
       {
@@ -5338,14 +5431,14 @@
         "possibleDays": [
           1,
           2,
-          13,
-          14
+          14,
+          15
         ],
         "possibleDayLabels": [
           "Day 1 — Arrival in Tokyo",
           "Day 2 — TeamLab & Harajuku",
-          "Day 13 — Osaka → Tokyo",
-          "Day 14 — Departure"
+          "Day 14 — Osaka → Tokyo",
+          "Day 15 — Departure"
         ]
       },
       {
@@ -5363,14 +5456,14 @@
         "possibleDays": [
           1,
           2,
-          13,
-          14
+          14,
+          15
         ],
         "possibleDayLabels": [
           "Day 1 — Arrival in Tokyo",
           "Day 2 — TeamLab & Harajuku",
-          "Day 13 — Osaka → Tokyo",
-          "Day 14 — Departure"
+          "Day 14 — Osaka → Tokyo",
+          "Day 15 — Departure"
         ]
       },
       {
@@ -5388,14 +5481,14 @@
         "possibleDays": [
           1,
           2,
-          13,
-          14
+          14,
+          15
         ],
         "possibleDayLabels": [
           "Day 1 — Arrival in Tokyo",
           "Day 2 — TeamLab & Harajuku",
-          "Day 13 — Osaka → Tokyo",
-          "Day 14 — Departure"
+          "Day 14 — Osaka → Tokyo",
+          "Day 15 — Departure"
         ]
       },
       {
@@ -5413,14 +5506,14 @@
         "possibleDays": [
           1,
           2,
-          13,
-          14
+          14,
+          15
         ],
         "possibleDayLabels": [
           "Day 1 — Arrival in Tokyo",
           "Day 2 — TeamLab & Harajuku",
-          "Day 13 — Osaka → Tokyo",
-          "Day 14 — Departure"
+          "Day 14 — Osaka → Tokyo",
+          "Day 15 — Departure"
         ]
       },
       {
@@ -5438,14 +5531,14 @@
         "possibleDays": [
           1,
           2,
-          13,
-          14
+          14,
+          15
         ],
         "possibleDayLabels": [
           "Day 1 — Arrival in Tokyo",
           "Day 2 — TeamLab & Harajuku",
-          "Day 13 — Osaka → Tokyo",
-          "Day 14 — Departure"
+          "Day 14 — Osaka → Tokyo",
+          "Day 15 — Departure"
         ]
       },
       {
@@ -5463,14 +5556,14 @@
         "possibleDays": [
           1,
           2,
-          13,
-          14
+          14,
+          15
         ],
         "possibleDayLabels": [
           "Day 1 — Arrival in Tokyo",
           "Day 2 — TeamLab & Harajuku",
-          "Day 13 — Osaka → Tokyo",
-          "Day 14 — Departure"
+          "Day 14 — Osaka → Tokyo",
+          "Day 15 — Departure"
         ]
       },
       {
@@ -5488,14 +5581,14 @@
         "possibleDays": [
           1,
           2,
-          13,
-          14
+          14,
+          15
         ],
         "possibleDayLabels": [
           "Day 1 — Arrival in Tokyo",
           "Day 2 — TeamLab & Harajuku",
-          "Day 13 — Osaka → Tokyo",
-          "Day 14 — Departure"
+          "Day 14 — Osaka → Tokyo",
+          "Day 15 — Departure"
         ]
       },
       {
@@ -5513,14 +5606,14 @@
         "possibleDays": [
           1,
           2,
-          13,
-          14
+          14,
+          15
         ],
         "possibleDayLabels": [
           "Day 1 — Arrival in Tokyo",
           "Day 2 — TeamLab & Harajuku",
-          "Day 13 — Osaka → Tokyo",
-          "Day 14 — Departure"
+          "Day 14 — Osaka → Tokyo",
+          "Day 15 — Departure"
         ]
       },
       {
@@ -5538,14 +5631,14 @@
         "possibleDays": [
           1,
           2,
-          13,
-          14
+          14,
+          15
         ],
         "possibleDayLabels": [
           "Day 1 — Arrival in Tokyo",
           "Day 2 — TeamLab & Harajuku",
-          "Day 13 — Osaka → Tokyo",
-          "Day 14 — Departure"
+          "Day 14 — Osaka → Tokyo",
+          "Day 15 — Departure"
         ]
       },
       {
@@ -5563,14 +5656,14 @@
         "possibleDays": [
           1,
           2,
-          13,
-          14
+          14,
+          15
         ],
         "possibleDayLabels": [
           "Day 1 — Arrival in Tokyo",
           "Day 2 — TeamLab & Harajuku",
-          "Day 13 — Osaka → Tokyo",
-          "Day 14 — Departure"
+          "Day 14 — Osaka → Tokyo",
+          "Day 15 — Departure"
         ]
       },
       {
@@ -5588,14 +5681,14 @@
         "possibleDays": [
           1,
           2,
-          13,
-          14
+          14,
+          15
         ],
         "possibleDayLabels": [
           "Day 1 — Arrival in Tokyo",
           "Day 2 — TeamLab & Harajuku",
-          "Day 13 — Osaka → Tokyo",
-          "Day 14 — Departure"
+          "Day 14 — Osaka → Tokyo",
+          "Day 15 — Departure"
         ]
       },
       {
@@ -5613,14 +5706,14 @@
         "possibleDays": [
           1,
           2,
-          13,
-          14
+          14,
+          15
         ],
         "possibleDayLabels": [
           "Day 1 — Arrival in Tokyo",
           "Day 2 — TeamLab & Harajuku",
-          "Day 13 — Osaka → Tokyo",
-          "Day 14 — Departure"
+          "Day 14 — Osaka → Tokyo",
+          "Day 15 — Departure"
         ]
       },
       {
@@ -5638,14 +5731,14 @@
         "possibleDays": [
           1,
           2,
-          13,
-          14
+          14,
+          15
         ],
         "possibleDayLabels": [
           "Day 1 — Arrival in Tokyo",
           "Day 2 — TeamLab & Harajuku",
-          "Day 13 — Osaka → Tokyo",
-          "Day 14 — Departure"
+          "Day 14 — Osaka → Tokyo",
+          "Day 15 — Departure"
         ]
       },
       {
@@ -5663,14 +5756,14 @@
         "possibleDays": [
           1,
           2,
-          13,
-          14
+          14,
+          15
         ],
         "possibleDayLabels": [
           "Day 1 — Arrival in Tokyo",
           "Day 2 — TeamLab & Harajuku",
-          "Day 13 — Osaka → Tokyo",
-          "Day 14 — Departure"
+          "Day 14 — Osaka → Tokyo",
+          "Day 15 — Departure"
         ]
       },
       {
@@ -5688,14 +5781,14 @@
         "possibleDays": [
           1,
           2,
-          13,
-          14
+          14,
+          15
         ],
         "possibleDayLabels": [
           "Day 1 — Arrival in Tokyo",
           "Day 2 — TeamLab & Harajuku",
-          "Day 13 — Osaka → Tokyo",
-          "Day 14 — Departure"
+          "Day 14 — Osaka → Tokyo",
+          "Day 15 — Departure"
         ]
       },
       {
@@ -5713,14 +5806,14 @@
         "possibleDays": [
           1,
           2,
-          13,
-          14
+          14,
+          15
         ],
         "possibleDayLabels": [
           "Day 1 — Arrival in Tokyo",
           "Day 2 — TeamLab & Harajuku",
-          "Day 13 — Osaka → Tokyo",
-          "Day 14 — Departure"
+          "Day 14 — Osaka → Tokyo",
+          "Day 15 — Departure"
         ]
       },
       {
@@ -5738,14 +5831,14 @@
         "possibleDays": [
           1,
           2,
-          13,
-          14
+          14,
+          15
         ],
         "possibleDayLabels": [
           "Day 1 — Arrival in Tokyo",
           "Day 2 — TeamLab & Harajuku",
-          "Day 13 — Osaka → Tokyo",
-          "Day 14 — Departure"
+          "Day 14 — Osaka → Tokyo",
+          "Day 15 — Departure"
         ]
       },
       {
@@ -5763,14 +5856,14 @@
         "possibleDays": [
           1,
           2,
-          13,
-          14
+          14,
+          15
         ],
         "possibleDayLabels": [
           "Day 1 — Arrival in Tokyo",
           "Day 2 — TeamLab & Harajuku",
-          "Day 13 — Osaka → Tokyo",
-          "Day 14 — Departure"
+          "Day 14 — Osaka → Tokyo",
+          "Day 15 — Departure"
         ]
       },
       {
@@ -5788,14 +5881,14 @@
         "possibleDays": [
           1,
           2,
-          13,
-          14
+          14,
+          15
         ],
         "possibleDayLabels": [
           "Day 1 — Arrival in Tokyo",
           "Day 2 — TeamLab & Harajuku",
-          "Day 13 — Osaka → Tokyo",
-          "Day 14 — Departure"
+          "Day 14 — Osaka → Tokyo",
+          "Day 15 — Departure"
         ]
       },
       {
@@ -5813,14 +5906,14 @@
         "possibleDays": [
           1,
           2,
-          13,
-          14
+          14,
+          15
         ],
         "possibleDayLabels": [
           "Day 1 — Arrival in Tokyo",
           "Day 2 — TeamLab & Harajuku",
-          "Day 13 — Osaka → Tokyo",
-          "Day 14 — Departure"
+          "Day 14 — Osaka → Tokyo",
+          "Day 15 — Departure"
         ]
       },
       {
@@ -5838,14 +5931,14 @@
         "possibleDays": [
           1,
           2,
-          13,
-          14
+          14,
+          15
         ],
         "possibleDayLabels": [
           "Day 1 — Arrival in Tokyo",
           "Day 2 — TeamLab & Harajuku",
-          "Day 13 — Osaka → Tokyo",
-          "Day 14 — Departure"
+          "Day 14 — Osaka → Tokyo",
+          "Day 15 — Departure"
         ]
       },
       {
@@ -5863,14 +5956,14 @@
         "possibleDays": [
           1,
           2,
-          13,
-          14
+          14,
+          15
         ],
         "possibleDayLabels": [
           "Day 1 — Arrival in Tokyo",
           "Day 2 — TeamLab & Harajuku",
-          "Day 13 — Osaka → Tokyo",
-          "Day 14 — Departure"
+          "Day 14 — Osaka → Tokyo",
+          "Day 15 — Departure"
         ]
       },
       {
@@ -5888,14 +5981,14 @@
         "possibleDays": [
           1,
           2,
-          13,
-          14
+          14,
+          15
         ],
         "possibleDayLabels": [
           "Day 1 — Arrival in Tokyo",
           "Day 2 — TeamLab & Harajuku",
-          "Day 13 — Osaka → Tokyo",
-          "Day 14 — Departure"
+          "Day 14 — Osaka → Tokyo",
+          "Day 15 — Departure"
         ]
       },
       {
@@ -5913,14 +6006,14 @@
         "possibleDays": [
           1,
           2,
-          13,
-          14
+          14,
+          15
         ],
         "possibleDayLabels": [
           "Day 1 — Arrival in Tokyo",
           "Day 2 — TeamLab & Harajuku",
-          "Day 13 — Osaka → Tokyo",
-          "Day 14 — Departure"
+          "Day 14 — Osaka → Tokyo",
+          "Day 15 — Departure"
         ]
       },
       {
@@ -5938,14 +6031,14 @@
         "possibleDays": [
           1,
           2,
-          13,
-          14
+          14,
+          15
         ],
         "possibleDayLabels": [
           "Day 1 — Arrival in Tokyo",
           "Day 2 — TeamLab & Harajuku",
-          "Day 13 — Osaka → Tokyo",
-          "Day 14 — Departure"
+          "Day 14 — Osaka → Tokyo",
+          "Day 15 — Departure"
         ]
       },
       {
@@ -5963,14 +6056,14 @@
         "possibleDays": [
           1,
           2,
-          13,
-          14
+          14,
+          15
         ],
         "possibleDayLabels": [
           "Day 1 — Arrival in Tokyo",
           "Day 2 — TeamLab & Harajuku",
-          "Day 13 — Osaka → Tokyo",
-          "Day 14 — Departure"
+          "Day 14 — Osaka → Tokyo",
+          "Day 15 — Departure"
         ]
       },
       {
@@ -5988,14 +6081,14 @@
         "possibleDays": [
           1,
           2,
-          13,
-          14
+          14,
+          15
         ],
         "possibleDayLabels": [
           "Day 1 — Arrival in Tokyo",
           "Day 2 — TeamLab & Harajuku",
-          "Day 13 — Osaka → Tokyo",
-          "Day 14 — Departure"
+          "Day 14 — Osaka → Tokyo",
+          "Day 15 — Departure"
         ]
       },
       {
@@ -6013,14 +6106,14 @@
         "possibleDays": [
           1,
           2,
-          13,
-          14
+          14,
+          15
         ],
         "possibleDayLabels": [
           "Day 1 — Arrival in Tokyo",
           "Day 2 — TeamLab & Harajuku",
-          "Day 13 — Osaka → Tokyo",
-          "Day 14 — Departure"
+          "Day 14 — Osaka → Tokyo",
+          "Day 15 — Departure"
         ]
       },
       {
@@ -6038,14 +6131,14 @@
         "possibleDays": [
           1,
           2,
-          13,
-          14
+          14,
+          15
         ],
         "possibleDayLabels": [
           "Day 1 — Arrival in Tokyo",
           "Day 2 — TeamLab & Harajuku",
-          "Day 13 — Osaka → Tokyo",
-          "Day 14 — Departure"
+          "Day 14 — Osaka → Tokyo",
+          "Day 15 — Departure"
         ]
       },
       {
@@ -6063,14 +6156,14 @@
         "possibleDays": [
           1,
           2,
-          13,
-          14
+          14,
+          15
         ],
         "possibleDayLabels": [
           "Day 1 — Arrival in Tokyo",
           "Day 2 — TeamLab & Harajuku",
-          "Day 13 — Osaka → Tokyo",
-          "Day 14 — Departure"
+          "Day 14 — Osaka → Tokyo",
+          "Day 15 — Departure"
         ]
       },
       {
@@ -7269,7 +7362,7 @@
         "possibleDays": [
           5,
           6,
-          7
+          8
         ],
         "possibleDayLabels": [
           "Days 5–7 — Kumamoto"
@@ -7297,7 +7390,7 @@
         "possibleDays": [
           5,
           6,
-          7
+          8
         ],
         "possibleDayLabels": [
           "Days 5–7 — Kumamoto"
@@ -7325,7 +7418,7 @@
         "possibleDays": [
           5,
           6,
-          7
+          8
         ],
         "possibleDayLabels": [
           "Days 5–7 — Kumamoto"
@@ -7353,7 +7446,7 @@
         "possibleDays": [
           5,
           6,
-          7
+          8
         ],
         "possibleDayLabels": [
           "Days 5–7 — Kumamoto"
@@ -7381,7 +7474,7 @@
         "possibleDays": [
           5,
           6,
-          7
+          8
         ],
         "possibleDayLabels": [
           "Days 5–7 — Kumamoto"
@@ -7409,7 +7502,7 @@
         "possibleDays": [
           5,
           6,
-          7
+          8
         ],
         "possibleDayLabels": [
           "Days 5–7 — Kumamoto"
@@ -7437,7 +7530,7 @@
         "possibleDays": [
           5,
           6,
-          7
+          8
         ],
         "possibleDayLabels": [
           "Days 5–7 — Kumamoto"
@@ -7465,7 +7558,7 @@
         "possibleDays": [
           5,
           6,
-          7
+          8
         ],
         "possibleDayLabels": [
           "Days 5–7 — Kumamoto"
@@ -7493,7 +7586,7 @@
         "possibleDays": [
           5,
           6,
-          7
+          8
         ],
         "possibleDayLabels": [
           "Days 5–7 — Kumamoto"
@@ -7521,7 +7614,7 @@
         "possibleDays": [
           5,
           6,
-          7
+          8
         ],
         "possibleDayLabels": [
           "Days 5–7 — Kumamoto"
@@ -7544,13 +7637,13 @@
         "region": "onomichi",
         "category": "hotel",
         "status": "matched",
-        "day": 8,
-        "dayLabel": "Day 8 — Onomichi",
+        "day": 9,
+        "dayLabel": "Day 9 — Onomichi",
         "possibleDays": [
-          8
+          9
         ],
         "possibleDayLabels": [
-          "Day 8 — Onomichi"
+          "Day 9 — Onomichi"
         ],
         "extendedStatus": "matched",
         "extendedDay": null,
@@ -7570,13 +7663,13 @@
         "region": "onomichi",
         "category": "hotel",
         "status": "matched",
-        "day": 8,
-        "dayLabel": "Day 8 — Onomichi",
+        "day": 9,
+        "dayLabel": "Day 9 — Onomichi",
         "possibleDays": [
-          8
+          9
         ],
         "possibleDayLabels": [
-          "Day 8 — Onomichi"
+          "Day 9 — Onomichi"
         ],
         "extendedStatus": "matched",
         "extendedDay": null,
@@ -7596,13 +7689,13 @@
         "region": "onomichi",
         "category": "hotel",
         "status": "matched",
-        "day": 8,
-        "dayLabel": "Day 8 — Onomichi",
+        "day": 9,
+        "dayLabel": "Day 9 — Onomichi",
         "possibleDays": [
-          8
+          9
         ],
         "possibleDayLabels": [
-          "Day 8 — Onomichi"
+          "Day 9 — Onomichi"
         ],
         "extendedStatus": "matched",
         "extendedDay": null,
@@ -7622,13 +7715,13 @@
         "region": "onomichi",
         "category": "hotel",
         "status": "matched",
-        "day": 8,
-        "dayLabel": "Day 8 — Onomichi",
+        "day": 9,
+        "dayLabel": "Day 9 — Onomichi",
         "possibleDays": [
-          8
+          9
         ],
         "possibleDayLabels": [
-          "Day 8 — Onomichi"
+          "Day 9 — Onomichi"
         ],
         "extendedStatus": "matched",
         "extendedDay": null,
@@ -7648,13 +7741,13 @@
         "region": "onomichi",
         "category": "hotel",
         "status": "matched",
-        "day": 8,
-        "dayLabel": "Day 8 — Onomichi",
+        "day": 9,
+        "dayLabel": "Day 9 — Onomichi",
         "possibleDays": [
-          8
+          9
         ],
         "possibleDayLabels": [
-          "Day 8 — Onomichi"
+          "Day 9 — Onomichi"
         ],
         "extendedStatus": "matched",
         "extendedDay": null,
@@ -7674,13 +7767,13 @@
         "region": "onomichi",
         "category": "hotel",
         "status": "matched",
-        "day": 8,
-        "dayLabel": "Day 8 — Onomichi",
+        "day": 9,
+        "dayLabel": "Day 9 — Onomichi",
         "possibleDays": [
-          8
+          9
         ],
         "possibleDayLabels": [
-          "Day 8 — Onomichi"
+          "Day 9 — Onomichi"
         ],
         "extendedStatus": "matched",
         "extendedDay": null,
@@ -7700,13 +7793,13 @@
         "region": "onomichi",
         "category": "hotel",
         "status": "matched",
-        "day": 8,
-        "dayLabel": "Day 8 — Onomichi",
+        "day": 9,
+        "dayLabel": "Day 9 — Onomichi",
         "possibleDays": [
-          8
+          9
         ],
         "possibleDayLabels": [
-          "Day 8 — Onomichi"
+          "Day 9 — Onomichi"
         ],
         "extendedStatus": "matched",
         "extendedDay": null,
@@ -7726,13 +7819,13 @@
         "region": "onomichi",
         "category": "ryokan",
         "status": "matched",
-        "day": 8,
-        "dayLabel": "Day 8 — Onomichi",
+        "day": 9,
+        "dayLabel": "Day 9 — Onomichi",
         "possibleDays": [
-          8
+          9
         ],
         "possibleDayLabels": [
-          "Day 8 — Onomichi"
+          "Day 9 — Onomichi"
         ],
         "extendedStatus": "matched",
         "extendedDay": null,
@@ -7752,13 +7845,13 @@
         "region": "osaka",
         "category": "hotel",
         "status": "matched",
-        "day": 9,
+        "day": 10,
         "dayLabel": "Days 9–12 — Osaka",
         "possibleDays": [
-          9,
           10,
           11,
-          12
+          12,
+          13
         ],
         "possibleDayLabels": [
           "Days 9–12 — Osaka"
@@ -7781,13 +7874,13 @@
         "region": "osaka",
         "category": "hotel",
         "status": "matched",
-        "day": 9,
+        "day": 10,
         "dayLabel": "Days 9–12 — Osaka",
         "possibleDays": [
-          9,
           10,
           11,
-          12
+          12,
+          13
         ],
         "possibleDayLabels": [
           "Days 9–12 — Osaka"
@@ -7810,13 +7903,13 @@
         "region": "osaka",
         "category": "hotel",
         "status": "matched",
-        "day": 9,
+        "day": 10,
         "dayLabel": "Days 9–12 — Osaka",
         "possibleDays": [
-          9,
           10,
           11,
-          12
+          12,
+          13
         ],
         "possibleDayLabels": [
           "Days 9–12 — Osaka"
@@ -7839,13 +7932,13 @@
         "region": "osaka",
         "category": "hotel",
         "status": "matched",
-        "day": 9,
+        "day": 10,
         "dayLabel": "Days 9–12 — Osaka",
         "possibleDays": [
-          9,
           10,
           11,
-          12
+          12,
+          13
         ],
         "possibleDayLabels": [
           "Days 9–12 — Osaka"
@@ -7868,13 +7961,13 @@
         "region": "osaka",
         "category": "hotel",
         "status": "matched",
-        "day": 9,
+        "day": 10,
         "dayLabel": "Days 9–12 — Osaka",
         "possibleDays": [
-          9,
           10,
           11,
-          12
+          12,
+          13
         ],
         "possibleDayLabels": [
           "Days 9–12 — Osaka"
@@ -7897,13 +7990,13 @@
         "region": "osaka",
         "category": "hotel",
         "status": "matched",
-        "day": 9,
+        "day": 10,
         "dayLabel": "Days 9–12 — Osaka",
         "possibleDays": [
-          9,
           10,
           11,
-          12
+          12,
+          13
         ],
         "possibleDayLabels": [
           "Days 9–12 — Osaka"
@@ -7926,13 +8019,13 @@
         "region": "osaka",
         "category": "hotel",
         "status": "matched",
-        "day": 9,
+        "day": 10,
         "dayLabel": "Days 9–12 — Osaka",
         "possibleDays": [
-          9,
           10,
           11,
-          12
+          12,
+          13
         ],
         "possibleDayLabels": [
           "Days 9–12 — Osaka"
@@ -7955,13 +8048,13 @@
         "region": "osaka",
         "category": "hotel",
         "status": "matched",
-        "day": 9,
+        "day": 10,
         "dayLabel": "Days 9–12 — Osaka",
         "possibleDays": [
-          9,
           10,
           11,
-          12
+          12,
+          13
         ],
         "possibleDayLabels": [
           "Days 9–12 — Osaka"
@@ -7984,13 +8077,13 @@
         "region": "osaka",
         "category": "hotel",
         "status": "matched",
-        "day": 9,
+        "day": 10,
         "dayLabel": "Days 9–12 — Osaka",
         "possibleDays": [
-          9,
           10,
           11,
-          12
+          12,
+          13
         ],
         "possibleDayLabels": [
           "Days 9–12 — Osaka"
@@ -8013,13 +8106,13 @@
         "region": "osaka",
         "category": "hotel",
         "status": "matched",
-        "day": 9,
+        "day": 10,
         "dayLabel": "Days 9–12 — Osaka",
         "possibleDays": [
-          9,
           10,
           11,
-          12
+          12,
+          13
         ],
         "possibleDayLabels": [
           "Days 9–12 — Osaka"
@@ -8042,13 +8135,13 @@
         "region": "osaka",
         "category": "ryokan",
         "status": "matched",
-        "day": 9,
+        "day": 10,
         "dayLabel": "Days 9–12 — Osaka",
         "possibleDays": [
-          9,
           10,
           11,
-          12
+          12,
+          13
         ],
         "possibleDayLabels": [
           "Days 9–12 — Osaka"
@@ -8071,13 +8164,13 @@
         "region": "osaka",
         "category": "ryokan",
         "status": "matched",
-        "day": 9,
+        "day": 10,
         "dayLabel": "Days 9–12 — Osaka",
         "possibleDays": [
-          9,
           10,
           11,
-          12
+          12,
+          13
         ],
         "possibleDayLabels": [
           "Days 9–12 — Osaka"
@@ -8100,13 +8193,13 @@
         "region": "tokyo",
         "category": "hotel",
         "status": "matched",
-        "day": 13,
-        "dayLabel": "Day 13 — Tokyo (final)",
+        "day": 14,
+        "dayLabel": "Day 14 — Tokyo (final)",
         "possibleDays": [
-          13
+          14
         ],
         "possibleDayLabels": [
-          "Day 13 — Tokyo (final)"
+          "Day 14 — Tokyo (final)"
         ],
         "extendedStatus": "matched",
         "extendedDay": null,
@@ -8126,13 +8219,13 @@
         "region": "tokyo",
         "category": "hotel",
         "status": "matched",
-        "day": 13,
-        "dayLabel": "Day 13 — Tokyo (final)",
+        "day": 14,
+        "dayLabel": "Day 14 — Tokyo (final)",
         "possibleDays": [
-          13
+          14
         ],
         "possibleDayLabels": [
-          "Day 13 — Tokyo (final)"
+          "Day 14 — Tokyo (final)"
         ],
         "extendedStatus": "matched",
         "extendedDay": null,
@@ -8152,13 +8245,13 @@
         "region": "tokyo",
         "category": "hotel",
         "status": "matched",
-        "day": 13,
-        "dayLabel": "Day 13 — Tokyo (final)",
+        "day": 14,
+        "dayLabel": "Day 14 — Tokyo (final)",
         "possibleDays": [
-          13
+          14
         ],
         "possibleDayLabels": [
-          "Day 13 — Tokyo (final)"
+          "Day 14 — Tokyo (final)"
         ],
         "extendedStatus": "matched",
         "extendedDay": null,
@@ -8178,13 +8271,13 @@
         "region": "tokyo",
         "category": "hotel",
         "status": "matched",
-        "day": 13,
-        "dayLabel": "Day 13 — Tokyo (final)",
+        "day": 14,
+        "dayLabel": "Day 14 — Tokyo (final)",
         "possibleDays": [
-          13
+          14
         ],
         "possibleDayLabels": [
-          "Day 13 — Tokyo (final)"
+          "Day 14 — Tokyo (final)"
         ],
         "extendedStatus": "matched",
         "extendedDay": null,
@@ -8204,13 +8297,13 @@
         "region": "tokyo",
         "category": "hotel",
         "status": "matched",
-        "day": 13,
-        "dayLabel": "Day 13 — Tokyo (final)",
+        "day": 14,
+        "dayLabel": "Day 14 — Tokyo (final)",
         "possibleDays": [
-          13
+          14
         ],
         "possibleDayLabels": [
-          "Day 13 — Tokyo (final)"
+          "Day 14 — Tokyo (final)"
         ],
         "extendedStatus": "matched",
         "extendedDay": null,
@@ -8230,13 +8323,13 @@
         "region": "tokyo",
         "category": "hotel",
         "status": "matched",
-        "day": 13,
-        "dayLabel": "Day 13 — Tokyo (final)",
+        "day": 14,
+        "dayLabel": "Day 14 — Tokyo (final)",
         "possibleDays": [
-          13
+          14
         ],
         "possibleDayLabels": [
-          "Day 13 — Tokyo (final)"
+          "Day 14 — Tokyo (final)"
         ],
         "extendedStatus": "matched",
         "extendedDay": null,
@@ -8256,13 +8349,13 @@
         "region": "tokyo",
         "category": "hotel",
         "status": "matched",
-        "day": 13,
-        "dayLabel": "Day 13 — Tokyo (final)",
+        "day": 14,
+        "dayLabel": "Day 14 — Tokyo (final)",
         "possibleDays": [
-          13
+          14
         ],
         "possibleDayLabels": [
-          "Day 13 — Tokyo (final)"
+          "Day 14 — Tokyo (final)"
         ],
         "extendedStatus": "matched",
         "extendedDay": null,
@@ -8282,13 +8375,13 @@
         "region": "tokyo",
         "category": "hotel",
         "status": "matched",
-        "day": 13,
-        "dayLabel": "Day 13 — Tokyo (final)",
+        "day": 14,
+        "dayLabel": "Day 14 — Tokyo (final)",
         "possibleDays": [
-          13
+          14
         ],
         "possibleDayLabels": [
-          "Day 13 — Tokyo (final)"
+          "Day 14 — Tokyo (final)"
         ],
         "extendedStatus": "matched",
         "extendedDay": null,
@@ -8308,13 +8401,13 @@
         "region": "tokyo",
         "category": "ryokan",
         "status": "matched",
-        "day": 13,
-        "dayLabel": "Day 13 — Tokyo (final)",
+        "day": 14,
+        "dayLabel": "Day 14 — Tokyo (final)",
         "possibleDays": [
-          13
+          14
         ],
         "possibleDayLabels": [
-          "Day 13 — Tokyo (final)"
+          "Day 14 — Tokyo (final)"
         ],
         "extendedStatus": "matched",
         "extendedDay": null,
@@ -8600,7 +8693,7 @@
         "possibleDays": [
           5,
           6,
-          7
+          8
         ],
         "possibleDayLabels": [
           "Days 5–7 — Kumamoto"
@@ -8628,7 +8721,7 @@
         "possibleDays": [
           5,
           6,
-          7
+          8
         ],
         "possibleDayLabels": [
           "Days 5–7 — Kumamoto"
@@ -8656,7 +8749,7 @@
         "possibleDays": [
           5,
           6,
-          7
+          8
         ],
         "possibleDayLabels": [
           "Days 5–7 — Kumamoto"
@@ -8684,7 +8777,7 @@
         "possibleDays": [
           5,
           6,
-          7
+          8
         ],
         "possibleDayLabels": [
           "Days 5–7 — Kumamoto"
@@ -8712,7 +8805,7 @@
         "possibleDays": [
           5,
           6,
-          7
+          8
         ],
         "possibleDayLabels": [
           "Days 5–7 — Kumamoto"
@@ -8740,7 +8833,7 @@
         "possibleDays": [
           5,
           6,
-          7
+          8
         ],
         "possibleDayLabels": [
           "Days 5–7 — Kumamoto"
@@ -8768,7 +8861,7 @@
         "possibleDays": [
           5,
           6,
-          7
+          8
         ],
         "possibleDayLabels": [
           "Days 5–7 — Kumamoto"
@@ -8796,7 +8889,7 @@
         "possibleDays": [
           5,
           6,
-          7
+          8
         ],
         "possibleDayLabels": [
           "Days 5–7 — Kumamoto"
@@ -8824,7 +8917,7 @@
         "possibleDays": [
           5,
           6,
-          7
+          8
         ],
         "possibleDayLabels": [
           "Days 5–7 — Kumamoto"
@@ -8852,7 +8945,7 @@
         "possibleDays": [
           5,
           6,
-          7
+          8
         ],
         "possibleDayLabels": [
           "Days 5–7 — Kumamoto"
@@ -8875,13 +8968,13 @@
         "region": "onomichi",
         "category": "hotel",
         "status": "matched",
-        "day": 8,
-        "dayLabel": "Day 8 — Onomichi",
+        "day": 9,
+        "dayLabel": "Day 9 — Onomichi",
         "possibleDays": [
-          8
+          9
         ],
         "possibleDayLabels": [
-          "Day 8 — Onomichi"
+          "Day 9 — Onomichi"
         ],
         "extendedStatus": "matched",
         "extendedDay": null,
@@ -8901,13 +8994,13 @@
         "region": "onomichi",
         "category": "hotel",
         "status": "matched",
-        "day": 8,
-        "dayLabel": "Day 8 — Onomichi",
+        "day": 9,
+        "dayLabel": "Day 9 — Onomichi",
         "possibleDays": [
-          8
+          9
         ],
         "possibleDayLabels": [
-          "Day 8 — Onomichi"
+          "Day 9 — Onomichi"
         ],
         "extendedStatus": "matched",
         "extendedDay": null,
@@ -8927,13 +9020,13 @@
         "region": "onomichi",
         "category": "hotel",
         "status": "matched",
-        "day": 8,
-        "dayLabel": "Day 8 — Onomichi",
+        "day": 9,
+        "dayLabel": "Day 9 — Onomichi",
         "possibleDays": [
-          8
+          9
         ],
         "possibleDayLabels": [
-          "Day 8 — Onomichi"
+          "Day 9 — Onomichi"
         ],
         "extendedStatus": "matched",
         "extendedDay": null,
@@ -8953,13 +9046,13 @@
         "region": "onomichi",
         "category": "hotel",
         "status": "matched",
-        "day": 8,
-        "dayLabel": "Day 8 — Onomichi",
+        "day": 9,
+        "dayLabel": "Day 9 — Onomichi",
         "possibleDays": [
-          8
+          9
         ],
         "possibleDayLabels": [
-          "Day 8 — Onomichi"
+          "Day 9 — Onomichi"
         ],
         "extendedStatus": "matched",
         "extendedDay": null,
@@ -8979,13 +9072,13 @@
         "region": "onomichi",
         "category": "hotel",
         "status": "matched",
-        "day": 8,
-        "dayLabel": "Day 8 — Onomichi",
+        "day": 9,
+        "dayLabel": "Day 9 — Onomichi",
         "possibleDays": [
-          8
+          9
         ],
         "possibleDayLabels": [
-          "Day 8 — Onomichi"
+          "Day 9 — Onomichi"
         ],
         "extendedStatus": "matched",
         "extendedDay": null,
@@ -9005,13 +9098,13 @@
         "region": "onomichi",
         "category": "hotel",
         "status": "matched",
-        "day": 8,
-        "dayLabel": "Day 8 — Onomichi",
+        "day": 9,
+        "dayLabel": "Day 9 — Onomichi",
         "possibleDays": [
-          8
+          9
         ],
         "possibleDayLabels": [
-          "Day 8 — Onomichi"
+          "Day 9 — Onomichi"
         ],
         "extendedStatus": "matched",
         "extendedDay": null,
@@ -9031,13 +9124,13 @@
         "region": "onomichi",
         "category": "hotel",
         "status": "matched",
-        "day": 8,
-        "dayLabel": "Day 8 — Onomichi",
+        "day": 9,
+        "dayLabel": "Day 9 — Onomichi",
         "possibleDays": [
-          8
+          9
         ],
         "possibleDayLabels": [
-          "Day 8 — Onomichi"
+          "Day 9 — Onomichi"
         ],
         "extendedStatus": "matched",
         "extendedDay": null,
@@ -9057,13 +9150,13 @@
         "region": "onomichi",
         "category": "ryokan",
         "status": "matched",
-        "day": 8,
-        "dayLabel": "Day 8 — Onomichi",
+        "day": 9,
+        "dayLabel": "Day 9 — Onomichi",
         "possibleDays": [
-          8
+          9
         ],
         "possibleDayLabels": [
-          "Day 8 — Onomichi"
+          "Day 9 — Onomichi"
         ],
         "extendedStatus": "matched",
         "extendedDay": null,
@@ -9083,13 +9176,13 @@
         "region": "osaka",
         "category": "hotel",
         "status": "matched",
-        "day": 9,
+        "day": 10,
         "dayLabel": "Days 9–12 — Osaka",
         "possibleDays": [
-          9,
           10,
           11,
-          12
+          12,
+          13
         ],
         "possibleDayLabels": [
           "Days 9–12 — Osaka"
@@ -9112,13 +9205,13 @@
         "region": "osaka",
         "category": "hotel",
         "status": "matched",
-        "day": 9,
+        "day": 10,
         "dayLabel": "Days 9–12 — Osaka",
         "possibleDays": [
-          9,
           10,
           11,
-          12
+          12,
+          13
         ],
         "possibleDayLabels": [
           "Days 9–12 — Osaka"
@@ -9141,13 +9234,13 @@
         "region": "osaka",
         "category": "hotel",
         "status": "matched",
-        "day": 9,
+        "day": 10,
         "dayLabel": "Days 9–12 — Osaka",
         "possibleDays": [
-          9,
           10,
           11,
-          12
+          12,
+          13
         ],
         "possibleDayLabels": [
           "Days 9–12 — Osaka"
@@ -9170,13 +9263,13 @@
         "region": "osaka",
         "category": "hotel",
         "status": "matched",
-        "day": 9,
+        "day": 10,
         "dayLabel": "Days 9–12 — Osaka",
         "possibleDays": [
-          9,
           10,
           11,
-          12
+          12,
+          13
         ],
         "possibleDayLabels": [
           "Days 9–12 — Osaka"
@@ -9199,13 +9292,13 @@
         "region": "osaka",
         "category": "hotel",
         "status": "matched",
-        "day": 9,
+        "day": 10,
         "dayLabel": "Days 9–12 — Osaka",
         "possibleDays": [
-          9,
           10,
           11,
-          12
+          12,
+          13
         ],
         "possibleDayLabels": [
           "Days 9–12 — Osaka"
@@ -9228,13 +9321,13 @@
         "region": "osaka",
         "category": "hotel",
         "status": "matched",
-        "day": 9,
+        "day": 10,
         "dayLabel": "Days 9–12 — Osaka",
         "possibleDays": [
-          9,
           10,
           11,
-          12
+          12,
+          13
         ],
         "possibleDayLabels": [
           "Days 9–12 — Osaka"
@@ -9257,13 +9350,13 @@
         "region": "osaka",
         "category": "hotel",
         "status": "matched",
-        "day": 9,
+        "day": 10,
         "dayLabel": "Days 9–12 — Osaka",
         "possibleDays": [
-          9,
           10,
           11,
-          12
+          12,
+          13
         ],
         "possibleDayLabels": [
           "Days 9–12 — Osaka"
@@ -9286,13 +9379,13 @@
         "region": "osaka",
         "category": "hotel",
         "status": "matched",
-        "day": 9,
+        "day": 10,
         "dayLabel": "Days 9–12 — Osaka",
         "possibleDays": [
-          9,
           10,
           11,
-          12
+          12,
+          13
         ],
         "possibleDayLabels": [
           "Days 9–12 — Osaka"
@@ -9315,13 +9408,13 @@
         "region": "osaka",
         "category": "hotel",
         "status": "matched",
-        "day": 9,
+        "day": 10,
         "dayLabel": "Days 9–12 — Osaka",
         "possibleDays": [
-          9,
           10,
           11,
-          12
+          12,
+          13
         ],
         "possibleDayLabels": [
           "Days 9–12 — Osaka"
@@ -9344,13 +9437,13 @@
         "region": "osaka",
         "category": "hotel",
         "status": "matched",
-        "day": 9,
+        "day": 10,
         "dayLabel": "Days 9–12 — Osaka",
         "possibleDays": [
-          9,
           10,
           11,
-          12
+          12,
+          13
         ],
         "possibleDayLabels": [
           "Days 9–12 — Osaka"
@@ -9373,13 +9466,13 @@
         "region": "osaka",
         "category": "ryokan",
         "status": "matched",
-        "day": 9,
+        "day": 10,
         "dayLabel": "Days 9–12 — Osaka",
         "possibleDays": [
-          9,
           10,
           11,
-          12
+          12,
+          13
         ],
         "possibleDayLabels": [
           "Days 9–12 — Osaka"
@@ -9402,13 +9495,13 @@
         "region": "osaka",
         "category": "ryokan",
         "status": "matched",
-        "day": 9,
+        "day": 10,
         "dayLabel": "Days 9–12 — Osaka",
         "possibleDays": [
-          9,
           10,
           11,
-          12
+          12,
+          13
         ],
         "possibleDayLabels": [
           "Days 9–12 — Osaka"
@@ -9431,13 +9524,13 @@
         "region": "tokyo",
         "category": "hotel",
         "status": "matched",
-        "day": 13,
-        "dayLabel": "Day 13 — Tokyo (final)",
+        "day": 14,
+        "dayLabel": "Day 14 — Tokyo (final)",
         "possibleDays": [
-          13
+          14
         ],
         "possibleDayLabels": [
-          "Day 13 — Tokyo (final)"
+          "Day 14 — Tokyo (final)"
         ],
         "extendedStatus": "matched",
         "extendedDay": null,
@@ -9457,13 +9550,13 @@
         "region": "tokyo",
         "category": "hotel",
         "status": "matched",
-        "day": 13,
-        "dayLabel": "Day 13 — Tokyo (final)",
+        "day": 14,
+        "dayLabel": "Day 14 — Tokyo (final)",
         "possibleDays": [
-          13
+          14
         ],
         "possibleDayLabels": [
-          "Day 13 — Tokyo (final)"
+          "Day 14 — Tokyo (final)"
         ],
         "extendedStatus": "matched",
         "extendedDay": null,
@@ -9483,13 +9576,13 @@
         "region": "tokyo",
         "category": "hotel",
         "status": "matched",
-        "day": 13,
-        "dayLabel": "Day 13 — Tokyo (final)",
+        "day": 14,
+        "dayLabel": "Day 14 — Tokyo (final)",
         "possibleDays": [
-          13
+          14
         ],
         "possibleDayLabels": [
-          "Day 13 — Tokyo (final)"
+          "Day 14 — Tokyo (final)"
         ],
         "extendedStatus": "matched",
         "extendedDay": null,
@@ -9509,13 +9602,13 @@
         "region": "tokyo",
         "category": "hotel",
         "status": "matched",
-        "day": 13,
-        "dayLabel": "Day 13 — Tokyo (final)",
+        "day": 14,
+        "dayLabel": "Day 14 — Tokyo (final)",
         "possibleDays": [
-          13
+          14
         ],
         "possibleDayLabels": [
-          "Day 13 — Tokyo (final)"
+          "Day 14 — Tokyo (final)"
         ],
         "extendedStatus": "matched",
         "extendedDay": null,
@@ -9535,13 +9628,13 @@
         "region": "tokyo",
         "category": "hotel",
         "status": "matched",
-        "day": 13,
-        "dayLabel": "Day 13 — Tokyo (final)",
+        "day": 14,
+        "dayLabel": "Day 14 — Tokyo (final)",
         "possibleDays": [
-          13
+          14
         ],
         "possibleDayLabels": [
-          "Day 13 — Tokyo (final)"
+          "Day 14 — Tokyo (final)"
         ],
         "extendedStatus": "matched",
         "extendedDay": null,
@@ -9561,13 +9654,13 @@
         "region": "tokyo",
         "category": "hotel",
         "status": "matched",
-        "day": 13,
-        "dayLabel": "Day 13 — Tokyo (final)",
+        "day": 14,
+        "dayLabel": "Day 14 — Tokyo (final)",
         "possibleDays": [
-          13
+          14
         ],
         "possibleDayLabels": [
-          "Day 13 — Tokyo (final)"
+          "Day 14 — Tokyo (final)"
         ],
         "extendedStatus": "matched",
         "extendedDay": null,
@@ -9587,13 +9680,13 @@
         "region": "tokyo",
         "category": "hotel",
         "status": "matched",
-        "day": 13,
-        "dayLabel": "Day 13 — Tokyo (final)",
+        "day": 14,
+        "dayLabel": "Day 14 — Tokyo (final)",
         "possibleDays": [
-          13
+          14
         ],
         "possibleDayLabels": [
-          "Day 13 — Tokyo (final)"
+          "Day 14 — Tokyo (final)"
         ],
         "extendedStatus": "matched",
         "extendedDay": null,
@@ -9613,13 +9706,13 @@
         "region": "tokyo",
         "category": "hotel",
         "status": "matched",
-        "day": 13,
-        "dayLabel": "Day 13 — Tokyo (final)",
+        "day": 14,
+        "dayLabel": "Day 14 — Tokyo (final)",
         "possibleDays": [
-          13
+          14
         ],
         "possibleDayLabels": [
-          "Day 13 — Tokyo (final)"
+          "Day 14 — Tokyo (final)"
         ],
         "extendedStatus": "matched",
         "extendedDay": null,
@@ -9639,13 +9732,13 @@
         "region": "tokyo",
         "category": "ryokan",
         "status": "matched",
-        "day": 13,
-        "dayLabel": "Day 13 — Tokyo (final)",
+        "day": 14,
+        "dayLabel": "Day 14 — Tokyo (final)",
         "possibleDays": [
-          13
+          14
         ],
         "possibleDayLabels": [
-          "Day 13 — Tokyo (final)"
+          "Day 14 — Tokyo (final)"
         ],
         "extendedStatus": "matched",
         "extendedDay": null,
@@ -9717,7 +9810,7 @@
     ],
     "days": [
       {
-        "day": 13,
+        "day": 14,
         "date": "2026-05-21",
         "dateLabel": "Thu, May 21",
         "title": "Nara Day Trip",
@@ -9793,7 +9886,7 @@
         "keyCost": 2960
       },
       {
-        "day": 14,
+        "day": 15,
         "date": "2026-05-22",
         "dateLabel": "Fri, May 22",
         "title": "Osaka → Kyoto — Higashiyama",
@@ -9875,7 +9968,7 @@
         "keyCost": 2060
       },
       {
-        "day": 15,
+        "day": 16,
         "date": "2026-05-23",
         "dateLabel": "Sat, May 23",
         "title": "Kyoto — Mountain Temples & Markets",
@@ -9951,7 +10044,7 @@
         "isHikingDay": true
       },
       {
-        "day": 16,
+        "day": 17,
         "date": "2026-05-24",
         "dateLabel": "Sun, May 24",
         "title": "Kyoto — Moss, Gold & Geisha",
@@ -10020,7 +10113,7 @@
         ]
       },
       {
-        "day": 17,
+        "day": 18,
         "date": "2026-05-25",
         "dateLabel": "Mon, May 25",
         "title": "Kyoto → Hakone",
@@ -10105,7 +10198,7 @@
         }
       },
       {
-        "day": 18,
+        "day": 19,
         "date": "2026-05-26",
         "dateLabel": "Tue, May 26",
         "title": "Hakone — Hiking & Hot Springs",
@@ -10183,7 +10276,7 @@
         "isHikingDay": true
       },
       {
-        "day": 19,
+        "day": 20,
         "date": "2026-05-27",
         "dateLabel": "Wed, May 27",
         "title": "Hakone → Matsumoto",
@@ -10247,7 +10340,7 @@
         "keyCost": 9200
       },
       {
-        "day": 20,
+        "day": 21,
         "date": "2026-05-28",
         "dateLabel": "Thu, May 28",
         "title": "Nakasendo Trail — Magome to Tsumago",
@@ -10350,7 +10443,7 @@
         }
       },
       {
-        "day": 21,
+        "day": 22,
         "date": "2026-05-29",
         "dateLabel": "Fri, May 29",
         "title": "Matsumoto → Tokyo → Home",
@@ -10428,7 +10521,7 @@
     "travels": [
       {
         "id": "osaka-nara-ext",
-        "day": 13,
+        "day": 14,
         "from": {
           "name": "Osaka",
           "area": "Namba"
@@ -10447,7 +10540,7 @@
       },
       {
         "id": "osaka-kyoto-ext",
-        "day": 14,
+        "day": 15,
         "from": {
           "name": "Osaka"
         },
@@ -10464,7 +10557,7 @@
       },
       {
         "id": "kyoto-hakone-ext",
-        "day": 17,
+        "day": 18,
         "from": {
           "name": "Kyoto"
         },
@@ -10482,7 +10575,7 @@
       },
       {
         "id": "hakone-matsumoto-ext",
-        "day": 19,
+        "day": 20,
         "from": {
           "name": "Hakone"
         },
@@ -10499,7 +10592,7 @@
       },
       {
         "id": "matsumoto-tokyo-ext",
-        "day": 21,
+        "day": 22,
         "from": {
           "name": "Matsumoto"
         },
@@ -10768,7 +10861,7 @@
   "mapConfig": {
     "defaultCenter": [
       36.5,
-      137.0
+      137
     ],
     "defaultZoom": 6,
     "minZoom": 5,
@@ -10783,7 +10876,7 @@
         154
       ]
     ],
-    "maxBoundsViscosity": 1.0,
+    "maxBoundsViscosity": 1,
     "fitBoundsFromPins": true,
     "fitBoundsPadding": [
       50,
@@ -10873,8 +10966,20 @@
         }
       },
       {
-        "label": "Kumamoto → Kurokawa Onsen",
+        "label": "Kumamoto → Amakusa",
         "day": 7,
+        "from": {
+          "lat": 32.8032,
+          "lng": 130.7079
+        },
+        "to": {
+          "lat": 32.4566,
+          "lng": 130.1929
+        }
+      },
+      {
+        "label": "Kumamoto → Kurokawa Onsen",
+        "day": 8,
         "from": {
           "lat": 32.8032,
           "lng": 130.7079
@@ -10886,7 +10991,7 @@
       },
       {
         "label": "Osaka → Kyoto",
-        "day": 12,
+        "day": 13,
         "from": {
           "lat": 34.6937,
           "lng": 135.5023
@@ -11014,13 +11119,13 @@
   "routeStops": [
     {
       "name": "Warsaw",
-      "sub": "May 8",
+      "sub": "May 7",
       "icon": "✈️",
       "type": "origin"
     },
     {
       "name": "Tokyo",
-      "sub": "May 9–12",
+      "sub": "May 8–11",
       "icon": "🏨",
       "type": "stay",
       "region": "tokyo"
@@ -11041,15 +11146,22 @@
     },
     {
       "name": "Kumamoto",
-      "sub": "May 13–14",
+      "sub": "May 12–15",
       "icon": "🏯",
       "type": "stay",
       "region": "kyushu"
     },
     {
       "name": "Mt Aso",
-      "sub": "May 14",
+      "sub": "May 13",
       "icon": "🌋",
+      "type": "dayTrip",
+      "region": "kyushu"
+    },
+    {
+      "name": "Amakusa",
+      "sub": "May 14",
+      "icon": "🏖️",
       "type": "dayTrip",
       "region": "kyushu"
     },
@@ -11163,6 +11275,73 @@
       }
     ],
     "days": {
+      "10": [
+        {
+          "src": "/trips/japan-2026/stickers/n2_13.png",
+          "size": "clamp(90px,14vw,180px)",
+          "top": "8%",
+          "right": "4vw",
+          "rot": "7deg",
+          "op": 0.85,
+          "dur": "8s",
+          "drift": "-10px",
+          "swing": "-3deg"
+        }
+      ],
+      "11": [
+        {
+          "src": "/trips/japan-2026/stickers/n1_17.png",
+          "size": "clamp(85px,12vw,160px)",
+          "top": "10%",
+          "left": "5vw",
+          "rot": "-8deg",
+          "op": 0.85
+        }
+      ],
+      "12": [
+        {
+          "src": "/trips/japan-2026/stickers/n1_19.png",
+          "size": "clamp(90px,13vw,170px)",
+          "top": "8%",
+          "right": "4vw",
+          "rot": "5deg",
+          "op": 0.8
+        }
+      ],
+      "13": [
+        {
+          "src": "/trips/japan-2026/stickers/n1_21.png",
+          "size": "clamp(100px,14vw,180px)",
+          "top": "6%",
+          "right": "3vw",
+          "rot": "-4deg",
+          "op": 0.9,
+          "dur": "9s",
+          "drift": "-12px",
+          "swing": "3deg"
+        }
+      ],
+      "14": [
+        {
+          "src": "/trips/japan-2026/stickers/n2_17.png",
+          "size": "clamp(80px,11vw,150px)",
+          "bottom": "12%",
+          "right": "5vw",
+          "rot": "10deg",
+          "op": 0.75
+        }
+      ],
+      "15": [
+        {
+          "src": "/trips/japan-2026/stickers/n2_19.png",
+          "size": "clamp(90px,12vw,160px)",
+          "top": "10%",
+          "left": "4vw",
+          "rot": "-6deg",
+          "op": 0.85,
+          "anim": "spin"
+        }
+      ],
       "01": [
         {
           "src": "/trips/japan-2026/stickers/n1_11.png",
@@ -11228,6 +11407,16 @@
       ],
       "07": [
         {
+          "src": "/trips/japan-2026/stickers/n2_07.png",
+          "size": "clamp(85px,12vw,160px)",
+          "top": "8%",
+          "right": "5vw",
+          "rot": "-5deg",
+          "op": 0.85
+        }
+      ],
+      "08": [
+        {
           "src": "/trips/japan-2026/stickers/n2_09.png",
           "size": "clamp(85px,12vw,160px)",
           "top": "8%",
@@ -11236,7 +11425,7 @@
           "op": 0.85
         }
       ],
-      "08": [
+      "09": [
         {
           "src": "/trips/japan-2026/stickers/n2_11.png",
           "size": "clamp(80px,11vw,150px)",
@@ -11245,90 +11434,24 @@
           "rot": "-6deg",
           "op": 0.8
         }
-      ],
-      "09": [
-        {
-          "src": "/trips/japan-2026/stickers/n2_13.png",
-          "size": "clamp(90px,14vw,180px)",
-          "top": "8%",
-          "right": "4vw",
-          "rot": "7deg",
-          "op": 0.85,
-          "dur": "8s",
-          "drift": "-10px",
-          "swing": "-3deg"
-        }
-      ],
-      "10": [
-        {
-          "src": "/trips/japan-2026/stickers/n1_17.png",
-          "size": "clamp(85px,12vw,160px)",
-          "top": "10%",
-          "left": "5vw",
-          "rot": "-8deg",
-          "op": 0.85
-        }
-      ],
-      "11": [
-        {
-          "src": "/trips/japan-2026/stickers/n1_19.png",
-          "size": "clamp(90px,13vw,170px)",
-          "top": "8%",
-          "right": "4vw",
-          "rot": "5deg",
-          "op": 0.8
-        }
-      ],
-      "12": [
-        {
-          "src": "/trips/japan-2026/stickers/n1_21.png",
-          "size": "clamp(100px,14vw,180px)",
-          "top": "6%",
-          "right": "3vw",
-          "rot": "-4deg",
-          "op": 0.9,
-          "dur": "9s",
-          "drift": "-12px",
-          "swing": "3deg"
-        }
-      ],
-      "13": [
-        {
-          "src": "/trips/japan-2026/stickers/n2_17.png",
-          "size": "clamp(80px,11vw,150px)",
-          "bottom": "12%",
-          "right": "5vw",
-          "rot": "10deg",
-          "op": 0.75
-        }
-      ],
-      "14": [
-        {
-          "src": "/trips/japan-2026/stickers/n2_19.png",
-          "size": "clamp(90px,12vw,160px)",
-          "top": "10%",
-          "left": "4vw",
-          "rot": "-6deg",
-          "op": 0.85,
-          "anim": "spin"
-        }
       ]
     },
     "dayIcons": {
+      "10": "/trips/japan-2026/stickers/n2_13.png",
+      "11": "/trips/japan-2026/stickers/n1_17.png",
+      "12": "/trips/japan-2026/stickers/n1_19.png",
+      "13": "/trips/japan-2026/stickers/n1_21.png",
+      "14": "/trips/japan-2026/stickers/n2_17.png",
+      "15": "/trips/japan-2026/stickers/n2_19.png",
       "01": "/trips/japan-2026/stickers/n1_11.png",
       "02": "/trips/japan-2026/stickers/n1_13.png",
       "03": "/trips/japan-2026/stickers/n1_05.png",
       "04": "/trips/japan-2026/stickers/n1_01.png",
       "05": "/trips/japan-2026/stickers/n1_09.png",
       "06": "/trips/japan-2026/stickers/n2_05.png",
-      "07": "/trips/japan-2026/stickers/n2_09.png",
-      "08": "/trips/japan-2026/stickers/n2_11.png",
-      "09": "/trips/japan-2026/stickers/n2_13.png",
-      "10": "/trips/japan-2026/stickers/n1_17.png",
-      "11": "/trips/japan-2026/stickers/n1_19.png",
-      "12": "/trips/japan-2026/stickers/n1_21.png",
-      "13": "/trips/japan-2026/stickers/n2_17.png",
-      "14": "/trips/japan-2026/stickers/n2_19.png"
+      "07": "/trips/japan-2026/stickers/n2_07.png",
+      "08": "/trips/japan-2026/stickers/n2_09.png",
+      "09": "/trips/japan-2026/stickers/n2_11.png"
     }
   },
   "luggageTags": {
@@ -11336,7 +11459,7 @@
       {
         "city": "Warsaw",
         "code": "WAW",
-        "date": "May 8",
+        "date": "May 7",
         "bottom": "22%",
         "right": "4%",
         "rot": "5deg",
@@ -11345,7 +11468,7 @@
       {
         "city": "Narita",
         "code": "NRT",
-        "date": "May 9",
+        "date": "May 8",
         "top": "18%",
         "left": "3%",
         "rot": "-4deg",
@@ -11373,6 +11496,60 @@
       }
     ],
     "days": {
+      "10": {
+        "city": "Shimanami",
+        "code": "SMN",
+        "date": "Day 10",
+        "bottom": "8%",
+        "right": "6%",
+        "rot": "-5deg",
+        "delay": "0.5s"
+      },
+      "11": {
+        "city": "Osaka",
+        "code": "KIX",
+        "date": "Day 11",
+        "bottom": "10%",
+        "left": "6%",
+        "rot": "4deg",
+        "delay": "0.6s"
+      },
+      "12": {
+        "city": "Osaka",
+        "code": "OSA",
+        "date": "Day 12",
+        "bottom": "8%",
+        "right": "7%",
+        "rot": "-3deg",
+        "delay": "0.4s"
+      },
+      "13": {
+        "city": "Kyoto",
+        "code": "KYO",
+        "date": "Day 13",
+        "bottom": "10%",
+        "left": "8%",
+        "rot": "5deg",
+        "delay": "0.5s"
+      },
+      "14": {
+        "city": "Tokyo",
+        "code": "TYO",
+        "date": "Day 14",
+        "bottom": "8%",
+        "left": "6%",
+        "rot": "-4deg",
+        "delay": "0.6s"
+      },
+      "15": {
+        "city": "Narita",
+        "code": "NRT",
+        "date": "Day 15",
+        "bottom": "10%",
+        "right": "5%",
+        "rot": "6deg",
+        "delay": "0.4s"
+      },
       "01": {
         "city": "Tokyo",
         "code": "NRT",
@@ -11428,75 +11605,30 @@
         "delay": "0.4s"
       },
       "07": {
+        "city": "Amakusa",
+        "code": "AMK",
+        "date": "Day 07",
+        "bottom": "8%",
+        "right": "6%",
+        "rot": "4deg",
+        "delay": "0.5s"
+      },
+      "08": {
         "city": "Kurokawa",
         "code": "KRK",
-        "date": "Day 07",
+        "date": "Day 08",
         "bottom": "8%",
         "left": "7%",
         "rot": "-6deg",
         "delay": "0.5s"
       },
-      "08": {
+      "09": {
         "city": "Onomichi",
         "code": "ONO",
-        "date": "Day 08",
+        "date": "Day 09",
         "bottom": "10%",
         "left": "8%",
         "rot": "3deg",
-        "delay": "0.4s"
-      },
-      "09": {
-        "city": "Shimanami",
-        "code": "SMN",
-        "date": "Day 09",
-        "bottom": "8%",
-        "right": "6%",
-        "rot": "-5deg",
-        "delay": "0.5s"
-      },
-      "10": {
-        "city": "Osaka",
-        "code": "KIX",
-        "date": "Day 10",
-        "bottom": "10%",
-        "left": "6%",
-        "rot": "4deg",
-        "delay": "0.6s"
-      },
-      "11": {
-        "city": "Osaka",
-        "code": "OSA",
-        "date": "Day 11",
-        "bottom": "8%",
-        "right": "7%",
-        "rot": "-3deg",
-        "delay": "0.4s"
-      },
-      "12": {
-        "city": "Kyoto",
-        "code": "KYO",
-        "date": "Day 12",
-        "bottom": "10%",
-        "left": "8%",
-        "rot": "5deg",
-        "delay": "0.5s"
-      },
-      "13": {
-        "city": "Tokyo",
-        "code": "TYO",
-        "date": "Day 13",
-        "bottom": "8%",
-        "left": "6%",
-        "rot": "-4deg",
-        "delay": "0.6s"
-      },
-      "14": {
-        "city": "Narita",
-        "code": "NRT",
-        "date": "Day 14",
-        "bottom": "10%",
-        "right": "5%",
-        "rot": "6deg",
         "delay": "0.4s"
       }
     }
@@ -11582,6 +11714,19 @@
     },
     {
       "day": 7,
+      "location": "Amakusa",
+      "highC": 24,
+      "lowC": 17,
+      "condition": "sunny",
+      "rainChance": 15,
+      "humidity": 62,
+      "sunrise": "5:21",
+      "sunset": "19:10",
+      "tip": "Perfect beach day — warm, low humidity. Sunscreen essential for boat and beach. Sea breeze keeps it pleasant.",
+      "icon": "☀️"
+    },
+    {
+      "day": 8,
       "location": "Kurokawa Onsen",
       "highC": 23,
       "lowC": 13,
@@ -11594,7 +11739,7 @@
       "icon": "🌫️"
     },
     {
-      "day": 8,
+      "day": 9,
       "location": "Onomichi",
       "highC": 24,
       "lowC": 16,
@@ -11607,7 +11752,7 @@
       "icon": "☀️"
     },
     {
-      "day": 9,
+      "day": 10,
       "location": "Shimanami Kaido",
       "highC": 23,
       "lowC": 17,
@@ -11620,7 +11765,7 @@
       "icon": "☀️"
     },
     {
-      "day": 10,
+      "day": 11,
       "location": "Osaka",
       "highC": 25,
       "lowC": 17,
@@ -11633,7 +11778,7 @@
       "icon": "⛅"
     },
     {
-      "day": 11,
+      "day": 12,
       "location": "Osaka",
       "highC": 26,
       "lowC": 18,
@@ -11646,7 +11791,7 @@
       "icon": "☀️"
     },
     {
-      "day": 12,
+      "day": 13,
       "location": "Kyoto",
       "highC": 24,
       "lowC": 16,
@@ -11659,7 +11804,7 @@
       "icon": "⛅"
     },
     {
-      "day": 13,
+      "day": 14,
       "location": "Tokyo",
       "highC": 23,
       "lowC": 15,
@@ -11672,7 +11817,7 @@
       "icon": "🌧️"
     },
     {
-      "day": 14,
+      "day": 15,
       "location": "Tokyo",
       "highC": 21,
       "lowC": 14,
