@@ -16,15 +16,15 @@ const DAY_LABELS: Record<string, { label: string; labelJp: string }> = {
   "03": { label: "Day 3 — Kamakura", labelJp: "鎌倉" },
   "04": { label: "Day 4 — Mt Fuji", labelJp: "富士山" },
   "05": { label: "Day 5 — Tokyo to Kumamoto", labelJp: "熊本へ" },
-  "06": { label: "Day 6 — Mt Aso & Bike Ride", labelJp: "阿蘇山" },
-  "07": { label: "Day 7 — Kurokawa Onsen", labelJp: "黒川温泉" },
-  "08": { label: "Day 8 — Onomichi", labelJp: "尾道" },
-  "09": { label: "Day 9 — Shimanami Kaido", labelJp: "しまなみ海道" },
-  "10": { label: "Day 10 — Osaka Dotonbori", labelJp: "道頓堀" },
-  "11": { label: "Day 11 — Osaka Castle", labelJp: "大阪城" },
-  "12": { label: "Day 12 — Kyoto", labelJp: "京都" },
+  "06": { label: "Day 6 — Takachiho Gorge", labelJp: "高千穂" },
+  "07": { label: "Day 7 — Bike on Aso", labelJp: "阿蘇山" },
+  "08": { label: "Day 8 — Beach Day", labelJp: "ビーチ" },
+  "09": { label: "Day 9 — Kumamoto to Osaka", labelJp: "大阪へ" },
+  "10": { label: "Day 10 — Osaka Exploration", labelJp: "大阪探検" },
+  "11": { label: "Day 11 — Shimanami Kaido", labelJp: "しまなみ海道" },
+  "12": { label: "Day 12 — Osaka Rest Day", labelJp: "休息日" },
   "13": { label: "Day 13 — Osaka to Tokyo", labelJp: "東京へ" },
-  "14": { label: "Day 14 — Departure", labelJp: "出発" },
+  "14": { label: "Day 14 — Last Tokyo Day", labelJp: "最後の東京" },
 };
 
 const DAY_COLORS: Record<string, string> = {
