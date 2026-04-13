@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "private": true,
   "scripts": {
-    "dev": "node scripts/sync-json.js & next dev",
+    "dev": "node scripts/sync-json.js & next dev --port 3300",
     "sync": "node scripts/sync-json.js",
     "og": "node scripts/generate-og.mjs",
     "build": "node scripts/generate-og.mjs && next build",
