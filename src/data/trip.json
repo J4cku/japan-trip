@@ -2,9 +2,9 @@
   "trip": {
     "title": "Japan Adventure",
     "titleJp": "アドベンチャー",
-    "dates": "May 8 – 22, 2026",
+    "dates": "May 7 – 22, 2026",
     "travelers": 4,
-    "durationDays": 15,
+    "durationDays": 16,
     "durationNights": 14,
     "origin": "Warsaw",
     "flights": {
@@ -12,14 +12,14 @@
         "from": "WAW",
         "to": "NRT",
         "date": "2026-05-07",
-        "arrives": "2026-05-08T18:30",
-        "note": "Landing Narita Terminal 1"
+        "arrives": "2026-05-08T16:20",
+        "note": "LO79 — Warsaw 22:50 → Narita 16:20 JST · 10h 30min"
       },
       "return": {
         "from": "NRT",
         "to": "WAW",
         "date": "2026-05-22",
-        "departs": "2026-05-22T22:50"
+        "departs": "2026-05-22T22:30"
       }
     },
     "dietary": [
@@ -33,753 +33,485 @@
       "Kamakura",
       "Mt Fuji",
       "Kumamoto",
-      "Takachiho",
       "Mt Aso",
+      "Takachiho",
+      "Amakusa",
       "Osaka",
       "Onomichi",
-      "Shimanami Kaido",
+      "Imabari",
+      "Matsuyama",
+      "Naoshima",
       "Tokyo",
       "Warsaw"
     ]
   },
   "stays": [
     {
-      "location": "Shibuya, Tokyo",
+      "location": "Shinjuku, Tokyo",
       "nights": 4,
-      "dates": "May 8–11",
-      "area": "lyf Shibuya Tokyo",
-      "budget": "¥15,000–20,000/room/night"
+      "dates": "May 8–12",
+      "area": "lyf Shinjuku",
+      "budget": "Confirmed booking"
     },
     {
       "location": "Kumamoto",
       "nights": 4,
-      "dates": "May 12–15",
-      "area": "Matsuya Bekkan",
-      "budget": "¥12,000–16,000/room/night"
+      "dates": "May 12–16",
+      "area": "Matsuya Bekkan · 2 rooms",
+      "budget": "Confirmed booking"
     },
     {
       "location": "Osaka",
-      "nights": 4,
-      "dates": "May 16–19",
-      "area": "Resol Trinity Osaka",
-      "budget": "¥15,000–20,000/room/night"
+      "nights": 3,
+      "dates": "May 16–20 · gap on the 18th",
+      "area": "Hotel Resol Trinity",
+      "budget": "Confirmed (May 18 unused — sleeping in Matsuyama)"
+    },
+    {
+      "location": "Matsuyama",
+      "nights": 1,
+      "dates": "May 18",
+      "area": "Dogo-no-Yado Katsuragi · 2 rooms",
+      "budget": "Confirmed booking · ref. #6839169689"
     },
     {
       "location": "Shibuya, Tokyo",
       "nights": 2,
-      "dates": "May 20–21",
+      "dates": "May 20–22",
       "area": "Sequence Miyashita Park",
-      "budget": "¥15,000–18,000/room/night"
+      "budget": "Confirmed booking"
     }
   ],
   "days": [
     {
       "day": 1,
-      "date": "2026-05-08",
-      "dateLabel": "Fri, May 8",
-      "title": "Arrival in Tokyo",
+      "date": "2026-05-07",
+      "dateLabel": "Thu, May 7",
+      "title": "Departure from Poland",
       "region": "tokyo",
-      "tagline": "Touch down at Narita. Neon lights and konbini runs await.",
-      "stay": "lyf Shibuya Tokyo",
+      "tagline": "Warsaw at midnight. Ten and a half hours over the Pole. Wake up in Japan.",
+      "stay": null,
       "highlights": [
-        "18:30 — Land at Narita Airport",
-        "Narita Express to Shibuya — 75 min, ¥3,250",
-        "Buy Suica IC cards at the airport kiosk",
-        "Check into hotel. Light konbini dinner — onigiri is your new best friend"
+        "20:30 — Warsaw Chopin (WAW), check-in + security with a 2h buffer",
+        "22:50 — LO79 lifts off for Narita (~10h 30min over the polar route)",
+        "Powerbank, eye mask, snacks, change of clothes — all in the carry-on",
+        "Set watches to JST when boarding. Try to sleep before midnight CET."
       ],
       "activities": [
-        {
-          "time": "18:30",
-          "name": "Arrive Narita Airport",
-          "type": "transport"
-        },
-        {
-          "time": "19:00",
-          "name": "Narita Express to Shibuya",
-          "duration": "75 min",
-          "cost": 3250,
-          "type": "transport"
-        },
-        {
-          "time": "20:30",
-          "name": "Check into Shibuya hotel",
-          "type": "accommodation"
-        },
-        {
-          "time": "21:00",
-          "name": "Konbini dinner",
-          "type": "food"
-        }
+        { "time": "20:30", "name": "Warsaw Chopin (WAW) — check-in", "type": "logistics" },
+        { "time": "22:50", "name": "LO79 WAW → NRT", "duration": "10h 30min", "type": "transport" }
+      ],
+      "transport": {
+        "mode": "Flight LO79 (LOT)",
+        "from": "WAW",
+        "to": "NRT",
+        "duration": "10h 30min",
+        "carrier": "LOT Polish Airlines"
+      },
+      "food": "Light dinner at WAW. LOT serves a meal in-flight — pack snacks just in case.",
+      "tip": "Tokyo is 7h ahead and you land mid-afternoon. Hydrate, walk the aisle every couple of hours, sleep when you can."
+    },
+    {
+      "day": 2,
+      "date": "2026-05-08",
+      "dateLabel": "Fri, May 8",
+      "title": "Tokyo Arrival — the lost day",
+      "region": "tokyo",
+      "tagline": "Land at Narita. N'EX to Shinjuku. First konbini run. Sleep before midnight.",
+      "stay": "lyf Shinjuku",
+      "highlights": [
+        "16:20 — Land at NRT (immigration 30–45 min)",
+        "17:30 — Narita Express to Shinjuku (~80 min, ¥3,070)",
+        "19:30 — Check into lyf Shinjuku, drop bags",
+        "20:30 — First konbini run (7-Eleven onigiri are vegan-friendly)",
+        "22:00 — Sleep. Tomorrow is teamLab."
+      ],
+      "activities": [
+        { "time": "16:20", "name": "Land at Narita (NRT)", "type": "transport" },
+        { "time": "17:30", "name": "Narita Express → Shinjuku", "duration": "80 min", "cost": 3070, "type": "transport" },
+        { "time": "19:30", "name": "Check in at lyf Shinjuku", "type": "accommodation" },
+        { "time": "20:30", "name": "Konbini dinner run", "type": "food" },
+        { "time": "22:00", "name": "Sleep — fight the jet lag", "type": "rest" }
       ],
       "transport": {
         "mode": "Narita Express",
         "from": "Narita Airport",
-        "to": "Shibuya",
-        "duration": "75 min",
-        "cost": 3250,
+        "to": "Shinjuku",
+        "duration": "80 min",
+        "cost": 3070,
         "jrPass": false
       },
-      "food": "Konbini onigiri — umeboshi, kombu fillings are naturally GF + vegan. Available 24/7.",
-      "tip": "Withdraw yen at 7-Eleven ATMs — best rates, English menus. Japan runs on cash.",
-      "keyCost": 3250
-    },
-    {
-      "day": 2,
-      "date": "2026-05-09",
-      "dateLabel": "Sat, May 9",
-      "title": "TeamLab & Harajuku",
-      "region": "tokyo",
-      "tagline": "Immersive digital art, then the sensory overload of Shibuya at night.",
-      "stay": "lyf Shibuya Tokyo",
-      "highlights": [
-        "TeamLab Borderless at Azabudai Hills — ¥3,800, book 2 months ahead",
-        "Meiji Shrine — ancient forest in the heart of the city",
-        "Harajuku & Takeshita Street — pop culture, fashion, chaos",
-        "Shibuya Crossing at dusk — you live here. Golden Gai after dark."
-      ],
-      "activities": [
-        {
-          "time": "09:00",
-          "name": "TeamLab Borderless",
-          "location": "Azabudai Hills",
-          "duration": "2–3 hrs",
-          "cost": 3800,
-          "bookAhead": true,
-          "type": "attraction"
-        },
-        {
-          "time": "12:30",
-          "name": "Lunch in Roppongi area",
-          "type": "food"
-        },
-        {
-          "time": "14:00",
-          "name": "Meiji Shrine",
-          "type": "attraction"
-        },
-        {
-          "time": "15:00",
-          "name": "Harajuku & Takeshita Street",
-          "type": "explore"
-        },
-        {
-          "time": "16:30",
-          "name": "Omotesandō",
-          "type": "explore"
-        },
-        {
-          "time": "18:00",
-          "name": "Shibuya Crossing / Shibuya Sky (¥2,000)",
-          "type": "attraction"
-        },
-        {
-          "time": "19:30",
-          "name": "Dinner — Ain Soph Journey (vegan, GF options)",
-          "type": "food"
-        }
-      ],
-      "transport": {
-        "mode": "Metro",
-        "note": "All within central Tokyo, use Suica"
-      },
-      "food": "Ain Soph Journey (Shinjuku) — fully vegan, GF options. Afuri ramen in Harajuku — ask for tamari.",
-      "tip": "Wear dark clothing at TeamLab — projections look best on black. Book tickets the moment they open (2 months ahead).",
-      "keyCost": 3800
+      "food": "Konbini onigiri (umeboshi, kombu fillings are naturally GF + vegan). 7-Eleven and Lawson have labelled vegan onigiri.",
+      "tip": "Withdraw yen at 7-Eleven ATMs — best rates, English menus. Buy a Suica IC card at the airport kiosk on arrival.",
+      "keyCost": 3070
     },
     {
       "day": 3,
-      "date": "2026-05-10",
-      "dateLabel": "Sun, May 10",
-      "title": "Kamakura",
+      "date": "2026-05-09",
+      "dateLabel": "Sat, May 9",
+      "title": "TeamLab Borderless · Shinjuku · Shibuya",
       "region": "tokyo",
-      "tagline": "13th-century capital. Giant Buddha, ocean temples, island at sunset.",
-      "stay": "lyf Shibuya Tokyo",
+      "tagline": "Step inside the digital world at 9am. Walk it off through Shinjuku and Shibuya till the neon kicks in.",
+      "stay": "lyf Shinjuku",
       "highlights": [
-        "JR Yokosuka Line from Shibuya — 60 min, ¥940",
-        "Tsurugaoka Hachimangū shrine → Komachi-dōri street",
-        "Kōtoku-in — the Great Buddha, 13m tall, cast in 1252",
-        "Hase-dera Temple — ocean views, hydrangeas in May",
-        "Enoden train to Enoshima Island — caves, shrine, panoramic views"
+        "09:00 — TeamLab Borderless at Azabudai Hills (tickets confirmed)",
+        "12:00 — Saido lunch — vegan kaiseki, no dashi (5 min from teamLab — book it!)",
+        "Afternoon — Shinjuku Gyoen + Isetan, Beams Japan, Tokyu Hands",
+        "Walk to Shibuya — scramble + Shibuya Sky at golden hour",
+        "20:00 — T's Tantan Shibuya, vegan ramen to close the day"
       ],
       "activities": [
-        {
-          "time": "08:00",
-          "name": "JR to Kamakura",
-          "duration": "60 min",
-          "cost": 940,
-          "type": "transport"
-        },
-        {
-          "time": "09:15",
-          "name": "Tsurugaoka Hachimangū",
-          "type": "attraction"
-        },
-        {
-          "time": "10:00",
-          "name": "Komachi-dōri shopping street",
-          "type": "explore"
-        },
-        {
-          "time": "11:30",
-          "name": "Kōtoku-in — Great Buddha",
-          "type": "attraction"
-        },
-        {
-          "time": "13:30",
-          "name": "Hase-dera Temple",
-          "type": "attraction"
-        },
-        {
-          "time": "15:00",
-          "name": "Enoden to Enoshima Island",
-          "type": "explore"
-        },
-        {
-          "time": "17:30",
-          "name": "Return to Tokyo",
-          "type": "transport"
-        }
+        { "time": "08:30", "name": "Metro → Azabudai Hills", "duration": "25 min", "type": "transport" },
+        { "time": "09:00", "name": "TeamLab Borderless", "location": "Azabudai Hills", "duration": "2–2.5 hrs", "cost": 3800, "bookAhead": true, "type": "attraction" },
+        { "time": "12:00", "name": "Lunch — Saido (vegan kaiseki)", "type": "food" },
+        { "time": "14:00", "name": "Shinjuku Gyoen + Isetan / Beams", "type": "explore" },
+        { "time": "17:30", "name": "Walk to Shibuya", "type": "explore" },
+        { "time": "18:00", "name": "Shibuya Crossing + Shibuya Sky (optional)", "type": "attraction" },
+        { "time": "20:00", "name": "Dinner — T's Tantan Shibuya", "type": "food" }
       ],
       "transport": {
-        "mode": "JR Yokosuka Line",
-        "from": "Shibuya",
-        "to": "Kamakura",
-        "duration": "60 min",
-        "cost": 940,
-        "jrPass": true,
-        "roundTrip": true
+        "mode": "Tokyo Metro",
+        "note": "All within central Tokyo — use Suica"
       },
-      "food": "Bowls Kamakura (plant-based café near Hase). Look for vegetable tempura sets (note: batter has gluten).",
-      "tip": "Time your visit to catch golden hour at Enoshima observation tower.",
-      "keyCost": 940
+      "food": "Saido (Roppongi/Azabudai) — fully vegan kaiseki, no dashi. T's Tantan (Shibuya Station 1F) — vegan ramen, late-night.",
+      "tip": "Wear dark clothing at teamLab — projections look best on black. Saido books up fast on weekends — reserve.",
+      "keyCost": 3800
     },
     {
       "day": 4,
-      "date": "2026-05-11",
-      "dateLabel": "Mon, May 11",
-      "title": "Mt Fuji",
-      "region": "fuji",
-      "tagline": "The iconic pagoda-and-peak view. Fuji is famously shy — go early.",
-      "stay": "lyf Shibuya Tokyo",
+      "date": "2026-05-10",
+      "dateLabel": "Sun, May 10",
+      "title": "Kamakura Day Trip",
+      "region": "tokyo",
+      "tagline": "13th-century capital. The Great Buddha at noon, hydrangeas, then a slow walk along Yuigahama.",
+      "stay": "lyf Shinjuku",
       "highlights": [
-        "Highway bus from Shibuya → Kawaguchiko — 2 hrs, ¥2,200",
-        "Chureito Pagoda — 398 steps to THE photo. Best light before noon.",
-        "Kawaguchiko Ropeway to Mt Tenjō — panoramic Fuji + lake view",
-        "Walk the north shore of Lake Kawaguchi — Fuji reflected in water"
+        "10:00 — JR Yokosuka Line, Tokyo → Hase (~1h)",
+        "12:30 — Kotoku-in: the Daibutsu, 13m of bronze cast in 1252",
+        "13:30 — Lunch at Garden House Kamakura (modern menu, easy with diet)",
+        "15:00 — Yuigahama Beach walk along the shore",
+        "16:30 — Cafe-hopping in Hase, then back to Tokyo by 18:00"
       ],
       "activities": [
-        {
-          "time": "06:30",
-          "name": "Highway bus to Kawaguchiko",
-          "duration": "2 hrs",
-          "cost": 2200,
-          "type": "transport"
-        },
-        {
-          "time": "09:00",
-          "name": "Chureito Pagoda (398 steps)",
-          "type": "attraction"
-        },
-        {
-          "time": "12:00",
-          "name": "Kawaguchiko Ropeway",
-          "cost": 1000,
-          "type": "attraction"
-        },
-        {
-          "time": "14:00",
-          "name": "Lake Kawaguchi north shore walk",
-          "type": "explore"
-        },
-        {
-          "time": "17:00",
-          "name": "Return bus to Shibuya",
-          "cost": 2200,
-          "type": "transport"
-        }
+        { "time": "10:00", "name": "JR Yokosuka Line → Kamakura", "duration": "60 min", "cost": 940, "type": "transport" },
+        { "time": "11:30", "name": "Hase Station — start the route", "type": "transport" },
+        { "time": "12:30", "name": "Kotoku-in (Great Buddha)", "type": "attraction" },
+        { "time": "13:30", "name": "Lunch — Garden House Kamakura", "type": "food" },
+        { "time": "15:00", "name": "Yuigahama Beach walk", "type": "explore" },
+        { "time": "16:30", "name": "Cafes in Hase", "type": "food" },
+        { "time": "18:00", "name": "Return to Tokyo", "type": "transport" }
       ],
       "transport": {
-        "mode": "Highway bus",
-        "from": "Shibuya",
-        "to": "Kawaguchiko",
-        "duration": "2 hrs",
-        "cost": 2200,
+        "mode": "JR Yokosuka Line",
+        "from": "Tokyo",
+        "to": "Kamakura",
+        "duration": "60 min",
+        "cost": 940,
         "jrPass": false,
         "roundTrip": true
       },
-      "food": "Limited veg/GF options around Kawaguchiko. Bring snacks from Tokyo. Rice dishes at lakeside restaurants.",
-      "tip": "Clouds roll in by midday almost daily. The early bus is non-negotiable.",
-      "keyCost": 2200
+      "food": "Garden House Kamakura (Yuigahama) — modern menu, easy with diet. Magokoro near the Daibutsu — small vegan cafe.",
+      "tip": "Mid-May = early hydrangeas at Hase-dera. Avoid Sunday afternoon crowds at the Buddha — walk straight from the train.",
+      "keyCost": 940
     },
     {
       "day": 5,
-      "date": "2026-05-12",
-      "dateLabel": "Tue, May 12",
-      "title": "Tokyo → Kumamoto",
-      "region": "kyushu",
-      "tagline": "A quick flight south. By lunch, you're in Kyushu.",
-      "stay": "Matsuya Bekkan",
+      "date": "2026-05-11",
+      "dateLabel": "Mon, May 11",
+      "title": "Mt Fuji Loop",
+      "region": "fuji",
+      "tagline": "Pick up the rental at 7:30. Lake reflections at Oishi, Iyashi village, then home before the cloud rolls in.",
+      "stay": "lyf Shinjuku",
       "highlights": [
-        "Flight: Haneda → Kumamoto — 1h50, arrive by lunch",
-        "Limousine bus from Shibuya to Haneda (30 min, ¥1,300)",
-        "Kumamoto Castle — rebuilt after 2016 earthquake, stunning stone walls",
-        "Shimotori covered arcade — Kumamoto's beating heart",
-        "Whole afternoon free to explore — way more time than the 6hr shinkansen"
+        "07:30 — Times Car / Toyota Rent pickup in Shinjuku (mid-size, IDP confirmed)",
+        "09:30 — Oishi Park, north shore of Lake Kawaguchi — classic Fuji + lake view",
+        "11:30 — Kubota Itchiku Art Museum (optional)",
+        "13:00 — Lunch at Cafe Troisieme Marche (aesthetic + flexible)",
+        "14:30 — Iyashi-no-Sato Nenba — traditional thatched village",
+        "19:00 — Back in Shinjuku, pack for Kumamoto"
       ],
       "activities": [
-        {
-          "time": "07:00",
-          "name": "Check out Shibuya hotel",
-          "type": "logistics"
-        },
-        {
-          "time": "07:30",
-          "name": "Limousine bus Shibuya → Haneda",
-          "duration": "30 min",
-          "cost": 1300,
-          "type": "transport"
-        },
-        {
-          "time": "11:25",
-          "name": "JAL629 HND → KMJ",
-          "duration": "1h50",
-          "cost": 15000,
-          "note": "Seats 27B, 27A, 26A, 26B — Economy",
-          "type": "transport"
-        },
-        {
-          "time": "13:15",
-          "name": "Arrive Kumamoto Airport",
-          "type": "transport"
-        },
-        {
-          "time": "12:00",
-          "name": "Airport bus to city center",
-          "duration": "50 min",
-          "cost": 900,
-          "type": "transport"
-        },
-        {
-          "time": "13:00",
-          "name": "Check into hotel, lunch",
-          "type": "food"
-        },
-        {
-          "time": "15:00",
-          "name": "Kumamoto Castle",
-          "type": "attraction"
-        },
-        {
-          "time": "17:00",
-          "name": "Shimotori arcade",
-          "type": "explore"
-        },
-        {
-          "time": "19:00",
-          "name": "Dinner in Shimotori",
-          "type": "food"
-        }
+        { "time": "07:30", "name": "Pickup rental car in Shinjuku", "type": "logistics" },
+        { "time": "09:30", "name": "Oishi Park, Lake Kawaguchi", "type": "attraction" },
+        { "time": "11:30", "name": "Kubota Itchiku Art Museum (optional)", "type": "attraction" },
+        { "time": "13:00", "name": "Lunch — Cafe Troisieme Marche", "type": "food" },
+        { "time": "14:30", "name": "Iyashi-no-Sato Nenba", "type": "explore" },
+        { "time": "19:00", "name": "Return car, repack at lyf", "type": "logistics" }
       ],
       "transport": {
-        "mode": "Flight",
-        "from": "Tokyo (HND)",
-        "to": "Kumamoto (KMJ)",
-        "carrier": "JAL",
-        "flight": "JAL629",
-        "departure": "11:25",
-        "arrival": "13:15",
-        "seats": "27B, 27A, 26A, 26B",
-        "class": "Economy",
-        "duration": "1h50",
-        "cost": 15000,
-        "jrPass": false
+        "mode": "Rental car (mid-size)",
+        "from": "Shinjuku",
+        "to": "Kawaguchiko loop",
+        "duration": "2 hrs each way",
+        "jrPass": false,
+        "roundTrip": true
       },
-      "food": "Kumamoto is famous for horse meat (basashi) — not for you, but the veggie izakayas near Shimotori are excellent. Try tofu steak sets.",
-      "tip": "JAL629 booked — seats 27B, 27A, 26A, 26B. Limousine bus from Shibuya to Haneda ~30 min.",
-      "keyCost": 15000
+      "food": "Konbini stocks before leaving — Fuji-area lunch options are limited. Cafe Troisieme Marche is the safe vegan spot.",
+      "tip": "Clouds roll in by midday almost daily. Hit Oishi Park first while Fuji is still clean. Backup: Cisco Coffee."
     },
     {
       "day": 6,
-      "date": "2026-05-13",
-      "dateLabel": "Wed, May 13",
-      "title": "Takachiho Gorge",
+      "date": "2026-05-12",
+      "dateLabel": "Tue, May 12",
+      "title": "Tokyo → Kumamoto · JAL629",
       "region": "kyushu",
-      "tagline": "Mythical gorge, towering basalt cliffs, and a rowboat ride through a waterfall canyon.",
+      "tagline": "South to Kyushu by lunch. Pick up the kei car at the airport, drop bags, and walk the castle.",
       "stay": "Matsuya Bekkan",
       "highlights": [
-        "Drive from Kumamoto to Takachiho — ~1.5 hrs through volcanic highlands",
-        "Takachiho Gorge boat ride — row through basalt canyon under Manai Falls",
-        "Amano Iwato Shrine — the cave where Amaterasu hid, plunging the world into darkness",
-        "Amano Yasukawara — eerie riverside cave with thousands of stacked stones",
-        "Takachiho Shrine — ancient cedar grove, over 1,900 years old"
+        "07:30 — Check out lyf, monorail/limousine to HND",
+        "11:50 — JAL629 HND → KMJ (lands 13:35)",
+        "14:00 — Nippon Rent-A-Car C08669 pickup (kei car) at KMJ",
+        "16:00 — Matsuya Bekkan check-in, drop bags",
+        "16:30 — Kumamoto Castle in the late light",
+        "18:00 — Dinner at Sakuranobaba Josaien — restaurant village under the castle"
       ],
       "activities": [
-        {
-          "time": "07:30",
-          "name": "Pick up rental car, drive to Takachiho",
-          "duration": "1.5 hrs",
-          "type": "transport"
-        },
-        {
-          "time": "09:30",
-          "name": "Takachiho Gorge boat ride",
-          "duration": "30 min",
-          "cost": 4100,
-          "bookAhead": true,
-          "type": "attraction"
-        },
-        {
-          "time": "11:00",
-          "name": "Gorge walking trail",
-          "type": "explore"
-        },
-        {
-          "time": "12:00",
-          "name": "Lunch in Takachiho town",
-          "type": "food"
-        },
-        {
-          "time": "13:30",
-          "name": "Amano Iwato Shrine",
-          "type": "attraction"
-        },
-        {
-          "time": "14:30",
-          "name": "Amano Yasukawara cave",
-          "type": "attraction"
-        },
-        {
-          "time": "16:00",
-          "name": "Takachiho Shrine",
-          "type": "attraction"
-        },
-        {
-          "time": "17:00",
-          "name": "Drive back to Kumamoto",
-          "duration": "1.5 hrs",
-          "type": "transport"
-        }
+        { "time": "07:30", "name": "Check out lyf Shinjuku", "type": "logistics" },
+        { "time": "08:30", "name": "Limousine bus / monorail → Haneda", "duration": "30 min", "type": "transport" },
+        { "time": "11:50", "name": "JAL629 HND → KMJ", "duration": "1h 45min", "type": "transport" },
+        { "time": "14:00", "name": "Nippon Rent-A-Car pickup (C08669)", "type": "logistics" },
+        { "time": "16:00", "name": "Matsuya Bekkan check-in", "type": "accommodation" },
+        { "time": "16:30", "name": "Kumamoto Castle", "type": "attraction" },
+        { "time": "18:00", "name": "Sakuranobaba Josaien dinner", "type": "food" }
       ],
       "transport": {
-        "mode": "Rental car",
-        "from": "Kumamoto",
-        "to": "Takachiho",
-        "duration": "1.5 hrs each way",
-        "jrPass": false,
-        "roundTrip": true
+        "mode": "Flight JAL629",
+        "from": "Tokyo (HND)",
+        "to": "Kumamoto (KMJ)",
+        "carrier": "JAL",
+        "duration": "1h 45min",
+        "jrPass": false
       },
-      "food": "Limited veggie options in Takachiho. Try the local nagashi somen (flowing noodles) if wheat is OK, otherwise pack snacks from Kumamoto konbini.",
-      "tip": "Book gorge boat ride online in advance — slots sell out by mid-morning in May. Arrive early for shortest queue.",
-      "keyCost": 4100
+      "food": "Sakuranobaba Josaien — under-castle restaurant village with multiple options. Veggie izakayas around Kamitori arcade.",
+      "tip": "Kei car on Aso roads will be tight — ask Nippon about an upgrade at the counter if it feels underpowered.",
+      "keyCost": 15000
     },
     {
       "day": 7,
-      "date": "2026-05-14",
-      "dateLabel": "Thu, May 14",
-      "title": "Bike on Mt Aso",
+      "date": "2026-05-13",
+      "dateLabel": "Wed, May 13",
+      "title": "Aso E-bikes & Kurokawa Onsen",
       "region": "kyushu",
-      "tagline": "Pedal through the world's largest caldera. Volcanic panoramas, rolling grasslands, wide open sky.",
+      "tagline": "World's largest caldera by morning, a hidden onsen village by afternoon. Three baths on the tegata pass.",
       "stay": "Matsuya Bekkan",
       "highlights": [
-        "Drive from Kumamoto to Aso area — ~1 hr through mountains",
-        "E-bike ride through Aso's vast caldera grasslands",
-        "Nakadake Crater — steaming vents, turquoise lake (if accessible)",
-        "Kusasenri — sweeping green meadows inside the caldera",
-        "Afternoon ride back through rice fields and farm villages"
+        "08:00 — Drive to Mt Aso (kei car, allow extra time on inclines)",
+        "09:30 — Naka-dake crater (if open) + Kusasenri grasslands",
+        "11:30 — E-bike rental in Aso town — ride around the caldera",
+        "15:00 — Kurokawa Onsen, tegata pass = 3 baths for ¥1,500",
+        "18:00 — Dinner in Kurokawa, drive back to Kumamoto by ~21:00"
       ],
       "activities": [
-        {
-          "time": "07:30",
-          "name": "Drive to Aso",
-          "duration": "1 hr",
-          "type": "transport"
-        },
-        {
-          "time": "09:00",
-          "name": "E-bike ride through Aso caldera",
-          "duration": "3–4 hrs",
-          "cost": 8000,
-          "bookAhead": true,
-          "type": "cycling"
-        },
-        {
-          "time": "13:00",
-          "name": "Lunch in Aso town",
-          "type": "food"
-        },
-        {
-          "time": "14:30",
-          "name": "Nakadake Crater visit (if accessible)",
-          "type": "attraction"
-        },
-        {
-          "time": "16:00",
-          "name": "Kusasenri grasslands",
-          "type": "explore"
-        },
-        {
-          "time": "17:30",
-          "name": "Drive back to Kumamoto",
-          "duration": "1 hr",
-          "type": "transport"
-        }
+        { "time": "08:00", "name": "Drive Kumamoto → Aso", "duration": "1.5 hrs", "type": "transport" },
+        { "time": "09:30", "name": "Naka-dake + Kusasenri grasslands", "type": "attraction" },
+        { "time": "11:30", "name": "E-bike around the caldera", "duration": "2 hrs", "cost": 3000, "bookAhead": true, "type": "cycling" },
+        { "time": "13:30", "name": "Lunch in Aso", "type": "food" },
+        { "time": "14:30", "name": "Drive Aso → Kurokawa Onsen", "duration": "40 min", "type": "transport" },
+        { "time": "15:00", "name": "Kurokawa onsen — tegata pass (3 baths)", "cost": 1500, "type": "onsen" },
+        { "time": "18:00", "name": "Dinner in Kurokawa", "type": "food" },
+        { "time": "19:00", "name": "Drive back to Kumamoto", "duration": "2 hrs", "type": "transport" }
       ],
       "transport": {
-        "mode": "Rental car",
+        "mode": "Kei car",
         "from": "Kumamoto",
-        "to": "Mt Aso",
-        "duration": "1 hr each way",
-        "jrPass": false,
-        "roundTrip": true
+        "to": "Aso → Kurokawa",
+        "duration": "long day driving",
+        "jrPass": false
       },
-      "food": "Limited veggie options in Aso area. Bring snacks from Kumamoto konbini. Rice-bowl restaurants for GF.",
-      "tip": "Car rental makes Aso much more flexible than the train. Helmets provided for the e-bike ride.",
-      "keyCost": 8000,
+      "food": "Limited veggie options in Aso area. Print the 'no fish, no dashi' card. Kurokawa kitchens are more accommodating.",
+      "tip": "Tegata pass (¥1,500) lets you bath-hop 3 onsen in Kurokawa. Bring a small towel and tie up long hair.",
+      "keyCost": 1500,
       "isCyclingDay": true
     },
     {
       "day": 8,
-      "date": "2026-05-15",
-      "dateLabel": "Fri, May 15",
-      "title": "Beach Day",
+      "date": "2026-05-14",
+      "dateLabel": "Thu, May 14",
+      "title": "Takachiho Gorge — Kayaks",
       "region": "kyushu",
-      "tagline": "Salt air and slow pace. A lazy beach day before heading north.",
+      "tagline": "Manai-no-Taki up close — kayak under the waterfall, walk the Gokase path, end at the cave shrine.",
       "stay": "Matsuya Bekkan",
       "highlights": [
-        "Drive to the coast — Kumamoto has beautiful beaches within an hour",
-        "Amakusa Gokyo (Five Bridges) — iconic chain linking mainland to islands",
-        "Beach time — white sand, turquoise water, almost no tourists",
-        "Explore coastal villages and port towns",
-        "Golden hour drive back across the bridges"
+        "07:30 — Leave Kumamoto (~2h drive through volcanic highlands)",
+        "10:00 — Kayaks under Manai-no-Taki — book at eipro.jp/takachiho1!",
+        "11:00 — Local lunch (verify dashi-free options)",
+        "12:30 — Gokase walking path along the gorge",
+        "14:00 — Amano-Iwato Shrine — the cave where Amaterasu hid",
+        "18:00 — Hotel + light dinner in Kumamoto"
       ],
       "activities": [
-        {
-          "time": "09:00",
-          "name": "Drive to coast / Amakusa",
-          "duration": "1–2 hrs",
-          "type": "transport"
-        },
-        {
-          "time": "10:30",
-          "name": "Cross Amakusa Gokyo (Five Bridges)",
-          "type": "explore"
-        },
-        {
-          "time": "11:30",
-          "name": "Beach time",
-          "type": "explore"
-        },
-        {
-          "time": "13:00",
-          "name": "Lunch at coastal restaurant",
-          "type": "food"
-        },
-        {
-          "time": "15:00",
-          "name": "Explore coastal village",
-          "type": "explore"
-        },
-        {
-          "time": "17:00",
-          "name": "Drive back to Kumamoto",
-          "duration": "1–2 hrs",
-          "type": "transport"
-        }
+        { "time": "07:30", "name": "Drive Kumamoto → Takachiho", "duration": "2 hrs", "type": "transport" },
+        { "time": "10:00", "name": "Manai-no-Taki kayaks", "duration": "30 min", "cost": 4100, "bookAhead": true, "type": "attraction" },
+        { "time": "11:00", "name": "Lunch in Takachiho town", "type": "food" },
+        { "time": "12:30", "name": "Gokase walking path", "type": "explore" },
+        { "time": "14:00", "name": "Amano-Iwato Shrine", "type": "attraction" },
+        { "time": "16:00", "name": "Drive back to Kumamoto", "duration": "2 hrs", "type": "transport" },
+        { "time": "18:00", "name": "Hotel + dinner", "type": "food" }
       ],
       "transport": {
-        "mode": "Rental car",
+        "mode": "Kei car",
         "from": "Kumamoto",
-        "to": "Coast / Amakusa",
-        "duration": "1–2 hrs each way",
+        "to": "Takachiho",
+        "duration": "2 hrs each way",
         "jrPass": false,
         "roundTrip": true
       },
-      "food": "Port restaurants serve fresh seafood. For veggie options, bring snacks — choices are limited in rural areas.",
-      "tip": "Last day with the rental car — return it this evening or early tomorrow before heading to Osaka."
+      "food": "Takachiho soba is everywhere — verify it's served without bonito dashi. Bring konbini snacks for the road.",
+      "tip": "Kayak slots disappear fast — book at eipro.jp/takachiho1 the moment they open. Arrive 15 min early.",
+      "keyCost": 4100
     },
     {
       "day": 9,
-      "date": "2026-05-16",
-      "dateLabel": "Sat, May 16",
-      "title": "Kumamoto → Osaka",
-      "region": "kansai",
-      "tagline": "Return the car, board the shinkansen, and trade volcanoes for neon.",
-      "stay": "Resol Trinity Osaka",
+      "date": "2026-05-15",
+      "dateLabel": "Fri, May 15",
+      "title": "Amakusa Islands — Beach Day",
+      "region": "kyushu",
+      "tagline": "Five Bridges out to the islands, white sand at Tomioka, optional dolphins, and one last onsen back home.",
+      "stay": "Matsuya Bekkan",
       "highlights": [
-        "Return rental car in Kumamoto morning",
-        "Shinkansen Kumamoto → Shin-Osaka — ~3.5 hrs via Hakata",
-        "Check into Resol Trinity Osaka",
-        "Evening: Dōtonbori — neon-lit canal, Glico Running Man sign",
-        "Street food crawl — takoyaki, okonomiyaki, yakiimo"
+        "09:30 — Drive Kumamoto → Amakusa (~1.5h)",
+        "11:00 — Cross the Amakusa Five Bridges chain",
+        "11:30 — Tomioka or Shimoda beach — turquoise water, almost no tourists",
+        "13:00 — Waterside lunch at a port restaurant",
+        "15:30 — Optional dolphin-watching cruise (~¥3,000, 1.5h)",
+        "20:00 — Onsen at Matsuya + final packing for Osaka"
       ],
       "activities": [
-        {
-          "time": "08:00",
-          "name": "Return rental car",
-          "type": "logistics"
-        },
-        {
-          "time": "09:00",
-          "name": "Shinkansen Kumamoto → Shin-Osaka",
-          "duration": "3.5 hrs",
-          "cost": 18000,
-          "note": "Via Hakata transfer",
-          "type": "transport"
-        },
-        {
-          "time": "13:00",
-          "name": "Arrive Shin-Osaka, check into Resol Trinity Osaka",
-          "type": "accommodation"
-        },
-        {
-          "time": "15:00",
-          "name": "Dōtonbori canal walk",
-          "type": "explore"
-        },
-        {
-          "time": "17:00",
-          "name": "Street food crawl",
-          "type": "food"
-        },
-        {
-          "time": "19:00",
-          "name": "Hozenji Yokocho",
-          "type": "explore"
-        }
+        { "time": "09:30", "name": "Drive Kumamoto → Amakusa", "duration": "1.5 hrs", "type": "transport" },
+        { "time": "11:00", "name": "Amakusa Five Bridges drive", "type": "explore" },
+        { "time": "11:30", "name": "Beach time at Tomioka / Shimoda", "type": "explore" },
+        { "time": "13:00", "name": "Waterside lunch", "type": "food" },
+        { "time": "15:30", "name": "Dolphin cruise (optional)", "duration": "1.5 hrs", "cost": 3000, "type": "attraction" },
+        { "time": "17:00", "name": "Sunset spot", "type": "explore" },
+        { "time": "18:00", "name": "Drive back to Kumamoto", "duration": "1.5 hrs", "type": "transport" },
+        { "time": "20:00", "name": "Onsen + final packing", "type": "rest" }
       ],
       "transport": {
-        "mode": "Shinkansen",
+        "mode": "Kei car",
         "from": "Kumamoto",
-        "to": "Shin-Osaka",
-        "via": "Hakata",
-        "duration": "~3.5 hrs",
-        "cost": 18000,
-        "jrPass": true
+        "to": "Amakusa",
+        "duration": "1.5 hrs each way",
+        "jrPass": false,
+        "roundTrip": true
       },
-      "food": "Paprika Shokudo Vegan (Namba). Green Earth (Shinsaibashi). Dōtonbori at night is pure electricity.",
-      "tip": "Osaka's motto is kuidaore — eat till you drop. For GF okonomiyaki, ask 'kome-ko de dekimasu ka?' (rice flour?).",
-      "keyCost": 18000
+      "food": "Port restaurants serve fresh seafood — for veg/GF, supermarket bento is the safer bet. Pack snacks for the beach.",
+      "tip": "Last full day with the kei car. Tomorrow morning is car return + Sakura 752 to Osaka — pack tonight.",
+      "keyCost": 3000
     },
     {
       "day": 10,
-      "date": "2026-05-17",
-      "dateLabel": "Sun, May 17",
-      "title": "Osaka Exploration",
+      "date": "2026-05-16",
+      "dateLabel": "Sat, May 16",
+      "title": "Kumamoto → Osaka · Sakura 752",
       "region": "kansai",
-      "tagline": "Castle parks, market stalls, and the city that never stops eating.",
-      "stay": "Resol Trinity Osaka",
+      "tagline": "Return the car at 10:00. Sakura 752 boards at 11:42. Three hours later you're under the Glico sign.",
+      "stay": "Hotel Resol Trinity Osaka",
       "highlights": [
-        "Osaka Castle — 8-story keep, panoramic city views, ¥600",
-        "Walk through Castle Park — beautiful in mid-May greenery",
-        "Kuromon Market — 'Osaka's Kitchen', browse 170+ stalls",
-        "Shinsekai — retro district under Tsutenkaku Tower",
-        "Shinsaibashi arcade — covered shopping stretching for blocks"
+        "09:30 — Check out Matsuya Bekkan",
+        "10:00 — Return Nippon car at Kumamoto Station Shinkansen Exit",
+        "11:42 — Sakura 752 Kumamoto → Shin-Osaka (3h 17min) · seats 16-CD/17-CD car 4",
+        "15:30 — Resol Trinity Osaka check-in",
+        "Evening — Dotonbori, first neon experience"
       ],
       "activities": [
-        {
-          "time": "09:00",
-          "name": "Osaka Castle",
-          "cost": 600,
-          "type": "attraction"
-        },
-        {
-          "time": "10:30",
-          "name": "Castle Park walk",
-          "type": "explore"
-        },
-        {
-          "time": "12:00",
-          "name": "Kuromon Market",
-          "type": "food"
-        },
-        {
-          "time": "14:00",
-          "name": "Shinsekai & Tsutenkaku Tower",
-          "type": "explore"
-        },
-        {
-          "time": "16:00",
-          "name": "Shinsaibashi arcade",
-          "type": "explore"
-        }
+        { "time": "09:00", "name": "Breakfast + final packing", "type": "food" },
+        { "time": "09:30", "name": "Check out Matsuya Bekkan", "type": "logistics" },
+        { "time": "10:00", "name": "Return Nippon car at Kumamoto Station", "type": "logistics" },
+        { "time": "11:42", "name": "Sakura 752 Kumamoto → Shin-Osaka", "duration": "3h 17min", "cost": 17400, "note": "Seats 16-CD/17-CD car 4 · ref. #2002", "type": "transport" },
+        { "time": "15:30", "name": "Resol Trinity Osaka check-in", "type": "accommodation" },
+        { "time": "16:00", "name": "Late lunch + first Osaka impressions", "type": "food" },
+        { "time": "20:00", "name": "Dotonbori first walk — neon + Glico sign", "type": "explore" }
       ],
       "transport": {
-        "mode": "Osaka Metro + walking",
-        "note": "All within central Osaka"
+        "mode": "Shinkansen Sakura 752",
+        "from": "Kumamoto",
+        "to": "Shin-Osaka",
+        "duration": "3h 17min",
+        "cost": 17400,
+        "jrPass": false,
+        "note": "4 pax · car 4 · seats 16-CD/17-CD · ref. #2002"
       },
-      "food": "Kuromon Market — look for fresh fruit, pickles, rice dishes. Mochi (glutinous rice ≠ gluten!) is naturally GF.",
-      "tip": "Kuromon Market before 2pm — stalls close early. Supermarket bento after 7pm is 30-50% off.",
-      "keyCost": 600
+      "food": "First Dotonbori walk is dinner — Optimus Cafe (vegan) on the canal, Tongdam (Thai backup), or Paprika Shokudo Vegan in Umeda.",
+      "tip": "Reservation already includes seats. Pack a snack for the train — most ekiben are fish-based.",
+      "keyCost": 17400
     },
     {
       "day": 11,
-      "date": "2026-05-18",
-      "dateLabel": "Mon, May 18",
-      "title": "Shimanami Kaido",
-      "region": "seto",
-      "tagline": "Day trip from Osaka. 70 km across 6 islands by bike — the ride of a lifetime.",
-      "stay": "Resol Trinity Osaka",
+      "date": "2026-05-17",
+      "dateLabel": "Sun, May 17",
+      "title": "Classic Osaka — Dotonbori & Namba",
+      "region": "kansai",
+      "tagline": "The motto is kuidaore — eat till you drop. Vintage in Ame-Mura, neons at sundown, Hozenji lanterns at night.",
+      "stay": "Hotel Resol Trinity Osaka",
       "highlights": [
-        "Early shinkansen Shin-Osaka → Fukuyama, then local to Onomichi",
-        "Pick up reserved bikes at Onomichi terminal",
-        "Ride across 6 islands — soaring bridges, Seto Inland Sea blue",
-        "Stop at Setoda, Omishima shrines, beaches along the way",
-        "Drop bikes at Imabari terminal",
-        "Train Imabari → Okayama → Shin-Osaka back to hotel"
+        "12:00 — Lunch at Paprika Shokudo Vegan (Umeda) or Optimus Cafe",
+        "14:30 — Namba — Shinsaibashi shopping arcade",
+        "16:30 — Dotonbori in daylight, then back at neon",
+        "18:00 — America-Mura — vintage shops, cafes",
+        "21:00 — Glico Sign + Hozenji Yokocho lantern alley",
+        "Pack the overnight bag — Yamato ships Resol → Katsuragi tomorrow morning"
       ],
       "activities": [
-        {
-          "time": "06:00",
-          "name": "Shinkansen Shin-Osaka → Fukuyama",
-          "duration": "1h30",
-          "type": "transport"
-        },
-        {
-          "time": "07:45",
-          "name": "Local train Fukuyama → Onomichi",
-          "duration": "20 min",
-          "type": "transport"
-        },
-        {
-          "time": "08:30",
-          "name": "Pick up reserved bikes at Onomichi terminal",
-          "cost": 4000,
-          "type": "cycling"
-        },
-        {
-          "time": "09:00",
-          "name": "Ferry to Mukaishima, Shimanami Kaido ride begins",
-          "type": "cycling"
-        },
-        {
-          "time": "15:00",
-          "name": "Arrive Imabari, drop bikes",
-          "type": "cycling"
-        },
-        {
-          "time": "15:30",
-          "name": "Train Imabari → Okayama → Shin-Osaka",
-          "duration": "3.5 hrs",
-          "cost": 11000,
-          "type": "transport"
-        },
-        {
-          "time": "19:00",
-          "name": "Arrive Osaka, back to Resol Trinity",
-          "type": "accommodation"
-        }
+        { "time": "12:00", "name": "Lunch — Paprika Shokudo Vegan / Optimus Cafe", "type": "food" },
+        { "time": "14:30", "name": "Shinsaibashi shopping arcade", "type": "explore" },
+        { "time": "16:30", "name": "Dotonbori canal walk", "type": "explore" },
+        { "time": "18:00", "name": "America-Mura (Ame-Mura)", "type": "explore" },
+        { "time": "19:30", "name": "Spontaneous Dotonbori dinner", "type": "food" },
+        { "time": "21:00", "name": "Glico Sign + Hozenji Yokocho", "type": "explore" },
+        { "time": "22:30", "name": "Pack overnight bag for Yamato", "type": "logistics" }
       ],
       "transport": {
-        "mode": "Shinkansen + E-bike + JR",
-        "note": "Day trip: Osaka → Onomichi → bike → Imabari → Osaka",
+        "mode": "Osaka Metro + walking",
+        "note": "Recovery day — lots of walking in Namba"
+      },
+      "food": "Paprika Shokudo Vegan (Umeda) — book weekend! Optimus Cafe — vegan in Dotonbori. Tongdam — Thai backup.",
+      "tip": "Pack only the daypack you'll need on tomorrow's bike ride. Yamato AM pickup ships your overnight bag to Katsuragi by evening."
+    },
+    {
+      "day": 12,
+      "date": "2026-05-18",
+      "dateLabel": "Mon, May 18",
+      "title": "Shimanami 70km · Matsuyama · Dogo Onsen",
+      "region": "seto",
+      "tagline": "Six islands by e-bike, then a train across to Shikoku, then 8pm in the Honkan baths. Epic.",
+      "stay": "Dogo-no-Yado Katsuragi",
+      "highlights": [
+        "06:00 — Shinkansen Shin-Osaka → Fukuyama (~1h)",
+        "08:00 — Onomichi e-bike pickup, ferry to Mukaishima",
+        "11:30 — Setoda lunch on Ikuchi-jima (lemons!)",
+        "16:30 — Imabari finish, return bikes",
+        "17:00 — Train to Matsuyama (~40 min)",
+        "20:00 — Dogo Onsen Honkan (reservation confirmed)",
+        "21:30 — Bocchan dango on the Dogo shopping street"
+      ],
+      "activities": [
+        { "time": "05:30", "name": "Leave Resol Trinity (daypack only)", "type": "logistics" },
+        { "time": "06:00", "name": "Shinkansen Shin-Osaka → Fukuyama", "duration": "1 hr", "type": "transport" },
+        { "time": "07:30", "name": "Local train Fukuyama → Onomichi", "duration": "20 min", "type": "transport" },
+        { "time": "08:00", "name": "Onomichi e-bike pickup", "cost": 4000, "bookAhead": true, "type": "cycling" },
+        { "time": "08:30", "name": "Ferry to Mukaishima — start the ride", "type": "cycling" },
+        { "time": "11:30", "name": "Setoda lunch (Ikuchi-jima)", "type": "food" },
+        { "time": "14:00", "name": "Omishima shrine + coffee", "type": "explore" },
+        { "time": "16:30", "name": "Imabari finish — return bikes", "type": "cycling" },
+        { "time": "17:00", "name": "Train Imabari → Matsuyama", "duration": "40 min", "type": "transport" },
+        { "time": "18:00", "name": "Check in at Katsuragi (bag delivered)", "type": "accommodation" },
+        { "time": "19:00", "name": "Light dinner near Dogo", "type": "food" },
+        { "time": "20:00", "name": "Dogo Onsen Honkan (reserved)", "type": "onsen" },
+        { "time": "21:30", "name": "Bocchan dango + Dogo shopping street", "type": "explore" }
+      ],
+      "transport": {
+        "mode": "Shinkansen + e-bike + train",
+        "from": "Osaka",
+        "to": "Onomichi → Imabari → Matsuyama",
+        "duration": "all-day combo",
         "cost": 15000
       },
-      "food": "Pack snacks before starting. Setoda has Dolce gelato shop. Omishima has mikan everything. Konbini stops on islands.",
-      "tip": "Bikes reserved in advance. Follow the blue line on the road. E-bikes worth every yen. Long day but unforgettable.",
+      "food": "Setoda lemon stops on Ikuchi-jima. Konbini fuel on Mukaishima/Omishima. Light dinner near Dogo before the 20:00 bath.",
+      "tip": "Daypack only — overnight bag is in Matsuyama already. Padded shorts, gloves, sunglasses. Helmet usually included with rental.",
       "keyCost": 15000,
       "isCyclingDay": true,
       "shimanamiKaido": {
-        "distance": "60–70 km",
+        "distance": "70 km",
         "duration": "6–8 hrs",
         "islands": [
           "Mukaishima",
@@ -798,204 +530,149 @@
       }
     },
     {
-      "day": 12,
+      "day": 13,
       "date": "2026-05-19",
       "dateLabel": "Tue, May 19",
-      "title": "Osaka — Rest & Explore",
-      "region": "kansai",
-      "tagline": "Recovery day. Rest your legs, explore at your own pace.",
-      "stay": "Resol Trinity Osaka",
+      "title": "Naoshima Art Island · Chichu 14:30",
+      "region": "seto",
+      "tagline": "Limited Express across to Takamatsu, ferry to Naoshima, Chichu locked in at 14:30. Yellow Pumpkin at golden hour.",
+      "stay": "Hotel Resol Trinity Osaka",
       "highlights": [
-        "Sleep in — your legs deserve it after yesterday's ride",
-        "Free day to explore at your own pace",
-        "Option: Nara day trip — friendly deer, giant Buddha (45 min by train)",
-        "Option: Kyoto day trip — Fushimi Inari, bamboo grove (30 min by train)",
-        "Option: Den Den Town — Osaka's Akihabara for electronics & anime"
+        "08:30 — Ishizuchi Limited Express Matsuyama → Takamatsu (~2h 40m)",
+        "12:10 — Ferry Takamatsu → Miyanoura (~50 min)",
+        "14:30 — Chichu Art Museum (reserved) — Tadao Ando + Turrell + Monet",
+        "16:00 — Lee Ufan Museum, then Benesse House",
+        "17:30 — Yayoi Kusama Yellow Pumpkin (pier photo)",
+        "Evening — ferry Miyanoura → Uno, Shinkansen Okayama → Shin-Osaka"
       ],
       "activities": [
-        {
-          "time": "10:00",
-          "name": "Late start — rest day",
-          "type": "rest"
-        },
-        {
-          "time": "11:00",
-          "name": "Free exploration or day trip",
-          "note": "Nara, Kyoto, or staying in Osaka — your call",
-          "type": "explore"
-        },
-        {
-          "time": "19:00",
-          "name": "Dinner in Osaka",
-          "type": "food"
-        }
+        { "time": "07:00", "name": "Breakfast at Katsuragi", "type": "food" },
+        { "time": "08:00", "name": "Yamato Katsuragi → Resol (~¥2,000/bag)", "type": "logistics" },
+        { "time": "08:15", "name": "Check out Katsuragi", "type": "logistics" },
+        { "time": "08:30", "name": "Ishizuchi Ltd Express → Takamatsu", "duration": "2h 40min", "type": "transport" },
+        { "time": "12:10", "name": "Ferry Takamatsu → Miyanoura", "duration": "50 min", "type": "transport" },
+        { "time": "13:15", "name": "Lunch — Benesse Garden Cafe", "type": "food" },
+        { "time": "14:30", "name": "Chichu Art Museum (reserved)", "cost": 2100, "bookAhead": true, "type": "attraction" },
+        { "time": "16:00", "name": "Lee Ufan Museum", "type": "attraction" },
+        { "time": "16:45", "name": "Benesse House Museum", "type": "attraction" },
+        { "time": "17:30", "name": "Yayoi Kusama Yellow Pumpkin (pier)", "type": "attraction" },
+        { "time": "18:30", "name": "Ferry Miyanoura → Uno", "duration": "20 min", "type": "transport" },
+        { "time": "19:00", "name": "Bus + train Uno → Okayama", "type": "transport" },
+        { "time": "20:00", "name": "Shinkansen Okayama → Shin-Osaka", "type": "transport" },
+        { "time": "21:30", "name": "Resol Trinity (luggage waiting)", "type": "accommodation" }
       ],
       "transport": {
-        "mode": "Osaka Metro / JR",
-        "note": "Flexible — depends on day trip choice"
+        "mode": "Train + ferry + Shinkansen",
+        "from": "Matsuyama",
+        "to": "Naoshima → Osaka",
+        "duration": "all-day chain",
+        "cost": 12000
       },
-      "food": "If Kyoto: Shigetsu at Tenryū-ji (shōjin ryōri). If Nara: veggie options near Nara Park. If Osaka: revisit Dōtonbori favorites.",
-      "tip": "Nara's deer are adorable but assertive. Buy shika senbei (deer crackers) and prepare for a mob."
-    },
-    {
-      "day": 13,
-      "date": "2026-05-20",
-      "dateLabel": "Wed, May 20",
-      "title": "Osaka → Tokyo",
-      "region": "tokyo",
-      "tagline": "Final bullet train north. Shibuya one more time.",
-      "stay": "Sequence Miyashita Park",
-      "highlights": [
-        "Morning: last Osaka stroll — pick up any remaining omiyage",
-        "Shinkansen Shin-Osaka → Tokyo — 2h45, ¥13,870",
-        "Check into Sequence Miyashita Park in Shibuya",
-        "Afternoon free: Asakusa, Akihabara, or Miyashita Park rooftop",
-        "Farewell dinner — Golden Gai or Michelin-star shōjin ryōri"
-      ],
-      "activities": [
-        {
-          "time": "09:00",
-          "name": "Last Osaka morning",
-          "type": "explore"
-        },
-        {
-          "time": "11:00",
-          "name": "Shinkansen Shin-Osaka → Tokyo",
-          "duration": "2h45",
-          "cost": 13870,
-          "type": "transport"
-        },
-        {
-          "time": "14:00",
-          "name": "Check into Sequence Miyashita Park",
-          "type": "accommodation"
-        },
-        {
-          "time": "15:00",
-          "name": "Asakusa / Akihabara / free choice",
-          "type": "explore"
-        },
-        {
-          "time": "19:00",
-          "name": "Dinner",
-          "type": "food"
-        }
-      ],
-      "transport": {
-        "mode": "Shinkansen",
-        "from": "Shin-Osaka",
-        "to": "Tokyo",
-        "duration": "2h45",
-        "cost": 13870,
-        "jrPass": true
-      },
-      "food": "Daigo near Shiba Park — 2-Michelin-star Buddhist vegan. Book ahead. Or casual Golden Gai.",
-      "tip": "Sequence Miyashita Park is right above Miyashita Park — rooftop views of Shibuya at night.",
-      "keyCost": 13870
+      "food": "Benesse Garden Cafe — verify vegan options. Pack snacks for the train back. Late dinner at Resol.",
+      "tip": "Chichu at 14:30 leaves ~3.5h for 3 more sites. Skip Honmura if running late — Pumpkin + Lee Ufan + Benesse are priority. Verify last ferry Miyanoura→Uno.",
+      "keyCost": 12000
     },
     {
       "day": 14,
-      "date": "2026-05-21",
-      "dateLabel": "Thu, May 21",
-      "title": "Tokyo — Last Full Day",
+      "date": "2026-05-20",
+      "dateLabel": "Wed, May 20",
+      "title": "Osaka → Tokyo · Cocktail Evening",
       "region": "tokyo",
-      "tagline": "One last day in the city that never sleeps. Make it count.",
+      "tagline": "Slow morning in Osaka. Nozomi north. Last cocktail in Ginza.",
       "stay": "Sequence Miyashita Park",
       "highlights": [
-        "Free day — revisit favorites or explore new neighborhoods",
-        "Option: Asakusa — Sensō-ji, Tokyo's oldest temple",
-        "Option: Akihabara — electronics, anime, retro gaming",
-        "Option: Shimokitazawa — vintage shops, indie cafés",
-        "Last shopping — omiyage, Japanese Kit-Kats, matcha sweets"
+        "10:00 — Slow morning, last Osaka impression",
+        "12:30 — Check out Resol Trinity",
+        "13:30 — Nozomi Shin-Osaka → Tokyo (~2h 30m)",
+        "16:00 — Tokyo Station → Sequence Miyashita Park",
+        "19:30 — Cocktail bar — Bar High Five (Ginza) / SG Club (Shibuya) / Bar Benfiddich (Shinjuku)"
       ],
       "activities": [
-        {
-          "time": "09:00",
-          "name": "Free exploration",
-          "type": "explore"
-        },
-        {
-          "time": "12:00",
-          "name": "Lunch",
-          "type": "food"
-        },
-        {
-          "time": "14:00",
-          "name": "Shopping & omiyage",
-          "type": "explore"
-        },
-        {
-          "time": "19:00",
-          "name": "Farewell dinner",
-          "type": "food"
-        }
+        { "time": "10:00", "name": "Slow Osaka morning", "type": "rest" },
+        { "time": "12:30", "name": "Check out Resol Trinity", "type": "logistics" },
+        { "time": "13:30", "name": "Nozomi Shin-Osaka → Tokyo", "duration": "2h 30min", "cost": 13870, "type": "transport" },
+        { "time": "16:00", "name": "Tokyo Station → Sequence", "type": "transport" },
+        { "time": "17:00", "name": "Check in at Sequence Miyashita Park", "type": "accommodation" },
+        { "time": "19:30", "name": "Cocktail bar (pick + reserve)", "type": "food" }
       ],
       "transport": {
-        "mode": "Tokyo Metro + walking",
-        "note": "All within Tokyo"
+        "mode": "Shinkansen Nozomi",
+        "from": "Shin-Osaka",
+        "to": "Tokyo",
+        "duration": "2h 30min",
+        "cost": 13870,
+        "jrPass": false
       },
-      "food": "For a special last meal: Daigo is extraordinary. Otherwise, kaiten-zushi (conveyor belt sushi) — kappa, avocado, inari are veggie.",
-      "tip": "Pack tonight — tomorrow is departure day. Tokyo Station has incredible omiyage shops if you need last-minute gifts."
+      "food": "Bar High Five (Ginza) — old-school perfectionist. SG Club (Shibuya) — modernist split bar. Bar Benfiddich (Shinjuku) — herbal alchemist.",
+      "tip": "Reserve the cocktail bar in advance. Bar High Five doesn't have a sign — it's on the 4th floor of the No.26 building.",
+      "keyCost": 13870
     },
     {
       "day": 15,
-      "date": "2026-05-22",
-      "dateLabel": "Fri, May 22",
-      "title": "Departure",
+      "date": "2026-05-21",
+      "dateLabel": "Thu, May 21",
+      "title": "Tokyo Chill Day · Souvenirs",
       "region": "tokyo",
-      "tagline": "One last Tokyo morning. Then Narita. Then memories.",
-      "stay": null,
+      "tagline": "Slow morning, packed bags, last shopping. Save energy for tomorrow.",
+      "stay": "Sequence Miyashita Park",
       "highlights": [
-        "Tsukiji Outer Market — breakfast stalls, tamagoyaki, fresh fruit",
-        "Last shopping — Tokyo Station omiyage shops are incredible",
-        "Japanese Kit-Kats, matcha sweets, furoshiki wrapping cloths",
-        "19:00 — Narita Express to airport",
-        "22:50 — ✈️ Fly home to Warsaw. Sayonara, Japan."
+        "Slow morning — coffee + breakfast near hotel",
+        "Souvenirs at Don Quijote (cheap), Tokyu Hands (design), Isetan / Mitsukoshi",
+        "Pack — Tokyo Station has incredible last-minute omiyage shops",
+        "Evening — spontaneous dinner",
+        "Sleep early — tomorrow is departure day"
       ],
       "activities": [
-        {
-          "time": "08:00",
-          "name": "Tsukiji Outer Market breakfast",
-          "type": "food"
-        },
-        {
-          "time": "10:00",
-          "name": "Last shopping",
-          "type": "explore"
-        },
-        {
-          "time": "15:00",
-          "name": "Tokyo Station omiyage shopping",
-          "type": "explore"
-        },
-        {
-          "time": "17:00",
-          "name": "Pack and prepare",
-          "type": "logistics"
-        },
-        {
-          "time": "19:00",
-          "name": "Narita Express to airport",
-          "duration": "60 min",
-          "cost": 3250,
-          "type": "transport"
-        },
-        {
-          "time": "22:50",
-          "name": "Flight to Warsaw",
-          "type": "transport"
-        }
+        { "time": "10:00", "name": "Slow morning, coffee near Sequence", "type": "rest" },
+        { "time": "12:00", "name": "Lunch — pick a favourite", "type": "food" },
+        { "time": "14:00", "name": "Don Quijote / Tokyu Hands souvenirs", "type": "explore" },
+        { "time": "16:00", "name": "Isetan / Mitsukoshi depachika", "type": "explore" },
+        { "time": "18:00", "name": "Pack", "type": "logistics" },
+        { "time": "19:30", "name": "Spontaneous dinner", "type": "food" }
       ],
       "transport": {
-        "mode": "Narita Express",
-        "from": "Tokyo",
-        "to": "Narita Airport",
-        "duration": "60 min",
-        "cost": 3250
+        "mode": "Tokyo Metro + walking",
+        "note": "All within central Tokyo"
       },
-      "food": "Stock up on snacks at Narita — excellent selection. Senbei (rice crackers, GF!), mochi, regional KitKats.",
-      "tip": "Tax-free shopping: ¥5,000+ at participating stores = ~10% savings. Don't open sealed items before leaving Japan.",
-      "keyCost": 3250
+      "food": "Depachika at Isetan / Mitsukoshi for last-minute treats. Kit-Kats, matcha sweets, senbei (rice crackers — naturally GF).",
+      "tip": "Tax-free kicks in at ¥5,000+ at participating stores — keep your passport handy and don't open sealed items before leaving Japan."
+    },
+    {
+      "day": 16,
+      "date": "2026-05-22",
+      "dateLabel": "Fri, May 22",
+      "title": "Departure · LO80 night flight",
+      "region": "tokyo",
+      "tagline": "Drop the bags at NRT in the morning. Spontaneous Tokyo wandering. Then home.",
+      "stay": null,
+      "highlights": [
+        "09:00 — Check out Sequence",
+        "11:00 — NRT baggage drop (LOT allows ~12h before)",
+        "12:00 — N'EX back to Tokyo with no luggage",
+        "13:30 — Spontaneous wandering, no plan",
+        "21:00 — NRT for boarding",
+        "22:30 — LO80 Tokyo → Warsaw"
+      ],
+      "activities": [
+        { "time": "09:00", "name": "Check out Sequence", "type": "logistics" },
+        { "time": "09:30", "name": "N'EX to NRT with luggage", "type": "transport" },
+        { "time": "11:00", "name": "Baggage drop at NRT", "type": "logistics" },
+        { "time": "12:00", "name": "N'EX back to Tokyo", "type": "transport" },
+        { "time": "13:30", "name": "Last Tokyo wandering (no luggage)", "type": "explore" },
+        { "time": "19:30", "name": "N'EX to NRT", "duration": "60 min", "cost": 3070, "type": "transport" },
+        { "time": "21:00", "name": "NRT — final security", "type": "logistics" },
+        { "time": "22:30", "name": "LO80 NRT → WAW", "type": "transport" }
+      ],
+      "transport": {
+        "mode": "Narita Express + Flight LO80",
+        "from": "Tokyo",
+        "to": "Warsaw",
+        "duration": "long flight night",
+        "cost": 3070
+      },
+      "food": "Stock up at NRT — excellent senbei, mochi, regional Kit-Kats. Last konbini coffee before boarding.",
+      "tip": "Alternative: Sagawa / Yamato hotel-to-airport service (~¥2,000–3,000/bag). Saves the morning haul.",
+      "keyCost": 3070
     }
   ],
   "dietary": {
@@ -1240,23 +917,23 @@
   ],
   "stats": [
     {
-      "value": 15,
+      "value": 16,
       "label": "Days"
     },
     {
-      "value": 8,
+      "value": 5,
+      "label": "Hotels"
+    },
+    {
+      "value": 9,
       "label": "Cities"
     },
     {
       "value": 2,
-      "label": "Bike rides"
+      "label": "Bike days"
     },
     {
-      "value": 6,
-      "label": "Islands crossed"
-    },
-    {
-      "value": 3,
+      "value": 4,
       "label": "Onsen baths"
     },
     {
@@ -1281,20 +958,20 @@
       },
       "mode": "plane",
       "icon": "plane",
-      "carrier": "LOT / connecting flight",
-      "duration": "~14 hrs",
-      "distance": "8,850 km",
+      "carrier": "LOT — LO79",
+      "duration": "~10h 30min",
+      "distance": "8,580 km",
       "cost": null,
-      "costNote": "Included in flight budget",
-      "details": "WAW → NRT, landing 18:30. Then Narita Express to Shibuya (75 min).",
+      "costNote": "Confirmed booking",
+      "details": "WAW 22:50 → NRT ~16:20 next day. Then N'EX to Shinjuku.",
       "animation": "plane-long-haul"
     },
     {
-      "id": "shibuya-kamakura",
-      "day": 3,
+      "id": "tokyo-kamakura",
+      "day": 4,
       "from": {
-        "name": "Shibuya",
-        "area": "Tokyo"
+        "name": "Tokyo",
+        "area": "Shinjuku"
       },
       "to": {
         "name": "Kamakura"
@@ -1303,36 +980,37 @@
       "icon": "train",
       "line": "JR Yokosuka Line",
       "duration": "60 min",
-      "distance": "50 km",
+      "distance": "55 km",
       "cost": 940,
       "roundTrip": true,
-      "details": "Day trip. Return via Enoden + JR same evening.",
+      "details": "Day trip. Return via JR same evening.",
       "animation": "train-local"
     },
     {
-      "id": "shibuya-kawaguchiko",
-      "day": 4,
+      "id": "tokyo-fuji",
+      "day": 5,
       "from": {
-        "name": "Shibuya",
+        "name": "Shinjuku",
         "area": "Tokyo"
       },
       "to": {
         "name": "Kawaguchiko",
         "area": "Mt Fuji"
       },
-      "mode": "bus",
-      "icon": "bus",
-      "carrier": "Keio / Fujikyu Highway Bus",
-      "duration": "2 hrs",
+      "mode": "car",
+      "icon": "car",
+      "carrier": "Times Car / Toyota Rent",
+      "duration": "2 hrs each way",
       "distance": "100 km",
-      "cost": 2200,
+      "cost": null,
+      "costNote": "Mid-size rental",
       "roundTrip": true,
-      "details": "06:30 departure, return ~17:00. Through mountain roads with Fuji views.",
-      "animation": "bus-mountain"
+      "details": "Pickup 7:30 in Shinjuku. Loop the lake, return by 19:00.",
+      "animation": "car-mountain"
     },
     {
       "id": "tokyo-kumamoto",
-      "day": 5,
+      "day": 6,
       "from": {
         "name": "Tokyo",
         "area": "Haneda",
@@ -1344,36 +1022,56 @@
       },
       "mode": "plane",
       "icon": "plane",
-      "carrier": "ANA / JAL / Solaseed",
-      "duration": "1h50",
+      "carrier": "JAL629",
+      "duration": "1h 45min",
       "distance": "900 km",
-      "cost": 15000,
-      "costNote": "¥12,000–20,000 with early-bird discount",
-      "details": "HND → KMJ. Morning flight, arrive by lunch. Way faster than 6hr shinkansen.",
+      "cost": null,
+      "costNote": "Confirmed booking",
+      "details": "HND 11:50 → KMJ 13:35. Nippon kei car C08669 ready at 14:00.",
       "animation": "plane-domestic"
     },
     {
       "id": "kumamoto-aso",
-      "day": 6,
+      "day": 7,
       "from": {
         "name": "Kumamoto"
       },
       "to": {
-        "name": "Mt Aso"
+        "name": "Mt Aso",
+        "area": "→ Kurokawa Onsen"
       },
-      "mode": "train",
-      "icon": "train",
-      "line": "JR Hōhi Line",
-      "duration": "75 min",
-      "distance": "55 km",
+      "mode": "car",
+      "icon": "car",
+      "carrier": "Nippon kei car",
+      "duration": "all-day",
+      "distance": "180 km RT",
       "cost": null,
       "roundTrip": true,
-      "details": "Day trip. Through dramatic mountain valleys. Then e-bike tour at Aso.",
-      "animation": "train-mountain"
+      "details": "Aso crater + Kusasenri, e-bike caldera, then Kurokawa onsen tegata.",
+      "animation": "car-mountain"
+    },
+    {
+      "id": "kumamoto-takachiho",
+      "day": 8,
+      "from": {
+        "name": "Kumamoto"
+      },
+      "to": {
+        "name": "Takachiho"
+      },
+      "mode": "car",
+      "icon": "car",
+      "carrier": "Nippon kei car",
+      "duration": "2 hrs each way",
+      "distance": "200 km RT",
+      "cost": null,
+      "roundTrip": true,
+      "details": "Manai-no-Taki kayaks at 10:00. Gokase walking path. Amano-Iwato.",
+      "animation": "car-coastal"
     },
     {
       "id": "kumamoto-amakusa",
-      "day": 7,
+      "day": 9,
       "from": {
         "name": "Kumamoto"
       },
@@ -1382,72 +1080,58 @@
       },
       "mode": "car",
       "icon": "car",
-      "duration": "2 hrs",
-      "distance": "100 km",
-      "cost": 5000,
+      "carrier": "Nippon kei car",
+      "duration": "1.5 hrs each way",
+      "distance": "150 km RT",
+      "cost": null,
       "roundTrip": true,
-      "details": "Day trip. Drive across 5 bridges to the Amakusa Islands. Crystal seas, dolphins, white sand.",
+      "details": "Five Bridges, Tomioka beach, optional dolphin cruise.",
       "animation": "car-coastal"
     },
     {
-      "id": "kumamoto-kurokawa",
-      "day": 8,
-      "from": {
-        "name": "Kumamoto",
-        "area": "Sakuramachi"
-      },
-      "to": {
-        "name": "Kurokawa Onsen"
-      },
-      "mode": "bus",
-      "icon": "bus",
-      "carrier": "Kyushu Sanko Bus",
-      "duration": "2.5 hrs",
-      "distance": "80 km",
-      "cost": 2500,
-      "roundTrip": true,
-      "details": "Day trip. Through mountain roads to the hidden onsen village. Return same evening.",
-      "animation": "bus-mountain"
-    },
-    {
-      "id": "kumamoto-onomichi",
-      "day": 9,
+      "id": "kumamoto-osaka",
+      "day": 10,
       "from": {
         "name": "Kumamoto"
       },
       "to": {
-        "name": "Onomichi"
+        "name": "Osaka",
+        "area": "Shin-Osaka"
       },
       "mode": "shinkansen",
       "icon": "shinkansen",
-      "line": "Kyushu + Sanyo Shinkansen",
-      "duration": "~3.5 hrs",
-      "distance": "450 km",
-      "cost": 13000,
-      "via": [
-        "Hakata",
-        "Fukuyama"
-      ],
-      "details": "Kumamoto → Hakata (40 min) → Fukuyama (1h30) → local to Onomichi (20 min).",
+      "line": "Sakura 752",
+      "carrier": "JR Kyushu / JR West",
+      "duration": "3h 17min",
+      "distance": "560 km",
+      "cost": 17400,
+      "costNote": "4 pax · car 4 · seats 16-CD/17-CD · ref. #2002",
+      "details": "Kumamoto 11:42 → Shin-Osaka 14:59. Reserved.",
       "animation": "shinkansen"
     },
     {
-      "id": "onomichi-imabari",
-      "day": 10,
+      "id": "osaka-shimanami",
+      "day": 12,
       "from": {
-        "name": "Onomichi"
+        "name": "Osaka",
+        "area": "Shin-Osaka"
       },
       "to": {
-        "name": "Imabari"
+        "name": "Matsuyama",
+        "area": "via Onomichi → Imabari"
       },
       "mode": "bike",
       "icon": "bike",
       "route": "Shimanami Kaido",
-      "duration": "6–8 hrs",
-      "distance": "70 km",
+      "duration": "all-day",
+      "distance": "70 km riding",
       "cost": 4000,
-      "costNote": "E-bike rental with one-way drop-off",
-      "details": "Ferry to Mukaishima, then 6 bridges across 6 islands. The ride of a lifetime.",
+      "costNote": "E-bike rental, one-way drop-off",
+      "via": [
+        "Fukuyama",
+        "Onomichi",
+        "Imabari"
+      ],
       "islands": [
         "Mukaishima",
         "Innoshima",
@@ -1456,49 +1140,33 @@
         "Hakatajima",
         "Oshima"
       ],
+      "details": "Shinkansen → local → ferry → ride 6 islands → train across to Matsuyama by 18:00.",
       "animation": "bike-island"
     },
     {
-      "id": "imabari-osaka",
-      "day": 10,
-      "from": {
-        "name": "Imabari"
-      },
-      "to": {
-        "name": "Osaka",
-        "area": "Namba"
-      },
-      "mode": "train",
-      "icon": "train",
-      "line": "JR Yosan + Seto-Ohashi + Sanyo Shinkansen",
-      "duration": "~3.5 hrs",
-      "distance": "320 km",
-      "cost": 11000,
-      "via": [
-        "Okayama"
-      ],
-      "details": "Drop bikes at Imabari terminal → train across Seto bridge → Shin-Osaka → Namba.",
-      "animation": "train-bridge"
-    },
-    {
-      "id": "osaka-kyoto",
+      "id": "matsuyama-osaka",
       "day": 13,
       "from": {
-        "name": "Osaka",
-        "area": "Namba"
+        "name": "Matsuyama"
       },
       "to": {
-        "name": "Kyoto"
+        "name": "Osaka",
+        "area": "Shin-Osaka"
       },
       "mode": "train",
       "icon": "train",
-      "line": "JR Special Rapid",
-      "duration": "30 min",
-      "distance": "45 km",
-      "cost": 580,
-      "roundTrip": true,
-      "details": "Day trip. Quick JR ride, packed day of temples and shrines.",
-      "animation": "train-local"
+      "line": "Ishizuchi Ltd Express + ferry + Shinkansen",
+      "duration": "all-day",
+      "distance": "470 km",
+      "cost": 12000,
+      "via": [
+        "Takamatsu",
+        "Naoshima",
+        "Uno",
+        "Okayama"
+      ],
+      "details": "Matsuyama → Takamatsu → Naoshima art island → Uno → Shinkansen back.",
+      "animation": "train-bridge"
     },
     {
       "id": "osaka-tokyo",
@@ -1513,15 +1181,15 @@
       "mode": "shinkansen",
       "icon": "shinkansen",
       "line": "Tōkaidō Shinkansen (Nozomi)",
-      "duration": "2h15",
+      "duration": "2h 30min",
       "distance": "515 km",
       "cost": 13870,
-      "details": "Nozomi — fastest bullet train. Views of Mt Fuji from the right side if you're lucky.",
+      "details": "Nozomi — fastest bullet train. Mt Fuji from the right side if lucky.",
       "animation": "shinkansen"
     },
     {
       "id": "tokyo-warsaw",
-      "day": 15,
+      "day": 16,
       "from": {
         "name": "Tokyo",
         "area": "Narita",
@@ -1534,12 +1202,12 @@
       },
       "mode": "plane",
       "icon": "plane",
-      "carrier": "Return flight",
+      "carrier": "LOT — LO80",
       "duration": "~12 hrs",
-      "distance": "8,850 km",
+      "distance": "8,580 km",
       "cost": null,
-      "costNote": "Included in flight budget",
-      "details": "Narita Express from Tokyo Station (60 min, ¥3,250). Flight 22:50.",
+      "costNote": "Confirmed booking",
+      "details": "NRT 22:30. Sleep in the air. Land in Warsaw morning.",
       "animation": "plane-long-haul"
     }
   ],
@@ -2531,6 +2199,50 @@
         "nights": 4
       },
       "pricingNote": "May 2026 rates not yet live. Osaka is competitive — great value. Post-Golden Week shoulder season."
+    },
+    "matsuyama": {
+      "stayId": "matsuyama",
+      "location": "Matsuyama (Dogo)",
+      "nights": 1,
+      "dates": "May 18",
+      "purpose": "One night by Dogo Onsen after the 70km Shimanami ride. Honkan baths reserved for 20:00.",
+      "options": [
+        {
+          "name": "Dogo-no-Yado Katsuragi",
+          "nameJp": "道後の宿 葛城",
+          "type": "ryokan",
+          "priceEUR": "Confirmed",
+          "priceJPY": "Confirmed",
+          "totalPerRoom": "1 night · 2 rooms · ref. #6839169689",
+          "style": "Traditional ryokan steps from Dogo Onsen Honkan",
+          "location": "1 min walk to Dogo Onsen Honkan",
+          "neighborhood": "Dogo, Matsuyama",
+          "highlights": [
+            "Booked for the night of May 18 — bag arrives via Yamato from Resol Trinity",
+            "Yukata, tatami rooms, communal baths",
+            "Walking distance to Bocchan dango and the Dogo shopping street"
+          ],
+          "travellerPick": true,
+          "pickReason": "Confirmed booking · ref. #6839169689 · 2 rooms",
+          "ryokanDetails": {
+            "tatami": true,
+            "futon": true,
+            "yukata": true,
+            "communalBath": true,
+            "meals": "Breakfast included"
+          },
+          "dietaryNote": "Communicate vegan/GF needs at booking — traditional kitchens lean heavily on dashi.",
+          "chosen": true
+        }
+      ],
+      "checkIn": "2026-05-18",
+      "checkOut": "2026-05-19",
+      "searchParams": {
+        "adults": 4,
+        "rooms": 2,
+        "nights": 1
+      },
+      "pricingNote": "Booking already confirmed. Daypack only on the day — overnight bag travels separately via Yamato."
     },
     "tokyoFinal": {
       "stayId": "tokyoFinal",
