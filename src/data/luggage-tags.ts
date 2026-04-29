@@ -11,25 +11,27 @@ export interface TagPlacement {
 }
 
 export const HERO_TAGS: TagPlacement[] = [
-  { city: "Warsaw", code: "WAW", date: "May 8", bottom: "22%", right: "4%", rot: "5deg", delay: "0.6s" },
-  { city: "Narita", code: "NRT", date: "May 9", top: "18%", left: "3%", rot: "-4deg", delay: "0.8s" },
+  { city: "Warsaw", code: "WAW", date: "May 7", bottom: "22%", right: "4%", rot: "5deg", delay: "0.6s" },
+  { city: "Narita", code: "NRT", date: "May 8", top: "18%", left: "3%", rot: "-4deg", delay: "0.8s" },
 ];
 
 export const DAY_TAGS: Record<string, TagPlacement> = {
-  "01": { city: "Tokyo", code: "TYO", date: "Day 01", bottom: "8%", left: "8%", rot: "-5deg", delay: "0.4s" },
-  "02": { city: "Shibuya", code: "SBY", date: "Day 02", bottom: "10%", left: "8%", rot: "3deg", delay: "0.5s" },
-  "03": { city: "Kamakura", code: "KMK", date: "Day 03", bottom: "8%", left: "8%", rot: "-4deg", delay: "0.4s" },
-  "04": { city: "Mt Fuji", code: "FUJ", date: "Day 04", bottom: "10%", left: "8%", rot: "5deg", delay: "0.5s" },
-  "05": { city: "Kumamoto", code: "KMJ", date: "Day 05", bottom: "8%", left: "8%", rot: "-3deg", delay: "0.4s" },
-  "06": { city: "Takachiho", code: "TKC", date: "Day 06", bottom: "10%", left: "8%", rot: "4deg", delay: "0.5s" },
+  "01": { city: "Warsaw", code: "WAW", date: "Day 01", bottom: "8%", left: "8%", rot: "-5deg", delay: "0.4s" },
+  "02": { city: "Tokyo", code: "TYO", date: "Day 02", bottom: "10%", left: "8%", rot: "3deg", delay: "0.5s" },
+  "03": { city: "Shibuya", code: "SBY", date: "Day 03", bottom: "8%", left: "8%", rot: "-4deg", delay: "0.4s" },
+  "04": { city: "Kamakura", code: "KMK", date: "Day 04", bottom: "10%", left: "8%", rot: "5deg", delay: "0.5s" },
+  "05": { city: "Mt Fuji", code: "FUJ", date: "Day 05", bottom: "8%", left: "8%", rot: "-3deg", delay: "0.4s" },
+  "06": { city: "Kumamoto", code: "KMJ", date: "Day 06", bottom: "10%", left: "8%", rot: "4deg", delay: "0.5s" },
   "07": { city: "Mt Aso", code: "ASO", date: "Day 07", bottom: "8%", left: "8%", rot: "-5deg", delay: "0.4s" },
-  "08": { city: "Kumamoto", code: "KMJ", date: "Day 08", bottom: "10%", left: "8%", rot: "3deg", delay: "0.5s" },
-  "09": { city: "Osaka", code: "KIX", date: "Day 09", bottom: "8%", left: "8%", rot: "-4deg", delay: "0.4s" },
+  "08": { city: "Takachiho", code: "TKC", date: "Day 08", bottom: "10%", left: "8%", rot: "3deg", delay: "0.5s" },
+  "09": { city: "Amakusa", code: "AMK", date: "Day 09", bottom: "8%", left: "8%", rot: "-4deg", delay: "0.4s" },
   "10": { city: "Osaka", code: "KIX", date: "Day 10", bottom: "10%", left: "8%", rot: "5deg", delay: "0.5s" },
-  "11": { city: "Shimanami", code: "SMN", date: "Day 11", bottom: "8%", left: "8%", rot: "-3deg", delay: "0.4s" },
-  "12": { city: "Osaka", code: "KIX", date: "Day 12", bottom: "10%", left: "8%", rot: "4deg", delay: "0.5s" },
-  "13": { city: "Tokyo", code: "TYO", date: "Day 13", bottom: "8%", left: "8%", rot: "-5deg", delay: "0.4s" },
+  "11": { city: "Osaka", code: "KIX", date: "Day 11", bottom: "8%", left: "8%", rot: "-3deg", delay: "0.4s" },
+  "12": { city: "Matsuyama", code: "MYJ", date: "Day 12", bottom: "10%", left: "8%", rot: "4deg", delay: "0.5s" },
+  "13": { city: "Naoshima", code: "NJS", date: "Day 13", bottom: "8%", left: "8%", rot: "-5deg", delay: "0.4s" },
   "14": { city: "Tokyo", code: "TYO", date: "Day 14", bottom: "10%", left: "8%", rot: "3deg", delay: "0.5s" },
+  "15": { city: "Tokyo", code: "TYO", date: "Day 15", bottom: "8%", left: "8%", rot: "-4deg", delay: "0.4s" },
+  "16": { city: "Narita", code: "NRT", date: "Day 16", bottom: "10%", left: "8%", rot: "5deg", delay: "0.5s" },
 };
 
 export const CLOSING_TAGS: TagPlacement[] = [
@@ -38,18 +40,18 @@ export const CLOSING_TAGS: TagPlacement[] = [
 ];
 
 export const DAY_HOTEL_KEY: Record<string, string> = {
-  "01": "shibuya",
   "02": "shibuya",
   "03": "shibuya",
   "04": "shibuya",
-  "05": "kumamoto",
+  "05": "shibuya",
   "06": "kumamoto",
   "07": "kumamoto",
   "08": "kumamoto",
-  "09": "osaka",
+  "09": "kumamoto",
   "10": "osaka",
   "11": "osaka",
-  "12": "osaka",
-  "13": "tokyoFinal",
+  "12": "matsuyama",
+  "13": "osaka",
   "14": "tokyoFinal",
+  "15": "tokyoFinal",
 };
