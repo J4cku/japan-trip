@@ -47,10 +47,10 @@
   },
   "stays": [
     {
-      "location": "Shinjuku, Tokyo",
+      "location": "Shibuya, Tokyo",
       "nights": 4,
       "dates": "May 8–12",
-      "area": "lyf Shinjuku",
+      "area": "lyf Shibuya Tokyo",
       "budget": "Confirmed booking"
     },
     {
@@ -117,42 +117,42 @@
       "dateLabel": "Fri, May 8",
       "title": "Tokyo Arrival — the lost day",
       "region": "tokyo",
-      "tagline": "Land at Narita. N'EX to Shinjuku. First konbini run. Sleep before midnight.",
-      "stay": "lyf Shinjuku",
+      "tagline": "Land at Narita. N'EX to Shibuya. First konbini run. Sleep before midnight.",
+      "stay": "lyf Shibuya Tokyo",
       "highlights": [
         "16:20 — Land at NRT (immigration 30–45 min)",
-        "17:30 — Narita Express to Shinjuku (~80 min, ¥3,070)",
-        "19:30 — Check into lyf Shinjuku, drop bags",
+        "17:30 — Narita Express to Shibuya (~75 min, ¥3,250)",
+        "19:30 — Check into lyf Shibuya Tokyo, drop bags",
         "20:30 — First konbini run (7-Eleven onigiri are vegan-friendly)",
         "22:00 — Sleep. Tomorrow is teamLab."
       ],
       "activities": [
         { "time": "16:20", "name": "Land at Narita (NRT)", "type": "transport" },
-        { "time": "17:30", "name": "Narita Express → Shinjuku", "duration": "80 min", "cost": 3070, "type": "transport" },
-        { "time": "19:30", "name": "Check in at lyf Shinjuku", "type": "accommodation" },
+        { "time": "17:30", "name": "Narita Express → Shibuya", "duration": "75 min", "cost": 3250, "type": "transport" },
+        { "time": "19:30", "name": "Check in at lyf Shibuya Tokyo", "type": "accommodation" },
         { "time": "20:30", "name": "Konbini dinner run", "type": "food" },
         { "time": "22:00", "name": "Sleep — fight the jet lag", "type": "rest" }
       ],
       "transport": {
         "mode": "Narita Express",
         "from": "Narita Airport",
-        "to": "Shinjuku",
-        "duration": "80 min",
-        "cost": 3070,
+        "to": "Shibuya",
+        "duration": "75 min",
+        "cost": 3250,
         "jrPass": false
       },
       "food": "Konbini onigiri (umeboshi, kombu fillings are naturally GF + vegan). 7-Eleven and Lawson have labelled vegan onigiri.",
       "tip": "Withdraw yen at 7-Eleven ATMs — best rates, English menus. Buy a Suica IC card at the airport kiosk on arrival.",
-      "keyCost": 3070
+      "keyCost": 3250
     },
     {
       "day": 3,
       "date": "2026-05-09",
       "dateLabel": "Sat, May 9",
-      "title": "TeamLab Borderless · Shinjuku · Shibuya",
+      "title": "TeamLab Borderless · Shibuya",
       "region": "tokyo",
-      "tagline": "Step inside the digital world at 9am. Walk it off through Shinjuku and Shibuya till the neon kicks in.",
-      "stay": "lyf Shinjuku",
+      "tagline": "Step inside the digital world at 9am. Walk it off through Shibuya till the neon kicks in.",
+      "stay": "lyf Shibuya Tokyo",
       "highlights": [
         "09:00 — TeamLab Borderless at Azabudai Hills (tickets confirmed)",
         "12:00 — Saido lunch — vegan kaiseki, no dashi (5 min from teamLab — book it!)",
@@ -184,7 +184,7 @@
       "title": "Kamakura Day Trip",
       "region": "tokyo",
       "tagline": "13th-century capital. The Great Buddha at noon, hydrangeas, then a slow walk along Yuigahama.",
-      "stay": "lyf Shinjuku",
+      "stay": "lyf Shibuya Tokyo",
       "highlights": [
         "10:00 — JR Yokosuka Line, Tokyo → Hase (~1h)",
         "12:30 — Kotoku-in: the Daibutsu, 13m of bronze cast in 1252",
@@ -221,17 +221,17 @@
       "title": "Mt Fuji Loop",
       "region": "fuji",
       "tagline": "Pick up the rental at 7:30. Lake reflections at Oishi, Iyashi village, then home before the cloud rolls in.",
-      "stay": "lyf Shinjuku",
+      "stay": "lyf Shibuya Tokyo",
       "highlights": [
-        "07:30 — Times Car / Toyota Rent pickup in Shinjuku (mid-size, IDP confirmed)",
+        "07:30 — Times Car / Toyota Rent pickup in Shibuya (mid-size, IDP confirmed)",
         "09:30 — Oishi Park, north shore of Lake Kawaguchi — classic Fuji + lake view",
         "11:30 — Kubota Itchiku Art Museum (optional)",
         "13:00 — Lunch at Cafe Troisieme Marche (aesthetic + flexible)",
         "14:30 — Iyashi-no-Sato Nenba — traditional thatched village",
-        "19:00 — Back in Shinjuku, pack for Kumamoto"
+        "19:00 — Back at the hotel, pack for Kumamoto"
       ],
       "activities": [
-        { "time": "07:30", "name": "Pickup rental car in Shinjuku", "type": "logistics" },
+        { "time": "07:30", "name": "Pickup rental car in Shibuya", "type": "logistics" },
         { "time": "09:30", "name": "Oishi Park, Lake Kawaguchi", "type": "attraction" },
         { "time": "11:30", "name": "Kubota Itchiku Art Museum (optional)", "type": "attraction" },
         { "time": "13:00", "name": "Lunch — Cafe Troisieme Marche", "type": "food" },
@@ -240,7 +240,7 @@
       ],
       "transport": {
         "mode": "Rental car (mid-size)",
-        "from": "Shinjuku",
+        "from": "Shibuya",
         "to": "Kawaguchiko loop",
         "duration": "2 hrs each way",
         "jrPass": false,
@@ -266,7 +266,7 @@
         "18:00 — Dinner at Sakuranobaba Josaien — restaurant village under the castle"
       ],
       "activities": [
-        { "time": "07:30", "name": "Check out lyf Shinjuku", "type": "logistics" },
+        { "time": "07:30", "name": "Check out lyf Shibuya Tokyo", "type": "logistics" },
         { "time": "08:30", "name": "Limousine bus / monorail → Haneda", "duration": "30 min", "type": "transport" },
         { "time": "11:50", "name": "JAL629 HND → KMJ", "duration": "1h 45min", "type": "transport" },
         { "time": "14:00", "name": "Nippon Rent-A-Car pickup (C08669)", "type": "logistics" },
@@ -963,7 +963,7 @@
       "distance": "8,580 km",
       "cost": null,
       "costNote": "Confirmed booking",
-      "details": "WAW 22:50 → NRT ~16:20 next day. Then N'EX to Shinjuku.",
+      "details": "WAW 22:50 → NRT ~16:20 next day. Then N'EX to Shibuya.",
       "animation": "plane-long-haul"
     },
     {
@@ -990,7 +990,7 @@
       "id": "tokyo-fuji",
       "day": 5,
       "from": {
-        "name": "Shinjuku",
+        "name": "Shibuya",
         "area": "Tokyo"
       },
       "to": {
@@ -1005,7 +1005,7 @@
       "cost": null,
       "costNote": "Mid-size rental",
       "roundTrip": true,
-      "details": "Pickup 7:30 in Shinjuku. Loop the lake, return by 19:00.",
+      "details": "Pickup 7:30 in Shibuya. Loop the lake, return by 19:00.",
       "animation": "car-mountain"
     },
     {
