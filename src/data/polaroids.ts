@@ -38,7 +38,7 @@ export const DAY_POLAROIDS: Record<string, PolaroidPhoto[]> = {
     { src: u("photo-1700325347467-8767c512ecd1"), caption: "Kurokawa lanterns", rotation: 3, position: { top: "25%", left: "3%" }, size: "md" },
   ],
   "08": [
-    { src: u("photo-1699073141845-5c6436fde432"), caption: "Manai-no-taki kayaks", rotation: -2, position: { top: "12%", right: "5%" }, size: "lg" },
+    { src: u("photo-1699073141845-5c6436fde432"), caption: "Manai-no-taki rowboats", rotation: -2, position: { top: "12%", right: "5%" }, size: "lg" },
     { src: u("photo-1760475291639-8fc73e25315d"), caption: "Volcanic highlands drive", rotation: 4, position: { top: "52%", left: "6%" }, size: "sm" },
   ],
   "09": [
