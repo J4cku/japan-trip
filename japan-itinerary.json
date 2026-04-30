@@ -327,13 +327,13 @@
       "day": 8,
       "date": "2026-05-14",
       "dateLabel": "Thu, May 14",
-      "title": "Takachiho Gorge — Kayaks",
+      "title": "Takachiho Gorge — Boats",
       "region": "kyushu",
-      "tagline": "Manai-no-Taki up close — kayak under the waterfall, walk the Gokase path, end at the cave shrine.",
+      "tagline": "Manai-no-Taki up close — row under the waterfall, walk the Gokase path, end at the cave shrine.",
       "stay": "Matsuya Bekkan",
       "highlights": [
         "07:30 — Leave Kumamoto (~2h drive through volcanic highlands)",
-        "10:00 — Kayaks under Manai-no-Taki — book at eipro.jp/takachiho1!",
+        "10:00 — Rowboats under Manai-no-Taki — reserved ✓",
         "11:00 — Local lunch (verify dashi-free options)",
         "12:30 — Gokase walking path along the gorge",
         "14:00 — Amano-Iwato Shrine — the cave where Amaterasu hid",
@@ -341,7 +341,7 @@
       ],
       "activities": [
         { "time": "07:30", "name": "Drive Kumamoto → Takachiho", "duration": "2 hrs", "type": "transport" },
-        { "time": "10:00", "name": "Manai-no-Taki kayaks", "duration": "30 min", "cost": 4100, "bookAhead": true, "type": "attraction" },
+        { "time": "10:00", "name": "Manai-no-Taki rowboats (reserved)", "duration": "30 min", "cost": 4100, "bookAhead": true, "type": "attraction" },
         { "time": "11:00", "name": "Lunch in Takachiho town", "type": "food" },
         { "time": "12:30", "name": "Gokase walking path", "type": "explore" },
         { "time": "14:00", "name": "Amano-Iwato Shrine", "type": "attraction" },
@@ -357,7 +357,7 @@
         "roundTrip": true
       },
       "food": "Takachiho soba is everywhere — verify it's served without bonito dashi. Bring konbini snacks for the road.",
-      "tip": "Kayak slots disappear fast — book at eipro.jp/takachiho1 the moment they open. Arrive 15 min early.",
+      "tip": "Boat reservation confirmed for 10:00 — arrive 15 min early to check in. Slot is 30 min on the water.",
       "keyCost": 4100
     },
     {
@@ -1066,7 +1066,7 @@
       "distance": "200 km RT",
       "cost": null,
       "roundTrip": true,
-      "details": "Manai-no-Taki kayaks at 10:00. Gokase walking path. Amano-Iwato.",
+      "details": "Manai-no-Taki rowboats at 10:00 (reserved). Gokase walking path. Amano-Iwato.",
       "animation": "car-coastal"
     },
     {
